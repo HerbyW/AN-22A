@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="Systems/views.xml">
+
+    <description>Antonov An 22 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM), Instrumentation HerbyW Jan2015</author>
+    <aircraft-version>0.2</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>0.8</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Antonov-An-22/an22-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/Antonov-An-22/Models/an22.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <!-- Weapons are not supported for now, maybe later
+    
+    <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Antonov-An-22/Models/weapons/release.xml</path>
+      </submodels>                                                            -->
+
+    <sound>
+      <path>Aircraft/Antonov-An-22/Sounds/an22-sound.xml</path>
+    </sound>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int n="0"    type="int">  0 </int>                                         <!-- 0 immat -->
+        <int n="1"    type="int">  0 </int>                                         <!-- 1 immat -->
+        <int n="2"    type="int">  0 </int>                                         <!-- 2 immat -->
+        <int n="3"    type="int">  0 </int>                                         <!-- 3 immat -->
+        <int n="4"    type="int">  0 </int>                                         <!-- 4 immat -->
+        <int n="5"    type="int">  0 </int>                                         <!-- 5 immat -->
+        <int n="6"    type="bool" alias="controls/smoke"> 0 </int>                  <!-- 6 smoke/bomb/torpedo -->
+        <int n="7"    type="int">  0 </int>                                         <!-- 7 color -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3"  alias="/position/altitude-ft"> 0 </float>                     <!-- altitude for Smoke/Trail -->
+        <float n="4"  alias="/engines/engine[0]/n2" />
+        <float n="5"  alias="/engines/engine[1]/n2" />
+        <float n="6"  alias="/engines/engine[2]/n2" />
+        <float n="7"  alias="/engines/engine[3]/n2" />
+        <float n="8"  alias="/controls/engines/engine[0]/throttle" />
+        <float n="9"  alias="/controls/engines/engine[1]/throttle" />
+        <float n="10" alias="/controls/engines/engine[2]/throttle" />
+        <float n="11" alias="/controls/engines/engine[3]/throttle" />
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+
+    <flaps>
+      <setting> 0.00 </setting>
+      <setting> 0.25 </setting>
+      <setting> 0.50 </setting>
+      <setting> 0.75 </setting>
+      <setting> 1.00 </setting>
+    </flaps>
+
+    <help include="Systems/help.xml"/>
+
+    <menubar include="Dialogs/an22-menu.xml"/>
+    
+  </sim>
+
+  <controls>
+    <engines>
+      <engine n="0">
+        <boost type="double">0</boost>
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="1">
+        <boost type="double">0</boost>
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="2">
+        <boost type="double">0</boost>
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="3">
+        <boost type="double">0</boost>
+        <magnetos>0</magnetos>
+      </engine>
+    </engines>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+  </controls>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <rpm>500</rpm>
+      <running>false</running>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+      <rpm>500</rpm>
+      <running>false</running>
+    </engine>
+    <engine n="2">
+      <engine-num type="int">2</engine-num>
+      <rpm>500</rpm>
+      <running>false</running>
+    </engine>
+    <engine n="3">
+      <engine-num type="int">3</engine-num>
+      <rpm>500</rpm>
+      <running>false</running>
+    </engine>
+  </engines>
+
+  <input>
+    <keyboard include="Systems/an22-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/Antonov-An-22/Nasal/doors.nas</file>
+    </doors>
+    <an22>
+      <file>Aircraft/Antonov-An-22/Nasal/liveries.nas</file>
+      <file>Aircraft/Antonov-An-22/Nasal/light.nas</file>
+    </an22>
+  </nasal>
+
+  
+ 
+ 
+ 
+  
+</PropertyList>

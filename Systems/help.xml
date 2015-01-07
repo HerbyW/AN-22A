@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Antonov An 22</title>
+  
+  <key>
+    <name>d</name>
+    <desc>Open/Close left door</desc>
+  </key>
+  <key>
+    <name>D</name>
+    <desc>Open/Close right doors</desc>
+  </key>
+  <key>
+    <name>E</name>
+    <desc>Open/Close cargo doors</desc>
+  </key>
+  
+  <text>
+	Some instruments will show you metric values, some ft.
+	
+	There is a green panel in the middle console, the right switch makes the lights on.
+	
+	You have a panel with 5 lamps in the middle, the lower 3 are for trim-neutralisation.
+	
+	The Key F2 is prepared for reverse, but unfortunatly it is not working (any help to get it working is wellcome).
+	
+	The Autopilot Helper panel in the top middle console is fully working.You may use some instruments to put in the values -
+	- Heading Control: Heading Bug (HDG) and Course of ILS (NAV) are to set in the HSI (Horizontal Situation Indicator),
+	- Velocity Control: Speed with Throttle are set in the Speed Indicator, then push IAS
+	- Pitch/Attitude Control is working if you get the plane in a climbing or descending position and push the Button VS,
+	- Wing leveler is activ when you push the AP button, it is also the AP activating Button,
+	- APRP is used for intersepting the Glide Scope,
+	- GPS for flying routes from the Route Manager,
+	- ALT is holding your attidude
+	
+	For ILS Landing you may use the little Instrument with the yellow and blue strips, the NAV Indicator, it
+	gives you the indication that ILS and/or Glide Scope is intersepted.
+	
+	Flaps Controll Panel will give you the right level for landing (on the right side) and starting (on the left side),
+	if the white strips are in the middle position (1-2 for starting, 2-4 for landing).
+	
+	Pushback car is now there. Do not use the brakes to stop backwards driving, use the pushback control please.
+	
+	Trails are now working only above 6000 ft, on ground it is not realistic.
+	
+	There are 2 Altimeters: one is in meter and mmHG, the other one in ft and inHG,
+	 they are connected and you should set them to the ATIS information of the airport befor starting (not working for now).
+	 
+	The compasses are not cleared of the magnetic variation, it will be done soon. 
+      </text>
+  
+</PropertyList>
