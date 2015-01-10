@@ -4,7 +4,8 @@
 		Septemper 2013
 		This file is licenced under the terms of the GNU General Public Licence V2 or later
 		###################################################################################
--->
+simplyfied by HerbyW Jan2015  -->
+
 <PropertyList>
     <path>ap-fg.ac</path>
 
@@ -156,6 +157,11 @@
 				    <command>property-assign</command>
 				    <property>/autopilot/locks/heading</property>
 				    <value type="string">wing-leveler</value>
+				  </binding>
+				  <binding>
+				    <command>property-assign</command>
+				    <property>/autopilot/internal/target-roll-deg</property>
+				    <value type="double"> 0 </value>
 				  </binding>
         </action>
     </animation>

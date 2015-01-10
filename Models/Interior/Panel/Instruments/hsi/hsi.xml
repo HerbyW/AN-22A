@@ -137,7 +137,7 @@
         <object-name>HSI.crsdeflection</object-name>
         <object-name>toflag</object-name>
         <object-name>fromflag</object-name>
-        <property>orientation/heading-magnetic-deg</property>
+        <property>orientation/heading-deg</property>
         <axis>
             <x>1.0</x>
             <y>0</y>
@@ -409,7 +409,7 @@
              <binding>
                 <command>property-adjust</command>
                 <property>instrumentation/nav/radials/selected-deg</property>
-                <step>1</step>
+                <step>10</step>
                 <min>0</min>
                 <max>360</max>
                 <wrap>true</wrap>
@@ -425,7 +425,7 @@
              <binding>
                 <command>property-adjust</command>
                 <property>instrumentation/nav/radials/selected-deg</property>
-                <step>-1</step>
+                <step>-10</step>
                 <min>0</min>
                 <max>360</max>
                 <wrap>true</wrap>
@@ -477,7 +477,7 @@
              <binding>
                 <command>property-adjust</command>
                 <property>autopilot/settings/heading-bug-deg</property>
-                <step>1</step>
+                <step>10</step>
                 <min>0</min>
                 <max>360</max>
                 <wrap>true</wrap>
@@ -493,7 +493,7 @@
              <binding>
                 <command>property-adjust</command>
                 <property>autopilot/settings/heading-bug-deg</property>
-                <step>-1</step>
+                <step>-10</step>
                 <min>0</min>
                 <max>360</max>
                 <wrap>true</wrap>

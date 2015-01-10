@@ -15,7 +15,15 @@
       <cockpit type="int"> 1 </cockpit>
       <model type="int">   4 </model>
     </rating>
-
+   
+   <systems>
+          <autopilot>
+	    <name>Autopilot</name>
+               <path>Nasal/An-22-autopilot.xml</path>
+         </autopilot>
+   </systems>
+   
+   
   </sim>
 
 </PropertyList>
