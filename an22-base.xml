@@ -57,6 +57,7 @@
         <float n="9"  alias="/controls/engines/engine[1]/throttle" />
         <float n="10" alias="/controls/engines/engine[2]/throttle" />
         <float n="11" alias="/controls/engines/engine[3]/throttle" />
+         <float n="12" alias="/gear/gear/rollspeed-ms" />
         <string n="9" type="string" />
       </generic>
     </multiplay>
