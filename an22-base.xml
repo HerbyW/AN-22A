@@ -36,14 +36,15 @@
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
-        <int n="0"    type="int">  0 </int>                                         <!-- 0 immat -->
-        <int n="1"    type="int">  0 </int>                                         <!-- 1 immat -->
-        <int n="2"    type="int">  0 </int>                                         <!-- 2 immat -->
-        <int n="3"    type="int">  0 </int>                                         <!-- 3 immat -->
-        <int n="4"    type="int">  0 </int>                                         <!-- 4 immat -->
-        <int n="5"    type="int">  0 </int>                                         <!-- 5 immat -->
-        <int n="6"    type="bool" alias="controls/smoke"> 0 </int>                  <!-- 6 smoke/bomb/torpedo -->
-        <int n="7"    type="int">  0 </int>                                         <!-- 7 color -->
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="int" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
         <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
         <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
         <float n="2"  alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
@@ -56,8 +57,6 @@
         <float n="9"  alias="/controls/engines/engine[1]/throttle" />
         <float n="10" alias="/controls/engines/engine[2]/throttle" />
         <float n="11" alias="/controls/engines/engine[3]/throttle" />
-        <!-- For Bombable -->
-        <int type="int" n="10" alias="controls/armament/trigger">0</int>
         <string n="9" type="string" />
       </generic>
     </multiplay>

@@ -20,7 +20,7 @@
         <greater-than>
           <!-- position/altitude-ft -->
           <property>sim/multiplay/generic/float[3]</property>
-          <value>3000</value>
+          <value>14000</value>
         </greater-than>
       </and>
     </condition>

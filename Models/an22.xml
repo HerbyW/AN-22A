@@ -1834,4 +1834,45 @@
     </axis>
   </animation>
   
+    
+  <!-- smoke -->
+  
+        <model>
+		<path>Aircraft/Antonov-An-22/Models/Effects/smoke/smoke_1.xml</path>
+		<offsets>
+			<x-m>  -4.31956 </x-m>
+                        <y-m> -13.45214 </y-m>
+                        <z-m>  -0.61716 </z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/Antonov-An-22/Models/Effects/smoke/smoke_2.xml</path>
+		<offsets>
+			<x-m> -5.00545 </x-m>
+                        <y-m> -6.87900 </y-m>
+                        <z-m> -0.61716 </z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/Antonov-An-22/Models/Effects/smoke/smoke_3.xml</path>
+		<offsets>
+			<x-m> -5.00545 </x-m>
+                        <y-m>  6.87900 </y-m>
+                        <z-m> -0.61716 </z-m>
+		</offsets>
+	</model>
+	
+	
+	<model>
+		<path>Aircraft/Antonov-An-22/Models/Effects/smoke/smoke_4.xml</path>
+		<offsets>
+			<x-m> -4.31956 </x-m>
+                        <y-m> 13.45214 </y-m>
+                        <z-m> -0.61716 </z-m>
+		</offsets>
+	</model>
+
+  
 </PropertyList>
