@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Antonov An 22        : BARANGER Emmanuel (2014)
 
      Sources              : http://en.wikipedia.org/wiki/Antonov_An-22
@@ -11,7 +10,6 @@
      Engines              : 4 x Kuznetsov NK-12MA turboprops driving contra-rotating propellers ( 15000 shp each )
      Max speed            : 740 km/h   (   399 kt      )
 -->
-
 <airplane mass="251325" version="YASIM_VERSION_CURRENT">
 
   <approach speed="120" aoa="6" fuel="0.2">
@@ -74,15 +72,7 @@
   <fuselage ax=" 9.89801" ay="-13.45214" az="-0.18105" bx="3.09717" by="-13.45214" bz="-0.18105" width="1.724" taper="0.8" midpoint="0.1"/>
   
   <!-- Wing -->
-  <wing x="3.92059" y="0" z="0.86412"
-	chord="7.781"
-	length="20.375"
-	taper="0.5"
-	sweep="4"
-	incidence="0.7"
-	dihedral="-1"
-	camber="0.001"
-	effectiveness="0.5">
+  <wing x="3.92059" y="0" z="0.86412" chord="7.781" length="20.375" taper="0.5" sweep="4" incidence="0.7" dihedral="-1" camber="0.001" effectiveness="0.5">
         <stall aoa="20" width="1" peak="3.5"/>
         <flap0 start="0.04" end="0.61" lift="1.8" drag="1.6"/>
 
@@ -93,12 +83,7 @@
         <control-speed control="FLAP0" transition-time="5"/>
   </wing>
 
-  <mstab x="3.20951" y="20.35949" z="0.50874"
-	 chord="4.637"
-	 length="11.873"
-	 taper="0.6"
-	 sweep="3"
-	 dihedral="-4">
+  <mstab x="3.20951" y="20.35949" z="0.50874" chord="4.637" length="11.873" taper="0.6" sweep="3" dihedral="-4">
          <stall aoa="20" width="1" peak="1.4"/>
          <flap1 start="0" end="1" lift="1.2" drag="1.1"/>
 
@@ -110,11 +95,7 @@
   </mstab>
 
    <!-- Elevator -->
-  <hstab x="-23.44338" y="0" z="1.66519"
-	 chord="5.551"
-	 length="9.905"
-	 sweep="3"
-	 taper="0.6">
+  <hstab x="-23.44338" y="0" z="1.66519" chord="5.551" length="9.905" sweep="3" taper="0.6">
          <stall aoa="18" width="1" peak="1.4"/>
          <flap0 start="0" end="1" lift="1.4" drag="1.5"/>
 
@@ -125,11 +106,7 @@
   </hstab>
 
   <!-- Ruder chord was 5.023 reduced to compensate for sidewind obscure -->
-  <vstab x="-22.77339" y="6.96456" z="-1.92091"
-	 chord="3.023"
-	 length="7.967"
-	 sweep="0"
-	 taper="0.7">
+  <vstab x="-22.77339" y="6.96456" z="-1.92091" chord="3.023" length="7.967" sweep="0" taper="0.7">
          <stall aoa="16" width="1" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
 
@@ -139,13 +116,7 @@
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
   </vstab>
 
-  <vstab x="-22.77339"
-	 y="-6.96456"
-	 z="-1.92091"
-	 chord="3.023"
-	 length="7.967"
-	 sweep="0"
-	 taper="0.7">
+  <vstab x="-22.77339" y="-6.96456" z="-1.92091" chord="3.023" length="7.967" sweep="0" taper="0.7">
          <stall aoa="16" width="1" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
 
@@ -163,20 +134,7 @@
                  weight            : 2900 kg  ( 6393 lbs)
   -->
   <!-- Engine left exterior -->
-  <propeller x="7.26952" y="13.45214" z="-0.18105"
-	     radius="3.188"
-	     mass="6393"
-	     moment="10500"
-	     cruise-alt="30000"
-	     cruise-speed="340"
-	     cruise-rpm="750"
-	     cruise-power="9700"
-	     takeoff-rpm="840"
-	     takeoff-power="14600"
-	     min-rpm="700"
-	     max-rpm="860"
-	     manual="true"
-	     contra="1">
+  <propeller x="7.26952" y="13.45214" z="-0.18105" radius="3.188" mass="6393" moment="10500" cruise-alt="30000" cruise-speed="340" cruise-rpm="750" cruise-power="9700" takeoff-rpm="840" takeoff-power="14600" min-rpm="700" max-rpm="860" manual="true" contra="1">
              <actionpt x="10.68032" y="13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14600" eng-rpm="840" alt="36000" min-n2="40" max-n2="100" flat-rating="14660" bsfc="0.360">
@@ -186,20 +144,7 @@
   </propeller>
 
   <!-- Engine left interior -->
-  <propeller x="7.87006" y="6.87901" z="-0.18105"
-	     radius="3.188"
-	     mass="6393"
-	     moment="10500"
-	     cruise-alt="30000"
-	     cruise-speed="340"
-	     cruise-rpm="750"
-	     cruise-power="9700"
-	     takeoff-rpm="840"
-	     takeoff-power="14600"
-	     min-rpm="700"
-	     max-rpm="860"
-	     manual="true"
-	     contra="1">
+  <propeller x="7.87006" y="6.87901" z="-0.18105" radius="3.188" mass="6393" moment="10500" cruise-alt="30000" cruise-speed="340" cruise-rpm="750" cruise-power="9700" takeoff-rpm="840" takeoff-power="14600" min-rpm="700" max-rpm="860" manual="true" contra="1">
              <actionpt x="11.28087" y="6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14600" eng-rpm="840" alt="36000" min-n2="40" max-n2="100" flat-rating="14660" bsfc="0.360">
@@ -209,20 +154,7 @@
   </propeller>
 
   <!-- Engine right interior-->
-  <propeller x="7.87006" y="-6.87901" z="-0.18105"
-	     radius="3.188"
-	     mass="6393"
-	     moment="10500"
-	     cruise-alt="30000"
-	     cruise-speed="340"
-	     cruise-rpm="750"
-	     cruise-power="9700"
-	     takeoff-rpm="840"
-	     takeoff-power="14600"
-	     min-rpm="700"
-	     max-rpm="860"
-	     manual="true"
-	     contra="1">
+  <propeller x="7.87006" y="-6.87901" z="-0.18105" radius="3.188" mass="6393" moment="10500" cruise-alt="30000" cruise-speed="340" cruise-rpm="750" cruise-power="9700" takeoff-rpm="840" takeoff-power="14600" min-rpm="700" max-rpm="860" manual="true" contra="1">
              <actionpt x="11.28087" y="-6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[2]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14600" eng-rpm="840" alt="36000" min-n2="40" max-n2="100" flat-rating="14660" bsfc="0.360">
@@ -232,22 +164,7 @@
   </propeller>
 
   <!-- Engine right exterior-->
-  <propeller x="7.26952"
-	     y="-13.45214"
-	     z="-0.18105"
-	     radius="3.188"
-	     mass="6393"
-	     moment="10500"
-	     cruise-alt="30000"
-	     cruise-speed="340"
-	     cruise-rpm="750"
-	     cruise-power="9700"
-	     takeoff-rpm="840"
-	     takeoff-power="14600"
-	     min-rpm="700"
-	     max-rpm="860"
-	     manual="true"
-	     contra="1">
+  <propeller x="7.26952" y="-13.45214" z="-0.18105" radius="3.188" mass="6393" moment="10500" cruise-alt="30000" cruise-speed="340" cruise-rpm="750" cruise-power="9700" takeoff-rpm="840" takeoff-power="14600" min-rpm="700" max-rpm="860" manual="true" contra="1">
              <actionpt x="10.68032" y="-13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[3]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14600" eng-rpm="840" alt="36000" min-n2="40" max-n2="100" flat-rating="14660" bsfc="0.360">

@@ -1228,7 +1228,7 @@
     <object-name>porteGE1</object-name>
     <object-name>porteGE2</object-name>
     <object-name>porteGE3</object-name>
-    <property>/gear/gear[1]/position-norm</property>
+    <property>gear/gear[1]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.2 </ind><dep> -80 </dep></entry>
@@ -1251,7 +1251,7 @@
     <object-name>porteGI1</object-name>
     <object-name>porteGI2</object-name>
     <object-name>porteGI3</object-name>
-    <property>/gear/gear[1]/position-norm</property>
+    <property>gear/gear[1]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 75 </dep></entry>
@@ -1274,7 +1274,7 @@
     <object-name>porteDI1</object-name>
     <object-name>porteDI2</object-name>
     <object-name>porteDI3</object-name>
-    <property>/gear/gear[1]/position-norm</property>
+    <property>gear/gear[1]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.2 </ind><dep> -75 </dep></entry>
@@ -1297,7 +1297,7 @@
     <object-name>porteDE1</object-name>
     <object-name>porteDE2</object-name>
     <object-name>porteDE3</object-name>
-    <property>/gear/gear[4]/position-norm</property>
+    <property>gear/gear[4]/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.2 </ind><dep> 80 </dep></entry>
@@ -1325,7 +1325,7 @@
   <animation>
     <type>rotate</type>
     <object-name>TrainAvant</object-name>
-    <property>/gear/gear[0]/position-norm</property>
+    <property>gear/gear[0]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 102 </dep></entry>
       <entry><ind> 1 </ind><dep>   0 </dep></entry>
@@ -1345,7 +1345,7 @@
   <animation>
     <type>translate</type>
     <object-name>roueG1</object-name>
-    <property>/gear/gear[1]/position-norm</property>
+    <property>gear/gear[1]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 1.12 </dep></entry>
       <entry><ind> 1 </ind><dep> 0.00 </dep></entry>
@@ -1360,7 +1360,7 @@
   <animation>
     <type>translate</type>
     <object-name>roueD1</object-name>
-    <property>/gear/gear[4]/position-norm</property>
+    <property>gear/gear[4]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 1.12 </dep></entry>
       <entry><ind> 1 </ind><dep> 0.00 </dep></entry>
@@ -1375,7 +1375,7 @@
   <animation>
     <type>translate</type>
     <object-name>roueG2</object-name>
-    <property>/gear/gear[2]/position-norm</property>
+    <property>gear/gear[2]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 1.05 </dep></entry>
       <entry><ind> 1 </ind><dep> 0.00 </dep></entry>
@@ -1390,7 +1390,7 @@
   <animation>
     <type>translate</type>
     <object-name>roueD2</object-name>
-    <property>/gear/gear[5]/position-norm</property>
+    <property>gear/gear[5]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 1.05 </dep></entry>
       <entry><ind> 1 </ind><dep> 0.00 </dep></entry>
@@ -1405,7 +1405,7 @@
   <animation>
     <type>translate</type>
     <object-name>roueG3</object-name>
-    <property>/gear/gear[3]/position-norm</property>
+    <property>gear/gear[3]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 1 </dep></entry>
       <entry><ind> 1 </ind><dep> 0 </dep></entry>
@@ -1420,7 +1420,7 @@
   <animation>
     <type>translate</type>
     <object-name>roueD3</object-name>
-    <property>/gear/gear[6]/position-norm</property>
+    <property>gear/gear[6]/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 1 </dep></entry>
       <entry><ind> 1 </ind><dep> 0 </dep></entry>
