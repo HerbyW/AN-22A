@@ -33,7 +33,7 @@
 	- Wing leveler is activ when you push the AP button, it is also the AP activating Button,
 	- APRP is used for intersepting the Glide Scope,
 	- GPS for flying routes from the Route Manager,
-	- ALT is holding your attidude
+	- ALT is holding your attidude, push again if the altidude will not get stable
 	
 	For ILS Landing you may use the little Instrument with the yellow and blue strips, the NAV Indicator, it
 	gives you the indication that ILS and/or Glide Scope is intersepted.
@@ -48,7 +48,11 @@
 	There are 2 Altimeters: one is in meter and mmHG, the other one in ft and inHG,
 	 they are connected and you should set them to the ATIS information of the airport befor starting (not working for now).
 	 
-	The compasses are not cleared of the magnetic variation, it will be done soon. 
+	The compasses are cleared of the magnetic variation.
+	
+	You may set your payloads and fuel in the menue.
+	
+	As it is a heavy aircraft it needs some special care about propper landing and starting routines :)
       </text>
   
 </PropertyList>

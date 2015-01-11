@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList include="an22-base.xml">
+  
+  <!-- generic autopilot settings changed HerbyW 10 Jan 2015-->
 
   <sim>
 

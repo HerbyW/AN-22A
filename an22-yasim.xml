@@ -10,7 +10,8 @@
      Empty weight         :  114000 kg (   251325 lb        )
      Engines              : 4 x Kuznetsov NK-12MA turboprops driving contra-rotating propellers ( 15000 shp each )
      Max speed            : 740 km/h   (   399 kt      )
--->
+     
+11 Jan 2015: changes in the yasim flight model from ph-cor, thanks! -->
 
 <airplane mass="251325" version="YASIM_VERSION_CURRENT">
 
