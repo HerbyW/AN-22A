@@ -1735,7 +1735,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteG</object-name>
-    <property>sim/model/door-positions/crewL/position-norm</property>
+    <property>sim/multiplay/generic/float[0]</property>
     <factor> -165 </factor>
     <center>
       <x-m> -8.68632 </x-m>
@@ -1766,7 +1766,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteD</object-name>
-    <property>sim/model/door-positions/crewR/position-norm</property>
+    <property>sim/multiplay/generic/float[1]</property>
     <factor> 165 </factor>
     <center>
       <x-m> -8.68632 </x-m>
@@ -1803,7 +1803,7 @@
   <animation>
     <type>rotate</type>
     <object-name>baieB</object-name>
-    <property>sim/model/door-positions/cargo/position-norm</property>
+    <property>sim/multiplay/generic/float[13]</property>
     <factor> 31 </factor>
     <center>
       <x-m>  5.85350 </x-m>
@@ -1820,7 +1820,7 @@
   <animation>
     <type>rotate</type>
     <object-name>baieH</object-name>
-    <property>sim/model/door-positions/cargo/position-norm</property>
+    <property>sim/multiplay/generic/float[13]</property>
     <factor> 20 </factor>
     <center>
       <x-m> 20.60851 </x-m>

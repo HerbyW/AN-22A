@@ -45,8 +45,8 @@
         <int type="int" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
         <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
         <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
-        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
-        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="0"  alias="/sim/model/door-positions/crewL/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/crewR/position-norm"/>
         <float n="2"  alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
         <float n="3"  alias="/position/altitude-ft"> 0 </float>                     <!-- altitude for Smoke/Trail -->
         <float n="4"  alias="/engines/engine[0]/n2" />
@@ -58,6 +58,7 @@
         <float n="10" alias="/controls/engines/engine[2]/throttle" />
         <float n="11" alias="/controls/engines/engine[3]/throttle" />
          <float n="12" alias="/gear/gear/rollspeed-ms" />
+         <float n="13"  alias="/sim/model/door-positions/cargo/position-norm"/>
         <string n="9" type="string" />
       </generic>
     </multiplay>
