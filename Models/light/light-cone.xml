@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
  <PropertyList>
    
@@ -18,7 +18,17 @@
        <property>sim/rendering/rembrandt/enabled</property>
      </condition>
    </effect>
-   
+  
+     <animation>
+    <type>select</type>
+    <object-name>Cone</object-name>
+    <object-name>Cone-texture</object-name>
+    <object-name>Light</object-name>
+    <condition>
+      <property>sim/multiplay/generic/int[8]</property>
+    </condition>
+  </animation>
+  
    <effect>
      <inherits-from>Effects/light-cone</inherits-from>
      <object-name>Cone</object-name>
@@ -27,22 +37,14 @@
    
    <animation>
      <type>material</type>
-     <object-name>Light</object-name>
+     <object-name>Light</object-name>     
      <emission>
        <red>   2 </red>
        <green> 2 </green>
        <blue>  2 </blue>
      </emission>
    </animation>
-<!--
-   <animation>
-    <type>select</type>
-    <object-name>Cone</object-name>
-    <object-name>Cone-texture</object-name>
-    <object-name>Light</object-name>
-    <condition>
-      <property>/controls/lighting/landing-lights</property>
-    </condition>
-  </animation>
--->
+
+
+
 </PropertyList>

@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <PropertyList>
 
-  <path>RedLight.ac</path>
+  <path>strobe-orange.ac</path>
 
   <animation>
     <type>noshadow</type>
-    <object-name>Light</object-name>
+    <object-name>strobe</object-name>
   </animation>
 
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <object-name>Light</object-name>
+    <object-name>strobe</object-name>
     <condition>
       <property>sim/rendering/rembrandt/enabled</property>
     </condition>
@@ -24,13 +24,13 @@
 
   <animation>
     <type>billboard</type>
-    <object-name>Light</object-name>
+    <object-name>strobe</object-name>
     <spherical type="bool">true</spherical>
   </animation>
 
   <animation>
     <type>select</type>
-    <object-name>Light</object-name>
+    <object-name>strobe</object-name>
     <condition>
       <property>/sim/model/lights/beacon/state</property>
     </condition>
@@ -38,7 +38,7 @@
 
   <animation>
     <type>material</type>
-    <object-name>Light</object-name>
+    <object-name>strobe</object-name>
     <emission>
       <red>   1 </red>
       <green> 1 </green>
@@ -49,7 +49,7 @@
 
   <animation>
     <type>dist-scale</type>
-    <object-name>Light</object-name>
+    <object-name>strobe</object-name>
     <interpolation>
       <entry><ind>    0 </ind><dep> 0.25 </dep></entry>
       <entry><ind>   20 </ind><dep> 0.50 </dep></entry>

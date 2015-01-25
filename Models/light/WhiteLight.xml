@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <PropertyList>
 
@@ -28,6 +28,15 @@
     <spherical type="bool">true</spherical>
   </animation>
 
+    <animation>
+    <type>select</type>
+    <object-name>Light</object-name>
+    <condition>
+      <property>sim/multiplay/generic/int[8]</property>
+    </condition>
+  </animation>
+
+  
   <animation>
     <type>material</type>
     <object-name>Light</object-name>
@@ -48,13 +57,6 @@
       <entry><ind> 1500 </ind><dep> 5.00 </dep></entry>
     </interpolation>
   </animation>
-<!--
-  <animation>
-    <type>select</type>
-    <object-name>Light</object-name>
-    <condition>
-      <property>controls/lighting/nav-lights</property>
-    </condition>
-  </animation>
--->
+
+
 </PropertyList>

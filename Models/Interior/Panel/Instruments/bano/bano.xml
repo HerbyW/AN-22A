@@ -7,7 +7,7 @@
     #############################################################################	  
     -->
 
-<!-- Light switches block
+<!-- Light switches block -AN-22
 3D instrument for Tu-154 -->
 <PropertyList>
  <path>bano.ac</path>
@@ -45,7 +45,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_1</object-name>
-  <property>tu154/switches/bano</property>  
+  <property>sim/multiplay/generic/int[9]</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -59,7 +59,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_2</object-name>
-  <property>tu154/switches/omi</property>  
+  <property>sim/multiplay/generic/int[8]</property>   
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -96,7 +96,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/bano", 1.0, 0.1 );
+        interpolate("sim/multiplay/generic/int[9]", 1.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -111,7 +111,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/bano", 0.0, 0.1 );
+        interpolate("sim/multiplay/generic/int[9]", 0.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -127,7 +127,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/omi", 1.0, 0.1 );        
+        interpolate("sim/multiplay/generic/int[8]", 1.0, 0.1 );        
       </script>
     </binding>
   </action>
@@ -142,7 +142,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/omi", 0.0, 0.1 );        
+        interpolate("sim/multiplay/generic/int[8]", 0.0, 0.1 );        
       </script>
     </binding>
   </action>
