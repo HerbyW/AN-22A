@@ -10,6 +10,42 @@
 <PropertyList>
  <path>lightcone-tiny.ac</path>
 
+    <!--Lights-->
+ 
+ <animation>
+    <type>noshadow</type>
+    <object-name>lightcone-taxi</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>lightcone-taxi</object-name>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+  </effect>
+ 
+ <animation>  
+   <object-name>lightcone-taxi</object-name> 
+</animation>
+
+
+  <!-- working for Rembrandt -->
+ 
+
+  <animation>
+    <type>material</type>
+    <object-name>lightcone-landing</object-name>
+    <emission>
+      <property>tu154/switches/gauge-light</property>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation> 
+ 
+ 
+ 
 <!--Spot lights-->
 
 <animation>
@@ -56,7 +92,7 @@
    <far-m>100</far-m>
  </animation>
 
- <animation>
+  <animation>
 	  <type>select</type>
 	  <condition>
 		  <property>tu154/switches/gauge-light</property>		  

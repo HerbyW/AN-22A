@@ -1846,7 +1846,6 @@
       <z-m>  -4.83 </z-m>
     </offsets>
   </model>
-
   <model>
     <path>Aircraft/Antonov-An-22/Models/light/beacon.xml</path>
     <offsets>
@@ -1864,8 +1863,7 @@
       <y-m>-32.25 </y-m>
       <z-m> -0.35 </z-m>
     </offsets>
-  </model>
-  
+  </model>  
   <model>
     <path>Aircraft/Antonov-An-22/Models/light/GreenLight.xml</path>
     <offsets>
@@ -1895,21 +1893,7 @@
      </offsets>
     </model>
     <model>
-    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
-     <offsets>
-      <x-m> -13.35 </x-m>
-      <y-m>  -3.65 </y-m>
-      <z-m>  -3.85 </z-m>
-     </offsets>
-    </model> 
-    <model>
-    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
-     <offsets>
-      <x-m> -13.35 </x-m>
-      <y-m>   3.65 </y-m>
-      <z-m>  -3.85 </z-m>
-     </offsets>
-    </model> 
+    
   
   <!-- StrobeLights: white-pulse, left-right-back-->
   <model>
@@ -1951,11 +1935,33 @@
   
    
   <!-- Lighting Landing -->
-  
+  <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
+     <offsets>
+      <x-m> -13.4 </x-m>
+      <y-m>  -3.65 </y-m>
+      <z-m>  -3.85 </z-m>
+     </offsets>
+    </model> 
+    <model>
+    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
+     <offsets>
+      <x-m> -13.4 </x-m>
+      <y-m>   3.65 </y-m>
+      <z-m>  -3.85 </z-m>
+     </offsets>
+    </model>
+    <model>
+    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
+     <offsets>
+      <x-m> -20.95 </x-m>
+      <y-m>   0.0 </y-m>
+      <z-m>  -4.95 </z-m>
+     </offsets>
+    </model> 
   
   <!-- Lighting Landing 154 beginn -->
   
-  <!--External lights-->
+  <!--External lights for Rembrand-->
   <model>
   <path>Aircraft/Antonov-An-22/Models/light/headlight-landing.xml</path>
   <name>headlight_c</name>
@@ -1965,18 +1971,7 @@
     <z-m>-0.55</z-m>
    <pitch-deg>80.0</pitch-deg>
   </offsets>
- </model>
- 
- <model>
-  <path>Aircraft/Antonov-An-22/Models/light/headlight-taxi.xml</path>
-  <name>taxilight_c</name>
-  <offsets>
-    <x-m>-29.037</x-m>
-    <y-m>0.0</y-m>
-    <z-m>-0.55</z-m>
-   <pitch-deg>70.0</pitch-deg>
-  </offsets>
- </model>
+ </model> 
  
  <model>
   <path>Aircraft/Antonov-An-22/Models/light/headlight-landing.xml</path>
@@ -1997,6 +1992,17 @@
    <y-m>3.81</y-m>
    <z-m>-0.1</z-m>
    <pitch-deg>80.0</pitch-deg>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Antonov-An-22/Models/light/headlight-taxi.xml</path>
+  <name>taxilight_c</name>
+  <offsets>
+    <x-m>-29.037</x-m>
+    <y-m>0.0</y-m>
+    <z-m>-0.55</z-m>
+   <pitch-deg>70.0</pitch-deg>
   </offsets>
  </model>
  
@@ -2023,7 +2029,27 @@
  </model>
   <!-- Lighting Landing 154 end -->
   
-  
+  <!-- Lighting Landing without Rembrand -->
+  <model>
+  <path>Aircraft/Antonov-An-22/Models/light/light-cone-707.xml</path>
+  <name>taxilight_r</name>
+  <offsets>
+   <x-m> -8.25 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  -3.25 </z-m>
+   <pitch-deg>0.0</pitch-deg>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/Antonov-An-22/Models/light/light-cone-taxi-707.xml</path>
+  <name>taxilight_r</name>
+  <offsets>
+   <x-m> -8.25 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  -3.25 </z-m>
+   <pitch-deg>0.0</pitch-deg>
+  </offsets>
+ </model>
   
 
     
