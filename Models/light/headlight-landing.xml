@@ -23,7 +23,7 @@
     <condition>
       <property>sim/rendering/rembrandt/enabled</property>
     </condition>
-  </effect>
+    </effect>
   
  <animation>  
    <object-name>lightcone-landing</object-name> 
