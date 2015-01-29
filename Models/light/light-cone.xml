@@ -25,7 +25,7 @@
     <object-name>Cone-texture</object-name>
     <object-name>Light</object-name>
     <condition>
-      <property>sim/multiplay/generic/int[8]</property>
+      <property>tu154/switches/gauge-light</property>
     </condition>
   </animation>
   

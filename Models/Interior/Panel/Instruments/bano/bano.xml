@@ -45,7 +45,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_1</object-name>
-  <property>sim/multiplay/generic/int[9]</property>  
+  <property>tu154/switches/gauge-light</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -96,7 +96,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("sim/multiplay/generic/int[9]", 1.0, 0.1 );
+        interpolate("tu154/switches/gauge-light", 1.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -111,7 +111,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("sim/multiplay/generic/int[9]", 0.0, 0.1 );
+        interpolate("tu154/switches/gauge-light", 0.0, 0.1 );
       </script>
     </binding>
   </action>

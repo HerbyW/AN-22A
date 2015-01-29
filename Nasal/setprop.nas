@@ -20,3 +20,7 @@ setlistener("/tu154/switches/usvp-selector-trans", func
   
   }
   );
+  
+  
+#Lights
+setprop("tu154/switches/headlight-mode", 1);

@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1.0000 1.0000 1.0000  amb 0.2000 0.2000 0.2000  emis 1.0000 1.0000 1.0000  spec 1.000 1.000 1.000  shi 10 trans 0.0000
-MATERIAL "lightcone2" rgb 0.0000 0.0000 0.0000  amb 0.0000 0.0000 0.0000  emis 1.0000 1.0000 1.0000  spec 0.0000 0.0000 0.0000  shi 60 trans 0.9
+MATERIAL "lightcone2" rgb 0.0000 0.0000 0.0000  amb 0.0000 0.0000 0.0000  emis 1.0000 1.0000 1.0000  spec 0.0000 0.0000 0.0000  shi 60 trans 0.92
 MATERIAL "lighthalo" rgb 1.0000 1.0000 1.0000  amb 1.0000 1.0000 1.0000  emis 1.0000 1.0000 1.0000  spec 1.0000 1.0000 1.0000  shi 100 trans 0.000
 OBJECT world
 name "lights-cone-707.ac"

@@ -24,7 +24,7 @@
   <condition>
     <and>
     	<not><property>/sim/rendering/rembrandt/enabled</property></not>
-	    <property>sim/multiplay/generic/int[8]</property>
+	    <property>sim/multiplay/generic/int[10]</property>
     </and>
   </condition>
 </animation>

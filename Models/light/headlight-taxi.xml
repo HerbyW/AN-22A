@@ -37,7 +37,7 @@
     <type>material</type>
     <object-name>lightcone-taxi</object-name>
     <emission>
-      <property>sim/multiplay/generic/int[8]</property>
+      <property>sim/multiplay/generic/int[10]</property>
       <red>   0.25 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
@@ -95,7 +95,7 @@
   <animation>
 	  <type>select</type>
 	  <condition>
-		  <property>sim/multiplay/generic/int[8]</property>		  
+		  <property>sim/multiplay/generic/int[10]</property>		  
 	  </condition>
   </animation> 
 
