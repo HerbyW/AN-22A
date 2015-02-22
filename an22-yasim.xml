@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <!-- Antonov An 22        : BARANGER Emmanuel (2014)
 
@@ -11,47 +11,48 @@
      Engines              : 4 x Kuznetsov NK-12MA turboprops driving contra-rotating propellers ( 15000 shp each )
      Max speed            : 740 km/h   (   399 kt      )
      
-11 Jan 2015: changes in the yasim flight model from ph-cor, thanks! -->
+11 Jan 2015: changes in the yasim flight model from ph-cor, thanks!
+updated 02/2015 HerbyW -->
 
-<airplane mass="251325" version="YASIM_VERSION_CURRENT">
+<airplane mass="251625" version="YASIM_VERSION_CURRENT">
 
   <approach speed="120" aoa="6" fuel="0.2">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.7"/>
     <control-setting axis="/controls/engines/engine[0]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
     
     <control-setting axis="/controls/engines/engine[1]/throttle" value="0.7"/>
     <control-setting axis="/controls/engines/engine[1]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
     
     <control-setting axis="/controls/engines/engine[2]/throttle" value="0.7"/>
     <control-setting axis="/controls/engines/engine[2]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="0"/>
+    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1"/>
     
     <control-setting axis="/controls/engines/engine[3]/throttle" value="0.7"/>
     <control-setting axis="/controls/engines/engine[3]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="0"/>
+    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1"/>
     
     <control-setting axis="/controls/flight/flaps" value="0.7"/>
     <control-setting axis="/controls/gear/gear-down" value="1"/>
   </approach>
 
-  <cruise speed="340" alt="39370" fuel="0.8">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
+  <cruise speed="340" alt="22370" fuel="0.8">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.8"/>
     <control-setting axis="/controls/engines/engine[0]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.8"/>
     
-    <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.8"/>
     <control-setting axis="/controls/engines/engine[1]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.8"/>
     
-    <control-setting axis="/controls/engines/engine[2]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[2]/throttle" value="0.8"/>
     <control-setting axis="/controls/engines/engine[2]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="0.8"/>
     
-    <control-setting axis="/controls/engines/engine[3]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[3]/throttle" value="0.8"/>
     <control-setting axis="/controls/engines/engine[3]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="0.8"/>
     
     <control-setting axis="/controls/flight/flaps" value="0"/>
     <control-setting axis="/controls/gear/gear-down" value="0"/>
@@ -78,14 +79,14 @@
   <wing x="3.92059" y="0" z="0.86412"
 	chord="7.781"
 	length="20.375"
-	taper="0.5"
-	sweep="4"
+	taper="0.3"
+	sweep="3"
 	incidence="0.7"
-	dihedral="-1"
+	dihedral="-3"
 	camber="0.001"
-	effectiveness="0.5">
-        <stall aoa="20" width="1" peak="3.5"/>
-        <flap0 start="0.04" end="0.61" lift="1.8" drag="1.6"/>
+	effectiveness="0.8">
+        <stall aoa="18" width="2" peak="3.5"/>
+        <flap0 start="0.04" end="0.61" lift="1.9" drag="1.4"/>
 
         <control-input axis="/controls/flight/flaps" control="FLAP0" invert="true"/>
 
@@ -98,10 +99,10 @@
 	 chord="4.637"
 	 length="11.873"
 	 taper="0.6"
-	 sweep="3"
-	 dihedral="-4">
-         <stall aoa="20" width="1" peak="1.4"/>
-         <flap1 start="0" end="1" lift="1.2" drag="1.1"/>
+	 sweep="4"
+	 dihedral="-3">
+         <stall aoa="18" width="1" peak="1.4"/>
+         <flap1 start="0" end="1" lift="1.3" drag="1.1"/>
 
          <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
          <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
@@ -114,10 +115,10 @@
   <hstab x="-23.44338" y="0" z="1.66519"
 	 chord="5.551"
 	 length="9.905"
-	 sweep="3"
+	 sweep="0"
 	 taper="0.6">
-         <stall aoa="18" width="1" peak="1.4"/>
-         <flap0 start="0" end="1" lift="1.4" drag="1.5"/>
+         <stall aoa="16" width="1" peak="1.4"/>
+         <flap0 start="0" end="1" lift="1.5" drag="1.5"/>
 
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -129,9 +130,9 @@
   <vstab x="-22.77339" y="6.96456" z="-1.92091"
 	 chord="3.023"
 	 length="7.967"
-	 sweep="0"
+	 sweep="3"
 	 taper="0.7">
-         <stall aoa="16" width="1" peak="1.5"/>
+         <stall aoa="19" width="1.5" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
 
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
@@ -140,14 +141,12 @@
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
   </vstab>
 
-  <vstab x="-22.77339"
-	 y="-6.96456"
-	 z="-1.92091"
+  <vstab x="-22.77339" y="-6.96456" z="-1.92091"
 	 chord="3.023"
 	 length="7.967"
-	 sweep="0"
+	 sweep="3"
 	 taper="0.7">
-         <stall aoa="16" width="1" peak="1.5"/>
+         <stall aoa="19" width="1.5" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
 
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
@@ -167,20 +166,29 @@
   <propeller x="7.26952" y="13.45214" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="10500"
-	     cruise-alt="30000"
+	     moment="4000"
+	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
 	     cruise-power="9700"
 	     takeoff-rpm="840"
-	     takeoff-power="14600"
-	     min-rpm="700"
+	     takeoff-power="14990"
+	     min-rpm="600"
 	     max-rpm="860"
+	     fine-stop="0.40"
+	     coarse-stop="4.0"
 	     manual="true"
 	     contra="1">
              <actionpt x="10.68032" y="13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="14600" eng-rpm="840" alt="36000" min-n2="40" max-n2="100" flat-rating="14660" bsfc="0.360">
+             <turbine-engine eng-power="14990"
+			     eng-rpm="840"
+			     alt="22000"
+			     n2-low-idle="32"
+                             n2-high-idle="65"
+                             n2-max="100"
+                             flat-rating="14990"
+                             bsfc="0.650">
                              <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
              </turbine-engine>
@@ -190,20 +198,29 @@
   <propeller x="7.87006" y="6.87901" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="10500"
-	     cruise-alt="30000"
+	     moment="4000"
+	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
 	     cruise-power="9700"
 	     takeoff-rpm="840"
-	     takeoff-power="14600"
-	     min-rpm="700"
+	     takeoff-power="14990"
+	     min-rpm="600"
 	     max-rpm="860"
+	     fine-stop="0.40"
+	     coarse-stop="4.0"
 	     manual="true"
 	     contra="1">
              <actionpt x="11.28087" y="6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="14600" eng-rpm="840" alt="36000" min-n2="40" max-n2="100" flat-rating="14660" bsfc="0.360">
+             <turbine-engine eng-power="14990"
+			     eng-rpm="840"
+			     alt="22000"
+			     n2-low-idle="32"
+                             n2-high-idle="65"
+                             n2-max="100"
+                             flat-rating="14990"
+                             bsfc="0.650">
                              <control-input axis="/controls/engines/engine[1]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
              </turbine-engine>
@@ -213,45 +230,61 @@
   <propeller x="7.87006" y="-6.87901" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="10500"
-	     cruise-alt="30000"
+	     moment="4000"
+	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
 	     cruise-power="9700"
 	     takeoff-rpm="840"
-	     takeoff-power="14600"
-	     min-rpm="700"
+	     takeoff-power="14990"
+	     min-rpm="600"
 	     max-rpm="860"
+	     fine-stop="0.40"
+	     coarse-stop="4.0"
 	     manual="true"
 	     contra="1">
              <actionpt x="11.28087" y="-6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[2]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="14600" eng-rpm="840" alt="36000" min-n2="40" max-n2="100" flat-rating="14660" bsfc="0.360">
+             <turbine-engine eng-power="14990"
+			     eng-rpm="840"
+			     alt="22000"
+			     n2-low-idle="32"
+                             n2-high-idle="65"
+                             n2-max="100"
+                             flat-rating="14990"
+                             bsfc="0.650">
                              <control-input axis="/controls/engines/engine[2]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[2]/throttle" control="THROTTLE"/>
              </turbine-engine>
   </propeller>
 
   <!-- Engine right exterior-->
-  <propeller x="7.26952"
-	     y="-13.45214"
-	     z="-0.18105"
+  <propeller x="7.26952" y="-13.45214" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="10500"
-	     cruise-alt="30000"
+	     moment="4000"
+	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
 	     cruise-power="9700"
 	     takeoff-rpm="840"
-	     takeoff-power="14600"
-	     min-rpm="700"
+	     takeoff-power="14990"
+	     min-rpm="600"
 	     max-rpm="860"
+	     fine-stop="0.40"
+	     coarse-stop="4.0"
 	     manual="true"
 	     contra="1">
              <actionpt x="10.68032" y="-13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[3]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="14600" eng-rpm="840" alt="36000" min-n2="40" max-n2="100" flat-rating="14660" bsfc="0.360">
+             <turbine-engine eng-power="14990"
+			     eng-rpm="840"
+			     alt="22000"
+			     n2-low-idle="32"
+                             n2-high-idle="65"
+                             n2-max="100"
+                             flat-rating="14990"
+                             bsfc="0.650">
                              <control-input axis="/controls/engines/engine[3]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[3]/throttle" control="THROTTLE"/>
              </turbine-engine>
@@ -346,7 +379,7 @@
   
     <!-- Thruster for Pushback action -->
   
-  <thruster x="20.40663" y="0" z="-6.16719" vx="1" vy="0" vz="0" thrust="65000">
+  <thruster x="20.40663" y="0" z="-6.16719" vx="1" vy="0" vz="0" thrust="40000">
   <control-input axis="/sim/model/pushback/target-speed-fps" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
   </thruster>
 
