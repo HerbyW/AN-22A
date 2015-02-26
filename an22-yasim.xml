@@ -86,7 +86,7 @@ updated 02/2015 HerbyW -->
 	camber="0.001"
 	effectiveness="0.8">
         <stall aoa="18" width="2" peak="3.5"/>
-        <flap0 start="0.04" end="0.61" lift="1.9" drag="1.4"/>
+        <flap0 start="0.04" end="0.61" lift="1.9" drag="1.1"/>
         <control-input axis="/controls/flight/flaps" control="FLAP0" invert="true"/>
         <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
         <control-speed control="FLAP0" transition-time="10"/>
@@ -113,7 +113,7 @@ updated 02/2015 HerbyW -->
 	 sweep="0"
 	 taper="0.6">
          <stall aoa="16" width="1" peak="1.4"/>
-         <flap0 start="0" end="1" lift="1.5" drag="1.5"/>
+         <flap0 start="0" end="1" lift="1.5" drag="1.1"/>
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
@@ -127,7 +127,7 @@ updated 02/2015 HerbyW -->
 	 sweep="3"
 	 taper="0.7">
          <stall aoa="19" width="1.5" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+         <flap0 start="0" end="1" lift="1.5" drag="1.1"/>
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
@@ -140,7 +140,7 @@ updated 02/2015 HerbyW -->
 	 sweep="3"
 	 taper="0.7">
          <stall aoa="19" width="1.5" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+         <flap0 start="0" end="1" lift="1.5" drag="1.1"/>
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
@@ -158,7 +158,7 @@ updated 02/2015 HerbyW -->
   <propeller x="7.26952" y="13.45214" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="14500"      
+	     moment="15500"      
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
@@ -174,7 +174,7 @@ updated 02/2015 HerbyW -->
              <actionpt x="10.68032" y="13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
-			     eng-rpm="840"
+			     eng-rpm="860"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"
@@ -190,7 +190,7 @@ updated 02/2015 HerbyW -->
   <propeller x="7.87006" y="6.87901" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="14500"      
+	     moment="15500"      
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
@@ -206,7 +206,7 @@ updated 02/2015 HerbyW -->
              <actionpt x="11.28087" y="6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
-			     eng-rpm="840"
+			     eng-rpm="860"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"
@@ -222,7 +222,7 @@ updated 02/2015 HerbyW -->
   <propeller x="7.87006" y="-6.87901" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="14500"      
+	     moment="15500"      
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
@@ -238,7 +238,7 @@ updated 02/2015 HerbyW -->
              <actionpt x="11.28087" y="-6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[2]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
-			     eng-rpm="840"
+			     eng-rpm="860"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"
@@ -254,7 +254,7 @@ updated 02/2015 HerbyW -->
   <propeller x="7.26952" y="-13.45214" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="14500"      
+	     moment="15500"      
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
@@ -270,7 +270,7 @@ updated 02/2015 HerbyW -->
              <actionpt x="10.68032" y="-13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[3]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
-			     eng-rpm="840"
+			     eng-rpm="860"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"

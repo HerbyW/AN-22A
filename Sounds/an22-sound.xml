@@ -12,7 +12,7 @@
         <offset>-0.3</offset>
       </volume>
       <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>100</max-dist>
     </crank>
     
     <crank>
@@ -22,7 +22,7 @@
         <offset>-0.3</offset>
       </volume>
       <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>100</max-dist>
       <delay-sec>15</delay-sec>
     </crank>
     
@@ -33,7 +33,7 @@
         <offset>-0.3</offset>
       </volume>
       <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>100</max-dist>
       <delay-sec>30</delay-sec>
     </crank>
     
@@ -44,7 +44,7 @@
         <offset>-0.3</offset>
       </volume>
       <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>100</max-dist>
       <delay-sec>45</delay-sec>
     </crank>
     
@@ -57,19 +57,19 @@
            
       <volume>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.0008</factor>
+        <factor>0.0005</factor>
         <min>0.0</min>
         <max>1.0</max>
         <offset>0.0</offset>
       </volume>
       <pitch>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.0004</factor>
+        <factor>0.0003</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
       <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>100</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
@@ -80,19 +80,19 @@
           
       <volume>
         <property>/engines/engine[1]/rpm</property>
-        <factor>0.0008</factor>
+        <factor>0.0005</factor>
         <min>0.0</min>
         <max>1.0</max>
         <offset>0.0</offset>
       </volume>
       <pitch>
         <property>/engines/engine[1]/rpm</property>
-        <factor>0.0004</factor>
+        <factor>0.0003</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
       <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>100</max-dist>
       <delay-sec>34</delay-sec>
     </engine>
     
@@ -103,19 +103,19 @@
          
       <volume>
         <property>/engines/engine[2]/rpm</property>
-        <factor>0.0008</factor>
+        <factor>0.0005</factor>
         <min>0.0</min>
         <max>1.0</max>
         <offset>0.0</offset>
       </volume>
       <pitch>
         <property>/engines/engine[2]/rpm</property>
-        <factor>0.0004</factor>
+        <factor>0.0003</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
       <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>100</max-dist>
       <delay-sec>51</delay-sec>
     </engine>
     
@@ -126,19 +126,19 @@
         
       <volume>
         <property>/engines/engine[3]/rpm</property>
-        <factor>0.0008</factor>
+        <factor>0.0005</factor>
         <min>0.0</min>
         <max>1.0</max>
         <offset>0.0</offset>
       </volume>
       <pitch>
         <property>/engines/engine[3]/rpm</property>
-        <factor>0.0004</factor>
+        <factor>0.0003</factor>
         <min>0.0</min>
         <max>1.0</max>
       </pitch>
       <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>100</max-dist>
       <delay-sec>68</delay-sec>
     </engine>
     

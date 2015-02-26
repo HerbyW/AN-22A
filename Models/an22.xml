@@ -1843,7 +1843,7 @@
     <offsets>
       <x-m> -5.99 </x-m>
       <y-m>  0.00000 </y-m>
-      <z-m>  -4.83 </z-m>
+      <z-m>  -4.9 </z-m>
     </offsets>
   </model>
   <model>
@@ -1851,7 +1851,7 @@
     <offsets>
       <x-m> -5.99 </x-m>
       <y-m>  0.00000 </y-m>
-      <z-m>  1.40 </z-m>
+      <z-m>  1.5 </z-m>
     </offsets>
   </model>
   
