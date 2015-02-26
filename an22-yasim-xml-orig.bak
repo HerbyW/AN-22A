@@ -89,7 +89,7 @@ updated 02/2015 HerbyW -->
         <flap0 start="0.04" end="0.61" lift="1.9" drag="1.4"/>
         <control-input axis="/controls/flight/flaps" control="FLAP0" invert="true"/>
         <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
-        <control-speed control="FLAP0" transition-time="10"/>
+        <control-speed control="FLAP0" transition-time="5"/>
   </wing>
 
   <mstab x="3.20951" y="20.35949" z="0.50874"
@@ -103,7 +103,7 @@ updated 02/2015 HerbyW -->
          <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
          <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
          <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
-         <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>         
+         <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
   </mstab>
 
    <!-- Elevator -->
@@ -117,7 +117,6 @@ updated 02/2015 HerbyW -->
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="18.0"/>
   </hstab>
 
   <!-- Ruder chord was 5.023 reduced to compensate for sidewind obscure -->
@@ -131,7 +130,6 @@ updated 02/2015 HerbyW -->
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="2.0"/>
   </vstab>
 
   <vstab x="-22.77339" y="-6.96456" z="-1.92091"
@@ -144,7 +142,6 @@ updated 02/2015 HerbyW -->
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="2.0"/>
   </vstab>
 
   <!-- Engines   source            : http://en.wikipedia.org/wiki/Kuznetsov_NK-12
@@ -158,11 +155,11 @@ updated 02/2015 HerbyW -->
   <propeller x="7.26952" y="13.45214" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="14500"      
+	     moment="4000"
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
-	     cruise-power="10700"
+	     cruise-power="9700"
 	     takeoff-rpm="840"
 	     takeoff-power="14990"
 	     min-rpm="600"
@@ -175,12 +172,12 @@ updated 02/2015 HerbyW -->
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
 			     eng-rpm="840"
-			     alt="22370"
+			     alt="22000"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="14990"
-                             bsfc="0.65">
+                             bsfc="0.650">
                              <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
              </turbine-engine>
@@ -190,11 +187,11 @@ updated 02/2015 HerbyW -->
   <propeller x="7.87006" y="6.87901" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="14500"      
+	     moment="4000"
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
-	     cruise-power="10700"
+	     cruise-power="9700"
 	     takeoff-rpm="840"
 	     takeoff-power="14990"
 	     min-rpm="600"
@@ -207,12 +204,12 @@ updated 02/2015 HerbyW -->
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
 			     eng-rpm="840"
-			     alt="22370"
+			     alt="22000"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="14990"
-                             bsfc="0.65">
+                             bsfc="0.650">
                              <control-input axis="/controls/engines/engine[1]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
              </turbine-engine>
@@ -222,11 +219,11 @@ updated 02/2015 HerbyW -->
   <propeller x="7.87006" y="-6.87901" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="14500"      
+	     moment="4000"
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
-	     cruise-power="10700"
+	     cruise-power="9700"
 	     takeoff-rpm="840"
 	     takeoff-power="14990"
 	     min-rpm="600"
@@ -239,12 +236,12 @@ updated 02/2015 HerbyW -->
              <control-input axis="/controls/engines/engine[2]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
 			     eng-rpm="840"
-			     alt="22370"
+			     alt="22000"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="14990"
-                             bsfc="0.65">                  
+                             bsfc="0.650">
                              <control-input axis="/controls/engines/engine[2]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[2]/throttle" control="THROTTLE"/>
              </turbine-engine>
@@ -254,11 +251,11 @@ updated 02/2015 HerbyW -->
   <propeller x="7.26952" y="-13.45214" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="14500"      
+	     moment="4000"
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="750"
-	     cruise-power="10700"
+	     cruise-power="9700"
 	     takeoff-rpm="840"
 	     takeoff-power="14990"
 	     min-rpm="600"
@@ -271,92 +268,92 @@ updated 02/2015 HerbyW -->
              <control-input axis="/controls/engines/engine[3]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
 			     eng-rpm="840"
-			     alt="22370"
+			     alt="22000"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="14990"
-                             bsfc="0.65">
+                             bsfc="0.650">
                              <control-input axis="/controls/engines/engine[3]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[3]/throttle" control="THROTTLE"/>
              </turbine-engine>
   </propeller>
 
   <!-- Noze wheel -->
-  <gear x="20.40663" y="0" z="-6.35" retract-time="7" compression="0.45" spring="0.78" damp="1.35" sfric="0.8" dfric="0.7">
+  <gear x="20.40663" y="0" z="-6.16719" retract-time="7" compression="0.45" spring="0.78" damp="1.35" sfric="0.8" dfric="0.7">
         <control-input axis="/controls/flight/rudder" control="STEER" square="true"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 
         <control-output control="STEER" prop="/gear/gear[0]/steering-norm"/>
         <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
 
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="5"/>
   </gear>
 
   <!-- Left wheel 1 -->
-  <gear x="5.83364" y=" 3.28059" z="-6.12" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
+  <gear x="5.83364" y=" 3.28059" z="-6.08679" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         
         <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="5"/>
   </gear>
 
   <!-- Left wheel 2 -->
-  <gear x="3.30963" y=" 3.28059" z="-6.00" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
+  <gear x="3.30963" y=" 3.28059" z="-6.00918" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         
         <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="5"/>
   </gear>
 
   <!-- Left wheel 3 -->
-  <gear x="0.84250" y=" 3.28059" z="-6.00" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
+  <gear x="0.84250" y=" 3.28059" z="-5.98100" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         
         <control-output control="EXTEND" prop="/gear/gear[3]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="5"/>
   </gear>
 
   <!-- Right wheel 1 -->
-  <gear x="5.83364" y="-3.28059" z="-6.12" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
+  <gear x="5.83364" y="-3.28059" z="-6.08679" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/> 
         
         <control-output control="EXTEND" prop="/gear/gear[4]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="5"/>
   </gear>
 
   <!-- Right wheel 2 -->
-  <gear x="3.30963" y="-3.28059" z="-6.00" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
+  <gear x="3.30963" y="-3.28059" z="-6.00918" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         
         <control-output control="EXTEND" prop="/gear/gear[5]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="5"/>
   </gear>
 
   <!-- Right wheel 3 -->
-  <gear x="0.84250" y="-3.28059" z="-6.00" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
+  <gear x="0.84250" y="-3.28059" z="-5.98100" retract-time="7" compression="0.45" spring="0.80" damp="1.10" sfric="0.8" dfric="0.7">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         
         <control-output control="EXTEND" prop="/gear/gear[6]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="5"/>
   </gear>
 
   <tank x="3" y=" 10.36101" z="-0.661" capacity="24000"/>

@@ -36,7 +36,7 @@
   <sim include="Systems/views.xml">
 
     <description>Antonov An 22 (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM), Instrumentation HerbyW Jan2015</author>
+    <author>BARANGER Emmanuel (3D/FDM), Instrumentation-Animation-FDM HerbyW Jan2015</author>
     <aircraft-version>0.3</aircraft-version>
     <status>Alpha</status>
 
@@ -81,8 +81,8 @@
         <int type="int" n="11" alias="controls/armament/trigger">0</int>   <!-- 10 reserved for bombable mode -->
         <float n="0"  alias="/sim/model/door-positions/crewL/position-norm"/>
         <float n="1"  alias="/sim/model/door-positions/crewR/position-norm"/>
-        <float n="2"  alias="/position/gear-agl-m"> 0 </float>                  <!-- altitude for MP shadow -->
-        <float n="3"  alias="/position/altitude-ft"> 0 </float>                 <!-- altitude for Smoke/Trail -->
+        <float n="2"  alias="/position/gear-agl-m"> 0 </float>       <!-- altitude for MP shadow -->
+        <float n="3"  alias="/position/altitude-ft"> 0 </float>      <!-- altitude for Smoke/Trail -->
         <float n="4"  alias="/engines/engine[0]/n2" />
         <float n="5"  alias="/engines/engine[1]/n2" />
         <float n="6"  alias="/engines/engine[2]/n2" />
@@ -93,6 +93,8 @@
         <float n="11" alias="/controls/engines/engine[3]/throttle" />
         <float n="12" alias="/gear/gear[6]/rollspeed-ms" />
         <float n="13"  alias="/sim/model/door-positions/cargo/position-norm"/>
+        <float n="14" alias="/orientation/pitch-deg"/>
+        <float n="15" alias="/orientation/roll-deg"/>
         <string n="9" type="string" />
       </generic>
     </multiplay>
@@ -114,22 +116,22 @@
   <engines>
     <engine n="0">
       <engine-num type="int">0</engine-num>
-      <rpm>90</rpm>
+      <rpm>500</rpm>
       <running>false</running>
     </engine>
     <engine n="1">
       <engine-num type="int">1</engine-num>
-      <rpm>90</rpm>
+      <rpm>500</rpm>
       <running>false</running>
     </engine>
     <engine n="2">
       <engine-num type="int">2</engine-num>
-      <rpm>90</rpm>
+      <rpm>500</rpm>
       <running>false</running>
     </engine>
     <engine n="3">
       <engine-num type="int">3</engine-num>
-      <rpm>90</rpm>
+      <rpm>500</rpm>
       <running>false</running>
     </engine>
   </engines>

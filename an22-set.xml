@@ -7,7 +7,7 @@
   <sim>
 
     <description>Antonov An 22 (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instruments, Animations, FDM)</author>
     <flight-model>yasim</flight-model>
     <aero>an22-yasim</aero>
     
