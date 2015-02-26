@@ -70,7 +70,7 @@
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-      <delay-sec>17</delay-sec>
+      <delay-sec>14</delay-sec>
     </engine>
     
     <engine>
@@ -93,7 +93,7 @@
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-      <delay-sec>34</delay-sec>
+      <delay-sec>29</delay-sec>
     </engine>
     
     <engine>
@@ -116,7 +116,7 @@
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-      <delay-sec>51</delay-sec>
+      <delay-sec>44</delay-sec>
     </engine>
     
     <engine>
@@ -139,7 +139,7 @@
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-      <delay-sec>68</delay-sec>
+      <delay-sec>59</delay-sec>
     </engine>
     
 <!-- Rumbling on runway -->
@@ -149,19 +149,47 @@
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-22/Sounds/rumble.wav</path>
       <condition>
-        <or>
-          <property>/gear/gear[0]/wow</property>
-          <property>/gear/gear[1]/wow</property>
-          <property>/gear/gear[2]/wow</property>
-        </or>
+          <property>/gear/gear[0]/wow</property>          
       </condition>
       <volume>
         <property>/velocities/airspeed-kt</property>
         <type>log</type>
-        <factor>0.25</factor>
+        <factor>0.35</factor>
       </volume>
       <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>100</max-dist>
+    </rumble>
+    
+    <rumble>
+      <name>rumble</name>
+      <mode>looped</mode>
+      <path>Aircraft/Antonov-An-22/Sounds/rumble.wav</path>
+      <condition>        
+          <property>/gear/gear[1]/wow</property>
+      </condition>
+      <volume>
+        <property>/velocities/airspeed-kt</property>
+        <type>log</type>
+        <factor>0.35</factor>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </rumble>
+    
+    <rumble>
+      <name>rumble</name>
+      <mode>looped</mode>
+      <path>Aircraft/Antonov-An-22/Sounds/rumble.wav</path>
+      <condition>          
+          <property>/gear/gear[2]/wow</property>
+      </condition>
+      <volume>
+        <property>/velocities/airspeed-kt</property>
+        <type>log</type>
+        <factor>0.35</factor>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
     </rumble>
 
 <!-- Gears -->    
@@ -192,13 +220,10 @@
 
     <squeal>
       <name>squeal</name>
+      <mode>once</mode>
       <path>Aircraft/Antonov-An-22/Sounds/squeal.wav</path>
-      <condition>
-        <or>
-          <property>/gear/gear[0]/wow</property>
-          <property>/gear/gear[1]/wow</property>
-          <property>/gear/gear[2]/wow</property>
-        </or>
+      <condition>        
+          <property>/gear/gear[0]/wow</property>                 
       </condition>
       <volume>
         <property>/velocities/speed-down-fps</property>
@@ -208,17 +233,43 @@
       <volume>
         <property>/velocities/airspeed-kt</property>
         <factor>0.01</factor>
+	<min>0.7</min>
         <max>1.0</max>
-      </volume>
-      <volume>
-        <internal>dt_stop</internal>
-        <factor>0.05</factor>
-        <max>1.0</max>
-      </volume>
+      </volume>      
       <pitch>
         <property>/velocities/airspeed-kt</property>
         <factor>0.0025</factor>
         <offset>0.5</offset>
+	<min>0.9</min>
+        <max>1.0</max>
+      </pitch>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </squeal>
+    
+    <squeal>
+      <name>squeal</name>
+      <mode>once</mode>
+      <path>Aircraft/Antonov-An-22/Sounds/squeal.wav</path>
+      <condition>        
+          <property>/gear/gear[6]/wow</property>          
+      </condition>
+      <volume>
+        <property>/velocities/speed-down-fps</property>
+        <factor>0.5</factor>
+        <max>1.0</max>
+      </volume>
+      <volume>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+	<min>0.7</min>
+        <max>1.0</max>
+      </volume>      
+      <pitch>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.0025</factor>
+        <offset>0.5</offset>
+	<min>0.9</min>
         <max>1.0</max>
       </pitch>
       <reference-dist>10</reference-dist>
@@ -308,7 +359,7 @@
        </and>
       </condition>
       <volume>
-        <factor>0.15</factor>
+        <factor>0.09</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -324,7 +375,7 @@
         </equals>
       </condition>
       <volume>
-        <factor>0.25</factor>
+        <factor>0.22</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -347,7 +398,7 @@
        </and>
       </condition>
       <volume>
-        <factor>0.12</factor>
+        <factor>0.06</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -363,7 +414,7 @@
         </equals>
       </condition>
       <volume>
-        <factor>0.25</factor>
+        <factor>0.22</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -386,7 +437,7 @@
        </and>
       </condition>
       <volume>
-        <factor>0.15</factor>
+        <factor>0.06</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>

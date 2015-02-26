@@ -101,10 +101,10 @@
 
     <flaps>
       <setting> 0.00 </setting>
-      <setting> 0.25 </setting>
-      <setting> 0.50 </setting>
-      <setting> 0.75 </setting>
-      <setting> 1.00 </setting>
+      <setting> 0.15 </setting>
+      <setting> 0.30 </setting>
+      <setting> 0.45 </setting>
+      <setting> 0.60 </setting>
     </flaps>
 
     <help include="Systems/help.xml"/>

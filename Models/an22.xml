@@ -1882,6 +1882,7 @@
       <z-m>  1.67 </z-m>
      </offsets>
    </model>
+   
    <model>
     <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
      <offsets>
@@ -1889,7 +1890,35 @@
       <y-m> -9.90 </y-m>
       <z-m>  1.67 </z-m>
      </offsets>
-    </model>    
+   </model>
+    
+   <model>
+    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>    
+     <offsets>
+      <x-m> -5.6 </x-m>
+      <y-m> 20.9 </y-m>
+      <z-m>  0.35 </z-m>
+     </offsets>
+   </model>
+   
+   <model>
+    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>    
+     <offsets>
+      <x-m> -5.6 </x-m>
+      <y-m>-20.9 </y-m>
+      <z-m>  0.35 </z-m>
+     </offsets>
+   </model>
+          
+   <model>
+    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>    
+     <offsets>
+      <x-m>-26.45 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -4.15 </z-m>
+     </offsets>
+   </model>
+    
   
   <!-- StrobeLights: white-pulse, left-right-back-->
   <model>
@@ -1931,7 +1960,7 @@
   
    
   <!-- Lighting Landing without Rembrand-->
-  <model>
+ <model>
   <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
           <condition>
 		  <property>sim/multiplay/generic/int[9]</property>		  
@@ -1941,8 +1970,9 @@
       <y-m>  -3.85 </y-m>
       <z-m>  -4.05 </z-m>
      </offsets>
-    </model> 
-    <model>
+ </model> 
+    
+ <model>
     <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
     <condition>
 		  <property>sim/multiplay/generic/int[9]</property>		  
@@ -1952,30 +1982,9 @@
       <y-m>   3.85 </y-m>
       <z-m>  -4.05 </z-m>
      </offsets>
-    </model>
-    <model>
-    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
-    <condition>
-		  <property>sim/multiplay/generic/int[9]</property>		  
-	  </condition>
-     <offsets>
-      <x-m> -5.6 </x-m>
-      <y-m> 20.9 </y-m>
-      <z-m>  0.35 </z-m>
-     </offsets>
-    </model>
-    <model>
-    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
-    <condition>
-		  <property>sim/multiplay/generic/int[9]</property>		  
-	  </condition>
-     <offsets>
-      <x-m> -5.6 </x-m>
-      <y-m>-20.9 </y-m>
-      <z-m>  0.35 </z-m>
-     </offsets>
-    </model>
-    <model>
+ </model>
+ 
+ <model>  
     <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
     <condition>
 		  <property>sim/multiplay/generic/int[9]</property>
@@ -1986,12 +1995,15 @@
       <y-m>   0.0 </y-m>
       <z-m>  -5.0 </z-m>
      </offsets>
-    </model> 
+ </model> 
   
   <!-- Lighting Landing 154 beginn, External lights for Rembrand-->
  <model>
   <path>Aircraft/Antonov-An-22/Models/light/headlight-landing.xml</path>
   <name>headlight_c</name>
+  <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
     <x-m>-29.037</x-m>
     <y-m>0.0</y-m>
@@ -2003,6 +2015,9 @@
  <model>
   <path>Aircraft/Antonov-An-22/Models/light/headlight-landing.xml</path>
   <name>headlight_l</name>
+  <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
    <x-m>-13.71</x-m>
    <y-m>-3.81</y-m>
@@ -2014,6 +2029,9 @@
  <model>
   <path>Aircraft/Antonov-An-22/Models/light/headlight-landing.xml</path>
   <name>headlight_r</name>
+  <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
    <x-m>-13.71</x-m>
    <y-m>3.81</y-m>
@@ -2025,6 +2043,9 @@
  <model>
   <path>Aircraft/Antonov-An-22/Models/light/headlight-taxi.xml</path>
   <name>taxilight_c</name>
+  <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
     <x-m>-29.037</x-m>
     <y-m>0.0</y-m>
@@ -2036,6 +2057,9 @@
  <model>
   <path>Aircraft/Antonov-An-22/Models/light/headlight-taxi.xml</path>
   <name>taxilight_l</name>
+  <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
    <x-m>-13.71</x-m>
    <y-m>-3.81</y-m>
@@ -2047,6 +2071,9 @@
  <model>
   <path>Aircraft/Antonov-An-22/Models/light/headlight-taxi.xml</path>
   <name>taxilight_r</name>
+  <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
    <x-m>-13.71</x-m>
    <y-m>3.81</y-m>

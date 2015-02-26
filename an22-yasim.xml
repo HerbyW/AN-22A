@@ -117,7 +117,7 @@ updated 02/2015 HerbyW -->
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="18.0"/>
+         <control-speed control="FLAP0" transition-time="15.0"/>
   </hstab>
 
   <!-- Ruder chord was 5.023 reduced to compensate for sidewind obscure -->
@@ -290,7 +290,7 @@ updated 02/2015 HerbyW -->
         <control-output control="STEER" prop="/gear/gear[0]/steering-norm"/>
         <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
 
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="9.7"/>
   </gear>
 
   <!-- Left wheel 1 -->
@@ -301,7 +301,7 @@ updated 02/2015 HerbyW -->
         
         <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="9.7"/>
   </gear>
 
   <!-- Left wheel 2 -->
@@ -312,7 +312,7 @@ updated 02/2015 HerbyW -->
         
         <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="9.7"/>
   </gear>
 
   <!-- Left wheel 3 -->
@@ -323,7 +323,7 @@ updated 02/2015 HerbyW -->
         
         <control-output control="EXTEND" prop="/gear/gear[3]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="9.7"/>
   </gear>
 
   <!-- Right wheel 1 -->
@@ -334,7 +334,7 @@ updated 02/2015 HerbyW -->
         
         <control-output control="EXTEND" prop="/gear/gear[4]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="9.7"/>
   </gear>
 
   <!-- Right wheel 2 -->
@@ -345,7 +345,7 @@ updated 02/2015 HerbyW -->
         
         <control-output control="EXTEND" prop="/gear/gear[5]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="9.7"/>
   </gear>
 
   <!-- Right wheel 3 -->
@@ -356,7 +356,7 @@ updated 02/2015 HerbyW -->
         
         <control-output control="EXTEND" prop="/gear/gear[6]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="9"/>
+        <control-speed control="EXTEND" transition-time="9.7"/>
   </gear>
 
   <tank x="3" y=" 10.36101" z="-0.661" capacity="24000"/>
