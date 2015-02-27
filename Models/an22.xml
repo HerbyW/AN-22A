@@ -1873,7 +1873,7 @@
     </offsets>
   </model>
 
-  <!-- PositionLights: white-steady -->
+  <!-- PositionLights: white-steady NAV-lights: 2 on tail, 2 on middle wings, 1 at nose-->
    <model>
     <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
      <offsets>
@@ -1920,7 +1920,7 @@
    </model>
     
   
-  <!-- StrobeLights: white-pulse, left-right-back-->
+  <!-- StrobeLights: white-pulse, left-right wings and ruder-->
   <model>
     <path>Aircraft/Antonov-An-22/Models/light/StrobeLight.xml</path>
     <offsets>
@@ -1962,9 +1962,14 @@
   <!-- Lighting Landing without Rembrand-->
  <model>
   <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
-          <condition>
-		  <property>sim/multiplay/generic/int[9]</property>		  
-	  </condition>
+   <condition>
+    
+      <or>
+	  <property>sim/multiplay/generic/int[9]</property>
+	  <property>sim/multiplay/generic/int[10]</property>
+      </or>
+     
+   </condition>
      <offsets>
       <x-m> -13.12 </x-m>
       <y-m>  -3.85 </y-m>
@@ -1975,8 +1980,13 @@
  <model>
     <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
     <condition>
-		  <property>sim/multiplay/generic/int[9]</property>		  
-	  </condition>
+    
+      <or>
+	  <property>sim/multiplay/generic/int[9]</property>
+	  <property>sim/multiplay/generic/int[10]</property>
+      </or>
+     
+   </condition>
      <offsets>
       <x-m> -13.12 </x-m>
       <y-m>   3.85 </y-m>
@@ -1986,10 +1996,17 @@
  
  <model>  
     <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
-    <condition>
-		  <property>sim/multiplay/generic/int[9]</property>
-		  <property>gear/gear[0]/position-norm</property>
-	  </condition>
+    
+       <condition>
+        <or>
+	  <property>sim/multiplay/generic/int[9]</property>
+	  <property>sim/multiplay/generic/int[10]</property>
+        </or>
+       </condition>    
+       <condition>
+	  <property>gear/gear[0]/position-norm</property>
+       </condition>
+    
      <offsets>
       <x-m> -21.5 </x-m>
       <y-m>   0.0 </y-m>
@@ -2002,7 +2019,7 @@
   <path>Aircraft/Antonov-An-22/Models/light/headlight-landing.xml</path>
   <name>headlight_c</name>
   <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
   <offsets>
     <x-m>-29.037</x-m>
@@ -2016,7 +2033,7 @@
   <path>Aircraft/Antonov-An-22/Models/light/headlight-landing.xml</path>
   <name>headlight_l</name>
   <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
   <offsets>
    <x-m>-13.71</x-m>
@@ -2030,7 +2047,7 @@
   <path>Aircraft/Antonov-An-22/Models/light/headlight-landing.xml</path>
   <name>headlight_r</name>
   <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
   <offsets>
    <x-m>-13.71</x-m>
@@ -2044,7 +2061,7 @@
   <path>Aircraft/Antonov-An-22/Models/light/headlight-taxi.xml</path>
   <name>taxilight_c</name>
   <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
   <offsets>
     <x-m>-29.037</x-m>
@@ -2058,7 +2075,7 @@
   <path>Aircraft/Antonov-An-22/Models/light/headlight-taxi.xml</path>
   <name>taxilight_l</name>
   <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
   <offsets>
    <x-m>-13.71</x-m>
@@ -2072,7 +2089,7 @@
   <path>Aircraft/Antonov-An-22/Models/light/headlight-taxi.xml</path>
   <name>taxilight_r</name>
   <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
   <offsets>
    <x-m>-13.71</x-m>
