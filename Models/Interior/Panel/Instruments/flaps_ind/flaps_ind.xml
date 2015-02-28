@@ -16,9 +16,9 @@
      <object-name>block4</object-name>     
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
     </emission>
   </animation>
 
@@ -26,9 +26,9 @@
    <type>material</type>
    <object-name>flaps_ind</object-name>
    <emission>
-		<red>   0.1</red>
-		<green> 0.1</green>
-		<blue>  0.1</blue>
+		<red>   0.15</red>
+		<green> 0.15</green>
+		<blue>  0.15</blue>
 		<factor-prop>tu154/switches/gauge-light</factor-prop>
 	</emission>
    </animation>
@@ -37,9 +37,9 @@
     <type>material</type>
      <object-name>flaps2</object-name>
        <emission>
-		<red>0.5</red>
-		<green>0.0</green>
-		<blue>0.0</blue>
+		<red>   0.35 </red>
+                <green> 0.35 </green>
+                <blue>  0.35 </blue>
 		<factor-prop>tu154/switches/gauge-light</factor-prop>
        </emission>
     </animation>

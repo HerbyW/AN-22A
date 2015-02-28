@@ -40,10 +40,10 @@
     <object-name>rect2</object-name>
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
-    </emission>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+   </emission>
   </animation>
   
 
@@ -53,7 +53,7 @@
   <property>/gear/gear/position-norm</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>    -120</dep></entry> 
-   <entry><ind> 0.7</ind><dep>  -120</dep></entry>
+   <entry><ind> 0.07</ind><dep>  -115</dep></entry>
    <entry><ind> 0.8</ind><dep>  -80</dep></entry>
    <entry><ind> 0.9</ind><dep>  -40</dep></entry>
    <entry><ind> 1</ind><dep>  0</dep></entry>
@@ -76,7 +76,7 @@
   <property>/gear/gear/position-norm</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>    -120</dep></entry> 
-   <entry><ind> 0.7</ind><dep>  -120</dep></entry>
+   <entry><ind> 0.07</ind><dep>  -115</dep></entry>
    <entry><ind> 0.8</ind><dep>  -80</dep></entry>
    <entry><ind> 0.9</ind><dep>  -40</dep></entry>
    <entry><ind> 1</ind><dep>  0</dep></entry>

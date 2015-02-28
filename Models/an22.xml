@@ -1997,15 +1997,15 @@
  <model>  
     <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
     
-       <condition>
+      <condition>
+       <and>
         <or>
 	  <property>sim/multiplay/generic/int[9]</property>
 	  <property>sim/multiplay/generic/int[10]</property>
-        </or>
-       </condition>    
-       <condition>
-	  <property>gear/gear[0]/position-norm</property>
-       </condition>
+        </or>       
+	  <property>gear/gear[0]/position-norm</property>       
+      </and>
+     </condition>
     
      <offsets>
       <x-m> -21.5 </x-m>

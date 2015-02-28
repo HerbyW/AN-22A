@@ -13,9 +13,9 @@ simplyfied by HerbyW Jan2015  -->
       <type>material</type>
       <object-name>bg</object-name>
       <emission>
-          <red>0.3</red>
-          <green>0.3</green>
-          <blue>0.3</blue>
+          <red>0.4</red>
+          <green>0.4</green>
+          <blue>0.4</blue>
           <factor-prop>tu154/switches/gauge-light</factor-prop>
       </emission>
     </animation>
@@ -33,8 +33,8 @@ simplyfied by HerbyW Jan2015  -->
         <object-name>pitchOn</object-name>
 		<emission>
 			<red>0.6</red>
-			<green>0.5</green>
-			<blue>0.5</blue>
+			<green>0.6</green>
+			<blue>0.6</blue>
 			<factor-prop>tu154/switches/gauge-light</factor-prop>
 		</emission>
 	</animation>
@@ -63,8 +63,8 @@ simplyfied by HerbyW Jan2015  -->
 		
 		<emission>
 		  <red>0.6</red>
-		  <green>0.5</green>
-		  <blue>0.5</blue>
+		  <green>0.6</green>
+		  <blue>0.6</blue>
 		  <factor-prop>tu154/switches/gauge-light</factor-prop>
 		</emission>
 	</animation>

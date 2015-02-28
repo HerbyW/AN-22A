@@ -61,19 +61,19 @@ updated 02/2015 HerbyW -->
   <cockpit x="24.41012" y="0.41799" z="-0.67554"/>
 
   <!-- Fuselage -->
-  <fuselage ax=" 28.76046" ay="0" az="-2.24423" bx=" 21.39809" by="0" bz="-2.14046" width="5.066" taper="0.3" midpoint="1.0" idrag="0.8"/>
-  <fuselage ax=" 21.39809" ay="0" az="-2.14046" bx=" -3.45695" by="0" bz="-2.14936" width="5.066" taper="1.0" midpoint="0.0" idrag="0.8"/>
-  <fuselage ax=" -3.45695" ay="0" az="-2.14936" bx="-21.34291" by="0" bz=" 1.03286" width="5.066" taper="0.3" midpoint="0.0" idrag="0.8"/>
-  <fuselage ax="-21.34291" ay="0" az=" 1.03286" bx="-28.65440" by="0" bz=" 1.18538" width="1.474" taper="1.0" midpoint="0.0" idrag="0.8"/>
+  <fuselage ax=" 28.76046" ay="0" az="-2.24423" bx=" 21.39809" by="0" bz="-2.14046" width="5.066" taper="0.0" midpoint="1.0" idrag="1.0"/>
+  <fuselage ax=" 21.39809" ay="0" az="-2.14046" bx=" -3.45695" by="0" bz="-2.14936" width="5.066" taper="1.0" midpoint="0.5" idrag="2.0"/>
+  <fuselage ax=" -3.45695" ay="0" az="-2.14936" bx="-21.34291" by="0" bz=" 1.03286" width="5.066" taper="1.0" midpoint="0.5" idrag="2.0"/>
+  <fuselage ax="-21.34291" ay="0" az=" 1.03286" bx="-28.65440" by="0" bz=" 1.18538" width="1.474" taper="0.0" midpoint="0.0" idrag="2.0"/>
   
   <!-- Engine exterior left -->
-  <fuselage ax=" 9.89801" ay=" 13.45214" az="-0.18105" bx="3.09717" by=" 13.45214" bz="-0.18105" width="1.724" taper="0.8" midpoint="0.1"/>
+  <fuselage ax=" 9.89801" ay=" 13.45214" az="-0.18105" bx="3.09717" by=" 13.45214" bz="-0.18105" cx="0.10" width="1.724" taper="0.98" midpoint="0.5"/>
   <!-- Engine interior left -->
-  <fuselage ax="10.49855" ay="  6.87900" az="-0.18105" bx="3.69771" by="  6.87900" bz="-0.18105" width="1.724" taper="0.8" midpoint="0.1"/>
+  <fuselage ax="10.49855" ay="  6.87900" az="-0.18105" bx="3.69771" by="  6.87900" bz="-0.18105" cx="0.10" width="1.724" taper="0.98" midpoint="0.5"/>
   <!-- Engine interior right -->
-  <fuselage ax="10.49855" ay=" -6.87900" az="-0.18105" bx="3.69771" by=" -6.87900" bz="-0.18105" width="1.724" taper="0.8" midpoint="0.1"/>
+  <fuselage ax="10.49855" ay=" -6.87900" az="-0.18105" bx="3.69771" by=" -6.87900" bz="-0.18105" cx="0.10" width="1.724" taper="0.98" midpoint="0.5"/>
   <!-- Engine exterior right -->
-  <fuselage ax=" 9.89801" ay="-13.45214" az="-0.18105" bx="3.09717" by="-13.45214" bz="-0.18105" width="1.724" taper="0.8" midpoint="0.1"/>
+  <fuselage ax=" 9.89801" ay="-13.45214" az="-0.18105" bx="3.09717" by="-13.45214" bz="-0.18105" cx="0.10" width="1.724" taper="0.98" midpoint="0.5"/>
   
   <!-- Wing -->
   <wing x="3.92059" y="0" z="0.86412"
@@ -103,7 +103,8 @@ updated 02/2015 HerbyW -->
          <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
          <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
          <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
-         <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>         
+         <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+         <control-speed control="FLAP1" transition-time="8"/>
   </mstab>
 
    <!-- Elevator -->
@@ -158,15 +159,15 @@ updated 02/2015 HerbyW -->
   <propeller x="7.26952" y="13.45214" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="15500"      
+	     moment="12500"      
 	     cruise-alt="22370"
 	     cruise-speed="340"
-	     cruise-rpm="750"
+	     cruise-rpm="2200"
 	     cruise-power="10700"
-	     takeoff-rpm="840"
+	     takeoff-rpm="2500"
 	     takeoff-power="14990"
 	     min-rpm="600"
-	     max-rpm="860"
+	     max-rpm="2500"
 	     fine-stop="0.40"
 	     coarse-stop="4.0"
 	     manual="true"
@@ -174,31 +175,31 @@ updated 02/2015 HerbyW -->
              <actionpt x="10.68032" y="13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
-			     eng-rpm="860"
+			     eng-rpm="2500"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="14990"
-                             bsfc="0.65">
+                             bsfc="0.60">
                              <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
              </turbine-engine>
   </propeller>
 
   <!-- Engine left interior -->
-  <propeller x="7.87006" y="6.87901" z="-0.18105"
+  <propeller x="7.26952" y="13.45214" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="15500"      
+	     moment="12500"      
 	     cruise-alt="22370"
 	     cruise-speed="340"
-	     cruise-rpm="750"
+	     cruise-rpm="2200"
 	     cruise-power="10700"
-	     takeoff-rpm="840"
+	     takeoff-rpm="2500"
 	     takeoff-power="14990"
 	     min-rpm="600"
-	     max-rpm="860"
+	     max-rpm="2500"
 	     fine-stop="0.40"
 	     coarse-stop="4.0"
 	     manual="true"
@@ -206,31 +207,31 @@ updated 02/2015 HerbyW -->
              <actionpt x="11.28087" y="6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
-			     eng-rpm="860"
+			     eng-rpm="2500"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="14990"
-                             bsfc="0.65">
+                             bsfc="0.60">
                              <control-input axis="/controls/engines/engine[1]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
              </turbine-engine>
   </propeller>
 
   <!-- Engine right interior-->
-  <propeller x="7.87006" y="-6.87901" z="-0.18105"
+  <propeller x="7.26952" y="13.45214" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="15500"      
+	     moment="12500"      
 	     cruise-alt="22370"
 	     cruise-speed="340"
-	     cruise-rpm="750"
+	     cruise-rpm="2200"
 	     cruise-power="10700"
-	     takeoff-rpm="840"
+	     takeoff-rpm="2500"
 	     takeoff-power="14990"
 	     min-rpm="600"
-	     max-rpm="860"
+	     max-rpm="2500"
 	     fine-stop="0.40"
 	     coarse-stop="4.0"
 	     manual="true"
@@ -238,31 +239,31 @@ updated 02/2015 HerbyW -->
              <actionpt x="11.28087" y="-6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[2]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
-			     eng-rpm="860"
+			     eng-rpm="2500"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="14990"
-                             bsfc="0.65">                  
+                             bsfc="0.60">                 
                              <control-input axis="/controls/engines/engine[2]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[2]/throttle" control="THROTTLE"/>
              </turbine-engine>
   </propeller>
 
   <!-- Engine right exterior-->
-  <propeller x="7.26952" y="-13.45214" z="-0.18105"
+  <propeller x="7.26952" y="13.45214" z="-0.18105"
 	     radius="3.188"
 	     mass="6393"
-	     moment="15500"      
+	     moment="12500"      
 	     cruise-alt="22370"
 	     cruise-speed="340"
-	     cruise-rpm="750"
+	     cruise-rpm="2200"
 	     cruise-power="10700"
-	     takeoff-rpm="840"
+	     takeoff-rpm="2500"
 	     takeoff-power="14990"
 	     min-rpm="600"
-	     max-rpm="860"
+	     max-rpm="2500"
 	     fine-stop="0.40"
 	     coarse-stop="4.0"
 	     manual="true"
@@ -270,13 +271,13 @@ updated 02/2015 HerbyW -->
              <actionpt x="10.68032" y="-13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[3]/propeller-pitch" control="ADVANCE"/>
              <turbine-engine eng-power="14990"
-			     eng-rpm="860"
+			     eng-rpm="2500"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="14990"
-                             bsfc="0.65">
+                             bsfc="0.60">
                              <control-input axis="/controls/engines/engine[3]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[3]/throttle" control="THROTTLE"/>
              </turbine-engine>
