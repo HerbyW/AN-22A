@@ -104,7 +104,7 @@ updated 02/2015 HerbyW -->
          <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
          <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
          <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
-         <control-speed control="FLAP1" transition-time="8"/>
+         <control-speed control="FLAP1" transition-time="10"/>
   </mstab>
 
    <!-- Elevator -->
@@ -132,7 +132,7 @@ updated 02/2015 HerbyW -->
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="2.0"/>
+         <control-speed control="FLAP0" transition-time="7.0"/>
   </vstab>
 
   <vstab x="-22.77339" y="-6.96456" z="-1.92091"
@@ -145,7 +145,7 @@ updated 02/2015 HerbyW -->
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="2.0"/>
+         <control-speed control="FLAP0" transition-time="5.0"/>
   </vstab>
 
   <!-- Engines   source            : http://en.wikipedia.org/wiki/Kuznetsov_NK-12
