@@ -418,4 +418,19 @@
     </offsets>
   </model>
   
+  <animation>
+     <type>slider</type>
+     <hovered>
+       <binding>
+         <command>set-tooltip</command>
+         <label>Mixture: %3d%%</label>
+         <measure-text>Mixture: 100%</measure-text>
+         <tooltip-id>mixture</tooltip-id>
+         <mapping>percent</mapping>
+         <property>controls/engines/engine[0]/mixture</property>
+       </binding>
+     </hovered>
+   </animation>
+  
+  
 </PropertyList>
