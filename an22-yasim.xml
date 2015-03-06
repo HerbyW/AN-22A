@@ -118,7 +118,7 @@ updated 02/2015 HerbyW -->
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="15.0"/>
+         <control-speed control="FLAP0" transition-time="10.0"/>
   </hstab>
 
   <!-- Ruder chord was 5.023 reduced to compensate for sidewind obscure -->
@@ -145,7 +145,7 @@ updated 02/2015 HerbyW -->
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="5.0"/>
+         <control-speed control="FLAP0" transition-time="7.0"/>
   </vstab>
 
   <!-- Engines   source            : http://en.wikipedia.org/wiki/Kuznetsov_NK-12
