@@ -71,7 +71,7 @@
         <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
         <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
         <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
-        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>
         <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
         <int type="int" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
 	<int type="int" n="7" alias="smoke/particlepersec"> 50 </int>             <!--  7 particlepersec -->
