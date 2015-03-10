@@ -372,7 +372,7 @@ updated 02/2015 HerbyW -->
   
     <!-- Thruster for Pushback action -->
   
-  <thruster x="20.40663" y="0" z="-6.16719" vx="1" vy="0" vz="0" thrust="40000">
+  <thruster x="20.40663" y="0" z="-6.16719" vx="1" vy="0" vz="0" thrust="45000">
   <control-input axis="/sim/model/pushback/target-speed-fps" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
   </thruster>
 
