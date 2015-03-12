@@ -20,8 +20,10 @@
     <type>select</type>
     <object-name>shadow</object-name>
     <condition>
+     <and>
       <property>/sim/rendering/shadows/enabled</property>
       <not><property>sim/multiplay/generic/int[4]</property></not>
+     </and>
     </condition>
   </animation>
   

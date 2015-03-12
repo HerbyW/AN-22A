@@ -145,48 +145,54 @@
 <!-- Rumbling on runway -->
 
     <rumble>
-      <name>rumble</name>
+      <name>rumble1</name>
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-22/Sounds/rumble.wav</path>
       <condition>
           <property>/gear/gear[0]/wow</property>          
       </condition>
       <volume>
-        <property>/velocities/airspeed-kt</property>
+        <property>sim/multiplay/generic/float[12]</property>
         <type>log</type>
         <factor>0.35</factor>
+	<min>0.0</min>
+        <max>1.0</max>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </rumble>
     
     <rumble>
-      <name>rumble</name>
+      <name>rumble2</name>
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-22/Sounds/rumble.wav</path>
       <condition>        
           <property>/gear/gear[1]/wow</property>
       </condition>
       <volume>
-        <property>/velocities/airspeed-kt</property>
+        <property>sim/multiplay/generic/float[12]</property>
         <type>log</type>
         <factor>0.35</factor>
+	<min>0.0</min>
+        <max>1.0</max>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </rumble>
     
     <rumble>
-      <name>rumble</name>
+      <name>rumble3</name>
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-22/Sounds/rumble.wav</path>
       <condition>          
           <property>/gear/gear[2]/wow</property>
       </condition>
       <volume>
-        <property>/velocities/airspeed-kt</property>
+        <property>sim/multiplay/generic/float[12]</property>
         <type>log</type>
         <factor>0.35</factor>
+	<min>0.0</min>
+        <max>1.0</max>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -219,7 +225,7 @@
 <!-- Touchdown on runway -->    
 
     <squeal>
-      <name>squeal</name>
+      <name>squeal1</name>
       <mode>once</mode>
       <path>Aircraft/Antonov-An-22/Sounds/squeal.wav</path>
       <condition>        
@@ -248,7 +254,7 @@
     </squeal>
     
     <squeal>
-      <name>squeal</name>
+      <name>squeal2</name>
       <mode>once</mode>
       <path>Aircraft/Antonov-An-22/Sounds/squeal.wav</path>
       <condition>        
@@ -284,35 +290,35 @@
       <path>Aircraft/Antonov-An-22/Sounds/flaps.wav</path>
       <property>/surface-positions/flap-pos-norm</property>
       <volume>
-        <factor>0.2</factor>
+        <factor>0.35</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </flap>
 
-<!-- Wind -->
-    
-    <wind>
-      <name>wind</name>
-      <mode>looped</mode>
-      <path>Aircraft/Antonov-An-22/Sounds/wind.wav</path>
-      <property>/velocities/airspeed-kt</property>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.0025</factor>
-        <min>0.00</min>
-        <max>0.25</max>
-      </volume>
-      <pitch>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.01</factor>
-        <offset>0.3</offset>
-        <max>1.0</max>
-      </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </wind>
+     <!-- Speed Warning -->
  
+    <speedwarn>
+      <name>warn1</name>
+      <mode>looped</mode>
+      <path>Aircraft/Antonov-An-22/Sounds/dinamik_pr2.wav</path>
+       <condition>
+        <greater-than>
+	 <property>velocities/groundspeed-kt</property>
+	 <value>399</value>
+         </greater-than>
+        </condition> 
+      <volume>
+	<offset>1.0</offset>
+	<min>1.0</min>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </speedwarn>
+
+ <!-- Stall -->   
+    
     <stall>
       <name>stall</name>
       <mode>looped</mode>
@@ -325,6 +331,8 @@
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </stall>
+  
+  <!-- Doors -->
   
     <door>
       <name>Cargo door</name>
@@ -344,7 +352,7 @@
     
     <door>
       <name>Cargo doorT</name>
-      <mode>looped</mode>
+      <mode>in-transit</mode>
       <path>Aircraft/Antonov-An-22/Sounds/door_close.wav</path>
       <condition>
        <and>
@@ -383,7 +391,7 @@
     
     <door>
       <name>Passenger doorLT</name>
-      <mode>looped</mode>
+      <mode>in-transit</mode>
       <path>Aircraft/Antonov-An-22/Sounds/door_close.wav</path>
       <condition>
         <and>
@@ -422,7 +430,7 @@
     
     <door>
       <name>Passenger doorRT</name>
-      <mode>looped</mode>
+      <mode>in-transit</mode>
       <path>Aircraft/Antonov-An-22/Sounds/door_close.wav</path>
       <condition>
         <and>
@@ -443,6 +451,30 @@
       <max-dist>100</max-dist>
     </door>
 
+    <!-- Wind -->
+    
+    <wind>
+      <name>wind</name>
+      <mode>looped</mode>
+      <path>Aircraft/Antonov-An-22/Sounds/wind.wav</path>
+      <property>/environment/wind-speed-kt</property>
+      <volume>
+        <property>/environment/wind-speed-kt</property>
+        <factor>0.0025</factor>
+        <min>0.00</min>
+        <max>0.25</max>
+      </volume>
+      <pitch>
+        <property>/environment/wind-speed-kt</property>
+        <factor>0.01</factor>
+        <offset>0.3</offset>
+        <max>1.0</max>
+      </pitch>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </wind>
+ 
+    
     <rain>
       <name>rain</name>
       <mode>looped</mode>

@@ -72,7 +72,7 @@
         <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
         <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
         <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>
-        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="int" n="5" alias="/tu154/switches/gauge-light"> 0 </int>
         <int type="int" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
 	<int type="int" n="7" alias="smoke/particlepersec"> 50 </int>             <!--  7 particlepersec -->
 	<int type="int" n="8" alias="/controls/lighting/nav-lights"/>
@@ -91,7 +91,7 @@
         <float n="9"  alias="/controls/engines/engine[1]/throttle" />
         <float n="10" alias="/controls/engines/engine[2]/throttle" />
         <float n="11" alias="/controls/engines/engine[3]/throttle" />
-        <float n="12" alias="/gear/gear[6]/rollspeed-ms" />
+        <float n="12" alias="/gear/gear[2]/rollspeed-ms" />
         <float n="13"  alias="/sim/model/door-positions/cargo/position-norm"/>
         <float n="14" alias="/orientation/pitch-deg"/>
         <float n="15" alias="/orientation/roll-deg"/>

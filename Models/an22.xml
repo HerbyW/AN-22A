@@ -29,7 +29,7 @@
     </unload>
   </nasal>
   
-    <model>
+  <model>
   <name>Pushback</name>
   <path>Models\Airport\Pushback\Goldhofert.xml</path>
   <offsets>
@@ -39,6 +39,22 @@
   </offsets>
  </model>
  
+<!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->
+<!--Working For ANY GLASS AND Rembrandt-->
+
+<animation>    
+    <object-name>vitres</object-name>
+</animation>
+<animation>
+<type>noshadow</type>    
+    <object-name>vitres</object-name>
+</animation>
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+    <texture>Aircraft/Antonov-An-22/Models/glass_michat.png</texture>    
+    <object-name>vitres</object-name>
+</animation> 
 
   <animation>
     <!-- Objets opaques -->
@@ -85,8 +101,7 @@
     <object-name>porteDE2</object-name>
     <object-name>porteDE3</object-name>
     <object-name>baieB</object-name>
-    <object-name>baieH</object-name>
-    
+    <object-name>baieH</object-name>    
     <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>roueG1</object-name>
@@ -102,8 +117,7 @@
     <object-name>heliceDI1</object-name>
     <object-name>heliceDI2</object-name>
     <object-name>heliceDE1</object-name>
-    <object-name>heliceDE2</object-name>
-    
+    <object-name>heliceDE2</object-name>    
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
     <object-name>propblurGE1</object-name>
@@ -169,8 +183,7 @@
     <object-name>porteDE2</object-name>
     <object-name>porteDE3</object-name>
     <object-name>baieB</object-name>
-    <object-name>baieH</object-name>
-    
+    <object-name>baieH</object-name>    
     <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>roueG1</object-name>
@@ -187,19 +200,79 @@
     <object-name>heliceDI2</object-name>
     <object-name>heliceDE1</object-name>
     <object-name>heliceDE2</object-name>
+    <emission>
+      <factor-prop>/sim/time/sun-angle-rad</factor-prop>
+      <red>   0.1 </red>
+      <green> 0.1 </green>
+      <blue>  0.1 </blue>
+    </emission>
     
-    <property-base>sim/model/livery</property-base>
+<!--    <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>texture.png</texture>
-    <specular>
-      <red-prop>specular/red</red-prop>
-      <green-prop>specular/green</green-prop>
-      <blue-prop>specular/blue</blue-prop>
-    </specular>
+    <texture>texture.png</texture>    
+    <emission>
+      <red>   0.1 </red>
+      <green> 0.1 </green>
+      <blue>  0.1 </blue>
+      </emission>                      -->
   </animation>
   
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
+    <object-name>derives</object-name>
+    <object-name>directionGH</object-name>
+    <object-name>directionGB</object-name>
+    <object-name>directionDH</object-name>
+    <object-name>directionDB</object-name>
+    <object-name>moteurs</object-name>
+    <object-name>bolGE1</object-name>
+    <object-name>bolGE2</object-name>
+    <object-name>bolGI1</object-name>
+    <object-name>bolGI2</object-name>
+    <object-name>bolDI1</object-name>
+    <object-name>bolDI2</object-name>
+    <object-name>bolDE1</object-name>
+    <object-name>bolDE2</object-name>
+    <object-name>prise-air</object-name>
+    <object-name>porteG</object-name>
+    <object-name>porteD</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAG2</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteAD2</object-name>
+    <object-name>porteGE1</object-name>
+    <object-name>porteGE2</object-name>
+    <object-name>porteGE3</object-name>
+    <object-name>porteGI1</object-name>
+    <object-name>porteGI2</object-name>
+    <object-name>porteGI3</object-name>
+    <object-name>porteDI1</object-name>
+    <object-name>porteDI2</object-name>
+    <object-name>porteDI3</object-name>
+    <object-name>porteDE1</object-name>
+    <object-name>porteDE2</object-name>
+    <object-name>porteDE3</object-name>
+    <object-name>baieB</object-name>
+    <object-name>baieH</object-name>
+  </effect>  
+  
+  <effect>
+    <inherits-from>Effects/model-combined-deferred</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
@@ -246,14 +319,33 @@
     <object-name>baieH</object-name>
   </effect>
   
-  <!-- working for Rembrandt -->
-  <effect>
-    <inherits-from>Aircraft/Antonov-An-22/Models/Effects/Glass/glass</inherits-from>
+  <animation>
+    <type>noshadow</type>
     <object-name>vitres</object-name>
-  </effect>
+    <object-name>propblurGE1</object-name>
+    <object-name>propdiscGE1</object-name>
+    <object-name>propblurGE2</object-name>
+    <object-name>propdiscGE2</object-name>
+    <object-name>propblurGI1</object-name>
+    <object-name>propdiscGI1</object-name>
+    <object-name>propblurGI2</object-name>
+    <object-name>propdiscGI2</object-name>
+    <object-name>propblurDI1</object-name>
+    <object-name>propdiscDI1</object-name>
+    <object-name>propblurDI2</object-name>
+    <object-name>propdiscDI2</object-name>
+    <object-name>propblurDE1</object-name>
+    <object-name>propdiscDE1</object-name>
+    <object-name>propblurDE2</object-name>
+    <object-name>propdiscDE2</object-name>
+  </animation>  
   
+  <!-- working for Rembrandt -->  
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
     <object-name>vitres</object-name>
     <object-name>propblurGE1</object-name>
     <object-name>propdiscGE1</object-name>
@@ -272,7 +364,18 @@
     <object-name>propblurDE2</object-name>
     <object-name>propdiscDE2</object-name>
   </effect>
-  
+ 
+ <animation>
+    <type>material</type>       
+       <object-name>vitres</object-name>
+  <emission>
+      <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
+      <red>   0.15 </red>
+      <green> 0.15 </green>
+      <blue>  0.60 </blue>
+    </emission>
+  </animation>
+ 
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/Antonov-An-22/Models/shadow.xml</path>
