@@ -45,16 +45,29 @@
 <animation>    
     <object-name>vitres</object-name>
 </animation>
+
 <animation>
 <type>noshadow</type>    
     <object-name>vitres</object-name>
 </animation>
+
 <animation>
 <type>shader</type>
 <shader>chrome</shader>
-    <texture>Aircraft/Antonov-An-22/Models/glass_michat.png</texture>    
+    <texture>Aircraft/Antonov-An-22/Models/glass_shader.png</texture>    
     <object-name>vitres</object-name>
-</animation> 
+</animation>
+
+<animation>
+    <type>material</type>       
+       <object-name>vitres</object-name>      
+  <emission>
+    <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
+      <red>   0.15 </red>
+      <green> 0.15 </green>
+      <blue>  0.60 </blue>
+    </emission>
+</animation>
 
   <animation>
     <!-- Objets opaques -->
@@ -200,21 +213,13 @@
     <object-name>heliceDI2</object-name>
     <object-name>heliceDE1</object-name>
     <object-name>heliceDE2</object-name>
+    
     <emission>
-      <factor-prop>/sim/time/sun-angle-rad</factor-prop>
+      <factor-prop>sim/time/sun-angle-rad</factor-prop>
       <red>   0.1 </red>
       <green> 0.1 </green>
       <blue>  0.1 </blue>
     </emission>
-    
-<!--    <property-base>sim/model/livery</property-base>
-    <texture-prop>texture</texture-prop>
-    <texture>texture.png</texture>    
-    <emission>
-      <red>   0.1 </red>
-      <green> 0.1 </green>
-      <blue>  0.1 </blue>
-      </emission>                      -->
   </animation>
   
   <effect>
@@ -365,16 +370,10 @@
     <object-name>propdiscDE2</object-name>
   </effect>
  
- <animation>
-    <type>material</type>       
-       <object-name>vitres</object-name>
-  <emission>
-      <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
-      <red>   0.15 </red>
-      <green> 0.15 </green>
-      <blue>  0.60 </blue>
-    </emission>
-  </animation>
+ <animation>    
+    <object-name>vitres</object-name>
+</animation>
+ 
  
   <!-- Une ombre pour OSG -->
   <model>

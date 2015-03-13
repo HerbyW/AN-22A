@@ -10,7 +10,7 @@
        <landing-lights type="int">0</landing-lights>
        <taxi-lights type="int">0</taxi-lights>
     </lighting>
-    <engines>
+     <engines>
       <engine n="0">
         <boost type="double">0</boost>
         <magnetos>0</magnetos>
@@ -32,6 +32,8 @@
       <brake-parking type="double">1</brake-parking>
     </gear>
   </controls>
+  
+  <tu154><switches><gauge-light type="int">0</gauge-light></switches></tu154>
            
   <sim include="Systems/views.xml">
 
@@ -72,13 +74,13 @@
         <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
         <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
         <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>
-        <int type="int" n="5" alias="/tu154/switches/gauge-light"> 0 </int>
+        <int type="int" n="5" alias="/tu154/switches/gauge-light"/>
         <int type="int" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
-	<int type="int" n="7" alias="smoke/particlepersec"> 50 </int>             <!--  7 particlepersec -->
+	<int type="int" n="7" alias="/smoke/particlepersec"> 50 </int>             <!--  7 particlepersec -->
 	<int type="int" n="8" alias="/controls/lighting/nav-lights"/>
 	<int type="int" n="9" alias="/controls/lighting/landing-lights"/>
 	<int type="int" n="10" alias="/controls/lighting/taxi-lights"/>
-        <int type="int" n="11" alias="controls/armament/trigger">0</int>   <!-- 10 reserved for bombable mode -->
+        <int type="int" n="11" alias="/controls/armament/trigger">0</int>   <!-- 10 reserved for bombable mode -->
         <float n="0"  alias="/sim/model/door-positions/crewL/position-norm"/>
         <float n="1"  alias="/sim/model/door-positions/crewR/position-norm"/>
         <float n="2"  alias="/position/gear-agl-m"> 0 </float>       <!-- altitude for MP shadow -->
@@ -170,11 +172,6 @@
     <instruments>
       <file>Aircraft/Antonov-An-22/Nasal/setprop.nas</file>
     </instruments>
-  </nasal>
-
-  
- 
- 
- 
+  </nasal> 
   
 </PropertyList>
