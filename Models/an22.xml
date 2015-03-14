@@ -1908,7 +1908,7 @@
     <type>rotate</type>
     <object-name>baieB</object-name>
     <property>sim/multiplay/generic/float[13]</property>
-    <factor> 31 </factor>
+    <factor> 27.5 </factor>
     <center>
       <x-m>  5.85350 </x-m>
       <y-m>  0.00000 </y-m>
