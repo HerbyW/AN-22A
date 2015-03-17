@@ -45,7 +45,7 @@
     <fuel-fraction>0.6</fuel-fraction>
 
     <startup>
-      <splash-texture>Aircraft/Antonov-An-22/an22-splash.png</splash-texture>
+      <splash-texture>Aircraft/Antonov-An-22/an22-splashN.png</splash-texture>
     </startup>
 
     <model>
