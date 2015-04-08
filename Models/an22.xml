@@ -222,6 +222,36 @@
     </emission>
   </animation>
   
+  <animation>
+    <type>material</type>    
+    <object-name>propblurGE1</object-name>
+    <object-name>propdiscGE1</object-name>
+    <object-name>propblurGE2</object-name>
+    <object-name>propdiscGE2</object-name>
+    <object-name>propblurGI1</object-name>
+    <object-name>propdiscGI1</object-name>
+    <object-name>propblurGI2</object-name>
+    <object-name>propdiscGI2</object-name>
+    <object-name>propblurDI1</object-name>
+    <object-name>propdiscDI1</object-name>
+    <object-name>propblurDI2</object-name>
+    <object-name>propdiscDI2</object-name>
+    <object-name>propblurDE1</object-name>
+    <object-name>propdiscDE1</object-name>
+    <object-name>propblurDE2</object-name>
+    <object-name>propdiscDE2</object-name>    
+    <property-base>sim/model/livery</property-base>
+      <texture-prop>Propeller-Texture</texture-prop>
+      <texture>prop.png</texture>
+      <emission>      
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+  
+  
+  
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <condition>
