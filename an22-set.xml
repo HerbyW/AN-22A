@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="an22-base.xml">
+  
+  <!-- generic autopilot settings changed HerbyW 10 Jan 2015-->
+
+  <sim>
+
+    <description>Antonov An 22 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instruments, Animations, FDM)</author>
+    <flight-model>yasim</flight-model>
+    <aero>an22-yasim</aero>
+    
+    <weight n="0">
+        	    <name>Crew</name>
+        	    <weight-lb type="double">400</weight-lb>
+        	    <max-lb type="double">800</max-lb>
+        	    <min-lb type="double">300</min-lb>
+    </weight>
+    
+    <weight n="1">
+		    <name>Cargo</name>
+		    <weight-lb type="double">90000.0</weight-lb>
+		    <max-lb type="double">200170.0</max-lb>
+		    <min-lb type="double">0.0</min-lb>
+		</weight>
+	
+
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+   
+   <systems>
+          <autopilot>
+	    <name>Autopilot</name>
+               <path>Nasal/An-22-autopilot.xml</path>
+         </autopilot>
+   </systems>
+   
+   <import>
+        <path>Huds/Sets/controls.xml</path>
+        <x-offset>-100</x-offset>
+        <y-offset>70</y-offset>
+    </import>
+   
+  </sim>
+
+</PropertyList>

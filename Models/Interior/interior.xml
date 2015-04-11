@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>    
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+ <effect>
+    <inherits-from>Aircraft/Antonov-An-22/Models/Effects/Glass/glass</inherits-from>
+    <object-name>intvitres</object-name>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+       <object-name>intvitres</object-name>
+    <emission>
+    <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
+      <red>   0.15 </red>
+      <green> 0.15 </green>
+      <blue>  0.60 </blue>
+    </emission>
+</animation>
+
+  <animation>    
+    <object-name>intvitres</object-name>
+  </animation>
+  
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Antonov-An-22/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -24.63 </x-m>
+      <y-m>  -0.43 </y-m>
+      <z-m>  -1.23 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Planche de bord -->
+  <model>
+    <path>Aircraft/Antonov-An-22/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -25.3900 </x-m>
+      <y-m>   0.0000 </y-m>
+      <z-m>  -1.1478 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
