@@ -32,15 +32,7 @@
     <object-name>intvitres</object-name>
   </animation>
   
-  <!-- Pilote -->
-  <model>
-    <path>Aircraft/Antonov-An-22/Models/Pilot/pilot.xml</path>
-    <offsets>
-      <x-m> -24.63 </x-m>
-      <y-m>  -0.43 </y-m>
-      <z-m>  -1.23 </z-m>
-    </offsets>
-  </model>
+
 
   <!-- Planche de bord -->
   <model>
