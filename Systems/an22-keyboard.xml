@@ -28,5 +28,53 @@
       <script>doors.crewL.toggle();</script>
     </binding>
   </key>
+  
+   
+ <key n="61"> 
+    <name>=</name>
+    <desc>Jump signal</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>controls/paratroopers/jump-signal</property>
+      <value>true</value>
+    </binding>
+  </key>
+  
+  <key n="115">
+    <name>s</name>
+    <desc>Autostart</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>controls/autostart</property>
+      <value>true</value>
+    </binding>
+  </key>
+ 
+ <key n="60">
+  <name> > </name>
+  <desc>Change Pilot Engineer View</desc>
+  <binding>
+    <command>property-cycle</command>
+      <property>sim/current-view/view-number</property>  
+      <value>0</value>
+      <value>9</value>
+  </binding>
+</key>
+
+<key n="127">
+	<name>Delete</name>
+	<desc>Toggle Reversers</desc>
+  <binding>
+      <command>property-cycle</command>
+      <property>controls/reverser</property>
+      <value>true</value>
+      <value>false</value>
+  </binding>
+</key>
+  
 
 </PropertyList>
+
+
+
+  

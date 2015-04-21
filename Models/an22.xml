@@ -3,7 +3,7 @@
 <!--Lights added, HerbyW-->
 
 <PropertyList>
-
+  
   <path>an22.ac</path>
 
   <nasal>
@@ -414,7 +414,7 @@
       <z-m> -5.85 </z-m>
     </offsets>
   </model>
-  
+   
   <!-- Interieur -->
   <model>
     <path>Aircraft/Antonov-An-22/Models/Interior/interior.xml</path>

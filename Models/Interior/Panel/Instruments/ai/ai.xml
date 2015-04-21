@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
     ###################################################################
     #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM,       #
@@ -8,7 +8,17 @@
     # Updated by Helijah August 2012                                  #
     ###################################################################
 -->
+<!--
 
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
 <!-- Altimeter indicator 3D instrument for Tu-154 -->
 <PropertyList>
 
@@ -20,7 +30,6 @@
     <object-name>knobs</object-name>
     <object-name>ball</object-name>
     <object-name>center</object-name>
-
     <object-name>marker</object-name>
     <object-name>face</object-name>
     <object-name>cache</object-name>
@@ -30,7 +39,6 @@
     <object-name>barrehorizontal</object-name>
     <object-name>craft</object-name>
     <object-name>pointer</object-name>
-
     <object-name>vitre</object-name>
     <object-name>vitre2</object-name>
   </animation>
@@ -49,7 +57,7 @@
     <object-name>vitre2</object-name>
   </animation>
 
-  <!-- working for Rembrandt -->
+  <!-- working for Rembrandt
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <condition>
@@ -57,10 +65,15 @@
     </condition>
     <object-name>vitre</object-name>
     <object-name>vitre2</object-name>
-  </effect>
+  </effect>                                   -->
 
   <animation>
     <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>fond2</object-name>
+    <object-name>knobs</object-name>
+    <object-name>ball</object-name>
+    <object-name>center</object-name>
     <object-name>marker</object-name>
     <object-name>face</object-name>
     <object-name>cache</object-name>
@@ -71,11 +84,11 @@
     <object-name>craft</object-name>
     <object-name>pointer</object-name>
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
-   </emission>
+    </emission>
   </animation>
 
   <animation>

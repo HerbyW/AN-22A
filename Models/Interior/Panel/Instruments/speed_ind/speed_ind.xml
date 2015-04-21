@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+
 <PropertyList>
  <path>speed_ind.ac</path>
 
@@ -17,11 +29,11 @@
      <object-name>kus_rect2</object-name>
      <object-name>kus_rect1</object-name>
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
-   </emission>
+    </emission>
   </animation>
  
  <animation>
@@ -55,7 +67,7 @@
   <interpolation>
    <entry><ind>  0.0</ind><dep>  0</dep></entry>   
    <entry><ind> 200</ind><dep>  7</dep></entry>   
-   <entry><ind> 500</ind><dep> 350</dep></entry>
+   <entry><ind> 500</ind><dep> 260</dep></entry>
    
 
   </interpolation>

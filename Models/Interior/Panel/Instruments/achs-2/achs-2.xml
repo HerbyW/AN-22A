@@ -6,6 +6,17 @@
     #    	Jul 2007						   	#
     #############################################################################	  
     -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
 <!-- Clock ACHS-2
 3D instrument -->
 
@@ -29,7 +40,7 @@
     <object-name>min_needle</object-name>
     <object-name>sec_needle</object-name>
    <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>

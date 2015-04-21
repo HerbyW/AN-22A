@@ -5,6 +5,18 @@
 		This file is licenced under the terms of the GNU General Public Licence V2 or later
 		###################################################################################
 simplyfied by HerbyW Jan2015  -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+
 
 <PropertyList>
     <path>ap-fg.ac</path>
@@ -16,7 +28,7 @@ simplyfied by HerbyW Jan2015  -->
           <red>0.4</red>
           <green>0.4</green>
           <blue>0.4</blue>
-          <factor-prop>tu154/switches/gauge-light</factor-prop>
+          <factor-prop>controls/switches/gauge-light</factor-prop>
       </emission>
     </animation>
     
@@ -35,7 +47,7 @@ simplyfied by HerbyW Jan2015  -->
 			<red>0.6</red>
 			<green>0.6</green>
 			<blue>0.6</blue>
-			<factor-prop>tu154/switches/gauge-light</factor-prop>
+			<factor-prop>controls/switches/gauge-light</factor-prop>
 		</emission>
 	</animation>
 
@@ -65,7 +77,7 @@ simplyfied by HerbyW Jan2015  -->
 		  <red>0.6</red>
 		  <green>0.6</green>
 		  <blue>0.6</blue>
-		  <factor-prop>tu154/switches/gauge-light</factor-prop>
+		  <factor-prop>controls/switches/gauge-light</factor-prop>
 		</emission>
 	</animation>
 	
@@ -91,7 +103,7 @@ simplyfied by HerbyW Jan2015  -->
         <object-name>pitchOn</object-name>
         <condition>
         	<greater-than>
-		 <property>tu154/switches/gauge-light</property>
+		 <property>controls/switches/gauge-light</property>
 		 <value>0.5</value>
 		</greater-than>
       	

@@ -26,11 +26,19 @@
 		</weight>
 	
 
+    <weight n="2">
+		    <name>Parachuters a 120 lb</name>
+		    <weight-lb type="double">0.0</weight-lb>
+		    <max-lb type="double">12000.0</max-lb>
+		    <min-lb type="double">0.0</min-lb>
+		</weight>
+    
+    
     <rating>
-      <FDM type="int">     2 </FDM>
-      <systems type="int"> 1 </systems>
-      <cockpit type="int"> 2 </cockpit>
-      <model type="int">   4 </model>
+      <FDM type="int">     4 </FDM>
+      <systems type="int"> 4 </systems>
+      <cockpit type="int"> 4 </cockpit>
+      <model type="int">   5 </model>
     </rating>
    
    <systems>

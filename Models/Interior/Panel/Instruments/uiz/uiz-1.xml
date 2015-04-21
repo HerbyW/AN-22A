@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
     #############################################################################
     #    (C) 2007 by Yurik V. Nikiforoff - port for FGFS,  FDM,                 #
@@ -8,7 +8,17 @@
     # Updated by Helijah August 2012                                            #
     #############################################################################
 -->
+<!--
 
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
 <!-- Turbine gauge UIZ-3 3D instrument for Tu-134 -->
 <PropertyList>
 
@@ -21,7 +31,6 @@
     <object-name>needle_1</object-name>
     <object-name>needle_2</object-name>
     <object-name>needle_3</object-name>
-
     <object-name>vitre</object-name>
   </animation>
 
@@ -37,40 +46,44 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <!-- working for Rembrandt -->
+  <!-- working for Rembrandt
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <condition>
       <property>sim/rendering/rembrandt/enabled</property>
     </condition>
     <object-name>vitre</object-name>
-  </effect>
+  </effect>                                        -->
 
   <!-- Internal instruments lighting -->
-  <animation>
+ 
+ <animation>
     <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>infos</object-name>
     <object-name>face</object-name>
     <object-name>needle_1</object-name>
     <object-name>needle_2</object-name>
     <object-name>needle_3</object-name>
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
-   </emission>
+    </emission>
   </animation>
 
-  <!--Needles-->
+  <!--Needles Fuel pressure Kg/cm2-->
+  
   <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>
-    <property>/engines/engine[0]/fuel-pressure-psi</property>
-    <!--Fuel pressure Kg/cm2-->
+    <property>/engines/engine/n2</property>
     <factor> 0.0703 </factor>
     <interpolation>
       <entry><ind>   0 </ind><dep>  0 </dep></entry>
-      <entry><ind> 100 </ind><dep> 97 </dep></entry>
+      <entry><ind>  60 </ind><dep> 55 </dep></entry>
+      <entry><ind> 100 </ind><dep> 78 </dep></entry>
     </interpolation>
     <center>
       <x-m> 0.00157 </x-m>
@@ -84,13 +97,16 @@
     </axis>
   </animation>
 
+  <!--Needles Oel pressure Kg/cm2-->  
+  
   <animation>
     <type>rotate</type>
     <object-name>needle_2</object-name>
-    <property>/engines/engine[0]/oilp-norm</property>
+    <property>/engines/engine/n2</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1 </ind><dep> 101 </dep></entry>
+      <entry><ind>   0 </ind><dep> 0 </dep></entry>
+      <entry><ind>  60 </ind><dep> 40 </dep></entry>
+      <entry><ind> 100 </ind><dep> 85 </dep></entry>
     </interpolation>
     <center>
       <x-m>  0.00150 </x-m>
@@ -104,13 +120,16 @@
     </axis>
   </animation>
 
+  <!--Needles Oel temperatur in C -->
+  
   <animation>
     <type>rotate</type>
     <object-name>needle_3</object-name>
-    <property>/engines/engine[0]/oilt-norm</property>
+    <property>/engines/engine/n2</property>    
     <interpolation>
-      <entry><ind> 0 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1 </ind><dep> 107 </dep></entry>
+      <entry><ind>   0 </ind><dep> 0 </dep></entry>
+      <entry><ind>  60 </ind><dep> 40 </dep></entry>
+      <entry><ind> 100 </ind><dep> 85 </dep></entry>
     </interpolation>
     <center>
       <x-m>  0.00164 </x-m>

@@ -5,11 +5,21 @@
     #    	yurik@megasignal.com					   	#
     #############################################################################	  
 -->
+<!--
 
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
 <!-- Altimeter UVID-15 feet
 3D instrument for Tu-154 -->
 <PropertyList>
- <path>uvid-15f.ac</path>
+ <path>uvid-15f3.ac</path>
 
  <animation>  
   <object-name>base</object-name>
@@ -37,13 +47,12 @@
   <object-name>dig_p_ths</object-name>
   <object-name>needle</object-name>  
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
-   </emission>
+    </emission>
   </animation>
-
  
 <!--Warning lamp-->
 <animation>
@@ -53,7 +62,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>tu154/switches/gauge-light</factor-prop>
+    <factor-prop>controls/switches/gauge-light</factor-prop>
   </emission>
 </animation>
 
@@ -62,7 +71,7 @@
   <object-name>lamp</object-name>
   <condition>    
        <greater-than>
-      	<property>tu154/switches/gauge-light</property>
+      	<property>controls/switches/gauge-light</property>
         <value>0.5</value>
        </greater-than>       
   </condition>
@@ -73,7 +82,7 @@
 <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>position/altitude-ft</property>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.36</factor>    
     <axis>
       <x>-1.0</x>
@@ -86,7 +95,7 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_a_dec</object-name>  
-  <property>position/altitude-ft</property>
+  <property>instrumentation/altimeter/indicated-altitude-ft</property>
   <factor>3.6</factor>
   <center>
     <x-m>-0.01985</x-m>
@@ -99,13 +108,14 @@
     <z>0.0</z>
   </axis>
 </animation>
+
 <animation>
   <type>rotate</type>
   <object-name>dig_a_hund</object-name>  
   <expression>
     <table>
       <mod>
-        <property>position/altitude-ft</property>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <value>1000</value>
       </mod>
       <entry><ind>	  0</ind>	<dep>	0</dep></entry>
@@ -150,7 +160,7 @@
   <expression>
     <table>
       <mod>
-        <property>position/altitude-ft</property>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <value>10000</value>
       </mod>
       <entry><ind>	   0</ind>	<dep>	0</dep></entry>
@@ -195,7 +205,7 @@
   <expression>
     <table>
       <mod>
-        <property>position/altitude-ft</property>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <value>100000</value>
       </mod>
       <entry><ind>	    0</ind>	<dep>	0</dep></entry>
@@ -238,8 +248,8 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_p_ones</object-name>
-  <property>instrumentation/altimeter/inhg100</property>
-  <factor>360</factor>
+  <property>/instrumentation/altimeter/setting-inhg</property>
+  <factor>3600</factor>
   <center>
     <x-m>-0.01257</x-m>
     <y-m>0.0</y-m>
@@ -255,20 +265,20 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_p_dec</object-name>
-  <expression>
+  <expression>    
     <product>
       <difference>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>100</value>
+          <property>/instrumentation/altimeter/setting-inhgN</property>
+          <value>1</value>
         </mod>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>10</value>
-        </mod>
+          <property>/instrumentation/altimeter/setting-inhgN</property>
+          <value>0.1</value>
+        </mod>	
       </difference>
       <value>360</value>
-    </product>
+    </product>    
   </expression>
   <center>
     <x-m>-0.01257</x-m>
@@ -289,12 +299,12 @@
     <product>
       <difference>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>1000</value>
+          <property>/instrumentation/altimeter/setting-inhg</property>
+          <value>10</value>
         </mod>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>100</value>
+          <property>/instrumentation/altimeter/setting-inhg</property>
+          <value>1</value>
         </mod>
       </difference>
       <value>36</value>
@@ -319,12 +329,12 @@
     <product>
       <difference>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>10000</value>
+          <property>/instrumentation/altimeter/setting-inhg</property>
+          <value>100</value>
         </mod>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>1000</value>
+          <property>/instrumentation/altimeter/setting-inhg</property>
+          <value>10</value>
         </mod>
       </difference>
       <value>3.6</value>
@@ -351,11 +361,10 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>instrumentation/altimeter/inhg100</property>
-      <value>2992</value>
-      <factor>1</factor>
-      <min>2500</min>
-      <max>3400</max>
+      <property>/instrumentation/altimeter/setting-inhg</property>
+      <factor>0.01</factor>
+      <min>28.10</min>
+      <max>31.00</max>
     </binding>
   </action>
 </animation>

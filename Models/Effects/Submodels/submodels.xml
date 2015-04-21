@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
+
+<PropertyList>
+
+  <submodel> 
+    <name>parachutist1</name>
+    <model>Aircraft/Antonov-An-22/Models/Effects/Submodels/parachuter.xml</model>
+    
+    <trigger>controls/paratroopers/trigger/state</trigger>
+    <speed> 0 </speed>
+    <repeat> true </repeat>
+    <delay> 0 </delay>
+    <count> 150 </count>
+    <x-offset> -45 </x-offset>
+    <y-offset>  3.3 </y-offset>
+    <z-offset> -8.5 </z-offset>
+    <yaw-offset> -7 </yaw-offset>
+    <pitch-offset> -5 </pitch-offset>
+    <cd> 5 </cd>
+    <eda> 100 </eda>
+    <weight> 120 </weight>
+    <wind> true </wind>
+    <buoyancy> -150 </buoyancy>
+    <life> 600 </life>
+    <randomness>1.0</randomness>
+  </submodel>
+  
+  <submodel> 
+    <name>parachutist2</name>
+    <model>Aircraft/Antonov-An-22/Models/Effects/Submodels/parachuter.xml</model>
+    
+    <trigger>controls/paratroopers/trigger/state</trigger>
+    <speed> 0 </speed>
+    <repeat> true </repeat>
+    <delay> 0.5 </delay>
+    <count> 150 </count>
+    <x-offset> -45 </x-offset>
+    <y-offset>  -3.3 </y-offset>
+    <z-offset> -8.5 </z-offset>
+    <yaw-offset> 7 </yaw-offset>
+    <pitch-offset> -5 </pitch-offset>
+    <cd> 5 </cd>
+    <eda> 100 </eda>
+    <weight> 120 </weight>
+    <wind> true </wind>
+    <buoyancy> -150 </buoyancy>
+    <life> 600 </life>
+    <randomness>1.0</randomness>
+  </submodel>
+
+</PropertyList>
+
+<!--
+controls/paratroopers/trigger/state
+-->

@@ -1,5 +1,15 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+    -->
 <PropertyList>
 
   <default>
@@ -7,23 +17,14 @@
       <label>Antonov An 22</label>
       <enabled type="bool">true</enabled>
       <item>
-        <label>Select Livery</label>
-        <binding>
-          <command>nasal</command>
-          <script>aircraft.livery.dialog.toggle()</script>
-        </binding>
-      </item>
+	<label>Select livery</label>
+	<binding>
+		<command>nasal</command>
+		<script>aircraft.livery.dialog.open()</script>
+	</binding>
+       </item>
     </menu>
-  <menu n="10">
-    <item n="2">
-     <label>Pushback</label>
-     <name>pushback</name>
-     <binding>
-      <command>dialog-show</command>
-      <dialog-name>pushback</dialog-name>
-     </binding>
-    </item>
-   </menu>
+    
   </default>
 
 </PropertyList>

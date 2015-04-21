@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
     #############################################################################
     #    (C) 2007 by Yurik V. Nikiforoff - port for FGFS,  FDM,                 #
@@ -8,7 +8,17 @@
     # Updated by Helijah August 2012                                            #
     #############################################################################
 -->
+<!--
 
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
 <!-- Exhaust gas temperature indicator UT-7A-710 3D instrument for Tu-134 -->
 <PropertyList>
 
@@ -20,7 +30,6 @@
     <object-name>needle_1</object-name>
     <object-name>needle_2</object-name>
     <object-name>cache</object-name>
-
     <object-name>vitre</object-name>
   </animation>
 
@@ -36,39 +45,40 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <!-- working for Rembrandt -->
+  <!-- working for Rembrandt
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <condition>
       <property>sim/rendering/rembrandt/enabled</property>
     </condition>
     <object-name>vitre</object-name>
-  </effect>
+  </effect>                                        -->
 
   <animation>
     <type>material</type>
+    <object-name>fond</object-name>
     <object-name>face</object-name>
     <object-name>needle_1</object-name>
     <object-name>needle_2</object-name>
+    <object-name>cache</object-name>
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
-   </emission>
+    </emission>
   </animation>
 
-  <!--Needles-->
+<!--Needles-->
   <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>
-    <property>/engines/engine[3]/egt-degf</property>
-    <!-- Temperature degc -->
-    <factor> -17.22 </factor>
+    <property>/engines/engine[3]/n2</property>
+    <factor> 1 </factor>
     <interpolation>
-      <entry><ind> 300 </ind><dep> -130 </dep></entry>
-      <entry><ind> 600 </ind><dep>    0 </dep></entry>
-      <entry><ind> 900 </ind><dep>  130 </dep></entry>
+      <entry><ind>	0.0</ind>	<dep>	190.0</dep></entry>
+      <entry><ind>	60.7</ind>	<dep>	324.0</dep></entry>
+      <entry><ind>	99.6</ind>	<dep>	465.0</dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>
@@ -80,9 +90,9 @@
   <animation>
     <type>rotate</type>
     <object-name>needle_2</object-name>
-    <property>engines/engine[3]/epr</property>
+    <property>/engines/engine[3]/n2</property>
     <factor> 3.6 </factor>
-    <offset-deg> 180 </offset-deg>
+    <offset-deg> 90 </offset-deg>
     <center>
       <x-m>  0.00000 </x-m>
       <y-m>  0.00022 </y-m>

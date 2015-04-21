@@ -38,7 +38,7 @@
   <model>
     <path>Aircraft/Antonov-An-22/Models/Interior/Panel/panel.xml</path>
     <offsets>
-      <x-m> -25.3900 </x-m>
+      <x-m> -25.20 </x-m>
       <y-m>   0.0000 </y-m>
       <z-m>  -1.1478 </z-m>
     </offsets>

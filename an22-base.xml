@@ -5,6 +5,7 @@
 <PropertyList>
  
   <controls>
+    <autostart type="int">0</autostart>
     <lighting>
        <nav-lights type="int">0</nav-lights>    
        <landing-lights type="int">0</landing-lights>
@@ -14,33 +15,60 @@
       <engine n="0">
         <boost type="double">0</boost>
         <magnetos>0</magnetos>
+	<condition>0</condition>
       </engine>
       <engine n="1">
         <boost type="double">0</boost>
         <magnetos>0</magnetos>
+	<condition>0</condition>
       </engine>
       <engine n="2">
         <boost type="double">0</boost>
         <magnetos>0</magnetos>
+	<condition>0</condition>
       </engine>
       <engine n="3">
         <boost type="double">0</boost>
         <magnetos>0</magnetos>
+	<condition>0</condition>
       </engine>
     </engines>
     <gear>
       <brake-parking type="double">1</brake-parking>
     </gear>
-  </controls>
-  
-  <tu154><switches><gauge-light type="int">0</gauge-light></switches></tu154>
+    <paratroopers>
+      <paratroopers type="int">0</paratroopers>
+      <weight type="float">0</weight>
+    </paratroopers>
+    <switches>
+      <fuel type="float">0</fuel>
+      <gauge-light type="int">0</gauge-light>
+      <adf-1-selector type="double">0</adf-1-selector>
+      <adf-2-selector type="double">0</adf-2-selector>
+      <ushdb-sel-1 type="double">0</ushdb-sel-1>
+      <ushdb-sel-2 type="double">0</ushdb-sel-2>
+    </switches>
+    <chokes>
+      <activ type="int">0</activ>
+    </chokes>
+    <reverser type="bool">0</reverser>
+ </controls>
+ 
+ <gear><gear><position-norm type="float">1</position-norm></gear></gear>
+
            
   <sim include="Systems/views.xml">
 
     <description>Antonov An 22 (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM), Instrumentation-Animation-FDM HerbyW Jan2015</author>
     <aircraft-version>0.3</aircraft-version>
-    <status>Alpha</status>
+    <status>advanced production</status>
+    <rating>
+     <FDM type="int">4</FDM>
+     <systems type="int">4</systems>
+     <cockpit type="int">4</cockpit>
+     <model type="int">5</model>
+    </rating>
 
     <fuel-fraction>0.6</fuel-fraction>
 
@@ -48,7 +76,7 @@
       <splash-texture>Aircraft/Antonov-An-22/an22-splashN.png</splash-texture>
     </startup>
 
-    <model>
+    <model>      
       <path>Aircraft/Antonov-An-22/Models/an22.xml</path>
       <livery>
         <file type="string">default</file>
@@ -66,22 +94,35 @@
       <path>Aircraft/Antonov-An-22/Sounds/an22-sound.xml</path>
     </sound>
 
+    <instrumentation>
+    <path>Aircraft/Antonov-An-22/Systems/instrumentation.xml</path>
+  </instrumentation>
+    
+    
+    <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/submodels.xml</path>
+    </submodels>
+    
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
-        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
-        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
-        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
-        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+	
+	<int type="int" n="3" alias="/controls/chokes/activ">  0 </int>
         <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>
-        <int type="int" n="5" alias="/tu154/switches/gauge-light"/>
-        <int type="int" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
-	<int type="int" n="7" alias="/smoke/particlepersec"> 50 </int>             <!--  7 particlepersec -->
+	<int type="int" n="5" alias="/controls/switches/gauge-light"/>
+        <int type="int" n="6" alias="/smoke/active"> 0 </int>                           <!--  6 start smoke -->
+        <int type="int" n="7" alias="/smoke/particlepersec"> 50 </int>               <!--  7 particlepersec -->
 	<int type="int" n="8" alias="/controls/lighting/nav-lights"/>
 	<int type="int" n="9" alias="/controls/lighting/landing-lights"/>
 	<int type="int" n="10" alias="/controls/lighting/taxi-lights"/>
-        <int type="int" n="11" alias="/controls/armament/trigger">0</int>   <!-- 10 reserved for bombable mode -->
-        <float n="0"  alias="/sim/model/door-positions/crewL/position-norm"/>
+        <int type="int" n="11" alias="/controls/armament/trigger">0</int> <!-- 10 reserved for bombable mode -->
+	<int type="int" n="12" alias="/engines/engine[0]/running">  0 </int>
+	<int type="int" n="13" alias="/engines/engine[1]/running">  0 </int>
+	<int type="int" n="14" alias="/engines/engine[2]/running">  0 </int>
+	<int type="int" n="15" alias="/engines/engine[3]/running">  0 </int>
+	
+	<float n="0"  alias="/sim/model/door-positions/crewL/position-norm"/>
         <float n="1"  alias="/sim/model/door-positions/crewR/position-norm"/>
         <float n="2"  alias="/position/gear-agl-m"> 0 </float>       <!-- altitude for MP shadow -->
         <float n="3"  alias="/position/altitude-ft"> 0 </float>      <!-- altitude for Smoke/Trail -->
@@ -97,6 +138,8 @@
         <float n="13"  alias="/sim/model/door-positions/cargo/position-norm"/>
         <float n="14" alias="/orientation/pitch-deg"/>
         <float n="15" alias="/orientation/roll-deg"/>
+        
+        <string  alias="/sim/multiplay/callsign"/>
         <string n="9" type="string" />
       </generic>
     </multiplay>
@@ -118,44 +161,128 @@
   <engines>
     <engine n="0">
       <engine-num type="int">0</engine-num>
-      <rpm>500</rpm>
+      <rpm>0</rpm>
       <running>false</running>
     </engine>
     <engine n="1">
       <engine-num type="int">1</engine-num>
-      <rpm>500</rpm>
+      <rpm>0</rpm>
       <running>false</running>
     </engine>
     <engine n="2">
       <engine-num type="int">2</engine-num>
-      <rpm>500</rpm>
+      <rpm>0</rpm>
       <running>false</running>
     </engine>
     <engine n="3">
       <engine-num type="int">3</engine-num>
-      <rpm>500</rpm>
+      <rpm>0</rpm>
       <running>false</running>
     </engine>
   </engines>
   
   <instrumentation>
-    <dme>
-        <frequencies>
-            <source type="string">/instrumentation/nav[0]/frequencies/selected-mhz</source>
-        </frequencies>
-        <switch-position n="0" type="int">0</switch-position>
-        <switch-position n="1" type="int">0</switch-position>
-    </dme>
-    <inst-vertical-speed-indicator>
-        <serviceable type="bool">1</serviceable>
-    </inst-vertical-speed-indicator>
-    <altimeter>
-        <decision-height type="double">200</decision-height>
-    </altimeter>
-    <airspeed-indicator>
+
+<dme n="0">
+    <frequencies>
+       <source type="string">/instrumentation/dme[0]/frequencies/selected-mhz</source>
+    </frequencies>
+    <switch-position n="0" type="int">0</switch-position>
+    <switch-position n="1" type="int">0</switch-position>
+    <switch-position n="2" type="int">0</switch-position>
+    <switch-position n="3" type="int">0</switch-position>
+    <serviceable type="bool">true</serviceable>
+</dme>
+<dme n="1">
+    <frequencies>
+       <source type="string">/instrumentation/dme[1]/frequencies/selected-mhz</source>
+    </frequencies>
+    <switch-position n="0" type="int">0</switch-position>
+    <switch-position n="1" type="int">0</switch-position>
+    <switch-position n="2" type="int">0</switch-position>
+    <switch-position n="3" type="int">0</switch-position>
+    <serviceable type="bool">true</serviceable>
+</dme>
+    
+<inst-vertical-speed-indicator>
+        <serviceable type="bool">true</serviceable>
+</inst-vertical-speed-indicator>
+<altimeter>
+        <decision-height type="double">0</decision-height>
+	<setting-hapa type="double">0</setting-hapa>
+</altimeter>
+<airspeed-indicator>
         <index-marker type="double">100</index-marker>
-    </airspeed-indicator>
-  </instrumentation>
+</airspeed-indicator>
+    
+<drift type="double">0</drift>
+    
+<heading-indicator n="0">
+      <serviceable type="int">0</serviceable>
+</heading-indicator>
+    
+<adf n="0">
+  <mode>adf</mode>
+  <serviceable type="bool">false</serviceable>
+  <frequencies>
+    <selected-khz type="int">490</selected-khz>  <!-- NDB "DVI" (Donaueschingen) -->
+    <standby-khz type="int">401</standby-khz>    <!-- EDTM ancient military airbase -->
+  </frequencies>
+  <error-deg type="double">0</error-deg>
+  <power-btn type="bool">false</power-btn>
+  <operable type="bool">true</operable>
+  <volume type="double">0.10</volume>
+</adf>
+
+<adf n="1">  
+  <mode>adf</mode>  
+  <serviceable type="bool">false</serviceable>
+  <frequencies>
+    <selected-khz type="int">0</selected-khz>  <!--442 EDNY near the lake of constance -->
+    <standby-khz type="int">0</standby-khz>    <!-- 473 EDSN ancient military airbase -->
+  </frequencies>
+  <error-deg type="double">0</error-deg>
+  <power-btn type="bool">false</power-btn>
+  <operable type="bool">true</operable>
+  <volume type="double">0.10</volume>
+  <indicated-bearing-deg type="double">90</indicated-bearing-deg>
+</adf>
+    
+<nav n="0">
+  
+  <volume type="double">0.10</volume>
+  <radials>
+    <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>    
+  </radials>
+  <power-btn type="bool">false</power-btn>
+  <serviceable type="bool">false</serviceable>
+  <operable type="bool">false</operable>  
+</nav>
+
+<nav n="1">
+  
+  <volume type="double">0.10</volume>
+  <radials>
+    <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>
+  </radials>
+  <power-btn type="bool">false</power-btn>
+  <serviceable type="bool">false</serviceable>
+  <operable type="bool">false</operable>  
+</nav>
+
+<iku>  
+    <heading-deg-1 type="double">90</heading-deg-1>
+    <heading-deg-2 type="double">90</heading-deg-2>
+</iku>
+
+<transponder>  
+  <serviceable type="bool">false</serviceable>
+</transponder>
+
+<ushdb><compass type="double">0</compass></ushdb>
+<mapcase><page type="int">1</page></mapcase>
+
+</instrumentation>
 
   <input>
     <keyboard include="Systems/an22-keyboard.xml"/>
@@ -165,13 +292,23 @@
     <doors>
       <file>Aircraft/Antonov-An-22/Nasal/doors.nas</file>
     </doors>
-    <an22>
+    <an12>
       <file>Aircraft/Antonov-An-22/Nasal/liveries.nas</file>
       <file>Aircraft/Antonov-An-22/Nasal/light.nas</file>
-    </an22>
+      <file>Aircraft/Antonov-An-22/Nasal/autostart.nas</file>
+    </an12>
     <instruments>
-      <file>Aircraft/Antonov-An-22/Nasal/setprop.nas</file>
+      <file>Aircraft/Antonov-An-22/Nasal/setprop.nas</file>      
     </instruments>
-  </nasal> 
+    <para>
+      <file>Aircraft/Antonov-An-22/Nasal/paratroopers.nas</file>
+    </para>
+    <help>
+      <file>Aircraft/Antonov-An-22/Nasal/km-5-1.nas</file>
+    </help>
+    <mapcase>
+      <file>Aircraft/Antonov-An-22/Nasal/mapcase.nas</file>
+    </mapcase>    
+  </nasal>
   
 </PropertyList>

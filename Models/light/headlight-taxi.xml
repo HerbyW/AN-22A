@@ -5,6 +5,16 @@
     #	2d & 3d instruments, animations, systems and over.		   	#
     #    	yurik.nsk@gmail.com					   	#
     #############################################################################	  
+
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
     -->
 
 <PropertyList>
@@ -29,9 +39,7 @@
    <object-name>lightcone-taxi</object-name> 
 </animation>
 
-
-  <!-- working for Rembrandt -->
- 
+  <!-- working for Rembrandt --> 
 
   <animation>
     <type>material</type>
@@ -43,8 +51,6 @@
       <blue>  0.25 </blue>
     </emission>
   </animation> 
- 
- 
  
 <!--Spot lights-->
 

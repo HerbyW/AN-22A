@@ -5,6 +5,17 @@
     #    	yurik@megasignal.com					   	#
     #############################################################################	  
     -->
+<!--
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
 <!-- Altimeter UVO-15 metric
 3D instrument for Tu-154 -->
 
@@ -37,11 +48,11 @@
   <object-name>dig_p_hund</object-name>
   <object-name>needle</object-name>  
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
-   </emission>
+    </emission>
   </animation>
 
  
@@ -49,7 +60,7 @@
 <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>position/altitude-ft</property>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.10973</factor>
     
     <axis>
@@ -64,7 +75,7 @@
   <type>rotate</type>
   <object-name>dig_a_dec</object-name>
   
-  <property>position/altitude-ft</property>
+  <property>instrumentation/altimeter/indicated-altitude-ft</property>
   <factor>1.0973</factor>
   <center>
     <x-m>-0.01866</x-m>
@@ -77,6 +88,7 @@
     <z>0.0</z>
   </axis>
 </animation>
+
 <animation>
   <type>rotate</type>
   <object-name>dig_a_hund</object-name>
@@ -85,7 +97,7 @@
     <table>
       <mod>
         <product>
-          <property>position/altitude-ft</property>
+          <property>instrumentation/altimeter/indicated-altitude-ft</property>
           <value>0.3048</value>
         </product>
         <value>1000</value>
@@ -133,7 +145,7 @@
     <table>
       <mod>
         <product>
-          <property>position/altitude-ft</property>
+          <property>instrumentation/altimeter/indicated-altitude-ft</property>
           <value>0.3048</value>
         </product>
         <value>10000</value>
@@ -181,7 +193,7 @@
     <table>
       <mod>
         <product>
-          <property>position/altitude-ft</property>
+          <property>instrumentation/altimeter/indicated-altitude-ft</property>
           <value>0.3048</value>
         </product>
         <value>100000</value>
@@ -269,7 +281,7 @@
       <entry><ind>	89</ind>	<dep>	288</dep></entry>
       <entry><ind>	90</ind>	<dep>	324</dep></entry>
       <entry><ind>	99</ind>	<dep>	324</dep></entry>
-      <entry><ind>	99.9</ind>	<dep>	359.9</dep></entry>
+      <entry><ind>	99.9999</ind>	<dep>	359.9</dep></entry>
     </table>
   </expression>
   <center>
@@ -337,13 +349,22 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>instrumentation/altimeter/mmhg</property>
-      <value>2992</value>
-      <factor>1</factor>
-      <min>2500</min>
-      <max>3400</max>
+      <property>/instrumentation/altimeter/setting-inhg</property>
+      <factor>0.01</factor>
+      <min>28.10</min>
+      <max>31.00</max>
     </binding>
   </action>
+  
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>mm-to-hPa</tooltip-id>      
+      <label>hPa: %6.2f</label>
+      <property>/instrumentation/altimeter/setting-hapa</property> 
+    </binding>
+  </hovered>
+  
 </animation>
 
 </PropertyList>

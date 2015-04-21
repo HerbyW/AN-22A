@@ -17,7 +17,8 @@
     <desc>Open/Close cargo doors</desc>
   </key>
   
-  <text>
+  <text>Wwelcome to Antonov-22 cargo airplane by HerbyW
+    
 	Some instruments will show you metric values, some ft.
 	
 	There is a green panel in the middle console, the right switch makes the lights on.
@@ -25,7 +26,7 @@
 	
 	You have a panel with 5 lamps in the middle, the lower 3 are for trim-neutralisation.
 	
-	The Key F2 is prepared for reverse, but unfortunatly it is not working (any help to get it working is wellcome).
+	
 	
 	The Autopilot Helper panel in the top middle console is fully working.You may use some instruments to put in the values -
 	- Heading Control: Heading Bug (HDG) and Course of ILS (NAV) are to set in the HSI (Horizontal Situation Indicator),
