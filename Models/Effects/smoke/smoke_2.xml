@@ -19,22 +19,28 @@
 		<texture>smoke.png</texture>
 		
 		<condition>
-			<or>
+		  <and>
+		           <greater-than>
+					<property>sim/multiplay/generic/float[5]</property>
+					<value>62</value>
+			   </greater-than>
+			  <or>
 				<greater-than>
-					<property>sim/multiplay/generic/float[8]</property>
+					<property>sim/multiplay/generic/float[9]</property>
 					<value>0.90</value>
 				</greater-than>
 				<and>
 					<greater-than>
-						<property>sim/multiplay/generic/float[8]</property>
+						<property>sim/multiplay/generic/float[9]</property>
 						<value>0.08</value>
 					</greater-than>
 					<less-than>
-						<property>sim/multiplay/generic/float[8]</property>
+						<property>sim/multiplay/generic/float[9]</property>
 						<value>0.25</value>
 					</less-than>
 				</and>
-			</or>
+			  </or>
+			</and>
 		</condition>
 		
 		<emissive>false</emissive>
