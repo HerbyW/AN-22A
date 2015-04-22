@@ -21,13 +21,13 @@
     
 	Some instruments will show you metric values, some ft.
 	
+	Please refer to the AN-12 for more informations.
+	
 	There is a green panel in the middle console, the right switch makes the lights on.
 	The middle switch is for nav-lights. The switch right from this panel is for landing and taxi lights.
 	
 	You have a panel with 5 lamps in the middle, the lower 3 are for trim-neutralisation.
-	
-	
-	
+		
 	The Autopilot Helper panel in the top middle console is fully working.You may use some instruments to put in the values -
 	- Heading Control: Heading Bug (HDG) and Course of ILS (NAV) are to set in the HSI (Horizontal Situation Indicator),
 	- Velocity Control: Speed with Throttle are set in the Speed Indicator, then push IAS
@@ -53,6 +53,8 @@
 	The compasses are cleared of the magnetic variation.
 	
 	You may set your payloads and fuel in the menue.
+	
+	The payload menue gives you a 3rd weight for up to 3 Bradle Tanks, roll out with not more than 120 kts, activated by pressing key "u"
 	
 	As it is a heavy aircraft it needs some special care about propper landing and starting routines :)
 	

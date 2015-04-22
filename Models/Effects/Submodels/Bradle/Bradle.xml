@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>Bradle.ac</path>
+  
+  <!--
+  
+Weight
+27.6  tonnes (30.4  short tons) 
+
+Length
+6.55 m 
+
+Width
+3.6 m 
+
+Height
+2.98 m 
+-->
+
+ <model>
+    <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Parachute.xml</path>
+    <offsets>
+      <x-m>   0.0 </x-m>
+      <y-m>   0.0 </y-m>
+      <z-m>   0.0 </z-m>
+      <pitch-deg>0.0</pitch-deg>
+      <heading-deg>0.0</heading-deg>
+      </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Parachute.xml</path>
+    <offsets>
+      <x-m>   0.0 </x-m>
+      <y-m>   0.0 </y-m>
+      <z-m>   0.0 </z-m>
+      <pitch-deg>35.0</pitch-deg>
+      <heading-deg>45.0</heading-deg>
+      </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Parachute.xml</path>
+    <offsets>
+      <x-m>   0.0 </x-m>
+      <y-m>   0.0 </y-m>
+      <z-m>   0.0 </z-m>
+      <pitch-deg>35.0</pitch-deg>
+      <heading-deg>-45.0</heading-deg>
+      </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Parachute.xml</path>
+    <offsets>
+      <x-m>   0.0 </x-m>
+      <y-m>   0.0 </y-m>
+      <z-m>   0.0 </z-m>
+      <pitch-deg>-35.0</pitch-deg>
+      <heading-deg>45.0</heading-deg>
+      </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Parachute.xml</path>
+    <offsets>
+      <x-m>   0.0 </x-m>
+      <y-m>   0.0 </y-m>
+      <z-m>   0.0 </z-m>
+      <pitch-deg>-35.0</pitch-deg>
+      <heading-deg>-45.0</heading-deg>
+      </offsets>
+  </model>
+
+</PropertyList>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<!--###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    ###################################################################################
+-->
+
+
+
+<PropertyList>
+
+<!-- Parachute -->
+
+	<path>Parachute.ac</path>
+
+	<offsets>
+		<x-m>0.0</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.0</z-m>
+		<pitch-deg>0</pitch-deg>
+	</offsets>
+
+	<animation>
+		<type>scale</type>
+		<x-offset>0.55</x-offset>
+                <y-offset>0.55</y-offset>
+                <z-offset>0.55</z-offset>                
+	</animation>
+
+	  
+  <!-- EXTRACT -->
+ <animation>
+  <type>translate</type>
+  
+  <property>sim/time/elapsed-sec</property>
+  <offset>5</offset>
+  <factor>1</factor>
+  <max-m>40</max-m>
+  <axis> 
+    <z>1</z>
+  </axis>
+ </animation>
+
+<!-- INFLATE -->
+ <animation>
+  <type>scale</type>
+  
+  <property>sim/time/elapsed-sec</property>
+  <offset>1</offset>
+  <x-max>2</x-max>
+  <y-max>2</y-max>
+  <z-max>2</z-max>
+  <x-factor>1</x-factor>
+  <y-factor>1</y-factor>
+  <z-factor>1</z-factor>
+ </animation>
+
+  
+	
+</PropertyList>

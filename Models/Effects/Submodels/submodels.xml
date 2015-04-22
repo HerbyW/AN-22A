@@ -59,6 +59,29 @@
     <life> 600 </life>
     <randomness>1.0</randomness>
   </submodel>
+  
+  <submodel> 
+    <name>Bradle</name>
+    <model>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Bradle.xml</model>
+    
+    <trigger>controls/bradle/trigger/state</trigger>
+    <speed> -120 </speed>
+    <repeat> true </repeat>
+    <delay> 5 </delay>
+    <count> 10 </count>
+    <x-offset> -35 </x-offset>
+    <y-offset>  0.0 </y-offset>
+    <z-offset> -16.5 </z-offset>
+    <yaw-offset> 0 </yaw-offset>
+    <pitch-offset> 35 </pitch-offset>
+    <cd> 5 </cd>
+    <eda> 100 </eda>
+    <weight> 60850 </weight>
+    <wind> true </wind>
+    <buoyancy> 25 </buoyancy>
+    <life> 600 </life>
+    <randomness>1.0</randomness>
+  </submodel>
 
 </PropertyList>
 

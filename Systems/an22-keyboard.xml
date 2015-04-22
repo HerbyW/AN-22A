@@ -2,6 +2,16 @@
 
 <PropertyList>
 
+  <key n="117"> 
+    <name>u</name>
+    <desc>Tank jump signal</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>controls/bradle/jump-signal</property>
+      <value>true</value>
+    </binding>
+  </key>
+
   <key n="68">
     <name>D</name>
     <desc>Right door</desc>

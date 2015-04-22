@@ -40,6 +40,10 @@
       <paratroopers type="int">0</paratroopers>
       <weight type="float">0</weight>
     </paratroopers>
+    <bradle>
+      <bradle type="int">0</bradle>
+      <weight type="float">0</weight>
+    </bradle>
     <switches>
       <fuel type="float">0</fuel>
       <gauge-light type="int">0</gauge-light>

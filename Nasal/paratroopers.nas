@@ -40,3 +40,32 @@ setlistener("controls/paratroopers/trigger/state", func(state){								# On éco
     }
   }
 });
+
+
+var jumper2 = aircraft.light.new("controls/bradle/trigger", [5,5], "controls/bradle/jump-signal");
+
+
+var listener_id2 = setlistener("sim/weight[3]/weight-lb" , func {setprop("controls/bradle/bradle", getprop("/sim/weight[3]/weight-lb") / 60850)},  0, 0);
+
+
+
+setlistener("controls/bradle/trigger/state", func(state){
+  if(state.getValue()){
+    if(getprop("sim/model/door-positions/cargo/position-norm") < 0.75){
+      jumper2.switch(0);
+      setprop("controls/bradle/trigger/state", 0);
+      setprop("sim/messages/copilot", "Cargo door is closed ! Bradle can not roll out!");
+    }else{
+      var nb_tank = getprop("controls/bradle/bradle") - 1;
+      setprop("controls/bradle/bradle", nb_tank);
+      var weight3 = getprop("/sim/weight[3]/weight-lb") - 60850;
+      setprop("/sim/weight[3]/weight-lb", weight3);
+      if(getprop("controls/bradle/bradle") > 0){
+        setprop("sim/messages/copilot", getprop("controls/bradle/bradle")~" Bradle Tank remaining");
+      }else{
+        jumper2.switch(0);
+        setprop("sim/messages/copilot", "There is no Bradle Tank inside");
+      }
+    }
+  }
+});

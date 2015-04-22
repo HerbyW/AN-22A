@@ -370,6 +370,7 @@ updated 02/2015 HerbyW -->
   <weight x="27.0" y="0" z="3.97" mass-prop="/sim/weight[0]/weight-lb"/>
   <weight x="10" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"/>
   <weight x="10" y="0" z="0" mass-prop="/sim/weight[2]/weight-lb"/>
+  <weight x="10" y="0" z="0" mass-prop="/sim/weight[3]/weight-lb"/>
   
   <!-- Thruster for Pushback action -->
   
