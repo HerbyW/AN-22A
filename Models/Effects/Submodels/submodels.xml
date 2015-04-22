@@ -22,12 +22,12 @@
     <speed> 0 </speed>
     <repeat> true </repeat>
     <delay> 0 </delay>
-    <count> 150 </count>
+    <count> 250 </count>
     <x-offset> -45 </x-offset>
     <y-offset>  3.3 </y-offset>
-    <z-offset> -8.5 </z-offset>
-    <yaw-offset> -7 </yaw-offset>
-    <pitch-offset> -5 </pitch-offset>
+    <z-offset> -15.5 </z-offset>
+    <yaw-offset> -10 </yaw-offset>
+    <pitch-offset> -45 </pitch-offset>
     <cd> 5 </cd>
     <eda> 100 </eda>
     <weight> 120 </weight>
@@ -48,9 +48,9 @@
     <count> 150 </count>
     <x-offset> -45 </x-offset>
     <y-offset>  -3.3 </y-offset>
-    <z-offset> -8.5 </z-offset>
-    <yaw-offset> 7 </yaw-offset>
-    <pitch-offset> -5 </pitch-offset>
+    <z-offset> -15.5 </z-offset>
+    <yaw-offset> 10 </yaw-offset>
+    <pitch-offset> -45 </pitch-offset>
     <cd> 5 </cd>
     <eda> 100 </eda>
     <weight> 120 </weight>

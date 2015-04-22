@@ -581,7 +581,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[0]/rpm</property>
-        <value> 20 </value>
+        <value> 5 </value>
       </greater-than>
     </condition>
     <property>engines/engine[0]/rpm</property>
@@ -653,7 +653,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[0]/rpm</property>
-        <value> 20 </value>
+        <value> 5 </value>
       </greater-than>
     </condition>
     <property>engines/engine[0]/rpm</property>
@@ -725,7 +725,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[1]/rpm</property>
-        <value> 20 </value>
+        <value> 5 </value>
       </greater-than>
     </condition>
     <property>engines/engine[1]/rpm</property>
@@ -797,7 +797,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[1]/rpm</property>
-        <value> 20 </value>
+        <value> 5 </value>
       </greater-than>
     </condition>
     <property>engines/engine[1]/rpm</property>
@@ -869,7 +869,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[2]/rpm</property>
-        <value> 20 </value>
+        <value> 5 </value>
       </greater-than>
     </condition>
     <property>engines/engine[2]/rpm</property>
@@ -941,7 +941,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[2]/rpm</property>
-        <value> 20 </value>
+        <value> 5 </value>
       </greater-than>
     </condition>
     <property>engines/engine[2]/rpm</property>
@@ -1013,7 +1013,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[3]/rpm</property>
-        <value> 20 </value>
+        <value> 5 </value>
       </greater-than>
     </condition>
     <property>engines/engine[3]/rpm</property>
@@ -1085,7 +1085,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[3]/rpm</property>
-        <value> 20 </value>
+        <value> 5 </value>
       </greater-than>
     </condition>
     <property>engines/engine[3]/rpm</property>
@@ -2288,6 +2288,58 @@
                         <z-m> -0.61716 </z-m>
 		</offsets>
 	</model>
+
+	        <!-- Chokes -->
+
+<model>
+	<name>choke_nose</name>
+	<path>Aircraft/Antonov-An-22/Models/Effects/ground/choke_nose.xml</path>
+	<condition>
+		<equals>
+			<property>sim/multiplay/generic/int[3]</property>
+			<value>1</value>
+		</equals>
+	</condition>
+	<offsets>
+	 <x-m> 4.37 </x-m>
+         <y-m> 0.0 </y-m>
+         <z-m> 2.35 </z-m>
+	</offsets>
+	
+</model>
+
+<model>
+	<name>choke_left</name>
+	<path>Aircraft/Antonov-An-22/Models/Effects/ground/choke_left.xml</path>
+	<condition>
+		<equals>
+			<property>sim/multiplay/generic/int[3]</property>
+			<value>1</value>
+		</equals>
+	</condition>
+	<offsets>
+	 <x-m> -15.6 </x-m>
+         <y-m> 3.7 </y-m>
+         <z-m> 2.39 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>choke_right</name>
+	<path>Aircraft/Antonov-An-22/Models/Effects/ground/choke_right.xml</path>
+	<condition>
+		<equals>
+			<property>sim/multiplay/generic/int[3]</property>
+			<value>1</value>
+		</equals>
+	</condition>
+	<offsets>
+	 <x-m> -15.6 </x-m>
+         <y-m> -3.7 </y-m>
+         <z-m> 2.39 </z-m>
+	</offsets>
+</model>
+
 
   
 </PropertyList>

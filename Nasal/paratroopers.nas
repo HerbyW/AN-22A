@@ -27,9 +27,9 @@ setlistener("controls/paratroopers/trigger/state", func(state){								# On éco
       setprop("controls/paratroopers/trigger/state", 0);
       setprop("sim/messages/copilot", "Paratroopers door is closed ! Paratroopers can't jump");				# On indique le problème
     }else{														# Sinon si la porte est ouverte
-      var nb_para = getprop("controls/paratroopers/paratroopers") - 1;							# On calcul combien il reste de parachutiste
+      var nb_para = getprop("controls/paratroopers/paratroopers") - 2;							# On calcul combien il reste de parachutiste
       setprop("controls/paratroopers/paratroopers", nb_para);								# On attribut le nombre de parachutiste à la propriété
-      var weight = getprop("/sim/weight[2]/weight-lb") - 120;							# On calcul le poids des parachutistes restant
+      var weight = getprop("/sim/weight[2]/weight-lb") - 240;							# On calcul le poids des parachutistes restant
       setprop("/sim/weight[2]/weight-lb", weight);									# On attribut le poids restant à la propriété
       if(getprop("controls/paratroopers/paratroopers") > 0){								# Si il reste encore des parachutistes
         setprop("sim/messages/copilot", getprop("controls/paratroopers/paratroopers")~" Paratroopers remaining");	# On indique le nombre de parachutistes restant  
