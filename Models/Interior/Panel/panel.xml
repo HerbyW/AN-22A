@@ -1951,14 +1951,20 @@ Lights</text>
   <text>
     <name>tank_load</name>
     <type type="string">literal</type>
-    <text type="string">Bradle Loading</text>
+    <text type="string">
+      Bradle
+      Loading
+      
+      
+      
+      Unloading</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.008</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
+    <max-height>0.07</max-height>
+    <max-width>0.06</max-width>
     <font-resolution>
       <width type="int">32</width>
       <height type="int">32</height>
@@ -1966,8 +1972,8 @@ Lights</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  26.475 </x-m>
-      <y-m> 2.92 </y-m>
-      <z-m>  -1.06 </z-m>
+      <y-m> 2.93 </y-m>
+      <z-m>  -1.077 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </text>

@@ -67,13 +67,13 @@
     <trigger>controls/bradle/trigger/state</trigger>
     <speed> -120 </speed>
     <repeat> true </repeat>
-    <delay> 5 </delay>
+    <delay> 1 </delay>
     <count> 10 </count>
-    <x-offset> -35 </x-offset>
+    <x-offset> -50 </x-offset>
     <y-offset>  0.0 </y-offset>
-    <z-offset> -16.5 </z-offset>
+    <z-offset> -43.5 </z-offset>
     <yaw-offset> 0 </yaw-offset>
-    <pitch-offset> 35 </pitch-offset>
+    <pitch-offset> 0 </pitch-offset>
     <cd> 5 </cd>
     <eda> 100 </eda>
     <weight> 60850 </weight>

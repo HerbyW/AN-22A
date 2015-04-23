@@ -55,10 +55,10 @@ setlistener("/controls/paratroopers/jump-signal", func(v) {
 #Bradle Tank roll out and jump
 #
 setlistener("/controls/bradle/jump-signal", func(v) {
-  if(v.getValue()){
-    interpolate("/controls/bradle/jump-signal-pos", 1, 25);
+ if(v.getValue()){
+    interpolate("/controls/bradle/jump-signal-pos", 1, 0.25);
   }else{
-    interpolate("/controls/bradle/jump-signal-pos", 0, 25);
+    interpolate("/controls/bradle/jump-signal-pos", 0, 0.25);
   }
 });
 

@@ -41,47 +41,67 @@ setlistener("controls/paratroopers/trigger/state", func(state){								# On éco
   }
 });
 
+
+var jumper2 = aircraft.light.new("controls/bradle/trigger", [5,5], "controls/bradle/jump-signal");
+
+
+var listener_id2 = setlistener("sim/weight[3]/weight-lb" , func {setprop("controls/bradle/bradle", getprop("/sim/weight[3]/weight-lb") / 60849)},  0, 0);
+
+
+
+setlistener("controls/bradle/trigger/state", func(state){
+  if(state.getValue()){
+    if(getprop("sim/model/door-positions/cargo/position-norm") < 0.75){
+      jumper2.switch(0);
+      setprop("controls/bradle/trigger/state", 0);
+      setprop("sim/messages/copilot", "Cargo door is closed ! Bradle can not roll out!");
+    }else{
+      var nb_tank = getprop("controls/bradle/bradle") - 1;
+      setprop("controls/bradle/bradle", nb_tank);
+      var weight3 = getprop("/sim/weight[3]/weight-lb") - 60850;
+      setprop("/sim/weight[3]/weight-lb", weight3);
+      if(getprop("controls/bradle/bradle") > 0){
+        setprop("sim/messages/copilot", getprop("controls/bradle/bradle")~" Bradle Tank remaining");
+      }else{
+        jumper2.switch(0);
+        setprop("sim/messages/copilot", "There is no Bradle Tank inside");
+      }
+    }
+  }
+});
+
+
+lEON
+
+
+
 var bradleWeight = 60850;
 
 var listener_id2 = setlistener("sim/weight[3]/weight-lb" , func {setprop("controls/bradle/bradle", getprop("/sim/weight[3]/weight-lb") / bradleWeight)}, 0, 0);
 
-var bradleTimerRunning = 0;
-var bradleTimer = func(){
-bradleTimerRunning = 1;
-var count = getprop("controls/bradle/bradle");
-var state = getprop("controls/bradle/trigger/state");
-if (count > 0){
+var bradleTimer = maketimer(5.0,func{
+
+var count = getprop("controls/bradle/bradle") - 1;
+setprop("controls/bradle/bradle", count);
+
 var weight = getprop("/sim/weight[3]/weight-lb") - bradleWeight;
+setprop("/sim/weight[3]/weight-lb", weight);
 
-# roll
-interpolate("/sim/weight[3]/weight-lb", weight, 9);
-setprop("sim/messages/copilot","Bradle Tank rolling");
-
-# jump
-settimer(func{
+if (count > 0 ){
+setprop("controls/bradle/trigger/state",0);
 setprop("controls/bradle/trigger/state",1);
-setprop("sim/messages/copilot","Bradle Tank out");
-},9);
-
-# prepair next
-settimer(func{
-setprop("controls/bradle/trigger/state",0);
-bradleTimer();
-},12);
-
 }else{
-setprop("controls/bradle/trigger/state",0);
 setprop("sim/messages/copilot", "There is no Bradle Tank inside");
-bradleTimerRunning = 0;
 }
-};
+
+});
 
 setlistener("controls/bradle/jump-signal", func(state){
 
 if (state.getValue()){
- if (state.getValue() == 1){
-bradleTimer();
-}
+bradleTimer.start();
+}else{
+bradleTimer.stop();
 }
 
 });

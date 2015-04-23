@@ -20,7 +20,7 @@
       <entry><ind> 42850 </ind><dep> -5.0 </dep></entry>
       <entry><ind> 23850 </ind><dep> -10.0 </dep></entry>
       <entry><ind> 11850 </ind><dep> -18.0 </dep></entry>
-      <entry><ind> 0 </ind><dep> -40.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> -50.0 </dep></entry>
     </interpolation>
     <axis>
       <x>-1 </x>
@@ -37,8 +37,8 @@
       <entry><ind> 60850 </ind><dep>  0.0 </dep></entry>
       <entry><ind> 48850 </ind><dep>  0.0 </dep></entry>
       <entry><ind> 12850 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 9000 </ind><dep>  0.4 </dep></entry>
-      <entry><ind> 4800 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 10000 </ind><dep>  0.4 </dep></entry>
+      <entry><ind> 6600 </ind><dep>  2.0 </dep></entry>
       <entry><ind> 0 </ind><dep>  2.0 </dep></entry>
     </interpolation>
     <axis>
