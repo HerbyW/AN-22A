@@ -78,7 +78,7 @@
     <eda> 100 </eda>
     <weight> 60850 </weight>
     <wind> true </wind>
-    <buoyancy> 25 </buoyancy>
+    <buoyancy> 29 </buoyancy>
     <life> 600 </life>
     <randomness>1.0</randomness>
   </submodel>

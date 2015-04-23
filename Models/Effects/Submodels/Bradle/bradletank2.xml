@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>Bradle.ac</path>
+    
+  <animation>
+    <name>bradletank2</name>    
+  </animation>
+  
+  
+  
+  <animation>
+    <type>translate</type>
+    <name>bradletank2</name>
+    <property>sim/multiplay/generic/float[16]</property>
+    <interpolation>
+      <entry><ind> 121700 </ind><dep> -0.0 </dep></entry>
+      <entry><ind> 109550 </ind><dep> -1.0 </dep></entry>
+      <entry><ind> 103550 </ind><dep> -5.0 </dep></entry>
+      <entry><ind> 84550 </ind><dep> -10.0 </dep></entry>
+      <entry><ind> 72850 </ind><dep> -18.0 </dep></entry>
+      <entry><ind> 60851 </ind><dep> -40.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>-1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+ <animation>
+    <type>translate</type>
+    <name>bradletank2</name>
+    <property>sim/multiplay/generic/float[16]</property>
+    <interpolation>
+      <entry><ind> 121700 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 109550 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 83550 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 79550 </ind><dep>  0.4 </dep></entry>
+      <entry><ind> 68000 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 60851 </ind><dep>  2.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z>-1 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

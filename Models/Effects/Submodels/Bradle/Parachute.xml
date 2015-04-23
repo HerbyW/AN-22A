@@ -37,7 +37,7 @@
   <property>sim/time/elapsed-sec</property>
   <offset>5</offset>
   <factor>1</factor>
-  <max-m>40</max-m>
+  <max-m>1</max-m>
   <axis> 
     <z>1</z>
   </axis>

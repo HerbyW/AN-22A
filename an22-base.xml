@@ -42,7 +42,7 @@
     </paratroopers>
     <bradle>
       <bradle type="int">0</bradle>
-      <weight type="float">0</weight>
+      <weight type="float">60850</weight>
     </bradle>
     <switches>
       <fuel type="float">0</fuel>
@@ -112,6 +112,7 @@
       <chat_display>1</chat_display>
       <generic> 
 	
+	<int type="int" n="2" alias="/controls/bradle/bradle">  0 </int>
 	<int type="int" n="3" alias="/controls/chokes/activ">  0 </int>
         <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>
 	<int type="int" n="5" alias="/controls/switches/gauge-light"/>
@@ -142,6 +143,7 @@
         <float n="13"  alias="/sim/model/door-positions/cargo/position-norm"/>
         <float n="14" alias="/orientation/pitch-deg"/>
         <float n="15" alias="/orientation/roll-deg"/>
+        <float n="16" alias="/sim/weight[3]/weight-lb"/>
         
         <string  alias="/sim/multiplay/callsign"/>
         <string n="9" type="string" />

@@ -52,6 +52,30 @@ setlistener("/controls/paratroopers/jump-signal", func(v) {
 ######################################################################################################################
 
 #
+#Bradle Tank roll out and jump
+#
+setlistener("/controls/bradle/jump-signal", func(v) {
+  if(v.getValue()){
+    interpolate("/controls/bradle/jump-signal-pos", 1, 25);
+  }else{
+    interpolate("/controls/bradle/jump-signal-pos", 0, 25);
+  }
+});
+
+#
+#Bradle Tank loading 3 tanks
+#
+setlistener("/controls/bradle/load-signal", func(v) {
+  if(v.getValue()){
+    interpolate("/sim/weight[3]/weight-lb", 182550, 25);
+  }else{
+    interpolate("/sim/weight[3]/weight-lb", 0, 25);
+  }
+});
+
+######################################################################################################################
+
+#
 # Air and Groundspeed selector for USVP-Instrument
 #
 setlistener("/controls/switches/usvp-selector-trans", func 
