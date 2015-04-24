@@ -144,6 +144,7 @@
         <float n="14" alias="/orientation/pitch-deg"/>
         <float n="15" alias="/orientation/roll-deg"/>
         <float n="16" alias="/sim/weight[3]/weight-lb"/>
+        <float n="17" alias="/ai/models/ballistic/sim/time/elapsed-sec"/>
         
         <string  alias="/sim/multiplay/callsign"/>
         <string n="9" type="string" />

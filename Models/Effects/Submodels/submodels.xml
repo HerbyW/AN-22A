@@ -79,7 +79,7 @@
     <weight> 60850 </weight>
     <wind> true </wind>
     <buoyancy> 29 </buoyancy>
-    <life> 600 </life>
+    <life> 180 </life>
     <randomness>1.0</randomness>
   </submodel>
 
