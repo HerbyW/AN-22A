@@ -7,7 +7,7 @@
 -->
 <PropertyList>
 	<particlesystem>
-		<name>paratrooper-smoke</name>
+		<name>paratrooper-smoke2</name>
 		<offsets>
 			<x-m>0</x-m>
 			<y-m>0</y-m>
@@ -19,23 +19,16 @@
 		<texture>paratrooper-trans.png</texture>
 		
 		<condition>
-		  
 		   
-		        <equals>
-					<property>controls/paratroopers/nosmoke</property>
-					<value></value>
-		        </equals>
-		   
-		 
 		  <and>
 		           
 		           <greater-than>
 					<property>sim/multiplay/generic/float[17]</property>
-					<value>1</value>
+					<value>2</value>
 			   </greater-than>
                            <less-than>
 					<property>sim/multiplay/generic/float[17]</property>
-					<value>100</value>
+					<value>105</value>
 			   </less-than>
 		   </and>
 		    
@@ -68,7 +61,7 @@
 		</shooter>
 		<counter>
 			<particles-per-sec>
-				<value>2</value>
+				<value>1</value>
 				<spread>1</spread>
 			</particles-per-sec>
 		</counter>

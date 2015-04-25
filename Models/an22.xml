@@ -2400,12 +2400,21 @@
 	</model>
 	
 <model>
-	<path>Aircraft/Antonov-An-22/Models/Effects/smoke/paratroopers-smoke.xml</path>
+	<path>Aircraft/Antonov-An-22/Models/Effects/smoke/paratroopers-smoke1.xml</path>
 		<offsets>
 			<x-m> 22 </x-m>
-                        <y-m> 0 </y-m>
+                        <y-m> -2.5 </y-m>
                         <z-m> -8 </z-m>
 		</offsets>
-	</model>	
+	</model>
+
+	<model>
+	<path>Aircraft/Antonov-An-22/Models/Effects/smoke/paratroopers-smoke2.xml</path>
+		<offsets>
+			<x-m> 32 </x-m>
+                        <y-m> 2.5 </y-m>
+                        <z-m> -8 </z-m>
+		</offsets>
+	</model>
   
 </PropertyList>
