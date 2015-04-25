@@ -39,10 +39,12 @@
     <paratroopers>
       <paratroopers type="int">0</paratroopers>
       <weight type="float">0</weight>
+      <nosmoke type="string">nosmoke</nosmoke>
     </paratroopers>
     <bradle>
       <bradle type="int">0</bradle>
       <weight type="float">60850</weight>
+      <nosmoke type="string">nosmoke</nosmoke>
     </bradle>
     <switches>
       <fuel type="float">0</fuel>
@@ -147,6 +149,7 @@
         <float n="17" alias="/ai/models/ballistic/sim/time/elapsed-sec"/>
         
         <string  alias="/sim/multiplay/callsign"/>
+        
         <string n="9" type="string" />
       </generic>
     </multiplay>

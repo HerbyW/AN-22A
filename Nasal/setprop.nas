@@ -44,6 +44,7 @@ timerDiff.start();
 setlistener("/controls/paratroopers/jump-signal", func(v) {
   if(v.getValue()){
     interpolate("/controls/paratroopers/jump-signal-pos", 1, 0.25);
+    
   }else{
     interpolate("/controls/paratroopers/jump-signal-pos", 0, 0.25);
   }
@@ -57,6 +58,7 @@ setlistener("/controls/paratroopers/jump-signal", func(v) {
 setlistener("/controls/bradle/jump-signal", func(v) {
  if(v.getValue()){
     interpolate("/controls/bradle/jump-signal-pos", 1, 0.25);
+    
   }else{
     interpolate("/controls/bradle/jump-signal-pos", 0, 0.25);
   }

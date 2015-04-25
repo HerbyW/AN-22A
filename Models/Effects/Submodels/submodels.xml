@@ -33,7 +33,7 @@
     <weight> 120 </weight>
     <wind> true </wind>
     <buoyancy> -150 </buoyancy>
-    <life> 600 </life>
+    <life> 120 </life>
     <randomness>1.0</randomness>
   </submodel>
   
@@ -56,7 +56,7 @@
     <weight> 120 </weight>
     <wind> true </wind>
     <buoyancy> -150 </buoyancy>
-    <life> 600 </life>
+    <life> 120 </life>
     <randomness>1.0</randomness>
   </submodel>
   
@@ -79,7 +79,7 @@
     <weight> 60850 </weight>
     <wind> true </wind>
     <buoyancy> 29 </buoyancy>
-    <life> 180 </life>
+    <life> 120 </life>
     <randomness>1.0</randomness>
   </submodel>
 

@@ -10,7 +10,7 @@
 
 
 ##########################################################
-#      DE L'HAMAIDE Clément for Douglas DC-3 C47         # modified by HerbyW 01/2015
+#      DE L'HAMAIDE Clément for Douglas DC-3 C47         # modified by HerbyW 01/2015 and D-LEON
 ##########################################################
 
 var jumper = aircraft.light.new("controls/paratroopers/trigger", [0.5,0.5], "controls/paratroopers/jump-signal");		# Création du signal qui larguera les parachutistes toutes les 3.5 secondes

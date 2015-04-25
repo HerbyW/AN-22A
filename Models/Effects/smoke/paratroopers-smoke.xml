@@ -7,7 +7,7 @@
 -->
 <PropertyList>
 	<particlesystem>
-		<name>bradle-smoke</name>
+		<name>paratrooper-smoke</name>
 		<offsets>
 			<x-m>0</x-m>
 			<y-m>0</y-m>
@@ -16,48 +16,29 @@
 			<pitch-deg>0</pitch-deg>
 			<heading-deg>0</heading-deg>
 		</offsets>
-		<texture>bradle-trans.png</texture>
+		<texture>paratrooper-trans.png</texture>
 		
 		<condition>
 		  
 		   
 		        <equals>
-					<property>controls/bradle/nosmoke</property>
+					<property>controls/paratroopers/nosmoke</property>
 					<value></value>
 		        </equals>
 		   
-		 <or>  
-		   <and>
+		 
+		  <and>
+		           
 		           <greater-than>
 					<property>sim/multiplay/generic/float[17]</property>
-					<value>2.2</value>
+					<value>1</value>
 			   </greater-than>
                            <less-than>
 					<property>sim/multiplay/generic/float[17]</property>
-					<value>3</value>
+					<value>100</value>
 			   </less-than>
-		    </and>
-		    <and>
-		           <greater-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>12.2</value>
-			   </greater-than>
-                           <less-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>13</value>
-			   </less-than>
-		    </and>
-		    <and>
-		           <greater-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>25.2</value>
-			   </greater-than>
-                           <less-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>26</value>
-			   </less-than>
-		    </and>
-		   </or>
+		   </and>
+		    
 		</condition>
 		
 		<emissive>false</emissive>
@@ -68,13 +49,13 @@
 			<type>point</type>
 		</placer>
 		<shooter>
-			<theta-min-deg>0</theta-min-deg>
-			<theta-max-deg>0</theta-max-deg>
-			<phi-min-deg>0</phi-min-deg>
-			<phi-max-deg> 0</phi-max-deg>
+			<theta-min-deg>-20</theta-min-deg>
+			<theta-max-deg>20</theta-max-deg>
+			<phi-min-deg>-20</phi-min-deg>
+			<phi-max-deg>20</phi-max-deg>
 			<speed-mps>
 				<value>-2</value>
-				<spread>1</spread>
+				<spread>10</spread>
 			</speed-mps>
 			<rotation-speed>
 				<x-min-deg-sec>0</x-min-deg-sec>
@@ -87,7 +68,7 @@
 		</shooter>
 		<counter>
 			<particles-per-sec>
-				<value>1</value>
+				<value>2</value>
 				<spread>1</spread>
 			</particles-per-sec>
 		</counter>
@@ -100,7 +81,7 @@
 					<alpha><value>1</value></alpha>
 				</color>
 				<size>
-					<value>20</value>
+					<value>3.4</value>
 				</size>
 			</start>
 			<end>
@@ -111,14 +92,14 @@
 					<alpha><value>1</value></alpha>
 				</color>
 				<size>
-					<value>20</value>
+					<value>3.4</value>
 				</size>
 			</end>
 			<life-sec>
 				<value>120</value>
 			</life-sec>
-			<mass-kg>49000</mass-kg>
-			<radius-m>17</radius-m>
+			<mass-kg>240</mass-kg>
+			<radius-m>1.95</radius-m>
 		</particle>
 		<program>
 			<fluid>air</fluid>
