@@ -19,19 +19,7 @@
 		<texture>paratrooper-trans.png</texture>
 		
 		<condition>
-		   
-		  <and>
-		           
-		           <greater-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>1</value>
-			   </greater-than>
-                           <less-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>105</value>
-			   </less-than>
-		   </and>
-		    
+		  <property>sim/multiplay/generic/int[1]</property>
 		</condition>
 		
 		<emissive>false</emissive>

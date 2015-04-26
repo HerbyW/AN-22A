@@ -114,6 +114,8 @@
       <chat_display>1</chat_display>
       <generic> 
 	
+	<int type="int" n="0" alias="/controls/bradle/trigger/state">  0 </int>
+	<int type="int" n="1" alias="/controls/paratroopers/jump-signal">  0 </int>
 	<int type="int" n="2" alias="/controls/bradle/bradle">  0 </int>
 	<int type="int" n="3" alias="/controls/chokes/activ">  0 </int>
         <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>

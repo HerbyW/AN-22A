@@ -19,45 +19,7 @@
 		<texture>bradle-trans.png</texture>
 		
 		<condition>
-		  
-		   
-		        <equals>
-					<property>controls/bradle/nosmoke</property>
-					<value></value>
-		        </equals>
-		   
-		 <or>  
-		   <and>
-		           <greater-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>2.2</value>
-			   </greater-than>
-                           <less-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>3</value>
-			   </less-than>
-		    </and>
-		    <and>
-		           <greater-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>12.2</value>
-			   </greater-than>
-                           <less-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>13</value>
-			   </less-than>
-		    </and>
-		    <and>
-		           <greater-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>25.2</value>
-			   </greater-than>
-                           <less-than>
-					<property>sim/multiplay/generic/float[17]</property>
-					<value>26</value>
-			   </less-than>
-		    </and>
-		   </or>
+		  <property>sim/multiplay/generic/int[0]</property>
 		</condition>
 		
 		<emissive>false</emissive>
@@ -87,7 +49,7 @@
 		</shooter>
 		<counter>
 			<particles-per-sec>
-				<value>1</value>
+				<value>0.5</value>
 				<spread>1</spread>
 			</particles-per-sec>
 		</counter>

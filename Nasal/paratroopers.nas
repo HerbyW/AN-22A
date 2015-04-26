@@ -67,7 +67,7 @@ setprop("sim/messages/copilot","Bradle Tank out");
 settimer(func{
 setprop("controls/bradle/trigger/state",0);
 bradleTimer();
-},12);
+},10.1);
 
 }else{
 setprop("controls/bradle/trigger/state",0);
