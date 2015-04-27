@@ -13,12 +13,15 @@
 -->
 
 <PropertyList>
+  
+ <!--  
+  
  <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/parachuter.ac</path>
  <offsets>
    <pitch-deg>90</pitch-deg>
- </offsets>
+ </offsets>-->
 
-<!-- EXTRACT -->
+<!-- EXTRACT 
  <animation>
   <type>translate</type>
   <object-name>parachute</object-name>
@@ -29,9 +32,9 @@
   <axis> 
     <z>1</z>
   </axis>
- </animation>
+ </animation>-->
 
-<!-- INFLATE -->
+<!-- INFLATE 
  <animation>
   <type>scale</type>
   <object-name>parachute</object-name>
@@ -44,11 +47,8 @@
   <y-factor>15</y-factor>
   <z-factor>1</z-factor>
  </animation>
-
+-->
 
 </PropertyList>
 
 
-<!--
-sim/time/elapsed-sec
--->

@@ -14,7 +14,7 @@
 
 <PropertyList>
 
-  <submodel> 
+ <!--  <submodel> 
     <name>parachutist1</name>
     <model>Aircraft/Antonov-An-22/Models/Effects/Submodels/parachuter.xml</model>
     
@@ -35,9 +35,9 @@
     <buoyancy> -150 </buoyancy>
     <life> 120 </life>
     <randomness>1.0</randomness>
-  </submodel>
+  </submodel>                  -->
   
-  <submodel> 
+ <!--  <submodel> 
     <name>parachutist2</name>
     <model>Aircraft/Antonov-An-22/Models/Effects/Submodels/parachuter.xml</model>
     
@@ -58,9 +58,9 @@
     <buoyancy> -150 </buoyancy>
     <life> 120 </life>
     <randomness>1.0</randomness>
-  </submodel>
+  </submodel>                  -->
   
-  <submodel> 
+  <!-- <submodel> 
     <name>Bradle</name>
     <model>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Bradle.xml</model>
     
@@ -81,10 +81,6 @@
     <buoyancy> 29 </buoyancy>
     <life> 120 </life>
     <randomness>1.0</randomness>
-  </submodel>
+    </submodel>                     -->
 
 </PropertyList>
-
-<!--
-controls/paratroopers/trigger/state
--->
