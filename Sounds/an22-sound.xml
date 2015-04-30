@@ -168,7 +168,7 @@
           <property>/gear/gear[0]/wow</property>
       </condition>
       <volume>
-        <property>sim/multiplay/generic/float[13]</property>
+        <property>sim/multiplay/generic/float[12]</property>
         <type>log</type>
         <factor>0.25</factor>
 	<min>0.0</min>
@@ -189,7 +189,7 @@
         </or>
       </condition>
       <volume>
-        <property>sim/multiplay/generic/float[13]</property>
+        <property>sim/multiplay/generic/float[12]</property>
         <type>log</type>
         <factor>0.25</factor>
 	<min>0.0</min>

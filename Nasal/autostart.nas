@@ -38,19 +38,19 @@ setlistener("/controls/autostart", func
         setprop("/consumables/fuel/tank[3]/selected", 1);
         
 	interpolate("controls/engines/engine[0]/throttle", 0.1, 17);
-	interpolate("controls/engines/engine[1]/throttle", 0.1, 34);
-	interpolate("controls/engines/engine[2]/throttle", 0.1, 51);
-	interpolate("controls/engines/engine[3]/throttle", 0.1, 68);
+	interpolate("controls/engines/engine[3]/throttle", 0.1, 34);
+	interpolate("controls/engines/engine[1]/throttle", 0.1, 51);
+	interpolate("controls/engines/engine[2]/throttle", 0.1, 68);
 	
 	interpolate("controls/engines/engine[0]/condition", 1, 1);
-	interpolate("controls/engines/engine[1]/condition", 1, 17);
-	interpolate("controls/engines/engine[2]/condition", 1, 34);
-	interpolate("controls/engines/engine[3]/condition", 1, 51);
+	interpolate("controls/engines/engine[3]/condition", 1, 17);
+	interpolate("controls/engines/engine[1]/condition", 1, 34);
+	interpolate("controls/engines/engine[2]/condition", 1, 51);
 	
 	interpolate("/engines/engine[0]/running", 1, 1);
-	interpolate("/engines/engine[1]/running", 1, 17);
-	interpolate("/engines/engine[2]/running", 1, 34);
-	interpolate("/engines/engine[3]/running", 1, 51);
+	interpolate("/engines/engine[3]/running", 1, 17);
+	interpolate("/engines/engine[1]/running", 1, 34);
+	interpolate("/engines/engine[2]/running", 1, 51);
 	
 	setprop("sim/messages/copilot", "Engines 1-4 starting up, wait 70 seconds till idle position");
       }  
