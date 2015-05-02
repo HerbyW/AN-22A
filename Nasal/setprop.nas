@@ -383,49 +383,64 @@ setprop("/controls/engines/engine[3]/throttle-v", 0);
  }
 );
 
-# /engines/engine[0]/running
-# /controls/switches/fuel
-# /controls/engines/engine[0]/condition
-#
-#
-#
-#   initialisieren:
-#
-#  var flaginfo = props.globals.initNode("/controls/flag-info",0,"INT");
-#
-#  DOUBLE oder BOOL
+#############################################################################################################
+# Lake of Constance Hangar :: M.Kraus
+# April 2013
+# This file is licenced under the terms of the GNU General Public Licence V2 or later
+# ============================================
+# The analog watch for the flightgear - rallye 
+# ============================================
+var sw = "/instrumentation/stopwatch/";
 
-#var AP_VS_neutral = func() {interpolate( getprop("/autopilot/settings/vertical-speed-fpm"), 0.0 , 5 );
-#}
-#setprop("/autopilot/internal/vert-speed-fpm", "AP_VS_neutral")
-#;
 
-# <command>nasal</command>
-# 		  instruments.AP_VS_neutral();
+#============================== only stopwatch actions ================================
+var sw_start_stop = func {
+  var running = props.globals.getNode(sw~"running");
 
-# instruments
+  if(!running.getBoolValue()){
+    # start
+    setprop(sw~"flight-time/start-time", getprop("/sim/time/elapsed-sec"));
+    running.setBoolValue(1);
+    sw_loop();
+  }else{
+    # stop
+    var accu = getprop(sw~"flight-time/accu");
+    accu += getprop("/sim/time/elapsed-sec") - getprop(sw~"flight-time/start-time");
+    setprop(sw~"running",0);
+    setprop(sw~"flight-time/accu", accu);
+    sw_show(accu);
+  }
+}
 
-# /autopilot/locks/altitude
+var sw_reset = func {
+  var running = props.globals.getNode(sw~"running");
+  setprop(sw~"flight-time/accu", 0);
 
-# <command>property-assign</command>
-#		  <property>/autopilot/settings/target-altitude-ft</property>
-#		  <property>/position/altitude-ft</property>
+  if(running.getBoolValue()){
+    setprop(sw~"flight-time/start-time", getprop("/sim/time/elapsed-sec"));
+  }else{
+    sw_show(0);
+  }
+}
 
-# <command>property-assign</command>
-#              <property>/autopilot/settings/vertical-speed-fpm</property>
-#	      <property>/autopilot/internal/vert-speed-fpm</property>
-#	      
+var sw_loop = func {
+  var running = props.globals.getNode(sw~"running");
+  if(running.getBoolValue()){
+    sw_show(getprop("/sim/time/elapsed-sec") - getprop(sw~"flight-time/start-time") + getprop(sw~"flight-time/accu"));
+    settimer(sw_loop, 0.04);
+  }
+}
 
-# <action>
-#            <button>0</button>
-#            <binding>
-#              <command>property-assign</command>
-#              <property>/autopilot/locks/altitude</property>
-#              <value type="string">vertical-speed-hold</value>
-#            </binding>
-#	    <binding>
-#              <command>property-assign</command>
-#              <property>/autopilot/settings/vertical-speed-fpm</property>
-#	      <property>/autopilot/internal/vert-speed-fpm</property>
-#            </binding>
-#        </action>
+var sw_show = func(s) {
+  var hours = s / 3600;
+  var minutes = int(math.mod(s / 60, 60));
+  var seconds = int(math.mod(s, 60));
+
+  setprop(sw~"flight-time/total",s);
+  setprop(sw~"flight-time/hours",hours);
+  setprop(sw~"flight-time/minutes",minutes);
+  setprop(sw~"flight-time/seconds",seconds);
+}
+
+#############################################################################################################
+
