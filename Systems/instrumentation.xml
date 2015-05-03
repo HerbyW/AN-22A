@@ -128,4 +128,9 @@ The only reason it's here is to specify a second ADF.
 		  <kt70-compatibility type="bool">0</kt70-compatibility>
 		</transponder>
 
+  <comm-radio>
+   <name>comm</name>
+   <number>0</number>
+  </comm-radio>
+
 </PropertyList>
