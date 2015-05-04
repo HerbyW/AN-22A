@@ -1963,6 +1963,7 @@
   </animation>
   
     <!-- Lighting effects -->
+   
     <!-- Beacon: red-orange at top and bottom of fuselage -->
   <model>
     <path>Aircraft/Antonov-An-22/Models/light/beacon.xml</path>

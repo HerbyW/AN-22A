@@ -364,8 +364,9 @@ updated 02/2015 HerbyW -->
   <tank x="3" y="-10.36101" z="-0.661" capacity="24000"/>
   <tank x="3" y=" 13.36101" z="0.1" capacity="24000"/>
   <tank x="3" y="-13.36101" z="0.1" capacity="24000"/>
-  <!-- Mass distribution -->
-  <ballast x="42" y="0" z="-4" mass="60000"/>
+  <!-- Mass distribution CG: 9.67, 0.000, -1.040-->
+  <ballast x="-3.5" y="0" z="-2.27" mass="13000"/>
+  <ballast x="25.65" y="0" z="-2.26" mass="97000"/>
   
   <weight x="27.0" y="0" z="3.97" mass-prop="/sim/weight[0]/weight-lb"/>
   <weight x="10" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"/>
