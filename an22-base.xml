@@ -79,11 +79,11 @@
       <fuel-fraction>0.6</fuel-fraction>
       
       <startup>
-	<splash-texture>Aircraft/Antonov-An-22/an22-splashN.png</splash-texture>
+	<splash-texture>Aircraft/Antonov-An-22/AN-22A-splash.png</splash-texture>
       </startup>
       
       <model>      
-	<path>Aircraft/Antonov-An-22/Models/an22.xml</path>
+	<path>Aircraft/Antonov-An-22/Models/AN-22A.xml</path>
 	<livery>
 	  <file type="string">default</file>
 	</livery>
