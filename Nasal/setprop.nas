@@ -343,7 +343,7 @@ oilPressTimer.start();
 
 setprop("sim/messages/copilot", "Hello");
 setprop("sim/messages/copilot", getprop("sim/multiplay/generic/string[0]"));
-setprop("sim/messages/copilot", "Have fun with the heavy cargo airplane Antonov-22");
+setprop("sim/messages/copilot", "Have fun with the heavy cargo airplane Antonov-22A");
 setprop("sim/messages/copilot", "For Autostart hit the s key!");
 
 
@@ -359,9 +359,9 @@ if
 (  getprop("/controls/reverser") == 0) 
 {
 setprop("/controls/engines/engine[0]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
-setprop("/controls/engines/engine[1]/throttle-v", getprop("/controls/engines/engine[1]/throttle"));
-setprop("/controls/engines/engine[2]/throttle-v", getprop("/controls/engines/engine[2]/throttle"));
-setprop("/controls/engines/engine[3]/throttle-v", getprop("/controls/engines/engine[3]/throttle"));
+setprop("/controls/engines/engine[1]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
+setprop("/controls/engines/engine[2]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
+setprop("/controls/engines/engine[3]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
 
 setprop("/controls/engines/engine[0]/throttle-r", 0);
 setprop("/controls/engines/engine[1]/throttle-r", 0);
@@ -371,9 +371,9 @@ setprop("/controls/engines/engine[3]/throttle-r", 0);
 else
 {  
 setprop("/controls/engines/engine[0]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
-setprop("/controls/engines/engine[1]/throttle-r", getprop("/controls/engines/engine[1]/throttle"));
-setprop("/controls/engines/engine[2]/throttle-r", getprop("/controls/engines/engine[2]/throttle"));
-setprop("/controls/engines/engine[3]/throttle-r", getprop("/controls/engines/engine[3]/throttle"));
+setprop("/controls/engines/engine[1]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
+setprop("/controls/engines/engine[2]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
+setprop("/controls/engines/engine[3]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
 
 setprop("/controls/engines/engine[0]/throttle-v", 0);
 setprop("/controls/engines/engine[1]/throttle-v", 0);
