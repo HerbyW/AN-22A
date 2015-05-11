@@ -20,7 +20,7 @@ Height
 -->
 
  <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Parachute.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/Parachute.xml</path>
     <offsets>
       <x-m>   0.0 </x-m>
       <y-m>   0.0 </y-m>
@@ -31,7 +31,7 @@ Height
   </model>
 
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Parachute.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/Parachute.xml</path>
     <offsets>
       <x-m>   0.0 </x-m>
       <y-m>   0.0 </y-m>
@@ -42,7 +42,7 @@ Height
   </model>
   
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Parachute.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/Parachute.xml</path>
     <offsets>
       <x-m>   0.0 </x-m>
       <y-m>   0.0 </y-m>
@@ -53,7 +53,7 @@ Height
   </model>
   
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Parachute.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/Parachute.xml</path>
     <offsets>
       <x-m>   0.0 </x-m>
       <y-m>   0.0 </y-m>
@@ -64,7 +64,7 @@ Height
   </model>
   
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/Parachute.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/Parachute.xml</path>
     <offsets>
       <x-m>   0.0 </x-m>
       <y-m>   0.0 </y-m>

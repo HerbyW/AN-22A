@@ -8,7 +8,7 @@
 
   <nasal>
     <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/Antonov-An-22/Models/Liveries", 10);
+      var livery_update = aircraft.livery_update.new("Aircraft/AN-22A/Models/Liveries", 10);
 
       var self = cmdarg();
 
@@ -30,7 +30,7 @@
   </nasal>
   
   <sound>
-       <path>Aircraft/Antonov-An-22/Sounds/an22-sound.xml</path>
+       <path>Aircraft/AN-22A/Sounds/an22-sound.xml</path>
  </sound>
  
 <!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->
@@ -48,7 +48,7 @@
 <animation>
 <type>shader</type>
 <shader>chrome</shader>
-    <texture>Aircraft/Antonov-An-22/Models/glass_shader.png</texture>    
+    <texture>Aircraft/AN-22A/Models/glass_shader.png</texture>    
     <object-name>vitres</object-name>
 </animation>
 
@@ -401,7 +401,7 @@
  
   <!-- Une ombre pour OSG -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/shadow.xml</path>
+    <path>Aircraft/AN-22A/Models/shadow.xml</path>
     <offsets>
       <x-m>  0.0 </x-m>
       <y-m>  0.0 </y-m>
@@ -411,13 +411,13 @@
    
   <!-- Interieur -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Interior/interior.xml</path>
+    <path>Aircraft/AN-22A/Models/Interior/interior.xml</path>
   </model>
   
   <!-- OSG particles -->
   <!-- Left exterior -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/trail/trail1.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/trail/trail1.xml</path>
     <offsets>
       <x-m>  -4.31956 </x-m>
       <y-m> -13.45214 </y-m>
@@ -427,7 +427,7 @@
   
   <!-- Left interio -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/trail/trail2.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/trail/trail2.xml</path>
     <offsets>
       <x-m> -5.00545 </x-m>
       <y-m> -6.87900 </y-m>
@@ -437,7 +437,7 @@
   
   <!-- Right interior -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/trail/trail3.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/trail/trail3.xml</path>
     <offsets>
       <x-m> -5.00545 </x-m>
       <y-m>  6.87900 </y-m>
@@ -447,7 +447,7 @@
   
   <!-- Right exterior -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/trail/trail4.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/trail/trail4.xml</path>
     <offsets>
       <x-m> -4.31956 </x-m>
       <y-m> 13.45214 </y-m>
@@ -458,7 +458,7 @@
   <!-- Effets sur le sol -->
   <!-- Roue avant -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/ground/ground0.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/ground/ground0.xml</path>
     <offsets>
       <x-m> -20.40663 </x-m>
       <y-m>   0.00000 </y-m>
@@ -468,7 +468,7 @@
   
   <!-- Roue gauche 1 -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/ground/ground1.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/ground/ground1.xml</path>
     <offsets>
       <x-m> -5.83364 </x-m>
       <y-m> -3.28059 </y-m>
@@ -478,7 +478,7 @@
   
   <!-- Roue gauche 2 -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/ground/ground2.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/ground/ground2.xml</path>
     <offsets>
       <x-m> -3.30963 </x-m>
       <y-m> -3.28059 </y-m>
@@ -488,7 +488,7 @@
   
   <!-- Roue gauche 3 -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/ground/ground3.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/ground/ground3.xml</path>
     <offsets>
       <x-m> -0.84250 </x-m>
       <y-m> -3.28059 </y-m>
@@ -498,7 +498,7 @@
   
   <!-- Roue droite 1 -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/ground/ground4.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/ground/ground4.xml</path>
     <offsets>
       <x-m> -5.83364 </x-m>
       <y-m>  3.28059 </y-m>
@@ -508,7 +508,7 @@
   
   <!-- Roue droite 2 -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/ground/ground5.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/ground/ground5.xml</path>
     <offsets>
       <x-m> -3.30963 </x-m>
       <y-m>  3.28059 </y-m>
@@ -518,7 +518,7 @@
   
   <!-- Roue droite 3 -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Effects/ground/ground6.xml</path>
+    <path>Aircraft/AN-22A/Models/Effects/ground/ground6.xml</path>
     <offsets>
       <x-m> -0.84250 </x-m>
       <y-m>  3.28059 </y-m>
@@ -1966,7 +1966,7 @@
    
     <!-- Beacon: red-orange at top and bottom of fuselage -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/light/beacon.xml</path>
+    <path>Aircraft/AN-22A/Models/light/beacon.xml</path>
     <offsets>
       <x-m> -5.99 </x-m>
       <y-m>  0.00000 </y-m>
@@ -1974,7 +1974,7 @@
     </offsets>
   </model>
   <model>
-    <path>Aircraft/Antonov-An-22/Models/light/beacon.xml</path>
+    <path>Aircraft/AN-22A/Models/light/beacon.xml</path>
     <offsets>
       <x-m> -5.99 </x-m>
       <y-m>  0.00000 </y-m>
@@ -1984,7 +1984,7 @@
   
   <!-- VavLights: green-right, red-left -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/light/RedLight.xml</path>
+    <path>Aircraft/AN-22A/Models/light/RedLight.xml</path>
     <offsets>
       <x-m> -3.60 </x-m>
       <y-m>-32.25 </y-m>
@@ -1992,7 +1992,7 @@
     </offsets>
   </model>  
   <model>
-    <path>Aircraft/Antonov-An-22/Models/light/GreenLight.xml</path>
+    <path>Aircraft/AN-22A/Models/light/GreenLight.xml</path>
     <offsets>
       <x-m> -3.60 </x-m>
       <y-m> 32.25 </y-m>
@@ -2002,7 +2002,7 @@
 
   <!-- PositionLights: white-steady NAV-lights: 2 on tail, 2 on middle wings, 1 at nose-->
    <model>
-    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
+    <path>Aircraft/AN-22A/Models/light/WhiteLight.xml</path>
      <offsets>
       <x-m> 23.60 </x-m>
       <y-m>  9.90 </y-m>
@@ -2011,7 +2011,7 @@
    </model>
    
    <model>
-    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
+    <path>Aircraft/AN-22A/Models/light/WhiteLight.xml</path>
      <offsets>
       <x-m> 23.60 </x-m>
       <y-m> -9.90 </y-m>
@@ -2020,7 +2020,7 @@
    </model>
     
    <model>
-    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>    
+    <path>Aircraft/AN-22A/Models/light/WhiteLight.xml</path>    
      <offsets>
       <x-m> -5.6 </x-m>
       <y-m> 20.9 </y-m>
@@ -2029,7 +2029,7 @@
    </model>
    
    <model>
-    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>    
+    <path>Aircraft/AN-22A/Models/light/WhiteLight.xml</path>    
      <offsets>
       <x-m> -5.6 </x-m>
       <y-m>-20.9 </y-m>
@@ -2038,7 +2038,7 @@
    </model>
           
    <model>
-    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>    
+    <path>Aircraft/AN-22A/Models/light/WhiteLight.xml</path>    
      <offsets>
       <x-m>-26.45 </x-m>
       <y-m>  0.0 </y-m>
@@ -2049,7 +2049,7 @@
   
   <!-- StrobeLights: white-pulse, left-right wings and ruder-->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/light/StrobeLight.xml</path>
+    <path>Aircraft/AN-22A/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> -3.35 </x-m>
       <y-m> 32.25 </y-m>
@@ -2058,7 +2058,7 @@
   </model>
   
   <model>
-    <path>Aircraft/Antonov-An-22/Models/light/StrobeLight.xml</path>
+    <path>Aircraft/AN-22A/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> -3.35 </x-m>
       <y-m>-32.25 </y-m>
@@ -2067,7 +2067,7 @@
   </model>
   
   <model>
-    <path>Aircraft/Antonov-An-22/Models/light/StrobeLight.xml</path>
+    <path>Aircraft/AN-22A/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> 25.20 </x-m>
       <y-m>-6.95 </y-m>
@@ -2076,7 +2076,7 @@
   </model>
   
   <model>
-    <path>Aircraft/Antonov-An-22/Models/light/StrobeLight.xml</path>
+    <path>Aircraft/AN-22A/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> 25.20 </x-m>
       <y-m> 6.95 </y-m>
@@ -2088,7 +2088,7 @@
    
   <!-- Lighting Landing without Rembrand-->
  <model>
-  <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
+  <path>Aircraft/AN-22A/Models/light/WhiteLight.xml</path>
    <condition>
     
       <or>
@@ -2105,7 +2105,7 @@
  </model> 
     
  <model>
-    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
+    <path>Aircraft/AN-22A/Models/light/WhiteLight.xml</path>
     <condition>
     
       <or>
@@ -2122,7 +2122,7 @@
  </model>
  
  <model>  
-    <path>Aircraft/Antonov-An-22/Models/light/WhiteLight.xml</path>
+    <path>Aircraft/AN-22A/Models/light/WhiteLight.xml</path>
     
       <condition>
        <and>
@@ -2143,7 +2143,7 @@
   
   <!-- Lighting Landing 154 beginn, External lights for Rembrand-->
  <model>
-  <path>Aircraft/Antonov-An-22/Models/light/headlight-landing.xml</path>
+  <path>Aircraft/AN-22A/Models/light/headlight-landing.xml</path>
   <name>headlight_c</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -2157,7 +2157,7 @@
  </model>
  
  <model>
-  <path>Aircraft/Antonov-An-22/Models/light/headlight-landing.xml</path>
+  <path>Aircraft/AN-22A/Models/light/headlight-landing.xml</path>
   <name>headlight_l</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -2171,7 +2171,7 @@
  </model>
  
  <model>
-  <path>Aircraft/Antonov-An-22/Models/light/headlight-landing.xml</path>
+  <path>Aircraft/AN-22A/Models/light/headlight-landing.xml</path>
   <name>headlight_r</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -2185,7 +2185,7 @@
  </model>
  
  <model>
-  <path>Aircraft/Antonov-An-22/Models/light/headlight-taxi.xml</path>
+  <path>Aircraft/AN-22A/Models/light/headlight-taxi.xml</path>
   <name>taxilight_c</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -2199,7 +2199,7 @@
  </model>
  
  <model>
-  <path>Aircraft/Antonov-An-22/Models/light/headlight-taxi.xml</path>
+  <path>Aircraft/AN-22A/Models/light/headlight-taxi.xml</path>
   <name>taxilight_l</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -2213,7 +2213,7 @@
  </model>
  
  <model>
-  <path>Aircraft/Antonov-An-22/Models/light/headlight-taxi.xml</path>
+  <path>Aircraft/AN-22A/Models/light/headlight-taxi.xml</path>
   <name>taxilight_r</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -2229,7 +2229,7 @@
   
   <!-- Lighting Landing without Rembrand -->
   <model>
-  <path>Aircraft/Antonov-An-22/Models/light/light-cone-707.xml</path>
+  <path>Aircraft/AN-22A/Models/light/light-cone-707.xml</path>
   <name>taxilight_r</name>
   <offsets>
    <x-m> -8.0 </x-m>
@@ -2239,7 +2239,7 @@
   </offsets>
  </model>
  <model>
-  <path>Aircraft/Antonov-An-22/Models/light/light-cone-taxi-707.xml</path>
+  <path>Aircraft/AN-22A/Models/light/light-cone-taxi-707.xml</path>
   <name>taxilight_r</name>
   <offsets>
    <x-m> -8.0 </x-m>
@@ -2254,7 +2254,7 @@
   <!-- smoke -->
   
         <model>
-		<path>Aircraft/Antonov-An-22/Models/Effects/smoke/smoke_1.xml</path>
+		<path>Aircraft/AN-22A/Models/Effects/smoke/smoke_1.xml</path>
 		<offsets>
 			<x-m>  -4.31956 </x-m>
                         <y-m> -13.45214 </y-m>
@@ -2263,7 +2263,7 @@
 	</model>
 	
 	<model>
-		<path>Aircraft/Antonov-An-22/Models/Effects/smoke/smoke_2.xml</path>
+		<path>Aircraft/AN-22A/Models/Effects/smoke/smoke_2.xml</path>
 		<offsets>
 			<x-m> -5.00545 </x-m>
                         <y-m> -6.87900 </y-m>
@@ -2272,7 +2272,7 @@
 	</model>
 	
 	<model>
-		<path>Aircraft/Antonov-An-22/Models/Effects/smoke/smoke_3.xml</path>
+		<path>Aircraft/AN-22A/Models/Effects/smoke/smoke_3.xml</path>
 		<offsets>
 			<x-m> -5.00545 </x-m>
                         <y-m>  6.87900 </y-m>
@@ -2282,7 +2282,7 @@
 	
 	
 	<model>
-		<path>Aircraft/Antonov-An-22/Models/Effects/smoke/smoke_4.xml</path>
+		<path>Aircraft/AN-22A/Models/Effects/smoke/smoke_4.xml</path>
 		<offsets>
 			<x-m> -4.31956 </x-m>
                         <y-m> 13.45214 </y-m>
@@ -2294,7 +2294,7 @@
 
 <model>
 	<name>choke_nose</name>
-	<path>Aircraft/Antonov-An-22/Models/Effects/ground/choke_nose.xml</path>
+	<path>Aircraft/AN-22A/Models/Effects/ground/choke_nose.xml</path>
 	<condition>
 		<equals>
 			<property>sim/multiplay/generic/int[3]</property>
@@ -2311,7 +2311,7 @@
 
 <model>
 	<name>choke_left</name>
-	<path>Aircraft/Antonov-An-22/Models/Effects/ground/choke_left.xml</path>
+	<path>Aircraft/AN-22A/Models/Effects/ground/choke_left.xml</path>
 	<condition>
 		<equals>
 			<property>sim/multiplay/generic/int[3]</property>
@@ -2327,7 +2327,7 @@
 
 <model>
 	<name>choke_right</name>
-	<path>Aircraft/Antonov-An-22/Models/Effects/ground/choke_right.xml</path>
+	<path>Aircraft/AN-22A/Models/Effects/ground/choke_right.xml</path>
 	<condition>
 		<equals>
 			<property>sim/multiplay/generic/int[3]</property>
@@ -2345,7 +2345,7 @@
 
 <model>
 	<name>bradletank1</name>
-	<path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/bradletank1.xml</path>
+	<path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank1.xml</path>
 	<condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[16]</property>
@@ -2361,7 +2361,7 @@
 
 <model>
 	<name>bradletank2</name>
-	<path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/bradletank2.xml</path>
+	<path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank2.xml</path>
 	<condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[16]</property>
@@ -2377,7 +2377,7 @@
 
 <model>
 	<name>bradletank3</name>
-	<path>Aircraft/Antonov-An-22/Models/Effects/Submodels/Bradle/bradletank3.xml</path>
+	<path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank3.xml</path>
 	<condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[16]</property>
@@ -2392,7 +2392,7 @@
 </model>
 
 <model>
-	<path>Aircraft/Antonov-An-22/Models/Effects/smoke/bradle-smoke.xml</path>
+	<path>Aircraft/AN-22A/Models/Effects/smoke/bradle-smoke.xml</path>
 		<offsets>
 			<x-m> 35 </x-m>
                         <y-m> 0 </y-m>
@@ -2401,7 +2401,7 @@
 	</model>
 	
 <model>
-	<path>Aircraft/Antonov-An-22/Models/Effects/smoke/paratroopers-smoke1.xml</path>
+	<path>Aircraft/AN-22A/Models/Effects/smoke/paratroopers-smoke1.xml</path>
 		<offsets>
 			<x-m> 22 </x-m>
                         <y-m> -2.5 </y-m>
@@ -2410,7 +2410,7 @@
 	</model>
 
 	<model>
-	<path>Aircraft/Antonov-An-22/Models/Effects/smoke/paratroopers-smoke2.xml</path>
+	<path>Aircraft/AN-22A/Models/Effects/smoke/paratroopers-smoke2.xml</path>
 		<offsets>
 			<x-m> 32 </x-m>
                         <y-m> 2.5 </y-m>

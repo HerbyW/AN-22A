@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<PropertyList include="an22-base.xml">
+<PropertyList include="AN-22A-base.xml">
   
   <!-- generic autopilot settings changed HerbyW 10 Jan 2015-->
 
   <sim>
 
-    <description>Antonov An 22 (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instruments, Animations, FDM)</author>
+    <description>Antonov AN-22A (YASim)</description>
+    <author>HerbyW (Instruments, Animations, FDM), BARANGER Emmanuel (orig 3D/FDM)</author>
     <flight-model>yasim</flight-model>
-    <aero>an22-yasim</aero>
+    <aero>AN-22A-yasim</aero>
     
     <weight n="0">
         	    <name>Crew</name>
@@ -51,7 +51,7 @@
    <systems>
           <autopilot>
 	    <name>Autopilot</name>
-               <path>Nasal/An-22-autopilot.xml</path>
+               <path>Nasal/AN-22A-autopilot.xml</path>
          </autopilot>
    </systems>
    

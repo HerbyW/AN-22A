@@ -10,7 +10,7 @@
 
   <!-- working for Rembrandt -->
  <effect>
-    <inherits-from>Aircraft/Antonov-An-22/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/AN-22A/Models/Effects/Glass/glass</inherits-from>
     <object-name>intvitres</object-name>
     <condition>
       <property>sim/rendering/rembrandt/enabled</property>
@@ -36,7 +36,7 @@
 
   <!-- Planche de bord -->
   <model>
-    <path>Aircraft/Antonov-An-22/Models/Interior/Panel/panel.xml</path>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/panel.xml</path>
     <offsets>
       <x-m> -25.20 </x-m>
       <y-m>   0.0000 </y-m>

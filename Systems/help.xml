@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <title>Antonov An 22</title>
+  <title>Antonov AN-22A</title>
   
   <key>
     <name>d</name>
@@ -17,7 +17,7 @@
     <desc>Open/Close cargo doors</desc>
   </key>
   
-  <text>Wwelcome to Antonov-22 cargo airplane by HerbyW
+  <text>Welcome to Antonov-22A heavy cargo airplane by HerbyW
     
 	Some instruments will show you metric values, some ft.
 	

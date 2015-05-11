@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--Changes in various files for learning and understanding from HerbyW, Dec 2014- Feb 2015 -->
+<!--
+
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment
+    Eagel: Liveries
+    ###################################################################################
+-->
 
 <PropertyList>
   
@@ -65,12 +76,12 @@
     
     <sim include="Systems/views.xml">
       
-      <description>Antonov An 22 (YASim)</description>
-      <author>BARANGER Emmanuel (3D/FDM), Instrumentation-Animation-FDM HerbyW Jan2015</author>
+      <description>Antonov AN-22A (YASim)</description>
+      <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, BARANGER E.(3D/FDM-orig)</author>
       <aircraft-version>0.3</aircraft-version>
       <status>advanced production</status>
       <rating>
-	<FDM type="int">4</FDM>
+	<FDM type="int">5</FDM>
 	<systems type="int">4</systems>
 	<cockpit type="int">4</cockpit>
 	<model type="int">5</model>
@@ -79,11 +90,11 @@
       <fuel-fraction>0.6</fuel-fraction>
       
       <startup>
-	<splash-texture>Aircraft/Antonov-An-22/AN-22A-splash.png</splash-texture>
+	<splash-texture>Aircraft/AN-22A/AN-22A-splash.png</splash-texture>
       </startup>
       
       <model>      
-	<path>Aircraft/Antonov-An-22/Models/AN-22A.xml</path>
+	<path>Aircraft/AN-22A/Models/AN-22A.xml</path>
 	<livery>
 	  <file type="string">default</file>
 	</livery>
@@ -93,21 +104,21 @@
       
       <submodels>
       <serviceable type="bool">true</serviceable>
-      <path>Aircraft/Antonov-An-22/Models/weapons/release.xml</path>
+      <path>Aircraft/AN-22A/Models/weapons/release.xml</path>
       </submodels>                                                            -->
       
       <sound>
-	<path>Aircraft/Antonov-An-22/Sounds/an22-sound.xml</path>
+	<path>Aircraft/AN-22A/Sounds/AN-22A-sound.xml</path>
       </sound>
       
       <instrumentation>
-	<path>Aircraft/Antonov-An-22/Systems/instrumentation.xml</path>
+	<path>Aircraft/AN-22A/Systems/instrumentation.xml</path>
       </instrumentation>
       
       
       <submodels>
 	<serviceable type="bool">true</serviceable>
-	<path>Aircraft/Antonov-An-22/Models/Effects/Submodels/submodels.xml</path>
+	<path>Aircraft/AN-22A/Models/Effects/Submodels/submodels.xml</path>
       </submodels>
       
       <multiplay>
@@ -166,7 +177,7 @@
 	
 	<help include="Systems/help.xml"/>
 	
-	<menubar include="Dialogs/an22-menu.xml"/>
+	<menubar include="Dialogs/AN-22A-menu.xml"/>
 	
 	</sim>  
 	
@@ -313,29 +324,29 @@
 	  </instrumentation>
 	  
 	  <input>
-	    <keyboard include="Systems/an22-keyboard.xml"/>
+	    <keyboard include="Systems/AN-22A-keyboard.xml"/>
 	    </input>
 	    
 	    <nasal>
 	      <doors>
-		<file>Aircraft/Antonov-An-22/Nasal/doors.nas</file>
+		<file>Aircraft/AN-22A/Nasal/doors.nas</file>
 	      </doors>
 	      <an12>
-		<file>Aircraft/Antonov-An-22/Nasal/liveries.nas</file>
-		<file>Aircraft/Antonov-An-22/Nasal/light.nas</file>
-		<file>Aircraft/Antonov-An-22/Nasal/autostart.nas</file>
+		<file>Aircraft/AN-22A/Nasal/liveries.nas</file>
+		<file>Aircraft/AN-22A/Nasal/light.nas</file>
+		<file>Aircraft/AN-22A/Nasal/autostart.nas</file>
 	      </an12>
 	      <instruments>
-		<file>Aircraft/Antonov-An-22/Nasal/setprop.nas</file>      
+		<file>Aircraft/AN-22A/Nasal/setprop.nas</file>      
 	      </instruments>
 	      <para>
-		<file>Aircraft/Antonov-An-22/Nasal/paratroopers.nas</file>
+		<file>Aircraft/AN-22A/Nasal/paratroopers.nas</file>
 	      </para>
 	      <help>
-		<file>Aircraft/Antonov-An-22/Nasal/km-5-1.nas</file>
+		<file>Aircraft/AN-22A/Nasal/km-5-1.nas</file>
 	      </help>
 	      <mapcase>
-		<file>Aircraft/Antonov-An-22/Nasal/mapcase.nas</file>
+		<file>Aircraft/AN-22A/Nasal/mapcase.nas</file>
 	      </mapcase>    
 	    </nasal>
 	    
