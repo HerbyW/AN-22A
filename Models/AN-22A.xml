@@ -30,7 +30,7 @@
   </nasal>
   
   <sound>
-       <path>Aircraft/AN-22A/Sounds/an22-sound.xml</path>
+       <path>Aircraft/AN-22A/Sounds/AN-22A-sound.xml</path>
  </sound>
  
 <!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->
