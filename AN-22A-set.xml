@@ -2,7 +2,16 @@
 
 <PropertyList include="AN-22A-base.xml">
   
-  <!-- generic autopilot settings changed HerbyW 10 Jan 2015-->
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment
+    Eagel: Liveries
+    ###################################################################################
+-->
 
   <sim>
 

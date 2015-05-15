@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment
+    Eagel: Liveries
+    ###################################################################################
+-->
 <!--Sources              : http://en.wikipedia.org/wiki/Antonov_An-22
 
-     Wingspan             :  64.40 m   (   211 ft  4     in )
+     Wingspan             :  64.40 m   (       211 ft  4 in )
      Lenght               :  57.90 m   (   189 ft 11 1/2 in )
      Height               :  12.53 m   (    41 ft  1 1/2 in )
-     Empty weight         :  114000 kg (   251325 lb        )
+     Empty weight         :  114000 kg (          251325 lb )
      Engines              : 4 x Kuznetsov NK-12MA turboprops driving contra-rotating propellers ( 15000 shp each )
-     Max speed            : 740 km/h   (   399 kt      )
+     Payload              :  80,000 kg (          176,350 lb)     
+     Maximum speed        :  740 km/h    (399 knots, 460 mph)
+     Range: 5,000 km (2,700 nmi, 3,100 mi) with maximum payload,
+           10,950 km (5,905 nmi, 6,800 mi) with maximum fuel and 45,000 kg (99,200 lb) payload
+
      
 11 Jan 2015: changes in the yasim flight model from ph-cor, thanks!
-updated 02/2015 HerbyW -->
+updated 05/2015 HerbyW 
+
+An-22A
+    Verbesserte Serienversion mit eigenem Triebwerksstartsystem, um auch im Flug Triebwerke neu starten zu können,
+    modifiziertem elektrischen System und verbesserter Funk- und Navigationausrüstung. 28 Stück in Taschkent gebaut.
+    Flugreichweite: 	ca. 5.000 km (bei maximaler Zuladung)
+    Startrollstrecke: 	1.460 m
+    Landerollstrecke: 	1.080 m
+An-22A
+    Improved variant with air-start capability, modified electrical system,
+    and updated radio and navigation equipment, 28 built at Tashkent.
+-->
 
 <airplane mass="251625" version="YASIM_VERSION_CURRENT">
 

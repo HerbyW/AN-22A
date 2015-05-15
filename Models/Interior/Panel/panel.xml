@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--
-
     ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
     Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
-    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Firefly: 3D model improvment
     Eagel: Liveries
     ###################################################################################
-
 
      Panel and Interior redesign from "firefly" Dec/Jan 2014
      Fotos from https://www.flickr.com/photos/raf_yyc/ added for visualisation of work to do, all rights belong to raf_yyc
@@ -31,11 +29,10 @@
     <object-name>overhead</object-name>
     
     <!-- Objets transparents -->
-  </animation>  
+  </animation> 
   
-
-  
-  <!-- Warning Indicator: fuel-low and over-speed,over-loading, Decision-Height, Parking Chokes, Marker (outer, middle, inner) -->
+    <!-- Warning Indicator: Reverser (yellow),fuel-low, over-speed, over-loading,
+         Decision-Height, Parking Chokes, Marker (outer, middle, inner) -->
   
   <model>
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/warning/warning88.xml</path>
@@ -126,6 +123,8 @@
       <z-m>  0.197 </z-m>
     </offsets>
   </model>
+  
+  <!-- Volume Control: Marker, Instruments, Cabin -->
   
   <model>
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/volume/volume.xml</path>
@@ -384,9 +383,7 @@
       <y-m>  0.737 </y-m>
       <z-m> -0.017 </z-m>
     </offsets>
-  </model>
-    
-  
+  </model>  
 
   <!-- DME40, VOR-DME and DME distance information in mi, kt and min -->
   
@@ -565,7 +562,6 @@
       <z-m> -0.089 </z-m>
     </offsets>
   </model>
-
 
   <!-- Fuel Control: Knob (activates the fuel system)
                      Total Fuel Sum below 10 t for all tanks combined
@@ -1160,9 +1156,7 @@
       <z-m> -0.173 </z-m>
       <heading-deg>90.0</heading-deg>
     </offsets>
-  </model>
-    
-  
+  </model>  
  
    <!-- Fuel Control Ingineer Panel: Knob, activating the fuel system 
                      Total Fuel Sum below 10 t for all tanks combined
@@ -1844,162 +1838,21 @@ Lights</text>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
     </emission>
-  </animation>
+  </animation>  
   
-
-    
-  <!-- rear panel -->
-  
-  <!-- TNV-15, OUtside Temperatur Indicator -->
+  <!--Map case from TU-154B-->
   
   <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
+    <name>MapCase</name>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/mapcase/mapcase.xml</path>
     <offsets>
-      <x-m>  26.475 </x-m>
-      <y-m> 2.84 </y-m>
-      <z-m>  -1.135 </z-m>
-      <heading-deg>180.0</heading-deg>
+      <x-m>  -0.545 </x-m>
+      <y-m> 0.13 </y-m>
+      <z-m>  -0.55 </z-m>      
     </offsets>
   </model>
   
-  <!-- Paratroopers Switch-->
- 
- <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/switch/parachute_signal.xml</path>
-    <offsets>
-      <x-m>  26.475 </x-m>
-      <y-m> 2.84 </y-m>
-      <z-m>  -1.06 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>  
-  
-  <text>
-    <name>parachute_signal</name>
-    <type type="string">literal</type>
-    <text type="string">Parachut Signal</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  26.475 </x-m>
-      <y-m> 2.84 </y-m>
-      <z-m>  -1.08 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </text>
-  
-    <!-- Bradle Tank Signal Switch-->
- 
- <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/switch/tank_signal.xml</path>
-    <offsets>
-      <x-m>  26.475 </x-m>
-      <y-m> 2.88 </y-m>
-      <z-m>  -1.08 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>  
-  
-  <text>
-    <name>tank_signal</name>
-    <type type="string">literal</type>
-    <text type="string">Bradle Signal</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  26.475 </x-m>
-      <y-m> 2.88 </y-m>
-      <z-m>  -1.06 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </text>
-  
-  <animation>
-    <type>material</type>    
-    <object-name>tank_signal</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-  
-      <!-- Bradle Tank Load Switch-->
- 
- <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/switch/tank_load.xml</path>
-    <offsets>
-      <x-m>  26.475 </x-m>
-      <y-m> 2.92 </y-m>
-      <z-m>  -1.08 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>  
-  
-  <text>
-    <name>tank_load</name>
-    <type type="string">literal</type>
-    <text type="string">
-      Bradle
-      Loading
-      
-      
-      
-      Unloading</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.07</max-height>
-    <max-width>0.06</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  26.475 </x-m>
-      <y-m> 2.93 </y-m>
-      <z-m>  -1.077 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </text>
-  
-  <animation>
-    <type>material</type>    
-    <object-name>tank_load</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
- 
-  
-  <!--Parachuter/Cargo Signal Lamps -->
+    <!--Parachuter/Cargo Signal Lamps -->
 
 <model>
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-green.xml</path>
@@ -2030,75 +1883,20 @@ Lights</text>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
-
-  
-   <!--Variometer, For Cabine and Outside pressure control--> 
-  
-  <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/uvpd/uvpd.xml</path>
+    
+    <!-- Ramp Control Panel (red box at ramp)-->
+    
+    <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ramppanel/ramppanel.xml</path>
     <offsets>
-      <x-m>  26.475 </x-m>
-      <y-m> 2.785 </y-m>
-      <z-m>  -1.06 </z-m>
-      <heading-deg>180.0</heading-deg>
+      <x-m>  26.70 </x-m>
+      <y-m> 2.86</y-m>
+      <z-m> -1.0 </z-m>
+      <heading-deg>85.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
     </offsets>
   </model>
   
-  <!-- IAS/groundspeed indicator USVP -->
-  
-  <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/usvp/usvp.xml</path>
-    <offsets>
-      <x-m>  26.475 </x-m>
-      <y-m> 2.7 </y-m>
-      <z-m>  -1.06 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
-  
-  
-  <!-- Air- and Groundspeed Indicator in km/h -->
-  
-  <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/speed_ind/speed_ind.xml</path>
-    <offsets>
-      <x-m>  26.475 </x-m>
-      <y-m> 2.615 </y-m>
-      <z-m>  -1.06 </z-m>
-      <heading-deg>0.0</heading-deg>
-    </offsets>
-  </model>
-  
-
-  
-      <!-- UVO, Altimeter Electric -->
-  
-  <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/uvo/uvo.xml</path>
-    <offsets>
-      <x-m>  26.475 </x-m>
-      <y-m> 2.545 </y-m>
-      <z-m>  -1.12 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
- 
-
-  
-  <!--Map case from TU-154B-->
-
-        <!-- Mapcase -->
-  
-  <model>
-    <name>MapCase</name>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/mapcase/mapcase.xml</path>
-    <offsets>
-      <x-m>  -0.545 </x-m>
-      <y-m> 0.13 </y-m>
-      <z-m>  -0.55 </z-m>      
-    </offsets>
-  </model>
-
     <!-- Overhead Panel -->
   
    <!-- Switches block 3 -->

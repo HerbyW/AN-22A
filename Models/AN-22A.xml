@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--Lights added, HerbyW-->
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment
+    Eagel: Liveries
+    ###################################################################################
+-->
 
 <PropertyList>
   
@@ -2344,78 +2353,158 @@
 <!--Bradle tank in payload cabin-->
 
 <model>
-	<name>bradletank1</name>
-	<path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank1.xml</path>
-	<condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>0</value>
-		</greater-than>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
+  <name>bradletank1</name>
+  <path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank1.xml</path>
+  <condition>
+    <greater-than>
+      <property>sim/multiplay/generic/float[16]</property>
+      <value>1</value>
+    </greater-than>
+  </condition>
+  <offsets>
+    <x-m> -17 </x-m>
+    <y-m> 0.0 </y-m>
+    <z-m> -3.9 </z-m>
+  </offsets>
 </model>
 
 <model>
-	<name>bradletank2</name>
-	<path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank2.xml</path>
-	<condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>60850</value>
-		</greater-than>
-	</condition>
-	<offsets>
-	 <x-m> -10 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
+  <name>bradletank2</name>
+  <path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank2.xml</path>
+  <condition>
+    <greater-than>
+      <property>sim/multiplay/generic/float[16]</property>
+      <value>60850</value>
+    </greater-than>
+  </condition>
+  <offsets>
+    <x-m> -10 </x-m>
+    <y-m> 0.0 </y-m>
+    <z-m> -3.9 </z-m>
+  </offsets>
 </model>
 
 <model>
-	<name>bradletank3</name>
-	<path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank3.xml</path>
-	<condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>121700</value>
-		</greater-than>
-	</condition>
-	<offsets>
-	 <x-m> -3 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
+  <name>bradletank3</name>
+  <path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank3.xml</path>
+  <condition>
+    <greater-than>
+      <property>sim/multiplay/generic/float[16]</property>
+      <value>121700</value>
+    </greater-than>
+  </condition>
+  <offsets>
+    <x-m> -3 </x-m>
+    <y-m> 0.0 </y-m>
+    <z-m> -3.9 </z-m>
+  </offsets>
+</model>
+
+<!--loading and unloading with standing on ground -->
+
+<model>
+  <name>bradletank1b</name>
+  <path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank1b.xml</path>
+  <condition>
+    <and>
+      <greater-than>
+	<property>sim/multiplay/generic/float[16]</property>
+	<value>0</value>
+      </greater-than>
+      <less-than>
+	<property>sim/multiplay/generic/float[12]</property>
+	<value>0.2</value>
+      </less-than>
+      <equals>
+	<property>sim/multiplay/generic/int[16]</property>
+	<value>1</value>
+      </equals>
+    </and>
+  </condition>
+  <offsets>
+    <x-m> -17 </x-m>
+    <y-m> 0.0 </y-m>
+    <z-m> -3.9 </z-m>
+  </offsets>
 </model>
 
 <model>
-	<path>Aircraft/AN-22A/Models/Effects/smoke/bradle-smoke.xml</path>
-		<offsets>
-			<x-m> 35 </x-m>
-                        <y-m> 0 </y-m>
-                        <z-m> -12 </z-m>
-		</offsets>
-	</model>
-	
-<model>
-	<path>Aircraft/AN-22A/Models/Effects/smoke/paratroopers-smoke1.xml</path>
-		<offsets>
-			<x-m> 22 </x-m>
-                        <y-m> -2.5 </y-m>
-                        <z-m> -8 </z-m>
-		</offsets>
-	</model>
+  <name>bradletank2b</name>
+  <path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank2b.xml</path>
+  <condition>
+    <and>
+      <greater-than>
+	<property>sim/multiplay/generic/float[16]</property>
+	<value>0</value>
+      </greater-than>
+      <less-than>
+	<property>sim/multiplay/generic/float[12]</property>
+	<value>0.2</value>
+      </less-than>
+      <equals>
+	<property>sim/multiplay/generic/int[16]</property>
+	<value>1</value>
+      </equals>
+    </and>
+  </condition>
+  <offsets>
+    <x-m> -10 </x-m>
+    <y-m> 0.0 </y-m>
+    <z-m> -3.9 </z-m>
+  </offsets>
+</model>
 
-	<model>
-	<path>Aircraft/AN-22A/Models/Effects/smoke/paratroopers-smoke2.xml</path>
-		<offsets>
-			<x-m> 32 </x-m>
-                        <y-m> 2.5 </y-m>
-                        <z-m> -8 </z-m>
-		</offsets>
-	</model>
-  
+<model>
+  <name>bradletank3b</name>
+  <path>Aircraft/AN-22A/Models/Effects/Submodels/Bradle/bradletank3b.xml</path>
+  <condition>
+    <and>
+      <greater-than>
+	<property>sim/multiplay/generic/float[16]</property>
+	<value>0</value>
+      </greater-than>
+      <less-than>
+	<property>sim/multiplay/generic/float[12]</property>
+	<value>0.2</value>
+      </less-than>
+      <equals>
+	<property>sim/multiplay/generic/int[16]</property>
+	<value>1</value>
+      </equals>
+    </and>
+  </condition>
+  <offsets>
+    <x-m> -3 </x-m>
+    <y-m> 0.0 </y-m>
+    <z-m> -3.9 </z-m>
+  </offsets>
+</model>
+
+<model>
+  <path>Aircraft/AN-22A/Models/Effects/smoke/bradle-smoke.xml</path>
+  <offsets>
+    <x-m> 35 </x-m>
+    <y-m> 0 </y-m>
+    <z-m> -12 </z-m>
+  </offsets>
+</model>
+
+<model>
+  <path>Aircraft/AN-22A/Models/Effects/smoke/paratroopers-smoke1.xml</path>
+  <offsets>
+    <x-m> 22 </x-m>
+    <y-m> -2.5 </y-m>
+    <z-m> -8 </z-m>
+  </offsets>
+</model>
+
+<model>
+  <path>Aircraft/AN-22A/Models/Effects/smoke/paratroopers-smoke2.xml</path>
+  <offsets>
+    <x-m> 32 </x-m>
+    <y-m> 2.5 </y-m>
+    <z-m> -8 </z-m>
+  </offsets>
+</model>
+
 </PropertyList>

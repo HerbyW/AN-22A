@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment
+    Eagel: Liveries
+    ###################################################################################
+-->
 <PropertyList>
 
   <chase-distance-m type="double" archive="y"> -80 </chase-distance-m>
@@ -45,7 +54,7 @@
       <from-model type="bool">true</from-model>
       <from-model-idx type="int">0</from-model-idx>
       <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-      <x-offset-m archive="y">   2.76 </x-offset-m> <!-- Right -->
+      <x-offset-m archive="y">   2.23 </x-offset-m> <!-- Right -->
       <y-offset-m archive="y">  -1.94 </y-offset-m> <!-- Up    -->
       <z-offset-m archive="y"> 0.26 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg> -5 </pitch-offset-deg>

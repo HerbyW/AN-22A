@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment
+    Eagel: Liveries
+    ###################################################################################
+-->
 <PropertyList>
 
   <title>Antonov AN-22A</title>
-  
+  <key>
+    <name>s</name>
+    <desc>Autostart</desc>
+  </key>
   <key>
     <name>d</name>
     <desc>Open/Close left door</desc>
@@ -16,7 +28,22 @@
     <name>E</name>
     <desc>Open/Close cargo doors</desc>
   </key>
-  
+  <key>
+    <name>=</name>
+    <desc>Parachutist</desc>
+  </key>
+  <key>
+    <name>Delete</name>
+    <desc>Reverser on/off</desc>
+  </key>
+  <key>
+    <name>&lt;</name>
+    <desc>Change Pilot Engineer View</desc>
+  </key>
+  <key>
+    <name>y</name>
+    <desc>Change Pilot Ramp View</desc>
+  </key>
   <text>Welcome to Antonov-22A heavy cargo airplane by HerbyW
     
 	Some instruments will show you metric values, some ft.

@@ -14,22 +14,23 @@
   <path>Bradle.ac</path>
     
   <animation>
-    <name>bradletank1</name>    
+    <name>bradletank3b</name>    
   </animation>
   
   
   
   <animation>
     <type>translate</type>
-    <name>bradletank1</name>
+    <name>bradletank3b</name>
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
-      <entry><ind> 60850 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 48850 </ind><dep> -1.0 </dep></entry>
-      <entry><ind> 42850 </ind><dep> -5.0 </dep></entry>
-      <entry><ind> 23850 </ind><dep> -10.0 </dep></entry>
-      <entry><ind> 11850 </ind><dep> -18.0 </dep></entry>
-      <entry><ind> 1 </ind><dep> -50.0 </dep></entry>
+      <entry><ind> 182550 </ind><dep> -0.0 </dep></entry>
+      <entry><ind> 170000 </ind><dep> -1.0 </dep></entry>
+      <entry><ind> 164000 </ind><dep> -5.0 </dep></entry>
+      <entry><ind> 145000 </ind><dep> -10.0 </dep></entry>
+      <entry><ind> 132000 </ind><dep> -18.0 </dep></entry>
+      <entry><ind> 121701 </ind><dep> -36.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> -70.0 </dep></entry>
     </interpolation>
     <axis>
       <x>-1 </x>
@@ -40,15 +41,16 @@
 
  <animation>
     <type>translate</type>
-    <name>bradletank1</name>
+    <name>bradletank3b</name>
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
-      <entry><ind> 60850 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 48850 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 12850 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 10000 </ind><dep>  0.4 </dep></entry>
-      <entry><ind> 6600 </ind><dep>  2.0 </dep></entry>
-      <entry><ind> 1 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 182550 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 170000 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 164000 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 145000 </ind><dep>  0.4 </dep></entry>
+      <entry><ind> 132000 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 121701 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 0 </ind><dep>  2.0 </dep></entry>
     </interpolation>
     <axis>
       <x> 0 </x>
@@ -58,3 +60,5 @@
   </animation>
   
 </PropertyList>
+
+

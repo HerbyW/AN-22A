@@ -1,9 +1,13 @@
 <?xml version="1.0"?>
-<!--###################################################################################
-		Lake of Constance Hangar :: M.Kraus
-		Boeing 707 for Flightgear Septemper 2013
-		This file is licenced under the terms of the GNU General Public Licence V2 or later
-		###################################################################################
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment
+    Eagel: Liveries
+    ###################################################################################
 -->
 <PropertyList>
 	<particlesystem>

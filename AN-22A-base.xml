@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--
-
-
     ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
     Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
@@ -141,6 +139,8 @@
 	  <int type="int" n="13" alias="/engines/engine[1]/running">  0 </int>
 	  <int type="int" n="14" alias="/engines/engine[2]/running">  0 </int>
 	  <int type="int" n="15" alias="/engines/engine[3]/running">  0 </int>
+	  <int type="int" n="16" alias="/gear/gear[0]/wow">  1 </int>
+	  <int type="int" n="17" alias="/sim/signals/fdm-initialized" />
 	  
 	  <float n="0"  alias="/sim/model/door-positions/crewL/position-norm"/>
 	  <float n="1"  alias="/sim/model/door-positions/crewR/position-norm"/>

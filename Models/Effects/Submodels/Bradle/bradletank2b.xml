@@ -14,22 +14,23 @@
   <path>Bradle.ac</path>
     
   <animation>
-    <name>bradletank1</name>    
+    <name>bradletank2b</name>    
   </animation>
   
   
   
   <animation>
     <type>translate</type>
-    <name>bradletank1</name>
+    <name>bradletank2b</name>
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
-      <entry><ind> 60850 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 48850 </ind><dep> -1.0 </dep></entry>
-      <entry><ind> 42850 </ind><dep> -5.0 </dep></entry>
-      <entry><ind> 23850 </ind><dep> -10.0 </dep></entry>
-      <entry><ind> 11850 </ind><dep> -18.0 </dep></entry>
-      <entry><ind> 1 </ind><dep> -50.0 </dep></entry>
+      <entry><ind> 121700 </ind><dep> -0.0 </dep></entry>
+      <entry><ind> 109550 </ind><dep> -1.0 </dep></entry>
+      <entry><ind> 103550 </ind><dep> -5.0 </dep></entry>
+      <entry><ind> 84550 </ind><dep> -10.0 </dep></entry>
+      <entry><ind> 72850 </ind><dep> -18.0 </dep></entry>
+      <entry><ind> 60851 </ind><dep> -43.0 </dep></entry>
+      <entry><ind> 0 </ind><dep> -60.0 </dep></entry>
     </interpolation>
     <axis>
       <x>-1 </x>
@@ -40,15 +41,16 @@
 
  <animation>
     <type>translate</type>
-    <name>bradletank1</name>
+    <name>bradletank2b</name>
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
-      <entry><ind> 60850 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 48850 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 12850 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 10000 </ind><dep>  0.4 </dep></entry>
-      <entry><ind> 6600 </ind><dep>  2.0 </dep></entry>
-      <entry><ind> 1 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 121700 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 109550 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 83550 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 74550 </ind><dep>  0.4 </dep></entry>
+      <entry><ind> 69000 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 60851 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 0 </ind><dep>  2.0 </dep></entry>
     </interpolation>
     <axis>
       <x> 0 </x>

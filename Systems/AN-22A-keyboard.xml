@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Development is ongoing, see latest version: www.github.com/HerbyW
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment
+    Eagel: Liveries
+    ###################################################################################
+-->
 <PropertyList>
 
   <key n="68">
@@ -58,6 +67,17 @@
       <property>sim/current-view/view-number</property>  
       <value>0</value>
       <value>9</value>
+  </binding>
+</key>
+
+<key n="121">
+	<name>y</name>
+	<desc>Change Pilot Ramp View</desc>
+  <binding>
+      <command>property-cycle</command>
+      <property>sim/current-view/view-number</property>  
+      <value>0</value>
+      <value>10</value>
   </binding>
 </key>
 

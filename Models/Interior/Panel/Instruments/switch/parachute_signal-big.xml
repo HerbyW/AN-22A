@@ -40,7 +40,7 @@
       <button>0</button>
       <binding>
         <command>property-toggle</command>
-        <property>controls/bradle/jump-signal</property>
+        <property>controls/paratroopers/jump-signal</property>
       </binding>      
     </action>
   </animation>
@@ -48,7 +48,7 @@
   <animation>
     <type>rotate</type>
     <object-name>switch</object-name>
-    <property>controls/bradle/jump-signal-pos</property>
+    <property>controls/paratroopers/jump-signal-pos</property>
     <factor> -50 </factor>
     <center>
       <x-m> 0 </x-m>
@@ -62,7 +62,7 @@
     </axis>
   </animation>
 
-  <animation>
+ <animation>
   <type>scale</type>
   <object-name>fond</object-name>
   <object-name>switch</object-name>    
@@ -75,5 +75,6 @@
   <y-factor>1.85</y-factor>
   <z-factor>1.85</z-factor>
  </animation>
+
 
 </PropertyList>
