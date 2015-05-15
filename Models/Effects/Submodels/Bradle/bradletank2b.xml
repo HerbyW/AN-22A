@@ -38,15 +38,36 @@
       <z> 0 </z>
     </axis>
   </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <name>bradletank2b</name>
+    <property>sim/multiplay/generic/float[16]</property>
+    <interpolation>
+      <entry><ind> 74550 </ind><dep>  0.0 </dep></entry>      
+      <entry><ind> 71750 </ind><dep>  20.0 </dep></entry>
+      <entry><ind> 69000 </ind><dep>  0.0 </dep></entry>      
+    </interpolation>
+    <center>
+      <x-m> 18.5 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.0 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
  <animation>
     <type>translate</type>
     <name>bradletank2b</name>
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
-      <entry><ind> 121700 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 109550 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 83550 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 121700 </ind><dep>  0.7 </dep></entry>
+      <entry><ind> 109550 </ind><dep>  0.7 </dep></entry>
+      <entry><ind> 83550 </ind><dep>  0.5 </dep></entry>
       <entry><ind> 74550 </ind><dep>  0.4 </dep></entry>
       <entry><ind> 69000 </ind><dep>  2.0 </dep></entry>
       <entry><ind> 60851 </ind><dep>  2.0 </dep></entry>
