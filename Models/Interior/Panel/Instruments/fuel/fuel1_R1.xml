@@ -79,12 +79,19 @@
  <animation>
   <type>rotate</type>
   <object-name>fr1</object-name>
-  <property>engines/engine[3]/fuel-flow-gph</property>
-  <interpolation>
-    <entry><ind>  0.0</ind><dep>  0   </dep></entry>
-    <entry><ind> 220</ind><dep> 90</dep></entry>
-    <entry><ind> 470</ind><dep> 205</dep></entry>
-  </interpolation>
+  
+  <expression>
+     <table>
+     <sum>
+       <property>engines/engine[2]/fuel-flow-gph</property>
+       <property>engines/engine[3]/fuel-flow-gph</property>
+     </sum>
+     <entry><ind>  0</ind><dep>0</dep></entry> 
+     <entry><ind> 1600</ind><dep>  265</dep></entry>
+     <entry><ind> 3200</ind><dep>  335</dep></entry>
+     </table>
+   </expression>
+
   <center>
    <x-m>0.0</x-m>
    <y-m>0.0</y-m>

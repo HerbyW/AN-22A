@@ -73,9 +73,8 @@
   <object-name>fr1</object-name>
   <property>engines/engine[2]/fuel-flow-gph</property>
   <interpolation>
-    <entry><ind>  0.0</ind><dep>  0   </dep></entry>
-    <entry><ind> 220</ind><dep> 45</dep></entry>
-    <entry><ind> 470</ind><dep> 103</dep></entry>
+    <entry><ind>  0.0</ind><dep>  0   </dep></entry>    
+    <entry><ind> 1600</ind><dep> 265</dep></entry>
   </interpolation>
   <center>
    <x-m>0.0</x-m>
