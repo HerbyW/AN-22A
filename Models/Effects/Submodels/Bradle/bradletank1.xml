@@ -25,10 +25,10 @@
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
       <entry><ind> 60850 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 48850 </ind><dep> -1.0 </dep></entry>
-      <entry><ind> 42850 </ind><dep> -5.0 </dep></entry>
-      <entry><ind> 23850 </ind><dep> -10.0 </dep></entry>
-      <entry><ind> 11850 </ind><dep> -18.0 </dep></entry>
+      <entry><ind> 58850 </ind><dep> -1.0 </dep></entry>
+      <entry><ind> 50850 </ind><dep> -5.0 </dep></entry>
+      <entry><ind> 35850 </ind><dep> -10.0 </dep></entry>
+      <entry><ind> 25000 </ind><dep> -18.0 </dep></entry>
       <entry><ind> 1 </ind><dep> -50.0 </dep></entry>
     </interpolation>
     <axis>
@@ -43,9 +43,9 @@
     <name>bradletank1</name>
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
-      <entry><ind> 10000 </ind><dep>  0.0 </dep></entry>      
-      <entry><ind> 8500 </ind><dep>  20.0 </dep></entry>
-      <entry><ind> 6600 </ind><dep>  0.0 </dep></entry>      
+      <entry><ind> 25000 </ind><dep>  0.0 </dep></entry>      
+      <entry><ind> 19500 </ind><dep>  20.0 </dep></entry>
+      <entry><ind> 14000 </ind><dep>  0.0 </dep></entry>      
     </interpolation>
     <center>
       <x-m> 26.50 </x-m>
@@ -65,10 +65,10 @@
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
       <entry><ind> 60850 </ind><dep>  0.7 </dep></entry>
-      <entry><ind> 48850 </ind><dep>  0.7 </dep></entry>
-      <entry><ind> 12850 </ind><dep>  0.5 </dep></entry>
-      <entry><ind> 10000 </ind><dep>  0.4 </dep></entry>
-      <entry><ind> 6600 </ind><dep>  2.0 </dep></entry>
+      <entry><ind> 50000 </ind><dep>  0.7 </dep></entry>
+      <entry><ind> 35000 </ind><dep>  0.5 </dep></entry>
+      <entry><ind> 25000 </ind><dep>  0.4 </dep></entry>
+      <entry><ind> 14000 </ind><dep>  2.0 </dep></entry>
       <entry><ind> 1 </ind><dep>  2.0 </dep></entry>
     </interpolation>
     <axis>
