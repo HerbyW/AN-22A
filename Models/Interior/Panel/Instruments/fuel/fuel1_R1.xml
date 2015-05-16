@@ -47,23 +47,31 @@
  <!--sum of tank 3+4 content in kg, small needle -->
  
  <animation>
-  <type>rotate</type>
-  <object-name>fr2</object-name>
-  <property>consumables/fuel/tank[3]/level-kg</property>
-  <interpolation>
-   <entry><ind>  0.0</ind><dep>/0</dep></entry> 
-   <entry><ind> 12500</ind><dep>  246</dep></entry>
-  </interpolation>
-  <center>
-   <x-m>0.0</x-m>
-   <y-m>0.0</y-m>
-   <z-m>0.0</z-m>
-  </center>
-  <axis>
-   <x>1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
+   <type>rotate</type>
+   <object-name>fr2</object-name>
+   
+   <expression>
+     <table>
+     <sum>
+       <property>/consumables/fuel/tank[2]/level-kg</property>
+       <property>/consumables/fuel/tank[3]/level-kg</property>
+     </sum>
+     <entry><ind>  0</ind><dep>0</dep></entry> 
+     <entry><ind> 21700</ind><dep>  263</dep></entry>
+     </table>
+   </expression>
+   
+   
+   <center>
+     <x-m>0.0</x-m>
+     <y-m>0.0</y-m>
+     <z-m>0.0</z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
  </animation>
  
  <!--fuel flow in gallons per hour for tank 3+4, big needle -->
