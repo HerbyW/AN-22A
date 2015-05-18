@@ -56,3 +56,34 @@ setlistener("/controls/autostart", func
       }  
   }
   );
+
+
+setlistener("/controls/electric/battery-switch", func 
+
+  { if(getprop("/controls/electric/battery-switch") == 0)
+      {
+		
+        setprop("/controls/switches/gauge-light", 0);
+        setprop("/controls/lighting/nav-lights", 0);
+	
+	setprop("sim/messages/copilot", "Main power and lights are off");
+	
+	setprop("/instrumentation/adf[0]/power-btn", 0);
+	setprop("/instrumentation/adf[1]/power-btn", 0);
+	setprop("/instrumentation/heading-indicator[0]/serviceable", 0);
+	setprop("/instrumentation/nav[0]/power-btn", 0);
+	setprop("/instrumentation/nav[1]/power-btn", 0);
+	setprop("/instrumentation/transponder/serviceable", 0);
+	
+	setprop("sim/messages/copilot", "Instruments are unpowered");
+	
+	setprop("/controls/switches/fuel", 0);
+        setprop("/consumables/fuel/tank[0]/selected", 0);
+        setprop("/consumables/fuel/tank[1]/selected", 0);
+        setprop("/consumables/fuel/tank[2]/selected", 0);
+        setprop("/consumables/fuel/tank[3]/selected", 0);
+        
+	setprop("sim/messages/copilot", "Main Battery Power is off");
+      }  
+  }
+  );

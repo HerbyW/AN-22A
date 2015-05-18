@@ -50,10 +50,16 @@
   <type>select</type>
   <object-name>_d_2</object-name>
   <condition>
+   <and>
     <greater-than>
     <property>/engines/engine[2]/n2</property>
     <value> 60 </value>
     </greater-than>
+    <greater-than>
+    <property>/controls/engines/engine[2]/throttle</property>
+    <value> 0.12 </value>
+    </greater-than>
+    </and>
   </condition>
 </animation>
 
