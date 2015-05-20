@@ -83,32 +83,32 @@ An-22A
   <cockpit x="24.41012" y="0.41799" z="-0.67554"/>
 
   <!-- Fuselage -->
-  <fuselage ax=" 28.76046" ay="0" az="-2.24423" bx=" 21.39809" by="0" bz="-2.14046" width="5.066" taper="0.0" midpoint="1.0" idrag="1.0"/>
-  <fuselage ax=" 21.39809" ay="0" az="-2.14046" bx=" -3.45695" by="0" bz="-2.14936" width="5.066" taper="1.0" midpoint="0.5" idrag="3.0"/>
-  <fuselage ax=" -3.45695" ay="0" az="-2.14936" bx="-21.34291" by="0" bz=" 1.03286" width="5.066" taper="1.0" midpoint="0.5" idrag="3.0"/>
-  <fuselage ax="-21.34291" ay="0" az=" 1.03286" bx="-28.65440" by="0" bz=" 1.18538" width="1.474" taper="0.0" midpoint="0.0" idrag="3.0"/>
+  <fuselage ax=" 28.76046" ay="0" az="-2.24423" bx=" 21.39809" by="0" bz="-2.14046" width="5.066" taper="0.0" midpoint="1.0" idrag="1.5"/>
+  <fuselage ax=" 21.39809" ay="0" az="-2.14046" bx=" -3.45695" by="0" bz="-2.14936" cx="0.1" width="5.066" taper="1.0" midpoint="0.5" idrag="2.0"/>
+  <fuselage ax=" -3.45695" ay="0" az="-2.14936" bx="-21.34291" by="0" bz=" 1.03286" cx="0.1" width="5.066" taper="0.3" midpoint="0.0" idrag="2.0"/>
+  <fuselage ax="-21.34291" ay="0" az=" 1.03286" bx="-28.65440" by="0" bz=" 1.18538" cx="0.1" width="1.474" taper="1.0" midpoint="0.5" idrag="2.0"/>
   
   <!-- Engine exterior left -->
-  <fuselage ax=" 9.89801" ay=" 13.45214" az="-0.18105" bx="3.09717" by=" 13.45214" bz="-0.18105" cx="0.05" width="1.724" taper="0.98" midpoint="0.5"/>
+  <fuselage ax=" 9.89801" ay=" 13.45214" az="-0.18105" bx="3.09717" by=" 13.45214" bz="-0.18105" cx="0.1" width="1.724" taper="0.98" midpoint="0.5" idrag="2.0"/>
   <!-- Engine interior left -->
-  <fuselage ax="10.49855" ay="  6.87900" az="-0.18105" bx="3.69771" by="  6.87900" bz="-0.18105" cx="0.05" width="1.724" taper="0.98" midpoint="0.5"/>
+  <fuselage ax="10.49855" ay="  6.87900" az="-0.18105" bx="3.69771" by="  6.87900" bz="-0.18105" cx="0.1" width="1.724" taper="0.98" midpoint="0.5" idrag="2.0"/>
   <!-- Engine interior right -->
-  <fuselage ax="10.49855" ay=" -6.87900" az="-0.18105" bx="3.69771" by=" -6.87900" bz="-0.18105" cx="0.05" width="1.724" taper="0.98" midpoint="0.5"/>
+  <fuselage ax="10.49855" ay=" -6.87900" az="-0.18105" bx="3.69771" by=" -6.87900" bz="-0.18105" cx="0.1" width="1.724" taper="0.98" midpoint="0.5" idrag="2.0"/>
   <!-- Engine exterior right -->
-  <fuselage ax=" 9.89801" ay="-13.45214" az="-0.18105" bx="3.09717" by="-13.45214" bz="-0.18105" cx="0.05" width="1.724" taper="0.98" midpoint="0.5"/>
+  <fuselage ax=" 9.89801" ay="-13.45214" az="-0.18105" bx="3.09717" by="-13.45214" bz="-0.18105" cx="0.1" width="1.724" taper="0.98" midpoint="0.5" idrag="2.0"/>
   
   <!-- Wing -->
   <wing x="3.92059" y="0" z="0.86412"
 	chord="7.781"
 	length="20.375"
 	taper="0.3"
-	sweep="0"
+	sweep="2"
 	incidence="0.7"
 	dihedral="0"
 	camber="0.001"
 	effectiveness="0.8">
         <stall aoa="18" width="2" peak="3.5"/>
-        <flap0 start="0.04" end="0.61" lift="1.9" drag="1.1"/>
+        <flap0 start="0.04" end="0.61" lift="2.1" drag="1.1"/>
         <control-input axis="/controls/flight/flaps" control="FLAP0" invert="true"/>
         <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
         <control-speed control="FLAP0" transition-time="10"/>
@@ -188,7 +188,7 @@ An-22A
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="2200"
-	     cruise-power="12700"
+	     cruise-power="10700"
 	     takeoff-rpm="2500"
 	     takeoff-power="15990"
 	     min-rpm="600"
@@ -199,13 +199,13 @@ An-22A
 	     contra="1">
              <actionpt x="10.68032" y="13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="14990"
+             <turbine-engine eng-power="15990"
 			     eng-rpm="2500"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             flat-rating="13990"
+                             flat-rating="14990"
                              bsfc="0.60">
                              <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[0]/throttle-v" control="THROTTLE"/>
@@ -220,7 +220,7 @@ An-22A
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="2200"
-	     cruise-power="12700"
+	     cruise-power="10700"
 	     takeoff-rpm="2500"
 	     takeoff-power="15990"
 	     min-rpm="600"
@@ -231,13 +231,13 @@ An-22A
 	     contra="1">
              <actionpt x="11.28087" y="6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="14990"
+             <turbine-engine eng-power="15990"
 			     eng-rpm="2500"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             flat-rating="13990"
+                             flat-rating="14990"
                              bsfc="0.60">
                              <control-input axis="/controls/engines/engine[1]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[1]/throttle-v" control="THROTTLE"/>
@@ -252,7 +252,7 @@ An-22A
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="2200"
-	     cruise-power="12700"
+	     cruise-power="10700"
 	     takeoff-rpm="2500"
 	     takeoff-power="15990"
 	     min-rpm="600"
@@ -263,14 +263,14 @@ An-22A
 	     contra="1">
              <actionpt x="11.28087" y="-6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[2]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="14990"
+             <turbine-engine eng-power="15990"
 			     eng-rpm="2500"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             flat-rating="13990"
-                             bsfc="0.60">             
+                             flat-rating="14990"
+                             bsfc="0.60">            
                              <control-input axis="/controls/engines/engine[2]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[2]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -284,7 +284,7 @@ An-22A
 	     cruise-alt="22370"
 	     cruise-speed="340"
 	     cruise-rpm="2200"
-	     cruise-power="12700"
+	     cruise-power="10700"
 	     takeoff-rpm="2500"
 	     takeoff-power="15990"
 	     min-rpm="600"
@@ -295,13 +295,13 @@ An-22A
 	     contra="1">
              <actionpt x="10.68032" y="-13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[3]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="14990"
+             <turbine-engine eng-power="15990"
 			     eng-rpm="2500"
 			     alt="22370"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             flat-rating="13990"
+                             flat-rating="14990"
                              bsfc="0.60">
                              <control-input axis="/controls/engines/engine[3]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[3]/throttle-v" control="THROTTLE"/>
@@ -309,7 +309,7 @@ An-22A
   </propeller>
 
   <!-- Noze wheel -->
-  <gear x="20.40663" y="0" z="-6.35" retract-time="7" compression="0.45" spring="0.78" damp="1.35" sfric="0.8" dfric="0.7">
+  <gear x="20.40663" y="0" z="-6.35" retract-time="7" compression="0.45" spring="0.78" damp="1.35" sfric="0.8" dfric="0.6">
         <control-input axis="/controls/flight/rudder" control="STEER" square="true"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
 
@@ -400,7 +400,7 @@ An-22A
   
   <!-- Thruster for Pushback action -->
   
-  <thruster x="-11.51110" y="0" z="-5.26151" vx="-1" vy="0" vz="0" thrust="34000">
+  <thruster x="-11.51110" y="0" z="-5.26151" vx="-1" vy="0" vz="0" thrust="44000">
   <control-input axis="/controls/engines/engine[0]/throttle-r" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[1]/throttle-r" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[2]/throttle-r" control="THROTTLE"/>
