@@ -59,7 +59,7 @@ An-22A
     <control-setting axis="/controls/gear/gear-down" value="1"/>
   </approach>
 
-  <cruise speed="340" alt="22370" fuel="0.8">
+  <cruise speed="360" alt="36370" fuel="0.8">
     <control-setting axis="/controls/engines/engine[0]/throttle-v" value="0.8"/>
     <control-setting axis="/controls/engines/engine[0]/condition" value="1"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
@@ -101,10 +101,10 @@ An-22A
   <wing x="3.92059" y="0" z="0.86412"
 	chord="7.781"
 	length="20.375"
-	taper="0.5"
-	sweep="3"
+	taper="0.6"
+	sweep="2"
 	incidence="0.7"
-	dihedral="-2"
+	dihedral="-1"
 	camber="0.07"
 	twist="-2.0"
 	effectiveness="0.8">
@@ -118,9 +118,9 @@ An-22A
   <mstab x="3.20951" y="20.35949" z="0.50874"
 	 chord="4.637"
 	 length="11.873"
-	 taper="0.7"
-	 sweep="3.5"
-	 dihedral="-3">
+	 taper="0.6"
+	 sweep="3.0"
+	 dihedral="-4">
          <stall aoa="18" width="1" peak="1.4"/>
          <flap1 start="0" end="1" lift="1.3" drag="1.1"/>
          <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
@@ -131,11 +131,11 @@ An-22A
   </mstab>
 
    <!-- Elevator -->
-  <hstab x="-23.44338" y="0" z="1.66519"
-	 chord="5.551"
+  <hstab x="-23.3" y="0" z="1.66519"
+	 chord="6"
 	 length="9.905"
-	 sweep="0"
-	 taper="0.6">
+	 sweep="4"
+	 taper="0.52">
          <stall aoa="16" width="1" peak="1.4"/>
          <flap0 start="0" end="1" lift="1.5" drag="1.1"/>
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
@@ -177,36 +177,35 @@ An-22A
                  type              : Turboprop
                  power cruise      : 14795 ehp hp
                  weight            : 2900 kg  ( 6393 lbs)
+                 Propeller weight  : 1150 lbs
   -->
-  <!-- Engine left exterior
-  
-  new changes: moment 12500 to 2500, cruse speed von 340 auf 280-->
+  <!-- Engine left exterior -->
   
   <propeller x="10.68032" y="13.45214" z="-0.18105"
 	     radius="3.188"
-	     mass="6393"
-	     moment="2000"      
-	     cruise-alt="22370"
+	     mass="7548"
+	     moment="3000"      
+	     cruise-alt="32370"
 	     cruise-speed="340"
-	     cruise-rpm="2200"
-	     cruise-power="7800"
-	     takeoff-rpm="2500"
-	     takeoff-power="16990"
-	     min-rpm="600"
-	     max-rpm="2500"
+	     cruise-rpm="700"
+	     cruise-power="10800"
+	     takeoff-rpm="750"
+	     takeoff-power="21990"
+	     min-rpm="400"
+	     max-rpm="750"
 	     fine-stop="0.40"
 	     coarse-stop="4.0"
 	     manual="true"
 	     contra="1">
              <actionpt x="10.68032" y="13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="16990"
-			     eng-rpm="2500"
-			     alt="22370"
+             <turbine-engine eng-power="15990"
+			     eng-rpm="750"
+			     alt="22000"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             flat-rating="14990"
+                             flat-rating="15990"
                              bsfc="0.60">
                              <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[0]/throttle-v" control="THROTTLE"/>
@@ -216,29 +215,29 @@ An-22A
   <!-- Engine left interior -->
   <propeller x="11.28087" y="6.87901" z="-0.18105"
 	     radius="3.188"
-	     mass="6393"
-	     moment="2000"      
-	     cruise-alt="22370"
+	     mass="7548"
+	     moment="3000"      
+	     cruise-alt="32370"
 	     cruise-speed="340"
-	     cruise-rpm="2200"
-	     cruise-power="7800"
-	     takeoff-rpm="2500"
-	     takeoff-power="16990"
-	     min-rpm="600"
-	     max-rpm="2500"
+	     cruise-rpm="700"
+	     cruise-power="10800"
+	     takeoff-rpm="750"
+	     takeoff-power="21990"
+	     min-rpm="400"
+	     max-rpm="750"
 	     fine-stop="0.40"
 	     coarse-stop="4.0"
 	     manual="true"
 	     contra="1">
              <actionpt x="11.28087" y="6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="16990"
-			     eng-rpm="2500"
-			     alt="22370"
+             <turbine-engine eng-power="15990"
+			     eng-rpm="750"
+			     alt="22000"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             flat-rating="14990"
+                             flat-rating="15990"
                              bsfc="0.60">
                              <control-input axis="/controls/engines/engine[1]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[1]/throttle-v" control="THROTTLE"/>
@@ -248,30 +247,30 @@ An-22A
   <!-- Engine right interior-->
   <propeller x="11.28087" y="-6.87901" z="-0.18105"
 	     radius="3.188"
-	     mass="6393"
-	     moment="2000"      
-	     cruise-alt="22370"
+	     mass="7548"
+	     moment="3000"      
+	     cruise-alt="32370"
 	     cruise-speed="340"
-	     cruise-rpm="2200"
-	     cruise-power="7800"
-	     takeoff-rpm="2500"
-	     takeoff-power="16990"
-	     min-rpm="600"
-	     max-rpm="2500"
+	     cruise-rpm="700"
+	     cruise-power="10800"
+	     takeoff-rpm="750"
+	     takeoff-power="21990"
+	     min-rpm="400"
+	     max-rpm="750"
 	     fine-stop="0.40"
 	     coarse-stop="4.0"
 	     manual="true"
 	     contra="1">
              <actionpt x="11.28087" y="-6.87901" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[2]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="16990"
-			     eng-rpm="2500"
-			     alt="22370"
+             <turbine-engine eng-power="15990"
+			     eng-rpm="750"
+			     alt="22000"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             flat-rating="14990"
-                             bsfc="0.60">            
+                             flat-rating="15990"
+                             bsfc="0.60">
                              <control-input axis="/controls/engines/engine[2]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[2]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -280,29 +279,29 @@ An-22A
   <!-- Engine right exterior-->
   <propeller x="10.68032" y="-13.45214" z="-0.18105"
 	     radius="3.188"
-	     mass="6393"
-	     moment="2000"      
-	     cruise-alt="22370"
+	     mass="7548"
+	     moment="3000"      
+	     cruise-alt="32370"
 	     cruise-speed="340"
-	     cruise-rpm="2200"
-	     cruise-power="7800"
-	     takeoff-rpm="2500"
-	     takeoff-power="16990"
-	     min-rpm="600"
-	     max-rpm="2500"
+	     cruise-rpm="700"
+	     cruise-power="10800"
+	     takeoff-rpm="750"
+	     takeoff-power="21990"
+	     min-rpm="400"
+	     max-rpm="750"
 	     fine-stop="0.40"
 	     coarse-stop="4.0"
 	     manual="true"
 	     contra="1">
              <actionpt x="10.68032" y="-13.45214" z="-0.18105"/>
              <control-input axis="/controls/engines/engine[3]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="16990"
-			     eng-rpm="2500"
-			     alt="22370"
+             <turbine-engine eng-power="15990"
+			     eng-rpm="750"
+			     alt="22000"
 			     n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             flat-rating="14990"
+                             flat-rating="15990"
                              bsfc="0.60">
                              <control-input axis="/controls/engines/engine[3]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[3]/throttle-v" control="THROTTLE"/>
