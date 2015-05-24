@@ -1255,7 +1255,7 @@
     <type>rotate</type>
     <object-name>voletG</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor> -40 </factor>
+    <factor> 40 </factor>
     <axis>
       <x1-m>  -1.42417 </x1-m>
       <y1-m> -20.41098 </y1-m>
@@ -1270,7 +1270,7 @@
     <type>rotate</type>
     <object-name>voletD</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor> -40 </factor>
+    <factor> 40 </factor>
     <axis>
       <x1-m> -1.42417 </x1-m>
       <y1-m>  2.80481 </y1-m>
@@ -1452,7 +1452,7 @@
     </axis>
   </animation>
   
-  <!-- Rentrée des roues -->
+  <!-- Rentre des roues -->
   <animation>
     <name>TrainAvant</name>
     <object-name>axeA</object-name>

@@ -317,7 +317,7 @@
        <condition>
         <greater-than>
 	 <property>velocities/groundspeed-kt</property>
-	 <value>419</value>
+	 <value>399</value>
          </greater-than>
         </condition> 
       <volume>
@@ -346,24 +346,24 @@
     </stall>
     
     <!-- Decision Height Warning -->
-- 
--    <decision>
--      <name>decision</name>
--      <mode>once</mode>
--      <path>Aircraft/AN-22A/Sounds/omi_1.wav</path>
--      <condition>
--    <less-than>
--      <property>position/altitude-agl-ft</property>
--      <property>instrumentation/altimeter/decision-height</property>      
--    </less-than>
--  </condition>
--      <volume>
--	<min>1.0</min>
--        <max>1.0</max>
--      </volume>
--      <reference-dist>10</reference-dist>
--      <max-dist>100</max-dist>
--    </decision>
+ 
+    <decision>
+      <name>decision</name>
+      <mode>once</mode>
+      <path>Aircraft/AN-22A/Sounds/omi_1.wav</path>
+      <condition>
+    <less-than>
+      <property>position/altitude-agl-ft</property>
+      <property>instrumentation/altimeter/decision-height</property>      
+    </less-than>
+  </condition>
+      <volume>
+        <min>1.0</min>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </decision>
   
   <!-- Doors -->
   
@@ -569,7 +569,7 @@
       <max-dist>100</max-dist>
     </ADF>
     
-     <!-- Gear in and out -->
+     <!-- Bradley Tanks in and out -->
     
     <tank1>
       <name>tank1</name>
