@@ -551,7 +551,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[0]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </greater-than>
     </condition>
   </animation>
@@ -563,11 +563,11 @@
       <and>
         <greater-than>
           <property>engines/engine[0]/rpm</property>
-          <value>600.000</value>
+          <value>400.000</value>
         </greater-than>
         <less-than>
           <property>engines/engine[0]/rpm</property>
-          <value>800.001</value>
+          <value>600.001</value>
         </less-than>
       </and>
     </condition>
@@ -579,7 +579,7 @@
     <condition>
       <less-than>
         <property>engines/engine[0]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </less-than>
     </condition>
   </animation>
@@ -623,7 +623,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[0]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </greater-than>
     </condition>
   </animation>
@@ -635,11 +635,11 @@
       <and>
         <greater-than>
           <property>engines/engine[0]/rpm</property>
-          <value>600.000</value>
+          <value>400.000</value>
         </greater-than>
         <less-than>
           <property>engines/engine[0]/rpm</property>
-          <value>800.001</value>
+          <value>600.001</value>
         </less-than>
       </and>
     </condition>
@@ -651,7 +651,7 @@
     <condition>
       <less-than>
         <property>engines/engine[0]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </less-than>
     </condition>
   </animation>
@@ -695,7 +695,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[1]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </greater-than>
     </condition>
   </animation>
@@ -707,11 +707,11 @@
       <and>
         <greater-than>
           <property>engines/engine[1]/rpm</property>
-          <value>600.000</value>
+          <value>400.000</value>
         </greater-than>
         <less-than>
           <property>engines/engine[1]/rpm</property>
-          <value>800.001</value>
+          <value>600.001</value>
         </less-than>
       </and>
     </condition>
@@ -723,7 +723,7 @@
     <condition>
       <less-than>
         <property>engines/engine[1]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </less-than>
     </condition>
   </animation>
@@ -767,7 +767,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[1]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </greater-than>
     </condition>
   </animation>
@@ -779,11 +779,11 @@
       <and>
         <greater-than>
           <property>engines/engine[1]/rpm</property>
-          <value>600.000</value>
+          <value>400.000</value>
         </greater-than>
         <less-than>
           <property>engines/engine[1]/rpm</property>
-          <value>800.001</value>
+          <value>600.001</value>
         </less-than>
       </and>
     </condition>
@@ -795,7 +795,7 @@
     <condition>
       <less-than>
         <property>engines/engine[1]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </less-than>
     </condition>
   </animation>
@@ -839,7 +839,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[2]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </greater-than>
     </condition>
   </animation>
@@ -851,11 +851,11 @@
       <and>
         <greater-than>
           <property>engines/engine[2]/rpm</property>
-          <value>600.000</value>
+          <value>400.000</value>
         </greater-than>
         <less-than>
           <property>engines/engine[2]/rpm</property>
-          <value>800.001</value>
+          <value>600.001</value>
         </less-than>
       </and>
     </condition>
@@ -867,7 +867,7 @@
     <condition>
       <less-than>
         <property>engines/engine[2]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </less-than>
     </condition>
   </animation>
@@ -911,7 +911,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[2]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </greater-than>
     </condition>
   </animation>
@@ -923,11 +923,11 @@
       <and>
         <greater-than>
           <property>engines/engine[2]/rpm</property>
-          <value>600.000</value>
+          <value>400.000</value>
         </greater-than>
         <less-than>
           <property>engines/engine[2]/rpm</property>
-          <value>800.001</value>
+          <value>600.001</value>
         </less-than>
       </and>
     </condition>
@@ -939,7 +939,7 @@
     <condition>
       <less-than>
         <property>engines/engine[2]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </less-than>
     </condition>
   </animation>
@@ -983,7 +983,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[3]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </greater-than>
     </condition>
   </animation>
@@ -995,11 +995,11 @@
       <and>
         <greater-than>
           <property>engines/engine[3]/rpm</property>
-          <value>600.000</value>
+          <value>400.000</value>
         </greater-than>
         <less-than>
           <property>engines/engine[3]/rpm</property>
-          <value>800.001</value>
+          <value>600.001</value>
         </less-than>
       </and>
     </condition>
@@ -1011,7 +1011,7 @@
     <condition>
       <less-than>
         <property>engines/engine[3]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </less-than>
     </condition>
   </animation>
@@ -1055,7 +1055,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[3]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </greater-than>
     </condition>
   </animation>
@@ -1067,11 +1067,11 @@
       <and>
         <greater-than>
           <property>engines/engine[3]/rpm</property>
-          <value>600.000</value>
+          <value>400.000</value>
         </greater-than>
         <less-than>
           <property>engines/engine[3]/rpm</property>
-          <value>800.001</value>
+          <value>600.001</value>
         </less-than>
       </and>
     </condition>
@@ -1083,7 +1083,7 @@
     <condition>
       <less-than>
         <property>engines/engine[3]/rpm</property>
-        <value>800</value>
+        <value>600</value>
       </less-than>
     </condition>
   </animation>
