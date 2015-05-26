@@ -820,6 +820,16 @@
       <z-m>  0.180 </z-m>
   </offsets>
  </model>
+ 
+ <model>
+  <name>Set Pitch</name>
+  <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/alt-set/pitch-set.xml</path>
+  <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m> -0.30 </y-m>
+      <z-m>  0.250 </z-m>
+  </offsets>
+ </model>
     
    <!--Throttle, Propeller-Pitch, Mixture Control Panel -->
  
