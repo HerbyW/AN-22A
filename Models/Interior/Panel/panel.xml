@@ -155,16 +155,18 @@
     </offsets>
   </model>
   
-  <!-- AI2, Artificial Horizont -->
-    
+  <!-- UAP-12, AOA indicator --> 
+  
   <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ai2/ai2.xml</path>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/uap-12/uap-12.xml</path>
     <offsets>
       <x-m> 0.002 </x-m>
-      <y-m> -0.40 </y-m>
-      <z-m> -0.105 </z-m>
+      <y-m> -0.395 </y-m>
+      <z-m> -0.085 </z-m>
     </offsets>
   </model>
+  
+  <!-- AI2, Artificial Horizont -->
 
   <model>
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ai2/ai2.xml</path>
@@ -2183,6 +2185,40 @@ SKAWK</text>
       <pitch-deg>72</pitch-deg>
     </offsets>
   </model>
+  
+    <!-- Version Number -->
+  
+  <text>
+        <name>Version</name>
+        <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.737 </y-m>
+      <z-m>  0.15 </z-m>
+    </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property type="string">sim/multiplay/generic/string[1]</property>
+        <format type="string">%.7s</format>
+        <font>arial_black.txf</font>
+        <character-size>0.01</character-size>
+        <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+  </text>
+    
+    <animation>
+        <type>material</type>
+         <object-name>Version</object-name>         
+        <emission>
+            <red>0.35</red>
+            <green>0.35</green>
+            <blue>0.50</blue>
+        </emission>        
+    </animation>
+ 
  
 
 </PropertyList>

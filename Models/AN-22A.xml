@@ -2258,7 +2258,21 @@
   </offsets>
  </model>
   
-
+    <!--Internal Cabin lights for Rembrand, switch: bano-->
+ <model>
+  <path>Aircraft/AN-22A/Models/light/headlight-tiny.xml</path>
+  <name>tiny</name>
+   <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+   </condition>
+  <offsets>
+      <x-m>-15.3</x-m>
+    <y-m>0.0</y-m>
+    <z-m>-2.3</z-m>
+   <pitch-deg>90</pitch-deg>
+  </offsets>
+ </model>  
+  
     
   <!-- smoke -->
   

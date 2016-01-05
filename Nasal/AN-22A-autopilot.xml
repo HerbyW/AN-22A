@@ -8,6 +8,13 @@
 
 
 <PropertyList>
+  
+    <predict-simple>
+     <input>/autopilot/internal/nav1-heading-error-deg</input>
+     <output>/autopilot/internal/nav1-heading-error-lookahead-deg</output>
+     <seconds>8.0</seconds>
+     <filter-gain>0.0</filter-gain>
+    </predict-simple>
 
   <!-- =============================================================== -->
   <!-- Roll Axis Modes                                                 -->
@@ -181,7 +188,7 @@
       <value>nav1-hold</value>
     </enable>
     <input>
-      <prop>/autopilot/internal/nav1-heading-error-deg</prop>
+      <prop>/autopilot/internal/nav1-heading-error-lookahead-deg</prop>
     </input>
     <reference>
       <value>0.0</value>
@@ -415,7 +422,6 @@
 
   <!-- Glideslope hold. -->
 
-  <!-- Stage #2 drives the elevator-trim to achieve the desired climb rate. -->
   <pid-controller>
     <name>Glideslop Hold</name>
     <debug>false</debug>

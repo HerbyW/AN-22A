@@ -60,11 +60,8 @@
   <object-name>block1</object-name>
   <property>controls/flight/flaps</property>
   <interpolation>
-   <entry><ind>  0.0</ind><dep>    -68</dep></entry> 
-   <entry><ind> 0.25</ind><dep>  -45</dep></entry>
-   <entry><ind> 0.5</ind><dep>  -35</dep></entry>
-   <entry><ind> 0.75</ind><dep> -15</dep></entry>
-   <entry><ind> 1</ind><dep>  0</dep></entry>
+   <entry><ind> 0.0</ind><dep>-67</dep></entry> 
+   <entry><ind> 1</ind><dep>  -4</dep></entry>
   </interpolation>
   <center>
    <x-m>0.000</x-m>
@@ -83,11 +80,8 @@
   <object-name>block2</object-name>
   <property>controls/flight/flaps</property>
   <interpolation>
-   <entry><ind>  0.0</ind><dep>    -68</dep></entry> 
-   <entry><ind> 0.25</ind><dep>  -45</dep></entry>
-   <entry><ind> 0.5</ind><dep>  -35</dep></entry>
-   <entry><ind>0.75</ind><dep>  -15</dep></entry>
-   <entry><ind> 1</ind><dep>  0</dep></entry>
+   <entry><ind>0.0</ind><dep>-67</dep></entry> 
+   <entry><ind> 1</ind><dep>  -4</dep></entry>
   </interpolation>
   <center>
    <x-m>0.000</x-m>
@@ -106,10 +100,8 @@
   <object-name>block3</object-name>
   <property>controls/flight/flaps</property>
   <interpolation>
-   <entry><ind>  0.0</ind><dep>    -68</dep></entry>  
-   <entry><ind> 0.25</ind><dep>  -30</dep></entry>  
-   <entry><ind> 0.5</ind><dep>  0</dep></entry>
-   <entry><ind> 0.75</ind><dep>  0</dep></entry>
+   <entry><ind>  0.0</ind><dep>    -75</dep></entry>  
+   <entry><ind> 1.0</ind><dep>  -74</dep></entry>
   </interpolation>
   <center>
    <x-m>0.000</x-m>
@@ -128,10 +120,8 @@
   <object-name>block4</object-name>
   <property>controls/flight/flaps</property>
   <interpolation>
-   <entry><ind>  0.0</ind><dep>    -68</dep></entry>  
-   <entry><ind> 0.25</ind><dep>  -30</dep></entry>  
-   <entry><ind> 0.5</ind><dep>  0</dep></entry>
-   <entry><ind> 0.75</ind><dep>  0</dep></entry>
+   <entry><ind>  0.0</ind><dep>    -75</dep></entry>  
+   <entry><ind> 1.0</ind><dep>  -74</dep></entry>
   </interpolation>
   <center>
    <x-m>0.000</x-m>

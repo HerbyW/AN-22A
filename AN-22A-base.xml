@@ -62,6 +62,7 @@
 	<adf-2-selector type="double">0</adf-2-selector>
 	<ushdb-sel-1 type="double">0</ushdb-sel-1>
 	<ushdb-sel-2 type="double">0</ushdb-sel-2>
+	<metar type="bool">0</metar>
       </switches>
       <chokes>
 	<activ type="int">0</activ>
@@ -76,7 +77,7 @@
       
       <description>Antonov AN-22A (YASim)</description>
       <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, BARANGER E.(3D/FDM-orig)</author>
-      <aircraft-version>0.3</aircraft-version>
+      <aircraft-version>1.1.2</aircraft-version>
       <status>early production</status>
       <rating>
 	<FDM type="int">3</FDM>
@@ -96,6 +97,7 @@
 	<livery>
 	  <file type="string">default</file>
 	</livery>
+	<AN-22A><version type="string">1.1.2</version></AN-22A>
       </model>
       
       <!-- Weapons are not supported for now, maybe later
@@ -162,7 +164,7 @@
 	  <float n="17" alias="/ai/models/ballistic/sim/time/elapsed-sec"/>
 	  
 	  <string  alias="/sim/multiplay/callsign"/>
-	  
+	  <string n="1" type="string" alias="/sim/model/AN-22A/version"/>
 	  <string n="9" type="string" />
 	  </generic>
 	</multiplay>
@@ -173,6 +175,8 @@
 	  <setting> 0.30 </setting>
 	  <setting> 0.45 </setting>
 	  <setting> 0.60 </setting>
+	  <setting> 0.80 </setting>
+	  <setting> 1.0 </setting>
 	</flaps>
 	
 	<help include="Systems/help.xml"/>
@@ -205,6 +209,8 @@
 	</engines>
 	
 	<instrumentation>
+	  
+	  <alerts><stall type="bool">false</stall></alerts>
 	  
 	  <dme n="0">
 	    <frequencies>
@@ -335,6 +341,7 @@
 		<file>Aircraft/AN-22A/Nasal/liveries.nas</file>
 		<file>Aircraft/AN-22A/Nasal/light.nas</file>
 		<file>Aircraft/AN-22A/Nasal/autostart.nas</file>
+		<file>Aircraft/AN-22A/Nasal/autopilot.nas</file>
 	      </an12>
 	      <instruments>
 		<file>Aircraft/AN-22A/Nasal/setprop.nas</file>      
@@ -347,7 +354,10 @@
 	      </help>
 	      <mapcase>
 		<file>Aircraft/AN-22A/Nasal/mapcase.nas</file>
-	      </mapcase>    
+	      </mapcase>
+	      <warning>
+	        <file>Aircraft/AN-22A/Nasal/AN-22A-stall.nas</file>
+	      </warning>
 	    </nasal>
 	    
 	    </PropertyList>
