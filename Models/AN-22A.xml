@@ -13,7 +13,7 @@
 
 <PropertyList>
   
-  <path>an22.ac</path>
+  <path>an22-02.ac</path>
 
   <nasal>
     <load>
@@ -135,7 +135,6 @@
     <object-name>heliceDE1</object-name>
     <object-name>heliceDE2</object-name>    
     <!-- Objets transparents -->
-    <object-name>vitres</object-name>
     <object-name>propblurGE1</object-name>
     <object-name>propdiscGE1</object-name>
     <object-name>propblurGE2</object-name>
@@ -356,10 +355,9 @@
     <object-name>baieB</object-name>
     <object-name>baieH</object-name>
   </effect>
-  
+
   <animation>
     <type>noshadow</type>
-    <object-name>vitres</object-name>
     <object-name>propblurGE1</object-name>
     <object-name>propdiscGE1</object-name>
     <object-name>propblurGE2</object-name>
@@ -376,7 +374,16 @@
     <object-name>propdiscDE1</object-name>
     <object-name>propblurDE2</object-name>
     <object-name>propdiscDE2</object-name>
-  </animation>  
+  </animation>
+
+  <animation>    
+    <object-name>vitres</object-name>
+</animation>
+
+<animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+  </animation>
   
   <!-- working for Rembrandt -->  
   <effect>

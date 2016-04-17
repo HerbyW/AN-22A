@@ -38,41 +38,41 @@ An-22A
 
 <airplane mass="251625" version="YASIM_VERSION_CURRENT">
 
-  <approach speed="120" aoa="6" fuel="0.2">
+  <approach speed="120" aoa="5" fuel="0.2">
     <control-setting axis="/controls/engines/engine[0]/throttle-v" value="0.7"/>
     <control-setting axis="/controls/engines/engine[0]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0"/>
     
     <control-setting axis="/controls/engines/engine[1]/throttle-v" value="0.7"/>
     <control-setting axis="/controls/engines/engine[1]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0"/>
     
     <control-setting axis="/controls/engines/engine[2]/throttle-v" value="0.7"/>
     <control-setting axis="/controls/engines/engine[2]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="0"/>
     
     <control-setting axis="/controls/engines/engine[3]/throttle-v" value="0.7"/>
     <control-setting axis="/controls/engines/engine[3]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="0"/>
     
     <control-setting axis="/controls/flight/flaps" value="0.7"/>
     <control-setting axis="/controls/gear/gear-down" value="1"/>
   </approach>
 
-  <cruise speed="360" alt="36370" fuel="0.8">
-    <control-setting axis="/controls/engines/engine[0]/throttle-v" value="0.8"/>
+  <cruise speed="390" alt="36370" fuel="0.8">
+    <control-setting axis="/controls/engines/engine[0]/throttle-v" value="1"/>
     <control-setting axis="/controls/engines/engine[0]/condition" value="1"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
     
-    <control-setting axis="/controls/engines/engine[1]/throttle-v" value="0.8"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle-v" value="1"/>
     <control-setting axis="/controls/engines/engine[1]/condition" value="1"/>
     <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1.0"/>
     
-    <control-setting axis="/controls/engines/engine[2]/throttle-v" value="0.8"/>
+    <control-setting axis="/controls/engines/engine[2]/throttle-v" value="1"/>
     <control-setting axis="/controls/engines/engine[2]/condition" value="1"/>
     <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1.0"/>
     
-    <control-setting axis="/controls/engines/engine[3]/throttle-v" value="0.8"/>
+    <control-setting axis="/controls/engines/engine[3]/throttle-v" value="1"/>
     <control-setting axis="/controls/engines/engine[3]/condition" value="1"/>
     <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1.0"/>
     
@@ -84,18 +84,18 @@ An-22A
 
   <!-- Fuselage -->
   <fuselage ax=" 28.76046" ay="0" az="-2.24423" bx=" 21.39809" by="0" bz="-2.14046" width="5.066" taper="0.0" midpoint="1.0"/>
-  <fuselage ax=" 21.39809" ay="0" az="-2.14046" bx=" -3.45695" by="0" bz="-2.14936" cx="0.1" width="5.066" taper="1.0" midpoint="0.5"/>
-  <fuselage ax=" -3.45695" ay="0" az="-2.14936" bx="-21.34291" by="0" bz=" 1.03286" cx="0.1" width="5.066" taper="0.3" midpoint="0.0"/>
-  <fuselage ax="-21.34291" ay="0" az=" 1.03286" bx="-28.65440" by="0" bz=" 1.18538" cx="0.1" width="1.474" taper="1.0" midpoint="0.5"/>
+  <fuselage ax=" 21.39809" ay="0" az="-2.14046" bx=" -3.45695" by="0" bz="-2.14936" cx="0.7" width="5.066" taper="1.0" midpoint="0.5"/>
+  <fuselage ax=" -3.45695" ay="0" az="-2.14936" bx="-21.34291" by="0" bz=" 1.03286" cx="0.7" width="5.066" taper="0.3" midpoint="0.0"/>
+  <fuselage ax="-21.34291" ay="0" az=" 1.03286" bx="-28.65440" by="0" bz=" 1.18538" cx="0.7" width="1.474" taper="1.0" midpoint="0.5"/>
   
   <!-- Engine exterior left -->
-  <fuselage ax=" 9.89801" ay=" 13.45214" az="-0.18105" bx="3.09717" by=" 13.45214" bz="-0.18105" cx="0.1" width="1.724" taper="0.98" midpoint="0.5"/>
+  <fuselage ax=" 9.89801" ay=" 13.45214" az="-0.18105" bx="3.09717" by=" 13.45214" bz="-0.18105" cx="0.7" width="1.724" taper="0.98" midpoint="0.5"/>
   <!-- Engine interior left -->
-  <fuselage ax="10.49855" ay="  6.87900" az="-0.18105" bx="3.69771" by="  6.87900" bz="-0.18105" cx="0.1" width="1.724" taper="0.98" midpoint="0.5"/>
+  <fuselage ax="10.49855" ay="  6.87900" az="-0.18105" bx="3.69771" by="  6.87900" bz="-0.18105" cx="0.7" width="1.724" taper="0.98" midpoint="0.5"/>
   <!-- Engine interior right -->
-  <fuselage ax="10.49855" ay=" -6.87900" az="-0.18105" bx="3.69771" by=" -6.87900" bz="-0.18105" cx="0.1" width="1.724" taper="0.98" midpoint="0.5"/>
+  <fuselage ax="10.49855" ay=" -6.87900" az="-0.18105" bx="3.69771" by=" -6.87900" bz="-0.18105" cx="0.7" width="1.724" taper="0.98" midpoint="0.5"/>
   <!-- Engine exterior right -->
-  <fuselage ax=" 9.89801" ay="-13.45214" az="-0.18105" bx="3.09717" by="-13.45214" bz="-0.18105" cx="0.1" width="1.724" taper="0.98" midpoint="0.5"/>
+  <fuselage ax=" 9.89801" ay="-13.45214" az="-0.18105" bx="3.09717" by="-13.45214" bz="-0.18105" cx="0.7" width="1.724" taper="0.98" midpoint="0.5"/>
   
   <!-- Wing -->
   <wing x="3.92059" y="0" z="0.86412"
@@ -105,10 +105,10 @@ An-22A
 	sweep="2"
 	incidence="0.7"
 	dihedral="-1"
-	camber="0.07"
+	camber="0.1"
 	twist="-2.0"
-	effectiveness="0.8">
-        <stall aoa="18" width="2" peak="3.5"/>
+	effectiveness="1">
+        <stall aoa="15" width="8" peak="1.5"/>
         <flap0 start="0" end="1" lift="1.5" drag="1.3"/>
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
@@ -120,8 +120,9 @@ An-22A
 	 length="11.873"
 	 taper="0.6"
 	 sweep="3.0"
-	 dihedral="-4">
-         <stall aoa="18" width="1" peak="1.4"/>
+	 dihedral="-4"
+	 camber="0.1">
+         <stall aoa="15" width="8" peak="1.5"/>
          <flap1 start="0" end="1" lift="1.2" drag="1.1"/>
          <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
          <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
@@ -136,8 +137,8 @@ An-22A
 	 length="9.905"
 	 sweep="3"
 	 taper="0.52">
-         <stall aoa="16" width="1" peak="1.4"/>
-         <flap0 start="0" end="1" lift="1.5" drag="1.1"/>
+         <stall aoa="20" width="8" peak="1.5"/>
+         <flap0 start="0" end="1" lift="2.3" drag="1.2"/>
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
