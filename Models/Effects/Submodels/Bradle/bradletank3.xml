@@ -64,10 +64,10 @@
     <name>bradletank3</name>
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
-      <entry><ind> 182550 </ind><dep>  0.7 </dep></entry>
-      <entry><ind> 170000 </ind><dep>  0.7 </dep></entry>
-      <entry><ind> 164000 </ind><dep>  0.5 </dep></entry>
-      <entry><ind> 145000 </ind><dep>  0.4 </dep></entry>
+      <entry><ind> 182550 </ind><dep>  0.8 </dep></entry>
+      <entry><ind> 170000 </ind><dep>  0.8 </dep></entry>
+      <entry><ind> 164000 </ind><dep>  0.7 </dep></entry>
+      <entry><ind> 145000 </ind><dep>  0.6 </dep></entry>
       <entry><ind> 132000 </ind><dep>  2.0 </dep></entry>
       <entry><ind> 121701 </ind><dep>  2.0 </dep></entry>
     </interpolation>

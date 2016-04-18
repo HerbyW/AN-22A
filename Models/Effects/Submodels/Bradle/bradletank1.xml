@@ -66,8 +66,8 @@
     <interpolation>
       <entry><ind> 60850 </ind><dep>  0.7 </dep></entry>
       <entry><ind> 50000 </ind><dep>  0.7 </dep></entry>
-      <entry><ind> 35000 </ind><dep>  0.5 </dep></entry>
-      <entry><ind> 25000 </ind><dep>  0.4 </dep></entry>
+      <entry><ind> 35000 </ind><dep>  0.6 </dep></entry>
+      <entry><ind> 25000 </ind><dep>  0.6 </dep></entry>
       <entry><ind> 14000 </ind><dep>  2.0 </dep></entry>
       <entry><ind> 1 </ind><dep>  2.0 </dep></entry>
     </interpolation>
