@@ -4,7 +4,7 @@
   
 <!--
     ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2016
     Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
@@ -16,7 +16,7 @@
   <sim>
 
     <description>Antonov AN-22A (YASim)</description>
-    <author>HerbyW (Instruments, Animations, FDM), BARANGER Emmanuel (orig 3D/FDM)</author>
+    <author>HerbyW (Instruments, Animations, FDM, 3D), BARANGER Emmanuel (orig 3D/FDM)</author>
     <flight-model>yasim</flight-model>
     <aero>AN-22A-yasim</aero>
     
