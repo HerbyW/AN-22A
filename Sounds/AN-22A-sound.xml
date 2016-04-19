@@ -239,7 +239,7 @@
       <mode>once</mode>
       <path>Aircraft/AN-22A/Sounds/squeal.wav</path>
       <condition>        
-          <property>/gear/gear[0]/wow</property>                 
+          <property>sim/multiplay/generic/int[18]</property>                 
       </condition>
       <volume>
         <property>/velocities/speed-down-fps</property>
@@ -268,7 +268,7 @@
       <mode>once</mode>
       <path>Aircraft/AN-22A/Sounds/squeal.wav</path>
       <condition>        
-          <property>/gear/gear[2]/wow</property>          
+          <property>sim/multiplay/generic/int[19]</property>          
       </condition>
       <volume>
         <property>/velocities/speed-down-fps</property>

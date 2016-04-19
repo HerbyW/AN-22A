@@ -44,6 +44,7 @@
     </engines>
     <gear>
       <brake-parking type="double">1</brake-parking>
+      <runway type="double">0</runway>
     </gear>
     <paratroopers>
       <paratroopers type="int">0</paratroopers>
@@ -143,6 +144,8 @@
 	  <int type="int" n="15" alias="/engines/engine[3]/running">  0 </int>
 	  <int type="int" n="16" alias="/gear/gear[0]/wow">  1 </int>
 	  <int type="int" n="17" alias="/sim/signals/fdm-initialized" />
+	  <int type="int" n="18" alias="/gear/gear[3]/wow">  1 </int>
+	  <int type="int" n="19" alias="/gear/gear[6]/wow">  1 </int>
 	  
 	  <float n="0"  alias="/sim/model/door-positions/crewL/position-norm"/>
 	  <float n="1"  alias="/sim/model/door-positions/crewR/position-norm"/>
@@ -162,6 +165,7 @@
 	  <float n="15" alias="/orientation/roll-deg"/>
 	  <float n="16" alias="/sim/weight[3]/weight-lb"/>
 	  <float n="17" alias="/ai/models/ballistic/sim/time/elapsed-sec"/>
+	  <float n="18" alias="/controls/gear/runway"> 0 </float>
 	  
 	  <string  alias="/sim/multiplay/callsign"/>
 	  <string n="1" type="string" alias="/sim/model/AN-22A/version"/>

@@ -2528,4 +2528,24 @@
   </offsets>
 </model>
 
+<!--runway effect -->
+
+<model> 
+ <path>Aircraft/AN-22A/Models/Effects/tyres.xml</path>
+ <offsets> 
+  <x-m> -0.84250 </x-m>
+      <y-m> -3.28059 </y-m>
+      <z-m> -5.88 </z-m>
+ </offsets>
+</model>
+
+<model> 
+ <path>Aircraft/AN-22A/Models/Effects/tyres.xml</path>
+ <offsets> 
+  <x-m> -0.84250 </x-m>
+      <y-m> 3.28059 </y-m>
+      <z-m> -5.88 </z-m>
+ </offsets>
+</model>
+
 </PropertyList>
