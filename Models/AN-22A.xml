@@ -13,7 +13,7 @@
 
 <PropertyList>
   
-  <path>an22-03.ac</path>
+  <path>an22-04.ac</path>
 
   <nasal>
     <load>
@@ -2535,7 +2535,7 @@
  <offsets> 
   <x-m> -0.84250 </x-m>
       <y-m> -3.28059 </y-m>
-      <z-m> -5.88 </z-m>
+      <z-m> -5.82 </z-m>
  </offsets>
 </model>
 
@@ -2544,7 +2544,7 @@
  <offsets> 
   <x-m> -0.84250 </x-m>
       <y-m> 3.28059 </y-m>
-      <z-m> -5.88 </z-m>
+      <z-m> -5.82 </z-m>
  </offsets>
 </model>
 

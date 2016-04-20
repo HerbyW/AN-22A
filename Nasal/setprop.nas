@@ -531,11 +531,14 @@ setlistener("controls/flight/flaps", func
 
 setprop("controls/gear/runway", 0);
 
-setlistener("/gear/gear[3]/wow", func
+setlistener("gear/gear[3]/wow", func
 {
-  if (getprop("/gear/gear[3]/wow") == 0 and getprop("/gear/gear[6]/wow") == 0)
+  if (getprop("gear/gear[3]/wow") == 0)
     interpolate("controls/gear/runway", 0 , 0.1);
-  if (getprop("/gear/gear[3]/wow") == 1 and getprop("/gear/gear[6]/wow") == 0 and getprop("/gear/gear[2]/rollspeed-ms") > 60)
-    interpolate("controls/gear/runway", 1 , 0.4, 0 , 0.4);
+  else
+  {
+  if ( ( getprop("gear/gear[3]/compression-norm") > 0.20 ) and ( getprop("gear/gear[3]/rollspeed-ms") > 60)  and ( getprop("/velocities/speed-down-fps") > 2))
+    interpolate("controls/gear/runway", 1 , 0.3, 0 , 0.3);
+  }
 }
 );

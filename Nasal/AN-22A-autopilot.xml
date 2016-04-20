@@ -12,31 +12,9 @@
     <predict-simple>
      <input>/autopilot/internal/nav1-heading-error-deg</input>
      <output>/autopilot/internal/nav1-heading-error-lookahead-deg</output>
-     <seconds>10.0</seconds>
+     <seconds>8.0</seconds>
      <filter-gain>0.0</filter-gain>
     </predict-simple>
-    
-    <filter>
-    <name>Output Elevator Trimm FILTER GS1</name>
-    <debug>false</debug>
-    <feedback-if-disabled>false</feedback-if-disabled>
-    <initialize-to>output</initialize-to>
-    <enable>
-      <condition>
-	<and>
-	  <equals>
-	    <property>/autopilot/locks/altitude</property>
-	    <value>gs1-hold</value>
-	  </equals>
-	  <property>/instrumentation/nav[0]/gs-in-range</property>
-	  </and>
-      </condition>
-    </enable>
-    <input>/controls/flight/elevator-trim-filter</input>
-    <output>/controls/flight/elevator-trim</output>
-    <type>noise-spike</type>
-    <max-rate-of-change>0.025</max-rate-of-change>
-  </filter>
 
   <!-- =============================================================== -->
   <!-- Roll Axis Modes                                                 -->
@@ -226,8 +204,8 @@
                            <!-- unfiltered derivative error -->
       <Ti>10.0</Ti>        <!-- integrator time -->
       <Td>0.00001</Td>     <!-- derivator time -->
-      <u_min>-16.0</u_min> <!-- minimum output clamp -->
-      <u_max>16.0</u_max>  <!-- maximum output clamp -->
+      <u_min>-18.0</u_min> <!-- minimum output clamp -->
+      <u_max>18.0</u_max>  <!-- maximum output clamp -->
     </config>
   </pid-controller>
 
@@ -442,14 +420,18 @@
     </config>
   </pid-controller>
 
-  <!-- Glideslope hold. -->
+  <!-- Glideslope hold Stage 1 -->
 
-  <pid-controller>
-    <name>Glideslop Hold</name>
+  <pi-simple-controller>
+    <name>Glideslope Hold</name>
     <debug>false</debug>
     <enable>
-      <prop>/autopilot/locks/altitude</prop>
-      <value>gs1-hold</value>
+      <condition>
+	<equals>
+	  <property>/autopilot/locks/altitude</property>
+	  <value>gs1-hold</value>
+	</equals>
+      </condition>
     </enable>
     <input>
       <prop>/velocities/vertical-speed-fps</prop>
@@ -457,21 +439,92 @@
     <reference>
       <prop>/instrumentation/nav[0]/gs-rate-of-climb</prop>
     </reference>
-     <output>
+    <output>
+      <prop>/autopilot/internal/target-climb-rate-fps</prop>
+    </output>
+    <config>
+      <Kp>1.0</Kp>          <!-- proportional gain -->
+      <Ki>0.0</Ki>          <!-- integral gain -->
+      <u_min>-25.0</u_min> <!-- minimum output clamp -->
+      <u_max>25.0</u_max>   <!-- maximum output clamp -->
+    </config>
+  </pi-simple-controller>
+  
+  
+  <!--Stage 2 -->
+  
+  <pid-controller>
+    <name>Elevator Trim Filter Controler</name>
+    <debug>false</debug>
+    <enable>
+      <condition>
+	
+	  <equals>
+	    <property>/autopilot/locks/altitude</property>
+	    <value>gs1-hold</value>
+	  </equals>
+	  
+      </condition>
+    </enable>
+    <input>
+      <prop>/velocities/vertical-speed-fps</prop>
+    </input>
+    <reference>
+      <prop>/autopilot/internal/target-climb-rate-fps</prop>
+    </reference>
+    <output>
       <prop>/controls/flight/elevator-trim-filter</prop>
     </output>
     <config>
-      <Kp>-0.002</Kp>      <!-- proportional gain -->
-      <beta>1.0</beta>    <!-- input value weighing factor -->
-      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
-      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
-                          <!-- unfiltered derivative error -->
-      <Ti>10.0</Ti>       <!-- integrator time -->
-      <Td>0.00001</Td>    <!-- derivator time -->
-      <u_min>-1.0</u_min> <!-- minimum output clamp -->
-      <u_max>1.0</u_max>  <!-- maximum output clamp -->
+      <Kp>-0.0015</Kp><!-- 0.065 -->
+      <beta>1.0</beta>
+      <alpha>0.1</alpha>
+      <gamma>0.0</gamma>
+      <Ti>15.0</Ti>
+      <Td>0.00001</Td>
+      <u_min>-1.0</u_min>
+      <u_max> 1.0</u_max>
     </config>
   </pid-controller>
+  
+  <!--Stage 3 -->
+  
+  <filter>
+    <name>PITCH FILTER</name>
+    <debug>false</debug>
+    <feedback-if-disabled>false</feedback-if-disabled>
+    <initialize-to>output</initialize-to>
+    <enable>
+      <condition>
+	
+	  <equals>
+	    <property>/autopilot/locks/altitude</property>
+	    <value>gs1-hold</value>
+	  </equals>
+	  
+      </condition>
+    </enable>
+    <input>
+      <property>/controls/flight/elevator-trim-filter</property>
+    </input>
+    <output>/controls/flight/elevator-trim</output>
+    <type>noise-spike</type>
+    <max-rate-of-change>1.0</max-rate-of-change>
+  </filter>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
   <!-- vertical speed hold -->
   <pid-controller>
