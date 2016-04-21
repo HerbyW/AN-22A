@@ -176,16 +176,20 @@
     </config>
   </pid-controller>
 
-  <!-- Nav1 hold.  2 stage cascade controller. -->
+  <!-- Nav1 hold.  3 stage cascade controller. -->
 
   <!-- Stage #1 sets target roll based on diff between current heading -->
-  <!-- and target heading. -->
-  <pid-controller>
-    <name>Nav1 Hold Stage 1</name>
+  
+  <pi-simple-controller>
+    <name>NAV 1 Hold</name>
     <debug>false</debug>
     <enable>
-      <prop>/autopilot/locks/heading</prop>
-      <value>nav1-hold</value>
+      <condition>
+	<equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value>nav1-hold</value>
+	</equals>
+      </condition>
     </enable>
     <input>
       <prop>/autopilot/internal/nav1-heading-error-lookahead-deg</prop>
@@ -194,28 +198,28 @@
       <value>0.0</value>
     </reference>
     <output>
-      <prop>/autopilot/internal/target-roll-deg</prop>
+      <property>autopilot/internal/target-roll-deg</property>
     </output>
     <config>
-      <Kp>-1.0</Kp>        <!-- proportional gain -->
-      <beta>1.0</beta>     <!-- input value weighing factor -->
-      <alpha>0.1</alpha>   <!-- low pass filter weighing factor -->
-      <gamma>0.0</gamma>   <!-- input value weighing factor for -->
-                           <!-- unfiltered derivative error -->
-      <Ti>10.0</Ti>        <!-- integrator time -->
-      <Td>0.00001</Td>     <!-- derivator time -->
-      <u_min>-18.0</u_min> <!-- minimum output clamp -->
-      <u_max>18.0</u_max>  <!-- maximum output clamp -->
+      <Kp>-1.0</Kp>
+      <Ki>0.0</Ki>
+      <u_min>-18</u_min>
+      <u_max>18</u_max>
     </config>
-  </pid-controller>
+  </pi-simple-controller>
 
-  <!-- Stage #2 drives the ailerons to achieve the desired roll deg. -->
+  <!--Stage 2 -->
+  
   <pid-controller>
-    <name>Nav1 Hold Stage 2</name>
+    <name>Aileron Trim Filter Controler</name>
     <debug>false</debug>
     <enable>
-      <prop>/autopilot/locks/heading</prop>
-      <value>nav1-hold</value>
+      <condition>
+	  <equals>
+	    <property>/autopilot/locks/heading</property>
+	    <value>nav1-hold</value>
+	  </equals>
+      </condition>
     </enable>
     <input>
       <prop>/orientation/roll-deg</prop>
@@ -224,21 +228,42 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </reference>
     <output>
-      <prop>/controls/flight/aileron-trim</prop>
+      <prop>/controls/flight/aileron-trim-filter</prop>
     </output>
     <config>
-      <Kp>0.1</Kp>        <!-- proportional gain -->
-      <beta>1.0</beta>    <!-- input value weighing factor -->
-      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
-      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
-                          <!-- unfiltered derivative error -->
-      <Ti>10.0</Ti>       <!-- integrator time -->
-      <Td>0.00001</Td>    <!-- derivator time -->
-      <u_min>-1.0</u_min> <!-- minimum output clamp -->
-      <u_max>1.0</u_max>  <!-- maximum output clamp -->
+      <Kp>0.1</Kp><!-- 0.065 -->
+      <beta>1.0</beta>
+      <alpha>0.1</alpha>
+      <gamma>0.0</gamma>
+      <Ti>10.0</Ti>
+      <Td>0.00001</Td>
+      <u_min>-1.0</u_min>
+      <u_max> 1.0</u_max>
     </config>
   </pid-controller>
 
+  <!--Stage 3 -->
+  
+  <filter>
+    <name>AILERON Trim FILTER Speed less than 280 kts, slowspeed=0</name>
+    <debug>false</debug>
+    <feedback-if-disabled>false</feedback-if-disabled>
+    <initialize-to>output</initialize-to>
+    <enable>
+      <condition>
+	    <equals>
+	      <property>/autopilot/locks/heading</property>
+	      <value>nav1-hold</value>
+	    </equals>
+      </condition>
+    </enable>
+    <input>
+      <property>/controls/flight/aileron-trim-filter</property>
+    </input>
+    <output>/controls/flight/aileron-trim</output>
+    <type>noise-spike</type>
+    <max-rate-of-change>2.0</max-rate-of-change>
+  </filter>
 
  <!-- =============================================================== -->
  <!-- Pitch Axis Modes                                                -->

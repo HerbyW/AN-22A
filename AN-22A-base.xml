@@ -78,7 +78,7 @@
       
       <description>Antonov AN-22A (YASim)</description>
       <author>HerbyW (Instrumentation, Animation, FDM. 3D), firefly 3D for interior and panel, BARANGER E.(3D/FDM-orig)</author>
-      <aircraft-version>1.2.0</aircraft-version>
+      <aircraft-version>1.2.1</aircraft-version>
       <status>early production</status>
       <rating>
 	<FDM type="int">4</FDM>
@@ -98,7 +98,7 @@
 	<livery>
 	  <file type="string">default</file>
 	</livery>
-	<AN-22A><version type="string">1.2.0</version></AN-22A>
+	<AN-22A><version type="string">1.2.1</version></AN-22A>
       </model>
       
       <!-- Weapons are not supported for now, maybe later

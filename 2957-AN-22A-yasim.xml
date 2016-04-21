@@ -127,7 +127,7 @@ An-22A
          <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
          <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
          <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
-         <control-speed control="FLAP1" transition-time="7"/>
+         <control-speed control="FLAP1" transition-time="6"/>
   </mstab>
 
    <!-- Elevator -->

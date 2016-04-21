@@ -52,7 +52,7 @@
   <condition>
     <greater-than>
     <property>engines/engine[2]/rpm</property>
-    <value> 400 </value>
+    <value> 453 </value>
     </greater-than>    
   </condition>
 </animation>
