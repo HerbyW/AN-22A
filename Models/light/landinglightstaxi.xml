@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+  
+  <path>AN-22A-landinglights.ac</path>
+  
+  <animation>
+    <type>select</type>
+    <object-name>landinglamp1</object-name>
+    <object-name>landinglamp1.001</object-name>
+    <object-name>landinglamp2</object-name>     
+    <condition>
+	<greater-than>
+	  <property>gear/gear[0]/position-norm</property>
+	  <value>0.1</value>
+	</greater-than>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>spot_glass-l</object-name>
+    <object-name>spot_glass-l.001</object-name>
+    <object-name>spot_glass-r</object-name>      
+    <condition>
+      <and>
+	<greater-than>
+	  <property>gear/gear[0]/position-norm</property>
+	  <value>0.1</value>
+	</greater-than>
+	<property>sim/multiplay/generic/int[10]</property>	  
+      </and>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>landing_plane-l</object-name>
+    <object-name>landing_plane-r</object-name> 
+    <object-name>landing_plane-r.001</object-name>    
+    <condition>
+      <and>
+	<not>
+	    <property>sim/rendering/rembrandt/enabled</property>
+	  </not>
+	<greater-than>
+	  <property>gear/gear[0]/position-norm</property>
+	  <value>0.1</value>
+	</greater-than>
+        <property>sim/multiplay/generic/int[10]</property>
+      </and>
+    </condition>
+  </animation>
+
+</PropertyList>
+  

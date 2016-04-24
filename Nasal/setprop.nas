@@ -542,3 +542,79 @@ setlistener("gear/gear[3]/wow", func
   }
 }
 );
+
+######################################################################################################################
+
+# ice system
+
+#  environment/temperature-degc
+#  /sim/model/anti-ice-alpha
+#  /sim/model/iceing                = float 19
+#  /controls/switches/glass-heating
+#  /controls/switches/rotor-heating
+
+var ice = maketimer(15, func
+
+  {
+   if(getprop("/controls/switches/glass-heating") == 0) 
+   {
+     if(getprop("/environment/temperature-degc") > 1)
+     {
+     interpolate("/sim/model/anti-ice-alpha", 1, 14);
+     }
+    else
+    {
+      interpolate("/sim/model/anti-ice-alpha", getprop("/environment/temperature-degc") * 0.03846 + 0.90 , 14 );
+    }
+   }
+   else 
+   {
+     interpolate("/sim/model/anti-ice-alpha", 1, 14);
+   }
+   
+   if(getprop("/controls/switches/rotor-heating") == 0) 
+   { 
+     if(getprop("/environment/temperature-degc") > 1)
+     {
+     interpolate("/sim/model/anti-ice-rotor", 1, 14);
+     }
+    else
+    {
+      interpolate("/sim/model/anti-ice-rotor", getprop("/environment/temperature-degc") * 0.03846 , 14 );
+    }
+   }
+   else 
+   {
+     interpolate("/sim/model/anti-ice-rotor", 1, 14);     
+   }
+   
+  }); 
+    
+ice.start();
+
+var glassice = maketimer(15, func {
+  
+  if(getprop("/controls/switches/glass-heating") == 0)
+  
+    interpolate("/sim/model/iceing", getprop("/sim/model/anti-ice-alpha"), 14);
+  
+  if(getprop("/controls/switches/glass-heating") == 1)
+    
+    interpolate("/sim/model/iceing", 1, 14);
+
+});
+
+glassice.start();
+
+var rotorice = maketimer(15, func {
+  
+  if(getprop("/controls/switches/rotor-heating") == 0)
+    
+    interpolate("/controls/flight/spoilers", -1 * getprop("/sim/model/anti-ice-rotor"), 14);
+  
+  if(getprop("/controls/switches/rotor-heating") == 1)
+    
+    interpolate("/controls/flight/spoilers", 0, 14);
+});
+
+rotorice.start();

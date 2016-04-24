@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+    #############################################################################
+    #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM,   	#
+    #	2d & 3d instruments, animations, systems and over.		   	#
+    #    	yurik@megasignal.com					   	#
+    #############################################################################	  
+    -->
+<!--
+    #########################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-June2015
+    Animations, FDM, Instrumentation, Rembrandt, ALS, Paratroopers, Cargo, Sounds
+    all with full Multiplayer Support.
+    Development is ongoing, see latest version: https://github.com/HerbyW?tab=repositories
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    D-Leon: technical assistance
+    Firefly: 3D model improvment
+    Eagel: Liveries
+    Michat, Joe, Miguel, 3m, D-07007 and many others: testing and giving hints for impovements
+    Instruments from; Tu-154b, Il-76D, 707
+    ##########################################################################################
+-->
+<!-- indicators on captain panel
+3D instrument for Tu-154 -->
+<PropertyList>
+ <path>warning60.ac</path>
+ 
+  <!-- Internal instruments lighting -->
+
+  <effect>
+ <inherits-from>Effects/model-transparent</inherits-from>
+  <object-name>cover</object-name>
+</effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>cover</object-name>    
+    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+   
+<!--Indicators 60 Ice Warning -->
+
+
+<animation>
+  <type>material</type>
+  <object-name>text</object-name>
+   <condition>
+    <less-than>
+     <property>/sim/model/anti-ice-alpha</property>    
+     <value>1</value>
+    </less-than>
+  </condition>  
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>    
+  </emission>
+</animation>
+
+</PropertyList>

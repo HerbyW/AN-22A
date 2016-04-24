@@ -113,6 +113,10 @@ An-22A
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
         <control-speed control="FLAP0" transition-time="10"/>
+        <spoiler start="0" end="1" lift="0.05" drag="11"/>
+	<control-input axis="/controls/flight/spoilers" control="SPOILER" src0="0" src1="1" dst0="0" dst1="1"/>
+	<control-output control="SPOILER" prop="/surface-positions/spoiler-pos-norm"/>
+	<control-speed control="SPOILER" transition-time="1.0"/>
   </wing>
 
   <mstab x="3.20951" y="20.35949" z="0.50874"

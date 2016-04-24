@@ -124,6 +124,23 @@
     </offsets>
   </model>
   
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/warning/warning60.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.635 </y-m>
+      <z-m>  0.174 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/warning/warning63.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.591 </y-m>
+      <z-m>  0.174 </z-m>
+    </offsets>
+  </model>
+  
   <!-- Volume Control: Marker, Instruments, Cabin -->
   
   <model>
@@ -2173,6 +2190,162 @@ SKAWK</text>
       <blue>  0.6 </blue>
     </emission>
   </animation>
+  
+       <!-- Switches block 5 ICE -->
+  
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/bano/bano5.xml</path>
+    <offsets>
+      <x-m>  0.350 </x-m>
+      <y-m>  -0.106 </y-m>
+      <z-m>  0.475 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </model>
+ 
+    <!-- Text 7 --> 
+
+  <text>
+    <name>text7</name>
+    <type type="string">literal</type>
+    <text type="string">Glass
+Heating</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.332 </x-m>
+      <y-m>  -0.161 </y-m>
+      <z-m>  0.460 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text7</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Text 8 --> 
+  
+  <text>
+    <name>text8</name>
+    <type type="string">literal</type>
+    <text type="string">Propeller
+Heating</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.332 </x-m>
+      <y-m>  -0.109 </y-m>
+      <z-m>  0.460 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text8</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Text 9 --> 
+  
+    <text>
+    <name>text9</name>
+    <type type="string">literal</type>
+    <text type="string">Intrument
+Heating</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.332 </x-m>
+      <y-m>  -0.057 </y-m>
+      <z-m>  0.460 </z-m>
+      <pitch-deg>56</pitch-deg>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>text9</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/red-lamp-glassheating.xml</path>
+    <offsets>
+      <x-m>  0.382 </x-m>
+      <y-m>  -0.161 </y-m>
+      <z-m>  0.517 </z-m>
+      <pitch-deg>59</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/red-lamp-rotorheating.xml</path>
+    <offsets>
+      <x-m>  0.382 </x-m>
+      <y-m>  -0.109 </y-m>
+      <z-m>  0.517 </z-m> 
+      <pitch-deg>59</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/red-lamp-instrumentheating.xml</path>
+    <offsets>
+      <x-m>  0.382 </x-m>
+      <y-m>  -0.057 </y-m>
+      <z-m>  0.517 </z-m> 
+      <pitch-deg>59</pitch-deg>
+    </offsets>
+  </model>
   
     <!-- Ikone Picture -->
   

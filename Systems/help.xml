@@ -44,7 +44,7 @@
     <name>y</name>
     <desc>Change Pilot Ramp View</desc>
   </key>
-  <text>Welcome to Antonov-22A heavy cargo airplane Version 1.2.1 by HerbyW
+  <text>Welcome to Antonov-22A heavy cargo airplane Version 2.0.1 by HerbyW
     
 	Autostart: press s and make the 2 additional settings!
 		
@@ -112,6 +112,8 @@
 		You find some instruments in an additional panel, the middle instrument is for ground- and air-speed with a switch on the bottom.
 		
 		There is a warning light for overload on top of the compasses (sign: BEC).
+		
+		Now with Ice System implemented, for windows and propellers, switches in the overhead panel.
 		
 		Radios, DMEs, ADFs and Kurs (ILS) Instruments are fully working and can be set in the Engineer-Panel.
 		

@@ -245,7 +245,7 @@
   <!--Stage 3 -->
   
   <filter>
-    <name>AILERON Trim FILTER Speed less than 280 kts, slowspeed=0</name>
+    <name>AILERON Trim FILTER</name>
     <debug>false</debug>
     <feedback-if-disabled>false</feedback-if-disabled>
     <initialize-to>output</initialize-to>
@@ -445,7 +445,7 @@
     </config>
   </pid-controller>
 
-  <!-- Glideslope hold Stage 1 -->
+  <!-- Glideslope hold 3 Stage controler -->
 
   <pi-simple-controller>
     <name>Glideslope Hold</name>
@@ -471,10 +471,9 @@
       <Kp>1.0</Kp>          <!-- proportional gain -->
       <Ki>0.0</Ki>          <!-- integral gain -->
       <u_min>-25.0</u_min> <!-- minimum output clamp -->
-      <u_max>25.0</u_max>   <!-- maximum output clamp -->
+      <u_max>10.0</u_max>   <!-- maximum output clamp -->
     </config>
-  </pi-simple-controller>
-  
+  </pi-simple-controller>  
   
   <!--Stage 2 -->
   
@@ -483,12 +482,10 @@
     <debug>false</debug>
     <enable>
       <condition>
-	
 	  <equals>
 	    <property>/autopilot/locks/altitude</property>
 	    <value>gs1-hold</value>
-	  </equals>
-	  
+	  </equals>  
       </condition>
     </enable>
     <input>
@@ -521,12 +518,10 @@
     <initialize-to>output</initialize-to>
     <enable>
       <condition>
-	
 	  <equals>
 	    <property>/autopilot/locks/altitude</property>
 	    <value>gs1-hold</value>
-	  </equals>
-	  
+	  </equals>  
       </condition>
     </enable>
     <input>
@@ -535,21 +530,7 @@
     <output>/controls/flight/elevator-trim</output>
     <type>noise-spike</type>
     <max-rate-of-change>1.0</max-rate-of-change>
-  </filter>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  </filter>  
 
   <!-- vertical speed hold -->
   <pid-controller>
