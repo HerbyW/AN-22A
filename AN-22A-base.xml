@@ -81,7 +81,7 @@
       
       <description>Antonov AN-22A (YASim)</description>
       <author>HerbyW (Instrumentation, Animation, FDM. 3D), firefly 3D for interior and panel, BARANGER E.(3D/FDM-orig)</author>
-      <aircraft-version>2.0.1</aircraft-version>
+      <aircraft-version>2.0.2</aircraft-version>
       <status>early production</status>
       <rating>
 	<FDM type="int">4</FDM>
@@ -101,7 +101,7 @@
 	<livery>
 	  <file type="string">default</file>
 	</livery>
-	<AN-22A><version type="string">2.0.1</version></AN-22A>
+	<AN-22A><version type="string">2.0.2</version></AN-22A>
 	<anti-ice-alpha type="float">1</anti-ice-alpha>
 	<anti-ice-rotor type="float">1</anti-ice-rotor>
 	<iceing type="float">1</iceing>
