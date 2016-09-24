@@ -2392,6 +2392,18 @@ Heating</text>
         </emission>        
     </animation>
  
+ <!-- Navigator Panel -->
+  <!-- PNP, HSI Horizontal Situation Indicator from TU154b-->
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/pnp/pnp.xml</path>
+    <offsets>
+      <x-m>  -2.11 </x-m>
+      <y-m> -0.0 </y-m>
+      <z-m>  -2.05 </z-m>
+      <pitch-deg>-38</pitch-deg>
+    </offsets>
+  </model>
+   
  
 
 </PropertyList>
