@@ -2458,4 +2458,11 @@
  </offsets>
 </model>
 
+ <!-- LOD for the model as a whole -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>25000</max-m>
+ </animation>
+
 </PropertyList>
