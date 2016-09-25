@@ -314,8 +314,8 @@ An-22A
   </propeller>
 
   <!-- Noze wheel -->
-  <gear x="20.40663" y="0" z="-6.35" retract-time="7" compression="0.45" spring="1.2" damp="1.35" sfric="0.9" dfric="0.6">
-        <control-input axis="/controls/flight/rudder" control="STEER" square="true"/>
+  <gear x="20.40663" y="0" z="-6.30" retract-time="7" compression="0.45" spring="1.2" damp="1.35" sfric="0.9" dfric="0.6">
+        <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-0.75" dst1="0.75" square="true"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         <control-output control="STEER" prop="/gear/gear[0]/steering-norm"/>
         <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>

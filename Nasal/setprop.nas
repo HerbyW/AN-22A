@@ -1,5 +1,3 @@
-
-
 #    ###################################################################################
 #    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
 #    Development is ongoing, see latest version: www.github.com/HerbyW
@@ -45,8 +43,7 @@ timerDiff.start();
 #
 setlistener("/controls/paratroopers/jump-signal", func(v) {
   if(v.getValue()){
-    interpolate("/controls/paratroopers/jump-signal-pos", 1, 0.25);
-    
+    interpolate("/controls/paratroopers/jump-signal-pos", 1, 0.25);    
   }else{
     interpolate("/controls/paratroopers/jump-signal-pos", 0, 0.25);
   }
@@ -543,6 +540,18 @@ setlistener("gear/gear[3]/wow", func
 }
 );
 
+setlistener("controls/gear/brake-parking", func
+{
+  if (getprop("controls/gear/brake-parking") == 0)
+    interpolate("controls/gear/runway", 0 , 0.1);
+  else
+  {
+  if ( ( getprop("controls/gear/brake-parking") == 1 ) and ( getprop("gear/gear[2]/rollspeed-ms") > 30) )
+    interpolate("controls/gear/runway", 1 , 1.2, 0 , 1.2);
+  }
+}
+);
+
 ######################################################################################################################
 
 # ice system
@@ -565,6 +574,7 @@ var ice = maketimer(15, func
     else
     {
       interpolate("/sim/model/anti-ice-alpha", getprop("/environment/temperature-degc") * 0.03846 + 0.90 , 14 );
+      setprop("sim/messages/copilot", "Window Ice Warning System has detected low temperature");
     }
    }
    else 
@@ -581,6 +591,7 @@ var ice = maketimer(15, func
     else
     {
       interpolate("/sim/model/anti-ice-rotor", getprop("/environment/temperature-degc") * 0.03846 , 14 );
+      setprop("sim/messages/copilot", "Propeller Ice Warning System has detected low temperature");
     }
    }
    else 
@@ -618,3 +629,22 @@ var rotorice = maketimer(15, func {
 });
 
 rotorice.start();
+######################################################################################################################
+# smoke shooter definition
+#  /sim/model/smokeshooterspeed  == float n="17"
+
+#<speed-mps>
+#<value>80</value>
+#<spread>15</spread>
+#</speed-mps>
+
+setlistener("gear/gear[2]/wow", func
+{
+  if (getprop("gear/gear[2]/wow") == 0)
+    setprop("/sim/model/smokeshooterspeed", 80 );
+  else
+  {
+   setprop("/sim/model/smokeshooterspeed", 35 + getprop("/gear/gear[2]/rollspeed-ms") * 0.5);
+  }
+}
+);

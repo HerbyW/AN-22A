@@ -16,7 +16,7 @@
     <condition>
       <greater-than>
 	  <property>sim/multiplay/generic/float[18]</property>
-	  <value>0.5</value>
+	  <value>0.45</value>
       </greater-than>
       </condition>
       
@@ -71,7 +71,7 @@
         </color>
         <size><value> 0.55 </value></size>
       </end>
-      <life-sec><value> 25 </value></life-sec>
+      <life-sec><value> 65 </value></life-sec>
       <mass-kg>0.35</mass-kg>
       <radius-m>0.40</radius-m>
     </particle>

@@ -24,7 +24,7 @@
         <offset>-0.45</offset>
       </volume>
       <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <max-dist>1000</max-dist>
     </crank>
     
     <crank>
@@ -37,7 +37,7 @@
         <offset>-0.45</offset>
       </volume>
       <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <max-dist>1000</max-dist>
       <delay-sec>0</delay-sec>
     </crank>
     
@@ -51,7 +51,7 @@
         <offset>-0.45</offset>
       </volume>
       <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <max-dist>1000</max-dist>
       <delay-sec>0</delay-sec>
     </crank>
     
@@ -65,7 +65,7 @@
         <offset>-0.45</offset>
       </volume>
       <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <max-dist>1000</max-dist>
       <delay-sec>0</delay-sec>
     </crank>
   
@@ -91,7 +91,7 @@
         <max>0.2</max>
       </pitch>
       <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>10000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
@@ -115,7 +115,7 @@
         <max>0.2</max>
       </pitch>
       <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>10000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
@@ -139,7 +139,7 @@
         <max>0.2</max>
       </pitch>
       <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>10000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
@@ -163,7 +163,7 @@
         <max>0.2</max>
       </pitch>
       <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>10000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
@@ -184,7 +184,7 @@
         <max>0.85</max>
       </volume>
       <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>3000</max-dist>
     </rumble>
     
     <rumble>
@@ -205,7 +205,7 @@
         <max>0.85</max>
       </volume>
       <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <max-dist>3000</max-dist>
     </rumble>
 
     <!-- Gear in and out -->
@@ -215,8 +215,11 @@
       <mode>in-transit</mode>
       <path>Aircraft/AN-22A/Sounds/gear.wav</path>
       <property>/gear/gear[0]/position-norm</property>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <volume>
+        <factor>0.5</factor>
+      </volume>
+      <reference-dist>500</reference-dist>
+      <max-dist>2000</max-dist>
     </gear>
 
     <gear>
@@ -228,8 +231,11 @@
          <value>0.96</value>
        </greater-than>
      </condition>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <volume>
+        <factor>0.5</factor>
+      </volume>
+      <reference-dist>500</reference-dist>
+      <max-dist>2000</max-dist>
     </gear>
 
     <!-- Touchdown -->
@@ -241,26 +247,11 @@
       <condition>        
           <property>sim/multiplay/generic/int[18]</property>                 
       </condition>
-      <volume>
-        <property>/velocities/speed-down-fps</property>
-        <factor>0.5</factor>
-        <max>1.0</max>
+        <volume>
+        <factor>0.15</factor>
       </volume>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.01</factor>
-	<min>0.7</min>
-        <max>1.0</max>
-      </volume>      
-      <pitch>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.0025</factor>
-        <offset>0.5</offset>
-	<min>0.9</min>
-        <max>1.0</max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <reference-dist>1000</reference-dist>
+      <max-dist>5000</max-dist>
     </squeal>
     
     <squeal>
@@ -270,26 +261,11 @@
       <condition>        
           <property>sim/multiplay/generic/int[19]</property>          
       </condition>
-      <volume>
-        <property>/velocities/speed-down-fps</property>
-        <factor>0.5</factor>
-        <max>1.0</max>
+        <volume>
+        <factor>0.15</factor>
       </volume>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.01</factor>
-	<min>0.7</min>
-        <max>1.0</max>
-      </volume>      
-      <pitch>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.0025</factor>
-        <offset>0.5</offset>
-	<min>0.9</min>
-        <max>1.0</max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <reference-dist>1000</reference-dist>
+      <max-dist>5000</max-dist>
     </squeal>
  
  <!-- Flaps -->
@@ -302,7 +278,7 @@
       <volume>
         <factor>0.35</factor>
       </volume>
-      <reference-dist>100</reference-dist>
+      <reference-dist>500</reference-dist>
       <max-dist>1000</max-dist>
     </flap>
     
