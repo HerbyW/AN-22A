@@ -71,7 +71,7 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </output>
     <config>
-      <Kp>-1.0</Kp>        <!-- proportional gain -->
+      <Kp>-3.0</Kp>        <!-- proportional gain -->
       <beta>1.0</beta>     <!-- input value weighing factor -->
       <alpha>0.1</alpha>   <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>   <!-- input value weighing factor for -->
@@ -98,10 +98,10 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </reference>
     <output>
-      <prop>/controls/flight/aileron-trim</prop>
+      <prop>/controls/flight/aileron-trim-filter</prop>
     </output>
     <config>
-      <Kp>0.1</Kp>        <!-- proportional gain -->
+      <Kp>0.065</Kp>        <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -134,7 +134,7 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </output>
     <config>
-      <Kp>-1.0</Kp>        <!-- proportional gain -->
+      <Kp>-3.0</Kp>        <!-- proportional gain -->
       <beta>1.0</beta>     <!-- input value weighing factor -->
       <alpha>0.1</alpha>   <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>   <!-- input value weighing factor for -->
@@ -180,12 +180,16 @@
 
   <!-- Stage #1 sets target roll based on diff between current heading -->
   
-  <pid-controller>
-    <name>Nav1 Hold Stage 1</name>
+  <pi-simple-controller>
+    <name>NAV 1 Hold</name>
     <debug>false</debug>
     <enable>
-      <prop>/autopilot/locks/heading</prop>
-      <value>nav1-hold</value>
+      <condition>
+	<equals>
+	  <property>/autopilot/locks/heading</property>
+	  <value>nav1-hold</value>
+	</equals>
+      </condition>
     </enable>
     <input>
       <prop>/autopilot/internal/nav1-heading-error-lookahead-deg</prop>
@@ -194,20 +198,15 @@
       <value>0.0</value>
     </reference>
     <output>
-      <prop>/autopilot/internal/target-roll-deg</prop>
+      <property>autopilot/internal/target-roll-deg</property>
     </output>
     <config>
-      <Kp>-1.0</Kp>        <!-- proportional gain -->
-      <beta>1.0</beta>     <!-- input value weighing factor -->
-      <alpha>0.1</alpha>   <!-- low pass filter weighing factor -->
-      <gamma>0.0</gamma>   <!-- input value weighing factor for -->
-                           <!-- unfiltered derivative error -->
-      <Ti>10.0</Ti>        <!-- integrator time -->
-      <Td>0.00001</Td>     <!-- derivator time -->
-      <u_min>-18.0</u_min> <!-- minimum output clamp -->
-      <u_max>18.0</u_max>  <!-- maximum output clamp -->
+      <Kp>-1.0</Kp>
+      <Ki>0.0</Ki>
+      <u_min>-20</u_min>
+      <u_max>20</u_max>
     </config>
-  </pid-controller>
+  </pi-simple-controller>
 
   <!--Stage 2 -->
   
@@ -232,7 +231,7 @@
       <prop>/controls/flight/aileron-trim-filter</prop>
     </output>
     <config>
-      <Kp>0.065</Kp><!-- 0.065 -->
+      <Kp>0.055</Kp><!-- 0.065 -->
       <beta>1.0</beta>
       <alpha>0.1</alpha>
       <gamma>0.0</gamma>
@@ -252,10 +251,16 @@
     <initialize-to>output</initialize-to>
     <enable>
       <condition>
-	    <equals>
-	      <property>/autopilot/locks/heading</property>
-	      <value>nav1-hold</value>
-	    </equals>
+	<or>
+	  <equals>
+	    <property>/autopilot/locks/heading</property>
+	    <value>nav1-hold</value>
+	  </equals>
+	  <equals> 
+	    <property>/autopilot/locks/heading</property>
+	    <value>dg-heading-hold</value>
+	  </equals> 
+	</or> 
       </condition>
     </enable>
     <input>
@@ -357,6 +362,13 @@
       <u_max>20.0</u_max>   <!-- maximum output clamp -->
     </config>
   </pi-simple-controller>
+  
+  <filter>
+   <type>noise-spike</type>
+     <max-rate-of-change>1</max-rate-of-change>
+     <input>/autopilot/internal/target-climb-rate-fps</input>
+     <output>/autopilot/internal/target-climb-rate-fps-limited</output>
+  </filter>
 
   <!-- Stage #2 drives the elevator-trim to achieve the desired climb rate. -->
   <pid-controller>
@@ -370,7 +382,7 @@
       <prop>/velocities/vertical-speed-fps</prop>
     </input>
     <reference>
-      <prop>/autopilot/internal/target-climb-rate-fps</prop>
+      <prop>/autopilot/internal/target-climb-rate-fps-limited</prop>
     </reference>
     <output>
       <prop>/controls/flight/elevator-trim</prop>
