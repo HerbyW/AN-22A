@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--
-    ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
-    Development is ongoing, see latest version: www.github.com/HerbyW
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    
-    Firefly: 3D model improvment
-    Eagel: Liveries
-    ###################################################################################
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
 
 <PropertyList>
@@ -81,7 +75,7 @@
       
       <description>Antonov AN-22A (YASim)</description>
       <author>HerbyW (Instrumentation, Animation, FDM. 3D-model), firefly 3D for interior and panel, BARANGER E.(3D/FDM-orig)</author>
-      <aircraft-version>4.0.2</aircraft-version>
+      <aircraft-version>4.0.4</aircraft-version>
       <status>early production</status>
       <rating>
 	<FDM type="int">4</FDM>
@@ -101,7 +95,7 @@
 	<livery>
 	  <file type="string">default</file>
 	</livery>
-	<AN-22A><version type="string">4.0.2</version></AN-22A>
+	<AN-22A><version type="string">4.0.4</version></AN-22A>
 	<anti-ice-alpha type="float">1</anti-ice-alpha>
 	<anti-ice-rotor type="float">1</anti-ice-rotor>
 	<iceing type="float">1</iceing>
@@ -114,13 +108,7 @@
       <instrumentation>
 	<path>Aircraft/AN-22A/Systems/instrumentation.xml</path>
       </instrumentation>
-      
-      
-      <submodels>
-	<serviceable type="bool">true</serviceable>
-	<path>Aircraft/AN-22A/Models/Effects/Submodels/submodels.xml</path>
-      </submodels>
-      
+ 
       <multiplay>
 	<chat_display>1</chat_display>
 	<generic> 

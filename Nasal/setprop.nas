@@ -1,12 +1,7 @@
-#    ###################################################################################
-#    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-#    Development is ongoing, see latest version: www.github.com/HerbyW
-#    This file is licenced under the terms of the GNU General Public Licence V3 or later
-#    
-#    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
-#    Eagel: Liveries
-#    ###################################################################################
-
+#
+#  Copyright (C) Herbert Wagner Dec2014-2016
+#  see Read-Me.txt for all copyrights in the base folder of this aircraft
+###################################################################################
 
 #UVID-15 Control for Pressure in mmhg and inhg
 # create listener
@@ -367,37 +362,65 @@ setprop("sim/messages/copilot", "For Autostart hit the s key!");
 ####################################################################################################################
 
 #
-# Reverser
+# Reverser and throttle control
 #
 
-setlistener("controls/engines/engine[0]/throttle", func
+setlistener("/controls/engines/engine[0]/throttle", func
  {
-if
-(  getprop("/controls/reverser") == 0) 
-{
-setprop("/controls/engines/engine[0]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
-setprop("/controls/engines/engine[1]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
-setprop("/controls/engines/engine[2]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
-setprop("/controls/engines/engine[3]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
-
-setprop("/controls/engines/engine[0]/throttle-r", 0);
-setprop("/controls/engines/engine[1]/throttle-r", 0);
-setprop("/controls/engines/engine[2]/throttle-r", 0);
-setprop("/controls/engines/engine[3]/throttle-r", 0);
-}
-else
-{  
-setprop("/controls/engines/engine[0]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
-setprop("/controls/engines/engine[1]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
-setprop("/controls/engines/engine[2]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
-setprop("/controls/engines/engine[3]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
-
-setprop("/controls/engines/engine[0]/throttle-v", 0);
-setprop("/controls/engines/engine[1]/throttle-v", 0);
-setprop("/controls/engines/engine[2]/throttle-v", 0);
-setprop("/controls/engines/engine[3]/throttle-v", 0);
-}
+  if ((getprop("/controls/engines/engine[0]/throttle") < 0.015) and (getprop("/controls/autostart-time") == 1)) 
+  setprop("/controls/engines/engine[0]/throttle", 0.015);
  }
+);
+
+setlistener("/controls/engines/engine[1]/throttle", func
+ {
+  if (getprop("/controls/engines/engine[1]/throttle") < 0.015 and getprop("/controls/autostart-time") == 1) 
+  setprop("/controls/engines/engine[1]/throttle", 0.015);
+ }
+);
+
+setlistener("/controls/engines/engine[2]/throttle", func
+ {
+  if (getprop("/controls/engines/engine[2]/throttle") < 0.015 and getprop("/controls/autostart-time") == 1) 
+  setprop("/controls/engines/engine[2]/throttle", 0.015);
+ }
+);
+
+setlistener("/controls/engines/engine[3]/throttle", func
+ {
+  if (getprop("/controls/engines/engine[3]/throttle") < 0.015 and getprop("/controls/autostart-time") == 1) 
+  setprop("/controls/engines/engine[3]/throttle", 0.015);
+ }
+);
+
+
+setlistener("/controls/engines/engine[0]/throttle", func
+{   
+ if ((getprop("/controls/reverser") == 0) and (getprop("/controls/autostart-time") == 1)) 
+ {
+  setprop("/controls/engines/engine[0]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
+  setprop("/controls/engines/engine[1]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
+  setprop("/controls/engines/engine[2]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
+  setprop("/controls/engines/engine[3]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
+
+  setprop("/controls/engines/engine[0]/throttle-r", 0);
+  setprop("/controls/engines/engine[1]/throttle-r", 0);
+  setprop("/controls/engines/engine[2]/throttle-r", 0);
+  setprop("/controls/engines/engine[3]/throttle-r", 0);
+ }
+ if ((getprop("/controls/reverser") == 1) and (getprop("/controls/autostart-time") == 1))
+ {  
+  setprop("/controls/engines/engine[0]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
+  setprop("/controls/engines/engine[1]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
+  setprop("/controls/engines/engine[2]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
+  setprop("/controls/engines/engine[3]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
+
+  setprop("/controls/engines/engine[0]/throttle-v", 0);
+  setprop("/controls/engines/engine[1]/throttle-v", 0);
+  setprop("/controls/engines/engine[2]/throttle-v", 0);
+  setprop("/controls/engines/engine[3]/throttle-v", 0);
+ }
+}
 );
 
 #############################################################################################################

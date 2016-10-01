@@ -1,7 +1,11 @@
 ######################################################################
+# 
+#  Map case inserted paper images (.svg or .png in Instruments-3d/mapcase/).
+#  From TU154B
 #
-# Map case inserted paper images (.svg or .png in Instruments-3d/mapcase/).
-# From TU154B
+#  Copyright (C) Herbert Wagner Dec2014-2016
+#  see Read-Me.txt for all copyrights in the base folder of this aircraft
+###################################################################################
 
 var mapcase = canvas.new({
     name: "MapCase",

@@ -7,15 +7,8 @@
     #############################################################################	  
     -->
 <!--
-
-    ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    
-    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
-    Eagel: Liveries
-    ###################################################################################
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
 <!-- Green lamp
 3D instrument for Tu-154 -->
@@ -49,17 +42,11 @@
 <animation>
   <type>select</type>
   <object-name>_d_2</object-name>
-  <condition>
-    <and>
+  <condition>    
     <greater-than>
-    <property>/engines/engine[1]/n2</property>
-    <value> 67.06 </value>
-    </greater-than>
-    <greater-than>
-    <property>/controls/engines/engine[1]/throttle</property>
-    <value> 0.074 </value>
-    </greater-than>
-    </and>      
+    <property>/engines/engine[1]/rpm</property>
+    <value> 350 </value>
+    </greater-than>        
   </condition>
 </animation>
 

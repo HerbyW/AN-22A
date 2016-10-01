@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--
-    ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
-    Development is ongoing, see latest version: www.github.com/HerbyW
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    
-    Firefly: 3D model improvment
-    Eagel: Liveries
-    ###################################################################################
-
-     Panel and Interior redesign from "firefly" Dec/Jan 2014
-     Fotos from https://www.flickr.com/photos/raf_yyc/ added for visualisation of work to do, all rights belong to raf_yyc
-
-     Source : http://i41.photobucket.com/albums/e290/sovietjet/IMG_1739.jpg 
-              this is not a AN-12, but for a start not bad                 -->
-
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
 <PropertyList>
 
   

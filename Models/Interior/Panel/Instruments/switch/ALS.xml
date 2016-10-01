@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!--
+    #############################################################################
+    #    (C) 2007 by Yurik V. Nikiforoff - port for FGFS,  FDM,                 #
+    # 2d & 3d instruments, animations, systems and over.                        #
+    #     yurik@megasignal.com                                                  #
+    #                                                                           #
+    #############################################################################
+-->
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
 <PropertyList>
 
   <path>switch.ac</path>

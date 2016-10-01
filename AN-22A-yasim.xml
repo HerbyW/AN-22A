@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!--
-    ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-May2015
-    Development is ongoing, see latest version: www.github.com/HerbyW
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    
-    Firefly: 3D model improvment
-    Eagel: Liveries
-    ###################################################################################
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
 <!--Sources              : http://en.wikipedia.org/wiki/Antonov_An-22
 
@@ -34,6 +28,17 @@ An-22A
 An-22A
     Improved variant with air-start capability, modified electrical system,
     and updated radio and navigation equipment, 28 built at Tashkent.
+    
+    YASim solution results:
+       Iterations: 2421
+       Drag Coefficient: 19.6124
+       Lift Ratio: 127.213
+       Cruise AoA: 2.03591
+       Tail Incidence: -3.87746
+       Approach Elevator: -0.291123
+       CG: 7.804, -0.000, -0.939
+    
+    
 -->
 
 <airplane mass="251625" version="YASIM_VERSION_CURRENT">
