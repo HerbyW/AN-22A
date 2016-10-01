@@ -216,7 +216,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.45">
+                             bsfc="0.35">
                              <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[0]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -248,7 +248,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.45">
+                             bsfc="0.35">
                              <control-input axis="/controls/engines/engine[1]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[1]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -280,7 +280,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.45">
+                             bsfc="0.35">
                              <control-input axis="/controls/engines/engine[2]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[2]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -312,7 +312,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.45">
+                             bsfc="0.35">
                              <control-input axis="/controls/engines/engine[3]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[3]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -381,10 +381,10 @@ An-22A
         <control-speed control="EXTEND" transition-time="9.7"/>
   </gear>
 
-  <tank x="3" y=" 10.36101" z="-0.661" capacity="24000"/>
-  <tank x="3" y="-10.36101" z="-0.661" capacity="24000"/>
-  <tank x="3" y=" 13.36101" z="0.1" capacity="24000"/>
-  <tank x="3" y="-13.36101" z="0.1" capacity="24000"/>
+  <tank x="3" y=" 10.36101" z="-0.661" capacity="52911"/>
+  <tank x="3" y="-10.36101" z="-0.661" capacity="52911"/>
+  <tank x="3" y=" 13.36101" z="0.1" capacity="52911"/>
+  <tank x="3" y="-13.36101" z="0.1" capacity="52911"/>
   <!-- Mass distribution CG: 9.67, 0.000, -1.040-->
   <ballast x="-2.0" y="0" z="-2.27" mass="12000"/>
   <ballast x="19.5" y="0" z="-2.26" mass="92000"/>
