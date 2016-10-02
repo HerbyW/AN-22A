@@ -69,7 +69,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         </color>
         <size><value> 0.55 </value></size>
       </end>
-      <life-sec><value> 65 </value></life-sec>
+      <life-sec><value> 165 </value></life-sec>
       <mass-kg>0.35</mass-kg>
       <radius-m>0.40</radius-m>
     </particle>

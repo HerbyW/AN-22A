@@ -151,7 +151,7 @@ An-22A
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="3.0"/>
+         <control-speed control="FLAP0" transition-time="6.0"/>
   </hstab>
 
   <!-- Ruder chord was 5.023 reduced to compensate for sidewind obscure -->
@@ -216,7 +216,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.35">
+                             bsfc="0.37">
                              <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[0]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -248,7 +248,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.35">
+                             bsfc="0.37">
                              <control-input axis="/controls/engines/engine[1]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[1]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -280,7 +280,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.35">
+                             bsfc="0.37">
                              <control-input axis="/controls/engines/engine[2]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[2]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -312,7 +312,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.35">
+                             bsfc="0.37">
                              <control-input axis="/controls/engines/engine[3]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[3]/throttle-v" control="THROTTLE"/>
              </turbine-engine>

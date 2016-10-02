@@ -58,22 +58,6 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   </view>
   
   <view n="103">
-    <name>Exterior tail View</name>
-    <type>lookfrom</type>
-    <internal archive="y">true</internal>
-    <config>
-      <from-model type="bool">true</from-model>
-      <from-model-idx type="int">0</from-model-idx>
-      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-      <x-offset-m archive="y">  0.00000 </x-offset-m> <!--Right-->
-      <y-offset-m archive="y">  6.66544 </y-offset-m> <!--Up-->
-      <z-offset-m archive="y"> 22.60122 </z-offset-m> <!--Back-->
-      <pitch-offset-deg> -5 </pitch-offset-deg>
-      <default-field-of-view-deg type="double"> 50 </default-field-of-view-deg>
-    </config>
-  </view>
-  
-  <view n="104">
     <name>Navigator View</name>
     <type>lookfrom</type>
     <internal archive="y">true</internal>
@@ -81,11 +65,28 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <from-model type="bool">true</from-model>
       <from-model-idx type="int">0</from-model-idx>
       <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-      <x-offset-m archive="y">  0.09 </x-offset-m> <!--Right-->
-      <y-offset-m archive="y">  -2.84 </y-offset-m> <!--Up-->
-      <z-offset-m archive="y"> -26.72 </z-offset-m> <!--Back-->
-      <pitch-offset-deg> -10 </pitch-offset-deg>
-      <default-field-of-view-deg type="double"> 80 </default-field-of-view-deg>
+      <x-offset-m archive="y">  0.0 </x-offset-m> <!--Right-->
+      <y-offset-m archive="y">  -2.82 </y-offset-m> <!--Up-->
+      <z-offset-m archive="y"> -26.06 </z-offset-m> <!--Back-->
+      <pitch-offset-deg> -19 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 75 </default-field-of-view-deg>
+    </config>
+  </view>
+  
+  <view n="104">
+    <name>Navigator View Guest</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <x-offset-m archive="y">  0.71 </x-offset-m> <!--Right-->
+      <y-offset-m archive="y">  -2.89 </y-offset-m> <!--Up-->
+      <z-offset-m archive="y"> -26.71 </z-offset-m> <!--Back-->
+      <pitch-offset-deg> -25 </pitch-offset-deg>
+      <heading-offset-deg type="double">30 </heading-offset-deg>
+      <default-field-of-view-deg type="double"> 120.0 </default-field-of-view-deg>
     </config>
   </view>
   
