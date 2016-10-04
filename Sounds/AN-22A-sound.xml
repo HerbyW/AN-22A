@@ -34,15 +34,15 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	</condition>			    
 	<volume>
 		<property>sim/multiplay/generic/float[8]</property>
-		<factor>0.5</factor>
-		<offset>0.5</offset>
+		<factor>0.4</factor>
+		<offset>0.6</offset>
 	</volume>
 	<position>
 		<x>-28</x>
 		<y>-1.7</y>
 		<z>-2.8</z>
 	</position>
-	<reference-dist>20</reference-dist>
+	<reference-dist>5</reference-dist>
   </engineflight-L>
   
   <engineflight-R>
@@ -69,20 +69,20 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	   </and>
 	</condition>			    
 	<volume>
-		<property>sim/multiplay/generic/float[8]</property>
-		<factor>0.5</factor>
-		<offset>0.5</offset>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>0.4</factor>
+		<offset>0.6</offset>
 	</volume>
 	<position>
 		<x>-28</x>
 		<y>1.7</y>
 		<z>-2.8</z>
 	</position>
-	<reference-dist>20</reference-dist>
+	<reference-dist>5</reference-dist>
   </engineflight-R>
   
-  <enginerunway-L>
-	<name>enginerunway-L</name>
+  <enginerevrserunway-L>
+	<name>enginerevrserunway-L</name>
 	<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-reverserunway-left.wav</path>
 	<mode>looped</mode>
 	<condition>  
@@ -98,33 +98,32 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 			</equals>
 
 		</or>
-			<less-than>
-				<property>sim/multiplay/generic/float[17]</property>
-				<value>80</value>
-			</less-than>
-			<greater-than>
-				<property>sim/multiplay/generic/float[12]</property>
-				<value>1</value>
-			</greater-than>
+		<less-than>
+			<property>sim/multiplay/generic/float[17]</property>
+			<value>80</value>
+		</less-than>
+		<greater-than>
+			<property>sim/multiplay/generic/float[17]</property>
+			<value>35.1</value>
+		</greater-than>
+		<property>sim/multiplay/generic/int[6]</property>
 	   </and>
 	</condition>			    
 	<volume>
-        <property>sim/multiplay/generic/float[12]</property>
-        <type>log</type>
-        <factor>0.25</factor>
-	<min>0.0</min>
-        <max>1</max>
-      </volume>
+		<property>sim/multiplay/generic/float[8]</property>
+		<factor>0.4</factor>
+		<offset>0.6</offset>
+	</volume>
 	<position>
 		<x>-28</x>
 		<y>-1.7</y>
 		<z>-2.8</z>
 	</position>
-        <reference-dist>20</reference-dist>
-  </enginerunway-L>
+        <reference-dist>5</reference-dist>
+  </enginerevrserunway-L>
   
-  <enginerunway-R>
-	<name>enginerunway-R</name>
+  <enginerevrserunway-R>
+	<name>enginerevrserunway-R</name>
 	<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-reverserunway-right.wav</path>
 	<mode>looped</mode>
 	<condition>  
@@ -140,30 +139,111 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 			</equals>
 
 		</or>
-			<less-than>
-				<property>sim/multiplay/generic/float[17]</property>
-				<value>80</value>
-			</less-than>
-			<greater-than>
-				<property>sim/multiplay/generic/float[12]</property>
-				<value>1</value>
-			</greater-than>
+		<less-than>
+			<property>sim/multiplay/generic/float[17]</property>
+			<value>80</value>
+		</less-than>
+		<greater-than>
+			<property>sim/multiplay/generic/float[17]</property>
+			<value>35.1</value>
+		</greater-than>
+		<property>sim/multiplay/generic/int[6]</property>
 	   </and>
 	</condition>			    
 	<volume>
-        <property>sim/multiplay/generic/float[12]</property>
-        <type>log</type>
-        <factor>0.25</factor>
-	<min>0.0</min>
-        <max>1</max>
-      </volume>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>0.4</factor>
+		<offset>0.6</offset>
+	</volume>
 	<position>
 		<x>-28</x>
 		<y> 1.7</y>
 		<z>-2.8</z>
 	</position>
-	<reference-dist>20</reference-dist>
-  </enginerunway-R>
+	<reference-dist>5</reference-dist>
+  </enginerevrserunway-R>
+  
+  <runway-L>
+	<name>runway-L</name>
+	<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-runway-left.wav</path>
+	<mode>looped</mode>
+	<condition>  
+	   <and>
+		<or>
+                        <equals>
+			  <property>/sim/current-view/view-number</property>
+			  <value>11</value>	
+			</equals> 
+			<equals>
+			  <property>/sim/current-view/view-number</property>
+			  <value>12</value>	
+			</equals>
+
+		</or>
+		<less-than>
+			<property>sim/multiplay/generic/float[17]</property>
+			<value>80</value>
+		</less-than>
+		<greater-than>
+			<property>sim/multiplay/generic/float[17]</property>
+			<value>35.1</value>
+		</greater-than>
+		<not><property>sim/multiplay/generic/int[6]</property></not>
+	   </and>
+	</condition>			    
+	<volume>
+		<property>sim/multiplay/generic/float[8]</property>
+		<factor>0.4</factor>
+		<offset>0.6</offset>
+	</volume>
+	<position>
+		<x>-28</x>
+		<y>-1.7</y>
+		<z>-2.8</z>
+	</position>
+        <reference-dist>5</reference-dist>
+  </runway-L>
+  
+  <runway-R>
+	<name>runway-R</name>
+	<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-runway-right.wav</path>
+	<mode>looped</mode>
+	<condition>  
+	   <and>
+		<or>
+                        <equals>
+			  <property>/sim/current-view/view-number</property>
+			  <value>11</value>	
+			</equals> 
+			<equals>
+			  <property>/sim/current-view/view-number</property>
+			  <value>12</value>	
+			</equals>
+
+		</or>
+		<less-than>
+			<property>sim/multiplay/generic/float[17]</property>
+			<value>80</value>
+		</less-than>
+		<greater-than>
+			<property>sim/multiplay/generic/float[17]</property>
+			<value>35.1</value>
+		</greater-than>
+		<not><property>sim/multiplay/generic/int[6]</property></not>
+	   </and>
+	</condition>			    
+	<volume>
+		<property>sim/multiplay/generic/float[10]</property>
+		<factor>0.4</factor>
+		<offset>0.6</offset>
+	</volume>
+	<position>
+		<x>-28</x>
+		<y> 1.7</y>
+		<z>-2.8</z>
+	</position>
+	<reference-dist>5</reference-dist>
+  </runway-R>
 
   <!-- Engines 1 -4 starting up-->
     <crank>
@@ -173,7 +253,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
          <property>sim/multiplay/generic/int[12]</property>         
         </condition>      
       <volume>
-        <offset>-0.45</offset>
+        <offset>-0.42</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>1000</max-dist>
@@ -186,11 +266,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
          <property>sim/multiplay/generic/int[13]</property>         
         </condition>      
       <volume>
-        <offset>-0.45</offset>
+        <offset>-0.40</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>1000</max-dist>
-      <delay-sec>0</delay-sec>
     </crank>
     
     <crank>
@@ -200,11 +279,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
          <property>sim/multiplay/generic/int[14]</property>         
         </condition>      
       <volume>
-        <offset>-0.45</offset>
+        <offset>-0.38</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>1000</max-dist>
-      <delay-sec>0</delay-sec>
     </crank>
     
     <crank>
@@ -214,34 +292,32 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
          <property>sim/multiplay/generic/int[15]</property>         
         </condition>      
       <volume>
-        <offset>-0.45</offset>
+        <offset>-0.36</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>1000</max-dist>
-      <delay-sec>0</delay-sec>
     </crank>
   
   <!-- Engines 1 -4 running -->
 
-    <engine>
+    <engine0>
        <name>engine0</name>
       <mode>looped</mode>
       <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-left.wav</path>      
-        <condition>       
-         <property>sim/multiplay/generic/int[12]</property>
+        <condition>
+	 <and>
+          <property>sim/multiplay/generic/int[12]</property>
+	  <greater-than>
+	    <property>sim/multiplay/generic/float[4]</property>
+	    <value>65.523</value>
+	  </greater-than>
+	 </and>
         </condition>  
       <volume>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.0008</factor>
-        <min>0.06</min>
-        <max>0.60</max>        
+        <factor>0.00072</factor>
+	<offset>0.055</offset>        
       </volume>
-      <pitch>
-        <property>/engines/engine[0]/rpm</property>
-        <factor>0.000006</factor>
-        <min>-0.05</min>
-        <max>0.0</max>
-      </pitch>
       <position>
 		<x>-5.2</x>
 		<y>-13.4</y>
@@ -249,28 +325,26 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	</position>
       <reference-dist>100</reference-dist>
       <max-dist>10000</max-dist>
-      <delay-sec>17</delay-sec>
-    </engine>
+    </engine0>
     
-    <engine>
+    <engine1>
        <name>engine1</name>
       <mode>looped</mode>
       <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-left.wav</path>      
-        <condition>       
-         <property>sim/multiplay/generic/int[13]</property>
+        <condition>
+	 <and>
+          <property>sim/multiplay/generic/int[13]</property>
+	  <greater-than>
+	    <property>sim/multiplay/generic/float[5]</property>
+	    <value>65.523</value>
+	  </greater-than>
+	 </and>
         </condition>  
       <volume>
         <property>/engines/engine[1]/rpm</property>
-        <factor>0.0008</factor>
-        <min>0.06</min>
-        <max>0.60</max>        
+        <factor>0.00072</factor>
+	<offset>0.055</offset>        
       </volume>
-      <pitch>
-        <property>/engines/engine[1]/rpm</property>
-        <factor>0.000006</factor>
-        <min>-0.05</min>
-        <max>0.0</max>
-      </pitch>
       <position>
 		<x>-5.8</x>
 		<y>-6.9</y>
@@ -278,28 +352,26 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	</position>
       <reference-dist>100</reference-dist>
       <max-dist>10000</max-dist>
-      <delay-sec>17</delay-sec>
-    </engine>
+    </engine1>
     
-    <engine>
+    <engine2>
        <name>engine2</name>
       <mode>looped</mode>
       <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-right.wav</path>      
-        <condition>       
-         <property>sim/multiplay/generic/int[14]</property>
+        <condition>
+	 <and>
+          <property>sim/multiplay/generic/int[14]</property>
+	  <greater-than>
+	    <property>sim/multiplay/generic/float[6]</property>
+	    <value>65.523</value>
+	  </greater-than>
+	 </and>
         </condition>  
       <volume>
         <property>/engines/engine[2]/rpm</property>
-        <factor>0.0008</factor>
-        <min>0.06</min>
-        <max>0.60</max>        
+        <factor>0.00072</factor>
+	<offset>0.055</offset>        
       </volume>
-      <pitch>
-        <property>/engines/engine[2]/rpm</property>
-        <factor>0.000006</factor>
-        <min>-0.05</min>
-        <max>0.0</max>
-      </pitch>
       <position>
 		<x>-5.2</x>
 		<y>13.4</y>
@@ -307,28 +379,26 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	</position>
       <reference-dist>100</reference-dist>
       <max-dist>10000</max-dist>
-      <delay-sec>17</delay-sec>
-    </engine>
+    </engine2>
     
-    <engine>
+    <engine3>
        <name>engine3</name>
       <mode>looped</mode>
       <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-right.wav</path>      
-        <condition>       
-         <property>sim/multiplay/generic/int[15]</property>
+        <condition>
+	 <and>
+          <property>sim/multiplay/generic/int[15]</property>
+	  <greater-than>
+	    <property>sim/multiplay/generic/float[7]</property>
+	    <value>65.523</value>
+	  </greater-than>
+	 </and>
         </condition>  
       <volume>
         <property>/engines/engine[3]/rpm</property>
-        <factor>0.0008</factor>
-        <min>0.06</min>
-        <max>0.60</max>        
+        <factor>0.00072</factor>
+	<offset>0.055</offset>        
       </volume>
-      <pitch>
-        <property>/engines/engine[3]/rpm</property>
-        <factor>0.000006</factor>
-        <min>-0.05</min>
-        <max>0.0</max>
-      </pitch>
       <position>
 		<x>-5.8</x>
 		<y>6.9</y>
@@ -336,8 +406,97 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	</position>
       <reference-dist>100</reference-dist>
       <max-dist>10000</max-dist>
-      <delay-sec>17</delay-sec>
-    </engine>
+    </engine3>
+    
+    <!-- Engines 1 -4 reverse-runway -->
+
+    <engine0r>
+       <name>engine0r</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-left.wav</path>      
+        <condition>       
+         <property>sim/multiplay/generic/int[12]</property>
+	 <property>sim/multiplay/generic/int[6]</property>
+        </condition>  
+      <volume>
+        <property>sim/multiplay/generic/float[8]</property>
+        <factor>0.5</factor>
+	<offset>0.1</offset>       
+      </volume>
+      <position>
+		<x>-5.2</x>
+		<y>-13.4</y>
+		<z>-1.1</z>
+	</position>
+      <reference-dist>100</reference-dist>
+      <max-dist>10000</max-dist>
+    </engine0r>
+    
+    <engine1r>
+       <name>engine1r</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-left.wav</path>      
+        <condition>       
+         <property>sim/multiplay/generic/int[13]</property>
+	 <property>sim/multiplay/generic/int[6]</property>
+        </condition>  
+      <volume>
+        <property>sim/multiplay/generic/float[9]</property>
+        <factor>0.5</factor>
+	<offset>0.1</offset>       
+      </volume>
+      <position>
+		<x>-5.8</x>
+		<y>-6.9</y>
+		<z>-1.1</z>
+	</position>
+      <reference-dist>100</reference-dist>
+      <max-dist>10000</max-dist>
+    </engine1r>
+    
+    <engine2r>
+       <name>engine2r</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-right.wav</path>      
+        <condition>       
+         <property>sim/multiplay/generic/int[14]</property>
+	 <property>sim/multiplay/generic/int[6]</property>
+        </condition>  
+      <volume>
+        <property>sim/multiplay/generic/float[10]</property>
+        <factor>0.5</factor>
+	<offset>0.1</offset>      
+      </volume>
+      <position>
+		<x>-5.2</x>
+		<y>13.4</y>
+		<z>-1.1</z>
+	</position>
+      <reference-dist>100</reference-dist>
+      <max-dist>10000</max-dist>
+    </engine2r>
+    
+    <engine3r>
+       <name>engine3r</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-right.wav</path>      
+        <condition>       
+         <property>sim/multiplay/generic/int[15]</property>
+	 <property>sim/multiplay/generic/int[6]</property>
+        </condition>  
+      <volume>
+        <property>sim/multiplay/generic/float[11]</property>
+        <factor>0.5</factor>
+	<offset>0.1</offset>       
+      </volume>
+      <position>
+		<x>-5.8</x>
+		<y>6.9</y>
+		<z>-1.1</z>
+	</position>
+      <reference-dist>100</reference-dist>
+      <max-dist>10000</max-dist>
+    </engine3r>
     
     <!-- Rumble on runway -->
 

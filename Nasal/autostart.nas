@@ -87,6 +87,11 @@ setlistener("/controls/electric/battery-switch", func
         setprop("/consumables/fuel/tank[1]/selected", 0);
         setprop("/consumables/fuel/tank[2]/selected", 0);
         setprop("/consumables/fuel/tank[3]/selected", 0);
+	
+	setprop("/engines/engine[0]/running", 0);
+	setprop("/engines/engine[3]/running", 0);
+	setprop("/engines/engine[1]/running", 0);
+	setprop("/engines/engine[2]/running", 0);
         
 	setprop("sim/messages/copilot", "Main Battery Power is off");
       }  

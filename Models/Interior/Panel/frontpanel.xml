@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+<PropertyList>
+
+  
+  <path>frontpanel.ac</path>
+
+   <!-- Navigator Panel -->
+  <!-- PNP, HSI Horizontal Situation Indicator from TU154b-->
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/pnp/pnp.xml</path>
+    <offsets>
+      <x-m>  -1.472 </x-m>
+      <y-m>   0.0575 </y-m>
+      <z-m>  -1.573 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ASI, Indicated Airspeed Indicator, for use with the Autothrottle in kt-->
+  
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  -1.472 </x-m>
+      <y-m>  -0.075 </y-m>
+      <z-m>  -1.573 </z-m>
+    </offsets>
+  </model>
+  
+  
+  
+    <!--Autopilot
+		Lake of Constance Hangar :: M.Kraus
+		Boeing 707 for Flightgear Septemper 2013
+		This file is licenced under the terms of the GNU General Public Licence V2 or later
+		###################################################################################
+		completly simplified by HerbyW Jan 2014 
+-->
+  
+ <model>
+  <name>Autopilot Helper</name>
+  <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ap/ap-fg.xml</path>
+  <offsets>
+      <x-m>  -1.472 </x-m>
+      <y-m>   0.20 </y-m>
+      <z-m>  -1.50 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Set Hight</name>
+  <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/alt-set/alt-set.xml</path>
+  <offsets>
+      <x-m>  -1.472 </x-m>
+      <y-m>   0.302 </y-m>
+      <z-m>  -1.50 </z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <name>Set Pitch</name>
+  <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/alt-set/pitch-set.xml</path>
+  <offsets>
+      <x-m>  -1.472 </x-m>
+      <y-m>   0.275 </y-m>
+      <z-m>  -1.425 </z-m>
+  </offsets>
+ </model>
+ 
+ <!-- ALT, Barometric Altimeter IN Hg/mm in meter-->
+  
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/uvid-15/uvid-15-m.xml</path>
+    <offsets>
+      <x-m>  -1.472 </x-m>
+      <y-m>  0.172 </y-m>
+      <z-m>  -1.573 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- VAR-30, Rate and Climb Indicator -->
+  
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/var/var-30.xml</path>
+    <offsets>
+      <x-m>  -1.472 </x-m>
+      <y-m>  0.272 </y-m>
+      <z-m>  -1.573 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

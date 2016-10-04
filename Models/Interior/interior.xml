@@ -58,9 +58,19 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   
 
 
-  <!-- Planche de bord -->
+  <!-- Panel from AN-12 modified -->
   <model>
     <path>Aircraft/AN-22A/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -25.20 </x-m>
+      <y-m>   0.0000 </y-m>
+      <z-m>  -1.1478 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Frontpanel HerbyW 2016 -->
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/frontpanel.xml</path>
     <offsets>
       <x-m> -25.20 </x-m>
       <y-m>   0.0000 </y-m>
