@@ -216,7 +216,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.37">
+                             bsfc="0.36">
                              <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[0]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -248,7 +248,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.37">
+                             bsfc="0.36">
                              <control-input axis="/controls/engines/engine[1]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[1]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -280,7 +280,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.37">
+                             bsfc="0.36">
                              <control-input axis="/controls/engines/engine[2]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[2]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -312,7 +312,7 @@ An-22A
                              n2-high-idle="65"
                              n2-max="100"
                              flat-rating="15990"
-                             bsfc="0.37">
+                             bsfc="0.36">
                              <control-input axis="/controls/engines/engine[3]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[3]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
