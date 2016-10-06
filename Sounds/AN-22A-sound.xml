@@ -4,950 +4,1193 @@ Copyright (C) Herbert Wagner Dec2014-2016
 see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
 <PropertyList>
-
+  
   <fx>
     
-  <!-- Glas Nose View Sounds --> 
-  
-  <engineflight-L>
-	<name>engineflight-L</name>
-	<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-flight-left.wav</path>
-	<mode>looped</mode>
-	<condition>  
-	   <and>
-		<or>
-                        <equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>11</value>	
-			</equals> 
-			<equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>12</value>	
-			</equals>
-
-		</or>
-			<equals>
-				<property>sim/multiplay/generic/float[17]</property>
-				<value>80</value>
-			</equals>
-	   </and>
-	</condition>			    
+    <!-- Glas Nose View Sounds -->
+    
+    <engineflight-L1>
+      <name>engineflight-L1</name>
+      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-flight-left.wav</path>
+      <mode>looped</mode>
+      <condition>  
+	<and>
+	  <or>
+	    <equals>
+	      <property>/sim/current-view/view-number</property>
+	      <value>11</value>	
+	    </equals> 
+	    <equals>
+	      <property>/sim/current-view/view-number</property>
+	      <value>12</value>	
+	    </equals>
+	    
+	    </or>
+	    <equals>
+	      <property>sim/multiplay/generic/float[17]</property>
+	      <value>80</value>
+	    </equals>
+	  </and>
+	</condition>    
 	<volume>
-		<property>sim/multiplay/generic/float[8]</property>
-		<factor>0.4</factor>
-		<offset>0.6</offset>
+	  <property>sim/multiplay/generic/float[8]</property>
+	  <factor>0.4</factor>
+	  <offset>0.6</offset>
 	</volume>
 	<position>
-		<x>-28</x>
-		<y>-1.7</y>
-		<z>-2.8</z>
+	  <x>-27.32</x>
+	  <y>-0.74</y>
+	  <z>-2.75</z>
 	</position>
-	<reference-dist>5</reference-dist>
-  </engineflight-L>
-  
-  <engineflight-R>
-	<name>engineflight-R</name>
+	<reference-dist>1.6</reference-dist>
+	<max-dist>3</max-dist>
+      </engineflight-L1>
+      
+      <engineflight-L2>
+      <name>engineflight-L2</name>
+      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-flight-left.wav</path>
+      <mode>looped</mode>
+      <condition>  
+	<and>
+	  <or>
+	    <equals>
+	      <property>/sim/current-view/view-number</property>
+	      <value>11</value>	
+	    </equals> 
+	    <equals>
+	      <property>/sim/current-view/view-number</property>
+	      <value>12</value>	
+	    </equals>
+	    
+	    </or>
+	    <equals>
+	      <property>sim/multiplay/generic/float[17]</property>
+	      <value>80</value>
+	    </equals>
+	  </and>
+	</condition>			    
+	<volume>
+	  <property>sim/multiplay/generic/float[9]</property>
+	  <factor>0.4</factor>
+	  <offset>0.6</offset>
+	</volume>
+	<position>
+	  <x>-27.32</x>
+	  <y>-0.54</y>
+	  <z>-2.75</z>
+	</position>
+	<reference-dist>1.6</reference-dist>
+	<max-dist>3</max-dist>
+      </engineflight-L2>
+      
+      <engineflight-R1>
+	<name>engineflight-R1</name>
 	<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-flight-right.wav</path>
 	<mode>looped</mode>
 	<condition>  
-	   <and>
-		<or>
-                        <equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>11</value>	
-			</equals> 
-			<equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>12</value>	
-			</equals>
-
-		</or>
-			<equals>
-				<property>sim/multiplay/generic/float[17]</property>
-				<value>80</value>
-			</equals>
-	   </and>
-	</condition>			    
-	<volume>
-		<property>sim/multiplay/generic/float[10]</property>
-		<factor>0.4</factor>
-		<offset>0.6</offset>
-	</volume>
-	<position>
-		<x>-28</x>
-		<y>1.7</y>
-		<z>-2.8</z>
-	</position>
-	<reference-dist>5</reference-dist>
-  </engineflight-R>
-  
-  <enginerevrserunway-L>
-	<name>enginerevrserunway-L</name>
-	<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-reverserunway-left.wav</path>
+	  <and>
+	    <or>
+	      <equals>
+		<property>/sim/current-view/view-number</property>
+		<value>11</value>	
+	      </equals> 
+	      <equals>
+		<property>/sim/current-view/view-number</property>
+		<value>12</value>	
+	      </equals>
+	      
+	      </or>
+	      <equals>
+		<property>sim/multiplay/generic/float[17]</property>
+		<value>80</value>
+	      </equals>
+	    </and>
+	  </condition>			    
+	  <volume>
+	    <property>sim/multiplay/generic/float[11]</property>
+	    <factor>0.4</factor>
+	    <offset>0.6</offset>
+	  </volume>
+	  <position>
+	    <x>-27.32</x>
+	    <y> 0.74</y>
+	    <z>-2.75</z>
+	  </position>
+	  <reference-dist>1.6</reference-dist>
+	  <max-dist>3</max-dist>
+	</engineflight-R1>
+	
+	<engineflight-R2>
+	<name>engineflight-R2</name>
+	<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-flight-right.wav</path>
 	<mode>looped</mode>
 	<condition>  
-	   <and>
-		<or>
-                        <equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>11</value>	
-			</equals> 
-			<equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>12</value>	
-			</equals>
-
+	  <and>
+	    <or>
+	      <equals>
+		<property>/sim/current-view/view-number</property>
+		<value>11</value>	
+	      </equals> 
+	      <equals>
+		<property>/sim/current-view/view-number</property>
+		<value>12</value>	
+	      </equals>
+	      
+	      </or>
+	      <equals>
+		<property>sim/multiplay/generic/float[17]</property>
+		<value>80</value>
+	      </equals>
+	    </and>
+	  </condition>			    
+	  <volume>
+	    <property>sim/multiplay/generic/float[10]</property>
+	    <factor>0.4</factor>
+	    <offset>0.6</offset>
+	  </volume>
+	  <position>
+	    <x>-27.32</x>
+	    <y> 0.54</y>
+	    <z>-2.75</z>
+	  </position>
+	  <reference-dist>1.6</reference-dist>
+	  <max-dist>3</max-dist>
+	</engineflight-R2>
+	
+	<enginerevrserunway-L1>
+	  <name>enginerevrserunway-L1</name>
+	  <path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-reverserunway-left.wav</path>
+	  <mode>looped</mode>
+	  <condition>  
+	    <and>
+	      <or>
+		<equals>
+		  <property>/sim/current-view/view-number</property>
+		  <value>11</value>	
+		</equals> 
+		<equals>
+		  <property>/sim/current-view/view-number</property>
+		  <value>12</value>	
+		</equals>
+		
 		</or>
 		<less-than>
-			<property>sim/multiplay/generic/float[17]</property>
-			<value>80</value>
+		  <property>sim/multiplay/generic/float[17]</property>
+		  <value>80</value>
 		</less-than>
 		<greater-than>
-			<property>sim/multiplay/generic/float[17]</property>
-			<value>35.1</value>
+		  <property>sim/multiplay/generic/float[17]</property>
+		  <value>35.1</value>
 		</greater-than>
 		<property>sim/multiplay/generic/int[6]</property>
-	   </and>
-	</condition>			    
-	<volume>
-		<property>sim/multiplay/generic/float[8]</property>
-		<factor>0.4</factor>
-		<offset>0.6</offset>
-	</volume>
-	<position>
-		<x>-28</x>
-		<y>-1.7</y>
-		<z>-2.8</z>
-	</position>
-        <reference-dist>5</reference-dist>
-  </enginerevrserunway-L>
-  
-  <enginerevrserunway-R>
-	<name>enginerevrserunway-R</name>
-	<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-reverserunway-right.wav</path>
-	<mode>looped</mode>
-	<condition>  
-	   <and>
-		<or>
-                        <equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>11</value>	
-			</equals> 
-			<equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>12</value>	
-			</equals>
-
+	      </and>
+	    </condition>			    
+	    <volume>
+	      <property>sim/multiplay/generic/float[8]</property>
+	      <factor>0.4</factor>
+	      <offset>0.6</offset>
+	    </volume>
+	    <position>
+	      <x>-27.32</x>
+	      <y>-0.74</y>
+	      <z>-2.75</z>
+	    </position>
+	    <reference-dist>1.6</reference-dist>
+	    <max-dist>3</max-dist>
+	  </enginerevrserunway-L1>
+	  
+	  <enginerevrserunway-L2>
+	  <name>enginerevrserunway-L2</name>
+	  <path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-reverserunway-left.wav</path>
+	  <mode>looped</mode>
+	  <condition>  
+	    <and>
+	      <or>
+		<equals>
+		  <property>/sim/current-view/view-number</property>
+		  <value>11</value>	
+		</equals> 
+		<equals>
+		  <property>/sim/current-view/view-number</property>
+		  <value>12</value>	
+		</equals>
+		
 		</or>
 		<less-than>
-			<property>sim/multiplay/generic/float[17]</property>
-			<value>80</value>
+		  <property>sim/multiplay/generic/float[17]</property>
+		  <value>80</value>
 		</less-than>
 		<greater-than>
-			<property>sim/multiplay/generic/float[17]</property>
-			<value>35.1</value>
+		  <property>sim/multiplay/generic/float[17]</property>
+		  <value>35.1</value>
 		</greater-than>
 		<property>sim/multiplay/generic/int[6]</property>
-	   </and>
-	</condition>			    
-	<volume>
+	      </and>
+	    </condition>			    
+	    <volume>
+	      <property>sim/multiplay/generic/float[9]</property>
+	      <factor>0.4</factor>
+	      <offset>0.6</offset>
+	    </volume>
+	    <position>
+	      <x>-27.32</x>
+	      <y>-0.54</y>
+	      <z>-2.75</z>
+	    </position>
+	    <reference-dist>1.6</reference-dist>
+	    <max-dist>3</max-dist>
+	  </enginerevrserunway-L2>
+	  
+	  <enginerevrserunway-R1>
+	    <name>enginerevrserunway-R1</name>
+	    <path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-reverserunway-right.wav</path>
+	    <mode>looped</mode>
+	    <condition>  
+	      <and>
+		<or>
+		  <equals>
+		    <property>/sim/current-view/view-number</property>
+		    <value>11</value>	
+		  </equals> 
+		  <equals>
+		    <property>/sim/current-view/view-number</property>
+		    <value>12</value>	
+		  </equals>
+		  
+		  </or>
+		  <less-than>
+		    <property>sim/multiplay/generic/float[17]</property>
+		    <value>80</value>
+		  </less-than>
+		  <greater-than>
+		    <property>sim/multiplay/generic/float[17]</property>
+		    <value>35.1</value>
+		  </greater-than>
+		  <property>sim/multiplay/generic/int[6]</property>
+		</and>
+	      </condition>			    
+	      <volume>
+		<property>sim/multiplay/generic/float[11]</property>
+		<factor>0.4</factor>
+		<offset>0.6</offset>
+	      </volume>
+	      <position>
+		<x>-27.32</x>
+		<y> 0.74</y>
+		<z>-2.75</z>
+	      </position>
+	      <reference-dist>1.6</reference-dist>
+	      <max-dist>3</max-dist>
+	    </enginerevrserunway-R1>
+	    
+	    <enginerevrserunway-R2>
+	    <name>enginerevrserunway-R2</name>
+	    <path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-reverserunway-right.wav</path>
+	    <mode>looped</mode>
+	    <condition>  
+	      <and>
+		<or>
+		  <equals>
+		    <property>/sim/current-view/view-number</property>
+		    <value>11</value>	
+		  </equals> 
+		  <equals>
+		    <property>/sim/current-view/view-number</property>
+		    <value>12</value>	
+		  </equals>
+		  
+		  </or>
+		  <less-than>
+		    <property>sim/multiplay/generic/float[17]</property>
+		    <value>80</value>
+		  </less-than>
+		  <greater-than>
+		    <property>sim/multiplay/generic/float[17]</property>
+		    <value>35.1</value>
+		  </greater-than>
+		  <property>sim/multiplay/generic/int[6]</property>
+		</and>
+	      </condition>			    
+	      <volume>
 		<property>sim/multiplay/generic/float[10]</property>
 		<factor>0.4</factor>
 		<offset>0.6</offset>
-	</volume>
-	<position>
-		<x>-28</x>
-		<y> 1.7</y>
-		<z>-2.8</z>
-	</position>
-	<reference-dist>5</reference-dist>
-  </enginerevrserunway-R>
-  
-  <runway-L>
-	<name>runway-L</name>
-	<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-runway-left.wav</path>
-	<mode>looped</mode>
-	<condition>  
-	   <and>
-		<or>
-                        <equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>11</value>	
-			</equals> 
-			<equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>12</value>	
-			</equals>
-
-		</or>
-		<less-than>
+	      </volume>
+	      <position>
+		<x>-27.32</x>
+		<y> 0.54</y>
+		<z>-2.75</z>
+	      </position>
+	      <reference-dist>1.6</reference-dist>
+	      <max-dist>3</max-dist>
+	    </enginerevrserunway-R2>
+	    
+	    <runway-L1>
+	      <name>runway-L1</name>
+	      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-runway-left.wav</path>
+	      <mode>looped</mode>
+	      <condition>  
+		<and>
+		  <or>
+		    <equals>
+		      <property>/sim/current-view/view-number</property>
+		      <value>11</value>	
+		    </equals> 
+		    <equals>
+		      <property>/sim/current-view/view-number</property>
+		      <value>12</value>	
+		    </equals>
+		    
+		    </or>
+		    <less-than>
+		      <property>sim/multiplay/generic/float[17]</property>
+		      <value>80</value>
+		    </less-than>
+		    <greater-than>
+		      <property>sim/multiplay/generic/float[17]</property>
+		      <value>35.1</value>
+		    </greater-than>
+		    <not><property>sim/multiplay/generic/int[6]</property></not>
+		  </and>
+		</condition>			    
+		<volume>
+		  <property>sim/multiplay/generic/float[8]</property>
+		  <factor>0.4</factor>
+		  <offset>0.6</offset>
+		</volume>
+		<position>
+		  <x>-27.32</x>
+		  <y>-0.74</y>
+		  <z>-2.75</z>
+		</position>
+		<reference-dist>1.6</reference-dist>
+		<max-dist>3</max-dist>
+	      </runway-L1>
+	      
+	      <runway-L2>
+	      <name>runway-L2</name>
+	      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-runway-left.wav</path>
+	      <mode>looped</mode>
+	      <condition>  
+		<and>
+		  <or>
+		    <equals>
+		      <property>/sim/current-view/view-number</property>
+		      <value>11</value>	
+		    </equals> 
+		    <equals>
+		      <property>/sim/current-view/view-number</property>
+		      <value>12</value>	
+		    </equals>
+		    
+		    </or>
+		    <less-than>
+		      <property>sim/multiplay/generic/float[17]</property>
+		      <value>80</value>
+		    </less-than>
+		    <greater-than>
+		      <property>sim/multiplay/generic/float[17]</property>
+		      <value>35.1</value>
+		    </greater-than>
+		    <not><property>sim/multiplay/generic/int[6]</property></not>
+		  </and>
+		</condition>			    
+		<volume>
+		  <property>sim/multiplay/generic/float[9]</property>
+		  <factor>0.4</factor>
+		  <offset>0.6</offset>
+		</volume>
+		<position>
+		  <x>-27.32</x>
+		  <y>-0.54</y>
+		  <z>-2.75</z>
+		</position>
+		<reference-dist>1.6</reference-dist>
+		<max-dist>3</max-dist>
+	      </runway-L2>
+	      
+	      <runway-R1>
+		<name>runway-R1</name>
+		<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-runway-right.wav</path>
+		<mode>looped</mode>
+		<condition>  
+		  <and>
+		    <or>
+		      <equals>
+			<property>/sim/current-view/view-number</property>
+			<value>11</value>	
+		      </equals> 
+		      <equals>
+			<property>/sim/current-view/view-number</property>
+			<value>12</value>	
+		      </equals>
+		      
+		      </or>
+		      <less-than>
 			<property>sim/multiplay/generic/float[17]</property>
 			<value>80</value>
-		</less-than>
-		<greater-than>
+		      </less-than>
+		      <greater-than>
 			<property>sim/multiplay/generic/float[17]</property>
 			<value>35.1</value>
-		</greater-than>
-		<not><property>sim/multiplay/generic/int[6]</property></not>
-	   </and>
-	</condition>			    
-	<volume>
-		<property>sim/multiplay/generic/float[8]</property>
-		<factor>0.4</factor>
-		<offset>0.6</offset>
-	</volume>
-	<position>
-		<x>-28</x>
-		<y>-1.7</y>
-		<z>-2.8</z>
-	</position>
-        <reference-dist>5</reference-dist>
-  </runway-L>
-  
-  <runway-R>
-	<name>runway-R</name>
-	<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-runway-right.wav</path>
-	<mode>looped</mode>
-	<condition>  
-	   <and>
-		<or>
-                        <equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>11</value>	
-			</equals> 
-			<equals>
-			  <property>/sim/current-view/view-number</property>
-			  <value>12</value>	
-			</equals>
-
-		</or>
-		<less-than>
+		      </greater-than>
+		      <not><property>sim/multiplay/generic/int[6]</property></not>
+		    </and>
+		  </condition>			    
+		  <volume>
+		    <property>sim/multiplay/generic/float[11]</property>
+		    <factor>0.4</factor>
+		    <offset>0.6</offset>
+		  </volume>
+		  <position>
+		    <x>-27.32</x>
+		    <y> 0.74</y>
+		    <z>-2.75</z>
+		  </position>
+		  <reference-dist>1.6</reference-dist>
+		  <max-dist>3</max-dist>
+		</runway-R1>
+		
+		<runway-R2>
+		<name>runway-R2</name>
+		<path>Aircraft/AN-22A/Sounds/Antonov22Antei-Glass-Nose-View-runway-right.wav</path>
+		<mode>looped</mode>
+		<condition>  
+		  <and>
+		    <or>
+		      <equals>
+			<property>/sim/current-view/view-number</property>
+			<value>11</value>	
+		      </equals> 
+		      <equals>
+			<property>/sim/current-view/view-number</property>
+			<value>12</value>	
+		      </equals>
+		      
+		      </or>
+		      <less-than>
 			<property>sim/multiplay/generic/float[17]</property>
 			<value>80</value>
-		</less-than>
-		<greater-than>
+		      </less-than>
+		      <greater-than>
 			<property>sim/multiplay/generic/float[17]</property>
 			<value>35.1</value>
-		</greater-than>
-		<not><property>sim/multiplay/generic/int[6]</property></not>
-	   </and>
-	</condition>			    
-	<volume>
-		<property>sim/multiplay/generic/float[10]</property>
-		<factor>0.4</factor>
-		<offset>0.6</offset>
-	</volume>
-	<position>
-		<x>-28</x>
-		<y> 1.7</y>
-		<z>-2.8</z>
-	</position>
-	<reference-dist>5</reference-dist>
-  </runway-R>
-
-  <!-- Engines 1 -4 starting up-->
-    <crank>
-      <name>engstart1</name>
-      <path>Aircraft/AN-22A/Sounds/starter.wav</path>
-       <condition>       
-         <property>sim/multiplay/generic/int[12]</property>         
-        </condition>      
-      <volume>
-        <offset>-0.42</offset>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
-    </crank>
-    
-    <crank>
-      <name>engstart2</name>
-      <path>Aircraft/AN-22A/Sounds/starter.wav</path>
-       <condition>       
-         <property>sim/multiplay/generic/int[13]</property>         
-        </condition>      
-      <volume>
-        <offset>-0.40</offset>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
-    </crank>
-    
-    <crank>
-      <name>engstart3</name>
-      <path>Aircraft/AN-22A/Sounds/starter.wav</path>
-       <condition>       
-         <property>sim/multiplay/generic/int[14]</property>         
-        </condition>      
-      <volume>
-        <offset>-0.38</offset>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
-    </crank>
-    
-    <crank>
-      <name>engstart4</name>
-      <path>Aircraft/AN-22A/Sounds/starter.wav</path>
-       <condition>       
-         <property>sim/multiplay/generic/int[15]</property>         
-        </condition>      
-      <volume>
-        <offset>-0.36</offset>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>1000</max-dist>
-    </crank>
-  
-  <!-- Engines 1 -4 running -->
-
-    <engine0>
-       <name>engine0</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-left.wav</path>      
-        <condition>
-	 <and>
-          <property>sim/multiplay/generic/int[12]</property>
-	  <greater-than>
-	    <property>sim/multiplay/generic/float[4]</property>
-	    <value>65.523</value>
-	  </greater-than>
-	 </and>
-        </condition>  
-      <volume>
-        <property>/engines/engine[0]/rpm</property>
-        <factor>0.00072</factor>
-	<offset>0.055</offset>        
-      </volume>
-      <position>
-		<x>-5.2</x>
-		<y>-13.4</y>
-		<z>-1.1</z>
-	</position>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
-    </engine0>
-    
-    <engine1>
-       <name>engine1</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-left.wav</path>      
-        <condition>
-	 <and>
-          <property>sim/multiplay/generic/int[13]</property>
-	  <greater-than>
-	    <property>sim/multiplay/generic/float[5]</property>
-	    <value>65.523</value>
-	  </greater-than>
-	 </and>
-        </condition>  
-      <volume>
-        <property>/engines/engine[1]/rpm</property>
-        <factor>0.00072</factor>
-	<offset>0.055</offset>        
-      </volume>
-      <position>
-		<x>-5.8</x>
-		<y>-6.9</y>
-		<z>-1.1</z>
-	</position>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
-    </engine1>
-    
-    <engine2>
-       <name>engine2</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-right.wav</path>      
-        <condition>
-	 <and>
-          <property>sim/multiplay/generic/int[14]</property>
-	  <greater-than>
-	    <property>sim/multiplay/generic/float[6]</property>
-	    <value>65.523</value>
-	  </greater-than>
-	 </and>
-        </condition>  
-      <volume>
-        <property>/engines/engine[2]/rpm</property>
-        <factor>0.00072</factor>
-	<offset>0.055</offset>        
-      </volume>
-      <position>
-		<x>-5.2</x>
-		<y>13.4</y>
-		<z>-1.1</z>
-	</position>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
-    </engine2>
-    
-    <engine3>
-       <name>engine3</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-right.wav</path>      
-        <condition>
-	 <and>
-          <property>sim/multiplay/generic/int[15]</property>
-	  <greater-than>
-	    <property>sim/multiplay/generic/float[7]</property>
-	    <value>65.523</value>
-	  </greater-than>
-	 </and>
-        </condition>  
-      <volume>
-        <property>/engines/engine[3]/rpm</property>
-        <factor>0.00072</factor>
-	<offset>0.055</offset>        
-      </volume>
-      <position>
-		<x>-5.8</x>
-		<y>6.9</y>
-		<z>-1.1</z>
-	</position>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
-    </engine3>
-    
-    <!-- Engines 1 -4 reverse-runway -->
-
-    <engine0r>
-       <name>engine0r</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-left.wav</path>      
-        <condition>       
-         <property>sim/multiplay/generic/int[12]</property>
-	 <property>sim/multiplay/generic/int[6]</property>
-        </condition>  
-      <volume>
-        <property>sim/multiplay/generic/float[8]</property>
-        <factor>0.5</factor>
-	<offset>0.1</offset>       
-      </volume>
-      <position>
-		<x>-5.2</x>
-		<y>-13.4</y>
-		<z>-1.1</z>
-	</position>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
-    </engine0r>
-    
-    <engine1r>
-       <name>engine1r</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-left.wav</path>      
-        <condition>       
-         <property>sim/multiplay/generic/int[13]</property>
-	 <property>sim/multiplay/generic/int[6]</property>
-        </condition>  
-      <volume>
-        <property>sim/multiplay/generic/float[9]</property>
-        <factor>0.5</factor>
-	<offset>0.1</offset>       
-      </volume>
-      <position>
-		<x>-5.8</x>
-		<y>-6.9</y>
-		<z>-1.1</z>
-	</position>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
-    </engine1r>
-    
-    <engine2r>
-       <name>engine2r</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-right.wav</path>      
-        <condition>       
-         <property>sim/multiplay/generic/int[14]</property>
-	 <property>sim/multiplay/generic/int[6]</property>
-        </condition>  
-      <volume>
-        <property>sim/multiplay/generic/float[10]</property>
-        <factor>0.5</factor>
-	<offset>0.1</offset>      
-      </volume>
-      <position>
-		<x>-5.2</x>
-		<y>13.4</y>
-		<z>-1.1</z>
-	</position>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
-    </engine2r>
-    
-    <engine3r>
-       <name>engine3r</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-right.wav</path>      
-        <condition>       
-         <property>sim/multiplay/generic/int[15]</property>
-	 <property>sim/multiplay/generic/int[6]</property>
-        </condition>  
-      <volume>
-        <property>sim/multiplay/generic/float[11]</property>
-        <factor>0.5</factor>
-	<offset>0.1</offset>       
-      </volume>
-      <position>
-		<x>-5.8</x>
-		<y>6.9</y>
-		<z>-1.1</z>
-	</position>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
-    </engine3r>
-    
-    <!-- Rumble on runway -->
-
-    <rumble>
-      <name>rumble1</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/24roll.wav</path>
-      <condition>
-          <property>/gear/gear[0]/wow</property>
-      </condition>
-      <volume>
-        <property>sim/multiplay/generic/float[12]</property>
-        <type>log</type>
-        <factor>0.25</factor>
-	<min>0.0</min>
-        <max>0.85</max>
-      </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>3000</max-dist>
-    </rumble>
-    
-    <rumble>
-      <name>rumble2</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/24roll.wav</path>
-      <condition>
-        <or>          
-          <property>/gear/gear[1]/wow</property>
-          <property>/gear/gear[2]/wow</property>
-        </or>
-      </condition>
-      <volume>
-        <property>sim/multiplay/generic/float[12]</property>
-        <type>log</type>
-        <factor>0.25</factor>
-	<min>0.0</min>
-        <max>0.85</max>
-      </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>3000</max-dist>
-    </rumble>
-
-    <!-- Gear in and out -->
-    
-    <gear>
-      <name>gear</name>
-      <mode>in-transit</mode>
-      <path>Aircraft/AN-22A/Sounds/gear.wav</path>
-      <property>/gear/gear[0]/position-norm</property>
-      <volume>
-        <factor>0.5</factor>
-      </volume>
-      <reference-dist>500</reference-dist>
-      <max-dist>2000</max-dist>
-    </gear>
-
-    <gear>
-     <name>gear-lock</name>
-     <path>Aircraft/AN-22A/Sounds/gear-lck.wav</path>
-     <condition>
-       <greater-than>
-         <property>/gear/gear[0]/position-norm</property>
-         <value>0.96</value>
-       </greater-than>
-     </condition>
-      <volume>
-        <factor>0.5</factor>
-      </volume>
-      <reference-dist>500</reference-dist>
-      <max-dist>2000</max-dist>
-    </gear>
-
-    <!-- Touchdown -->
-    
-    <squeal>
-      <name>squeal1</name>
-      <mode>once</mode>
-      <path>Aircraft/AN-22A/Sounds/squeal.wav</path>
-      <condition>        
-          <property>sim/multiplay/generic/int[18]</property>                 
-      </condition>
-        <volume>
-        <factor>0.15</factor>
-      </volume>
-      <reference-dist>1000</reference-dist>
-      <max-dist>5000</max-dist>
-    </squeal>
-    
-    <squeal>
-      <name>squeal2</name>
-      <mode>once</mode>
-      <path>Aircraft/AN-22A/Sounds/squeal.wav</path>
-      <condition>        
-          <property>sim/multiplay/generic/int[19]</property>          
-      </condition>
-        <volume>
-        <factor>0.15</factor>
-      </volume>
-      <reference-dist>1000</reference-dist>
-      <max-dist>5000</max-dist>
-    </squeal>
- 
- <!-- Flaps -->
- 
-    <flap>
-      <name>flaps</name>
-      <mode>in-transit</mode>
-      <path>Aircraft/AN-22A/Sounds/flaps.wav</path>
-      <property>/surface-positions/flap-pos-norm</property>
-      <volume>
-        <factor>0.35</factor>
-      </volume>
-      <reference-dist>500</reference-dist>
-      <max-dist>1000</max-dist>
-    </flap>
-    
-
-
-     <!-- Speed Warning -->
- 
-    <speedwarn>
-      <name>warn1</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/dinamik_pr2.wav</path>
-       <condition>
-        <greater-than>
-	 <property>velocities/groundspeed-kt</property>
-	 <value>399</value>
-         </greater-than>
-        </condition> 
-      <volume>
-	<offset>1.0</offset>
-	<min>1.0</min>
-        <max>1.0</max>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </speedwarn>
-
-    
-   <!-- Stall -->
- 
- <stall>
-   <name>stall</name>
-   <mode>looped</mode>
-   <path>Aircraft/AN-22A/Sounds/stall.wav</path>
-   <condition>
-     <and>
-       <property>instrumentation/alerts/stall</property>
-       <greater-than>
-	 <property>sim/time/elapsed-sec</property>
-	 <value>100</value>
-       </greater-than>
-     </and>
-   </condition>    
-   <volume>
-     <property>instrumentation/alerts/stall</property>
-     <max>1.0</max>
-   </volume>
-   <reference-dist>10</reference-dist>
-   <max-dist>100</max-dist>
- </stall>
-    
-    <!-- Decision Height Warning -->
- 
-    <decision>
-      <name>decision</name>
-      <mode>once</mode>
-      <path>Aircraft/AN-22A/Sounds/omi_1.wav</path>
-      <condition>
-    <less-than>
-      <property>position/altitude-agl-ft</property>
-      <property>instrumentation/altimeter/decision-height</property>      
-    </less-than>
-  </condition>
-      <volume>
-        <min>1.0</min>
-        <max>1.0</max>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </decision>
-  
-  <!-- Doors -->
-  
-    <door>
-      <name>Cargo door</name>
-      <path>Aircraft/AN-22A/Sounds/door_closed.wav</path>
-      <condition>
-        <equals>
-          <property>sim/multiplay/generic/float[13]</property>
-          <value>0.0</value>
-        </equals>
-      </condition>
-      <volume>
-        <factor>0.35</factor>
-      </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </door>
-    
-    <door>
-      <name>Cargo doorT</name>
-      <mode>in-transit</mode>
-      <path>Aircraft/AN-22A/Sounds/door_close.wav</path>
-      <condition>
-       <and>
-	<greater-than>
-          <property>sim/multiplay/generic/float[13]</property>
-          <value>0.01</value>
-        </greater-than>
-	<less-than>
-          <property>sim/multiplay/generic/float[13]</property>
-          <value>0.99</value>
-        </less-than>
-       </and>
-      </condition>
-      <volume>
-        <factor>0.12</factor>
-      </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </door>
-
-    <door>
-      <name>Passenger doorL</name>
-      <path>Aircraft/AN-22A/Sounds/door_closed.wav</path>
-      <condition>
-        <equals>
-          <property>sim/multiplay/generic/float[0]</property>
-          <value>0.0</value>
-        </equals>
-      </condition>
-      <volume>
-        <factor>0.35</factor>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </door>
-    
-    <door>
-      <name>Passenger doorLT</name>
-      <mode>in-transit</mode>
-      <path>Aircraft/AN-22A/Sounds/door_close.wav</path>
-      <condition>
-        <and>
-	<greater-than>
-          <property>sim/multiplay/generic/float[0]</property>
-          <value>0.01</value>
-        </greater-than>
-	<less-than>
-          <property>sim/multiplay/generic/float[0]</property>
-          <value>0.99</value>
-        </less-than>
-       </and>
-      </condition>
-      <volume>
-        <factor>0.11</factor>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </door>
-    
-    <door>
-      <name>Passenger doorR</name>
-      <path>Aircraft/AN-22A/Sounds/door_closed.wav</path>
-      <condition>
-        <equals>
-          <property>sim/multiplay/generic/float[1]</property>
-          <value>0.0</value>
-        </equals>
-      </condition>
-      <volume>
-        <factor>0.35</factor>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </door>
-    
-    <door>
-      <name>Passenger doorRT</name>
-      <mode>in-transit</mode>
-      <path>Aircraft/AN-22A/Sounds/door_close.wav</path>
-      <condition>
-        <and>
-	<greater-than>
-          <property>sim/multiplay/generic/float[1]</property>
-          <value>0.01</value>
-        </greater-than>
-	<less-than>
-          <property>sim/multiplay/generic/float[1]</property>
-          <value>0.99</value>
-        </less-than>
-       </and>
-      </condition>
-      <volume>
-        <factor>0.11</factor>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </door>
-
-        <!-- Wind -->
-
-    <wind>
-      <name>wind</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/wind.wav</path>
-      <property>/environment/wind-speed-kt</property>
-      <volume>
-        <property>/environment/wind-speed-kt</property>
-        <factor>0.0025</factor>
-        <min>0.00</min>
-        <max>0.20</max>
-      </volume>
-      <pitch>
-        <property>/environment/wind-speed-kt</property>
-        <factor>0.01</factor>
-        <offset>0.2</offset>
-        <max>0.70</max>
-      </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </wind>
-    
-    <!-- Rain -->
-    
-    <rain>
-      <name>rain</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/rain_canopy.wav</path>
-      <condition>
-        <greater-than>
-          <property>/environment/metar/rain-norm</property>
-          <value>0.2</value>
-        </greater-than>
-      </condition>
-      <volume>
-        <property>/environment/metar/rain-norm</property>
-        <factor>1.00</factor>
-        <offset>-0.2</offset>
-        <min>0.0</min>
-        <max>0.6</max>
-      </volume>
-      <pitch>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.001</factor>
-        <offset>0.50</offset>
-      </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </rain>
-    
-            <!-- ADF-MorseCode, see txt file -->
-
-    <ADF>
-      <name>ADF1</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/Morse.wav</path>
-       <condition>        
-          <property>/instrumentation/adf[0]/in-range</property>         
-       </condition>
-      <volume>
-	<property>instrumentation/adf[0]/volume</property>	
-        <min>0.00</min>
-        <max>1.0</max>
-      </volume>      
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </ADF>
-    
-    <ADF>
-      <name>ADF2</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/Morse.wav</path>
-       <condition>        
-          <property>/instrumentation/adf[1]/in-range</property>        
-       </condition>
-      <volume>	
-	<property>instrumentation/adf[1]/volume</property>
-        <min>0.00</min>
-        <max>1.0</max>
-      </volume>      
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </ADF>
-    
-     <!-- Bradley Tanks in and out -->
-    
-    <tank1>
-      <name>tank1</name>
-      <mode>once</mode>
-      <path>Aircraft/AN-22A/Sounds/Tank-SoundBible-com.wav</path>
-      <condition>       
-	<greater-than>
-          <property>sim/multiplay/generic/float[16]</property>
-          <value>1.1</value>
-        </greater-than>	
-      </condition>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </tank1>
-    
-    <tank2>
-      <name>tank2</name>
-      <mode>once</mode>
-      <path>Aircraft/AN-22A/Sounds/Tank-SoundBible-com.wav</path>
-      <condition>       
-	<greater-than>
-          <property>sim/multiplay/generic/float[16]</property>
-          <value>1.1</value>
-        </greater-than>	
-      </condition>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-      <delay-sec>5</delay-sec>
-    </tank2>
-    
-    <tank3>
-      <name>tank3</name>
-      <mode>once</mode>
-      <path>Aircraft/AN-22A/Sounds/Tank-SoundBible-com.wav</path>
-      <condition>       
-	<greater-than>
-          <property>sim/multiplay/generic/float[16]</property>
-          <value>1.1</value>
-        </greater-than>	
-      </condition>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-      <delay-sec>10</delay-sec>
-    </tank3>
-    
-                <!-- Gear Warning -->
- 
-    <decision>
-      <name>gearwarning</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-22A/Sounds/sirena.wav</path>
-      <condition>    
-      <property>/gear/warning</property>      
-      </condition>
-      <volume>
-        <min>0.8</min>
-        <max>0.8</max>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </decision>
-
-
-  </fx>
-
-</PropertyList>
+		      </greater-than>
+		      <not><property>sim/multiplay/generic/int[6]</property></not>
+		    </and>
+		  </condition>			    
+		  <volume>
+		    <property>sim/multiplay/generic/float[10]</property>
+		    <factor>0.4</factor>
+		    <offset>0.6</offset>
+		  </volume>
+		  <position>
+		    <x>-27.32</x>
+		    <y> 0.54</y>
+		    <z>-2.75</z>
+		  </position>
+		  <reference-dist>1.6</reference-dist>
+		  <max-dist>3</max-dist>
+		</runway-R2>
+		
+		<!-- Engines 1 -4 starting up-->
+		<crank>
+		  <name>engstart1</name>
+		  <path>Aircraft/AN-22A/Sounds/starter.wav</path>
+		  <condition>       
+		    <property>sim/multiplay/generic/int[12]</property>         
+		  </condition>      
+		  <volume>
+		    <offset>-0.42</offset>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>1000</max-dist>
+		</crank>
+		
+		<crank>
+		  <name>engstart2</name>
+		  <path>Aircraft/AN-22A/Sounds/starter.wav</path>
+		  <condition>       
+		    <property>sim/multiplay/generic/int[13]</property>         
+		  </condition>      
+		  <volume>
+		    <offset>-0.40</offset>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>1000</max-dist>
+		</crank>
+		
+		<crank>
+		  <name>engstart3</name>
+		  <path>Aircraft/AN-22A/Sounds/starter.wav</path>
+		  <condition>       
+		    <property>sim/multiplay/generic/int[14]</property>         
+		  </condition>      
+		  <volume>
+		    <offset>-0.38</offset>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>1000</max-dist>
+		</crank>
+		
+		<crank>
+		  <name>engstart4</name>
+		  <path>Aircraft/AN-22A/Sounds/starter.wav</path>
+		  <condition>       
+		    <property>sim/multiplay/generic/int[15]</property>         
+		  </condition>      
+		  <volume>
+		    <offset>-0.36</offset>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>1000</max-dist>
+		</crank>
+		
+		<!-- Engines 1 -4 running -->
+		
+		<engine0>
+		  <name>engine0</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-left.wav</path>      
+		  <condition>
+		    <and>
+		      <property>sim/multiplay/generic/int[12]</property>
+		    </and>
+		  </condition>  
+		  <volume>
+		    <property>/engines/engine[0]/rpm</property>
+		    <factor>0.00058</factor>
+		    <offset>0.055</offset>        
+		  </volume>
+		  <position>
+		    <x>-3.7</x>
+		    <y>-13.45</y>
+		    <z>-0.24</z>
+		  </position>
+		  <reference-dist>1000</reference-dist>
+		  <max-dist>28000</max-dist>
+		  <delay-sec>17</delay-sec>
+		</engine0>
+		
+		<engine1>
+		  <name>engine1</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-left.wav</path>      
+		  <condition>
+		    <and>
+		      <property>sim/multiplay/generic/int[13]</property>
+		    </and>
+		  </condition>  
+		  <volume>
+		    <property>/engines/engine[1]/rpm</property>
+		    <factor>0.00058</factor>
+		    <offset>0.055</offset>        
+		  </volume>
+		  <position>
+		    <x>-4.32</x>
+		    <y>-6.88</y>
+		    <z>-0.25</z>
+		  </position>
+		  <reference-dist>1000</reference-dist>
+		  <max-dist>28000</max-dist>
+		  <delay-sec>17</delay-sec>
+		</engine1>
+		
+		<engine2>
+		  <name>engine2</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-right.wav</path>      
+		  <condition>
+		    <and>
+		      <property>sim/multiplay/generic/int[14]</property>
+		    </and>
+		  </condition>  
+		  <volume>
+		    <property>/engines/engine[2]/rpm</property>
+		    <factor>0.00058</factor>
+		    <offset>0.055</offset>        
+		  </volume>
+		  <position>
+		    <x>-4.32</x>
+		    <y> 6.88</y>
+		    <z>-0.25</z>
+		  </position>
+		  <reference-dist>1000</reference-dist>
+		  <max-dist>28000</max-dist>
+		  <delay-sec>17</delay-sec>
+		</engine2>
+		
+		<engine3>
+		  <name>engine3</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-right.wav</path>      
+		  <condition>
+		    <and>
+		      <property>sim/multiplay/generic/int[15]</property>
+		    </and>
+		  </condition>  
+		  <volume>
+		    <property>/engines/engine[3]/rpm</property>
+		    <factor>0.00058</factor>
+		    <offset>0.055</offset>        
+		  </volume>
+		  <position>
+		    <x>-3.7</x>
+		    <y> 13.45</y>
+		    <z>-0.24</z>
+		  </position>
+		  <reference-dist>1000</reference-dist>
+		  <max-dist>28000</max-dist>
+		  <delay-sec>17</delay-sec>
+		</engine3>
+		
+		<!-- Engines 1 -4 reverse-runway -->
+		
+		<engine0r>
+		  <name>engine0r</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-left.wav</path>      
+		  <condition>       
+		    <property>sim/multiplay/generic/int[12]</property>
+		    <property>sim/multiplay/generic/int[6]</property>
+		  </condition>  
+		  <volume>
+		    <property>sim/multiplay/generic/float[8]</property>
+		    <factor>0.4</factor>
+		    <offset>0.1</offset>       
+		  </volume>
+		  <position>
+		    <x>-5.2</x>
+		    <y>-13.4</y>
+		    <z>-1.1</z>
+		  </position>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>10000</max-dist>
+		</engine0r>
+		
+		<engine1r>
+		  <name>engine1r</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-left.wav</path>      
+		  <condition>       
+		    <property>sim/multiplay/generic/int[13]</property>
+		    <property>sim/multiplay/generic/int[6]</property>
+		  </condition>  
+		  <volume>
+		    <property>sim/multiplay/generic/float[9]</property>
+		    <factor>0.4</factor>
+		    <offset>0.1</offset>       
+		  </volume>
+		  <position>
+		    <x>-4.32</x>
+		    <y>-6.88</y>
+		    <z>-0.25</z>
+		  </position>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>10000</max-dist>
+		</engine1r>
+		
+		<engine2r>
+		  <name>engine2r</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-right.wav</path>      
+		  <condition>       
+		    <property>sim/multiplay/generic/int[14]</property>
+		    <property>sim/multiplay/generic/int[6]</property>
+		  </condition>  
+		  <volume>
+		    <property>sim/multiplay/generic/float[10]</property>
+		    <factor>0.4</factor>
+		    <offset>0.1</offset>      
+		  </volume>
+		  <position>
+		    <x>-4.32</x>
+		    <y> 6.88</y>
+		    <z>-0.25</z>
+		  </position>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>10000</max-dist>
+		</engine2r>
+		
+		<engine3r>
+		  <name>engine3r</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/Antonov22Antei-PARADISE-Views-reverse-right.wav</path>      
+		  <condition>       
+		    <property>sim/multiplay/generic/int[15]</property>
+		    <property>sim/multiplay/generic/int[6]</property>
+		  </condition>  
+		  <volume>
+		    <property>sim/multiplay/generic/float[11]</property>
+		    <factor>0.4</factor>
+		    <offset>0.1</offset>       
+		  </volume>
+		  <position>
+		    <x>-5.8</x>
+		    <y>6.9</y>
+		    <z>-1.1</z>
+		  </position>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>10000</max-dist>
+		</engine3r>
+		
+		<!-- Rumble on runway -->
+		
+		<rumble>
+		  <name>rumble1</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/24roll.wav</path>
+		  <condition>
+		    <property>/gear/gear[0]/wow</property>
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/float[12]</property>
+		    <type>log</type>
+		    <factor>0.25</factor>
+		    <min>0.0</min>
+		    <max>0.8</max>
+		  </volume>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>3000</max-dist>
+		</rumble>
+		
+		<rumble>
+		  <name>rumble2</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/24roll.wav</path>
+		  <condition>
+		    <or>          
+		      <property>/gear/gear[1]/wow</property>
+		      <property>/gear/gear[2]/wow</property>
+		    </or>
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/float[12]</property>
+		    <type>log</type>
+		    <factor>0.25</factor>
+		    <min>0.0</min>
+		    <max>0.8</max>
+		  </volume>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>3000</max-dist>
+		</rumble>
+		
+		<!-- Gear in and out -->
+		
+		<gear>
+		  <name>gear</name>
+		  <mode>in-transit</mode>
+		  <path>Aircraft/AN-22A/Sounds/gear.wav</path>
+		  <property>/gear/gear[0]/position-norm</property>
+		  <volume>
+		    <factor>0.5</factor>
+		  </volume>
+		  <reference-dist>500</reference-dist>
+		  <max-dist>2000</max-dist>
+		</gear>
+		
+		<gear>
+		  <name>gear-lock</name>
+		  <path>Aircraft/AN-22A/Sounds/gear-lck.wav</path>
+		  <condition>
+		    <greater-than>
+		      <property>/gear/gear[0]/position-norm</property>
+		      <value>0.96</value>
+		    </greater-than>
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/int[17]</property>
+		    <factor>0.5</factor>
+		  </volume>
+		  <reference-dist>500</reference-dist>
+		  <max-dist>2000</max-dist>
+		</gear>
+		
+		<!-- Touchdown -->
+		
+		<squeal>
+		  <name>squeal1</name>
+		  <mode>once</mode>
+		  <path>Aircraft/AN-22A/Sounds/squeal.wav</path>
+		  <condition>        
+		    <property>sim/multiplay/generic/int[18]</property>                 
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/int[17]</property>
+		    <factor>0.15</factor>
+		  </volume>
+		  <reference-dist>1000</reference-dist>
+		  <max-dist>5000</max-dist>
+		</squeal>
+		
+		<squeal>
+		  <name>squeal2</name>
+		  <mode>once</mode>
+		  <path>Aircraft/AN-22A/Sounds/squeal.wav</path>
+		  <condition>        
+		    <property>sim/multiplay/generic/int[19]</property>          
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/int[17]</property>
+		    <factor>0.15</factor>
+		  </volume>
+		  <reference-dist>1000</reference-dist>
+		  <max-dist>5000</max-dist>
+		</squeal>
+		
+		<!-- Flaps -->
+		
+		<flap>
+		  <name>flaps</name>
+		  <mode>in-transit</mode>
+		  <path>Aircraft/AN-22A/Sounds/flaps.wav</path>
+		  <property>/surface-positions/flap-pos-norm</property>
+		  <volume>
+		    <factor>0.35</factor>
+		  </volume>
+		  <reference-dist>500</reference-dist>
+		  <max-dist>1000</max-dist>
+		</flap>
+		
+		
+		
+		<!-- Speed Warning -->
+		
+		<speedwarn>
+		  <name>warn1</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/dinamik_pr2.wav</path>
+		  <condition>
+		    <greater-than>
+		      <property>velocities/groundspeed-kt</property>
+		      <value>399</value>
+		    </greater-than>
+		  </condition> 
+		  <volume>
+		    <offset>1.0</offset>
+		    <min>1.0</min>
+		    <max>1.0</max>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</speedwarn>
+		
+		
+		<!-- Stall -->
+		
+		<stall>
+		  <name>stall</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/stall.wav</path>
+		  <condition>
+		    <and>
+		      <property>instrumentation/alerts/stall</property>
+		      <greater-than>
+			<property>sim/time/elapsed-sec</property>
+			<value>100</value>
+		      </greater-than>
+		    </and>
+		  </condition>    
+		  <volume>
+		    <property>instrumentation/alerts/stall</property>
+		    <max>1.0</max>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</stall>
+		
+		<!-- Decision Height Warning -->
+		
+		<decision>
+		  <name>decision</name>
+		  <mode>once</mode>
+		  <path>Aircraft/AN-22A/Sounds/omi_1.wav</path>
+		  <condition>
+		    <less-than>
+		      <property>position/altitude-agl-ft</property>
+		      <property>instrumentation/altimeter/decision-height</property>      
+		    </less-than>
+		  </condition>
+		  <volume>
+		    <min>1.0</min>
+		    <max>1.0</max>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</decision>
+		
+		<!-- Doors -->
+		
+		<door>
+		  <name>Cargo door</name>
+		  <path>Aircraft/AN-22A/Sounds/door_closed.wav</path>
+		  <condition>
+		    <equals>
+		      <property>sim/multiplay/generic/float[13]</property>
+		      <value>0.0</value>
+		    </equals>
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/int[17]</property>
+		    <factor>0.35</factor>
+		  </volume>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
+		</door>
+		
+		<door>
+		  <name>Cargo doorT</name>
+		  <mode>in-transit</mode>
+		  <path>Aircraft/AN-22A/Sounds/door_close.wav</path>
+		  <condition>
+		    <and>
+		      <greater-than>
+			<property>sim/multiplay/generic/float[13]</property>
+			<value>0.01</value>
+		      </greater-than>
+		      <less-than>
+			<property>sim/multiplay/generic/float[13]</property>
+			<value>0.99</value>
+		      </less-than>
+		    </and>
+		  </condition>
+		  <volume>
+		    <factor>0.12</factor>
+		  </volume>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
+		</door>
+		
+		<door>
+		  <name>Passenger doorL</name>
+		  <path>Aircraft/AN-22A/Sounds/door_closed.wav</path>
+		  <condition>
+		    <equals>
+		      <property>sim/multiplay/generic/float[0]</property>
+		      <value>0.0</value>
+		    </equals>
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/int[17]</property>
+		    <factor>0.35</factor>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</door>
+		
+		<door>
+		  <name>Passenger doorLT</name>
+		  <mode>in-transit</mode>
+		  <path>Aircraft/AN-22A/Sounds/door_close.wav</path>
+		  <condition>
+		    <and>
+		      <greater-than>
+			<property>sim/multiplay/generic/float[0]</property>
+			<value>0.01</value>
+		      </greater-than>
+		      <less-than>
+			<property>sim/multiplay/generic/float[0]</property>
+			<value>0.99</value>
+		      </less-than>
+		    </and>
+		  </condition>
+		  <volume>
+		    <factor>0.11</factor>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</door>
+		
+		<door>
+		  <name>Passenger doorR</name>
+		  <path>Aircraft/AN-22A/Sounds/door_closed.wav</path>
+		  <condition>
+		    <equals>
+		      <property>sim/multiplay/generic/float[1]</property>
+		      <value>0.0</value>
+		    </equals>
+		  </condition>
+		  <volume>
+		    <property>sim/multiplay/generic/int[17]</property>
+		    <factor>0.35</factor>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</door>
+		
+		<door>
+		  <name>Passenger doorRT</name>
+		  <mode>in-transit</mode>
+		  <path>Aircraft/AN-22A/Sounds/door_close.wav</path>
+		  <condition>
+		    <and>
+		      <greater-than>
+			<property>sim/multiplay/generic/float[1]</property>
+			<value>0.01</value>
+		      </greater-than>
+		      <less-than>
+			<property>sim/multiplay/generic/float[1]</property>
+			<value>0.99</value>
+		      </less-than>
+		    </and>
+		  </condition>
+		  <volume>
+		    <factor>0.11</factor>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</door>
+		
+		<!-- Wind -->
+		
+		<wind>
+		  <name>wind</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/wind.wav</path>
+		  <property>/environment/wind-speed-kt</property>
+		  <volume>
+		    <property>/environment/wind-speed-kt</property>
+		    <factor>0.0025</factor>
+		    <min>0.00</min>
+		    <max>0.20</max>
+		  </volume>
+		  <pitch>
+		    <property>/environment/wind-speed-kt</property>
+		    <factor>0.01</factor>
+		    <offset>0.2</offset>
+		    <max>0.70</max>
+		  </pitch>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</wind>
+		
+		<!-- Rain -->
+		
+		<rain>
+		  <name>rain</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/rain_canopy.wav</path>
+		  <condition>
+		    <greater-than>
+		      <property>/environment/metar/rain-norm</property>
+		      <value>0.2</value>
+		    </greater-than>
+		  </condition>
+		  <volume>
+		    <property>/environment/metar/rain-norm</property>
+		    <factor>1.00</factor>
+		    <offset>-0.2</offset>
+		    <min>0.0</min>
+		    <max>0.6</max>
+		  </volume>
+		  <pitch>
+		    <property>/velocities/airspeed-kt</property>
+		    <factor>0.001</factor>
+		    <offset>0.45</offset>
+		  </pitch>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</rain>
+		
+		<!-- ADF-MorseCode, see txt file -->
+		
+		<ADF>
+		  <name>ADF1</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/Morse.wav</path>
+		  <condition>        
+		    <property>/instrumentation/adf[0]/in-range</property>         
+		  </condition>
+		  <volume>
+		    <property>instrumentation/adf[0]/volume</property>	
+		    <min>0.00</min>
+		    <max>1.0</max>
+		  </volume>      
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</ADF>
+		
+		<ADF>
+		  <name>ADF2</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/Morse.wav</path>
+		  <condition>        
+		    <property>/instrumentation/adf[1]/in-range</property>        
+		  </condition>
+		  <volume>	
+		    <property>instrumentation/adf[1]/volume</property>
+		    <min>0.00</min>
+		    <max>1.0</max>
+		  </volume>      
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</ADF>
+		
+		<!-- Bradley Tanks in and out -->
+		
+		<tank1>
+		  <name>tank1</name>
+		  <mode>once</mode>
+		  <path>Aircraft/AN-22A/Sounds/Tank-SoundBible-com.wav</path>
+		  <condition>       
+		    <greater-than>
+		      <property>sim/multiplay/generic/float[16]</property>
+		      <value>1.1</value>
+		    </greater-than>	
+		  </condition>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
+		</tank1>
+		
+		<tank2>
+		  <name>tank2</name>
+		  <mode>once</mode>
+		  <path>Aircraft/AN-22A/Sounds/Tank-SoundBible-com.wav</path>
+		  <condition>       
+		    <greater-than>
+		      <property>sim/multiplay/generic/float[16]</property>
+		      <value>1.1</value>
+		    </greater-than>	
+		  </condition>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
+		  <delay-sec>5</delay-sec>
+		</tank2>
+		
+		<tank3>
+		  <name>tank3</name>
+		  <mode>once</mode>
+		  <path>Aircraft/AN-22A/Sounds/Tank-SoundBible-com.wav</path>
+		  <condition>       
+		    <greater-than>
+		      <property>sim/multiplay/generic/float[16]</property>
+		      <value>1.1</value>
+		    </greater-than>	
+		  </condition>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
+		  <delay-sec>10</delay-sec>
+		</tank3>
+		
+		<!-- Gear Warning -->
+		
+		<decision>
+		  <name>gearwarning</name>
+		  <mode>looped</mode>
+		  <path>Aircraft/AN-22A/Sounds/sirena.wav</path>
+		  <condition>    
+		    <property>/gear/warning</property>      
+		  </condition>
+		  <volume>
+		    <min>0.78</min>
+		    <max>0.78</max>
+		  </volume>
+		  <reference-dist>10</reference-dist>
+		  <max-dist>100</max-dist>
+		</decision>
+		
+		
+		</fx>
+		
+		</PropertyList>
+		

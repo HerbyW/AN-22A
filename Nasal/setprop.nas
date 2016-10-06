@@ -3,6 +3,20 @@
 #  see Read-Me.txt for all copyrights in the base folder of this aircraft
 ###################################################################################
 
+setprop("/sim/signals/fdm-ready", 0);
+
+
+var fdmready = maketimer(3, func {
+  
+  if (getprop ("/sim/time/elapsed-sec") > 10 )  
+  setprop("/sim/signals/fdm-ready", 1); 
+    
+});
+
+fdmready.start();
+
+
+###################################################################################
 #UVID-15 Control for Pressure in mmhg and inhg
 # create listener
 

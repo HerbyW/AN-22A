@@ -75,7 +75,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       
       <description>Antonov AN-22A (YASim)</description>
       <author>HerbyW (Instrumentation, Animation, FDM. 3D-model), firefly 3D for interior and panel, BARANGER E.(3D/FDM-orig)</author>
-      <aircraft-version>4.0.4</aircraft-version>
+      <aircraft-version>4.0.5</aircraft-version>
       <status>early production</status>
       <rating>
 	<FDM type="int">4</FDM>
@@ -95,7 +95,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<livery>
 	  <file type="string">default</file>
 	</livery>
-	<AN-22A><version type="string">4.0.4</version></AN-22A>
+	<AN-22A><version type="string">4.0.5</version></AN-22A>
 	<anti-ice-alpha type="float">1</anti-ice-alpha>
 	<anti-ice-rotor type="float">1</anti-ice-rotor>
 	<iceing type="float">1</iceing>
@@ -130,7 +130,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	  <int type="int" n="14" alias="/engines/engine[2]/running">  0 </int>
 	  <int type="int" n="15" alias="/engines/engine[3]/running">  0 </int>
 	  <int type="int" n="16" alias="/gear/gear[0]/wow">  1 </int>
-	  <int type="int" n="17" alias="/sim/signals/fdm-initialized" />
+	  <int type="int" n="17" alias="/sim/signals/fdm-ready" />
 	  <int type="int" n="18" alias="/gear/gear[3]/wow">  1 </int>
 	  <int type="int" n="19" alias="/gear/gear[6]/wow">  1 </int>
 	  
