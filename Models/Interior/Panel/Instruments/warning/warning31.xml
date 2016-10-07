@@ -42,7 +42,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <object-name>text</object-name>
    <condition>
      <greater-than>
-	<property>intrumentation/airspeed-indicator/true-speed-kt</property>
+	<property>instrumentation/airspeed-indicator/true-speed-kt</property>
 	<value>399</value>
      </greater-than>
     </condition>  
