@@ -862,7 +862,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		  <path>Aircraft/AN-22A/Sounds/dinamik_pr2.wav</path>
 		  <condition>
 		    <greater-than>
-		      <property>velocities/groundspeed-kt</property>
+		      <property>intrumentation/airspeed-indicator/true-speed-kt</property>
 		      <value>399</value>
 		    </greater-than>
 		  </condition> 
