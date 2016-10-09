@@ -7,7 +7,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 
 <PropertyList>
   
-  <path>an22-09.ac</path>
+  <path>an22-10.ac</path>
 
   <nasal>
     <load>
@@ -127,7 +127,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <object-name>heliceDI1</object-name>
     <object-name>heliceDI2</object-name>
     <object-name>heliceDE1</object-name>
-    <object-name>heliceDE2</object-name>    
+    <object-name>heliceDE2</object-name>
+    <object-name>Untitled</object-name>
+    <object-name>Untitled.001</object-name>    
     <!-- Objets transparents -->
     <object-name>propblurGE1</object-name>
     <object-name>propdiscGE1</object-name>
@@ -209,14 +211,14 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <object-name>heliceDI2</object-name>
     <object-name>heliceDE1</object-name>
     <object-name>heliceDE2</object-name>
+    <object-name>Untitled</object-name>
+    <object-name>Untitled.001</object-name>
     
-    <emission>
-      <factor-prop>sim/time/sun-angle-rad</factor-prop>
-      <red>   0.1 </red>
-      <green> 0.1 </green>
-      <blue>  0.1 </blue>
-    </emission>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
   </animation>
+
   
   <animation>
     <type>material</type>    
@@ -249,7 +251,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   
   
   <effect>
-    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <inherits-from>Aircraft/AN-22A/Models/Effects/c182sreflect-uber_body</inherits-from>
     <condition>
       <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
@@ -297,6 +299,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <object-name>porteDE3</object-name>
     <object-name>baieB</object-name>
     <object-name>baieH</object-name>
+    <object-name>Untitled</object-name>
+    <object-name>Untitled.001</object-name>
   </effect>  
   
   <effect>
@@ -348,6 +352,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <object-name>porteDE3</object-name>
     <object-name>baieB</object-name>
     <object-name>baieH</object-name>
+    <object-name>Untitled</object-name>
+    <object-name>Untitled.001</object-name>
   </effect>
 
   <animation>
@@ -1071,7 +1077,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <object-name>propdiscDE1</object-name>
     <object-name>propblurDE1</object-name>
     <object-name>heliceDE1</object-name>
-    <object-name>bolDE1</object-name>
+    <object-name>Untitled</object-name>
   </animation>
   
   <!-- Selection of the visible object based on the rpm -->

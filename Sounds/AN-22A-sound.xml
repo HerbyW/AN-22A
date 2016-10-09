@@ -867,8 +867,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    </greater-than>
 		  </condition> 
 		  <volume>
-		    <offset>1.0</offset>
-		    <min>1.0</min>
+		    <property>sim/multiplay/generic/int[17]</property>
+		    <factor>1.0</factor>
+		    <min>0.0</min>
 		    <max>1.0</max>
 		  </volume>
 		  <reference-dist>10</reference-dist>

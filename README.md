@@ -6,7 +6,7 @@ New Instrumentation, new panels, new interior and hundreds of addings to the off
 Additional works by:
 
 Firefly - 3D works March 2015
-Eagel   - Livery April 2015
+Eagel   - Livery April 2015 and 10/2016
 
 See txt-files in /sounds for some sound files
 
