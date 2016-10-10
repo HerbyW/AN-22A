@@ -33,7 +33,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   </nasal>
   
   <sound>
-       <path>Aircraft/AN-22A/Sounds/AN-22A-sound.xml</path>
+       <path>Aircraft/AN-22A/Sounds/AN-22A-sound-MP.xml</path>
  </sound>
  
 <!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->

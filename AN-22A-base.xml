@@ -85,14 +85,14 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       </rating>
       
       <fuel-fraction>0.6</fuel-fraction>
-      
+      <signals><fdm-ready type="int">0</fdm-ready></signals>
       <startup>
 	<splash-texture>Aircraft/AN-22A/AN-22A-splash.png</splash-texture>
       </startup>
       
       <model>      
 	<path>Aircraft/AN-22A/Models/AN-22A.xml</path>
-	<livery>
+	<livery archive="y">
 	  <file type="string">default</file>
 	</livery>
 	<AN-22A><version type="string">4.0.5</version></AN-22A>
@@ -131,8 +131,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	  <int type="int" n="15" alias="/engines/engine[3]/running">  0 </int>
 	  <int type="int" n="16" alias="/gear/gear[0]/wow">  1 </int>
 	  <int type="int" n="17" alias="/sim/signals/fdm-ready" />
-	  <int type="int" n="18" alias="/gear/gear[3]/wow">  1 </int>
-	  <int type="int" n="19" alias="/gear/gear[6]/wow">  1 </int>
+	  <int type="int" n="18" alias="/gear/gear[1]/wow">  1 </int>
+	  <int type="int" n="19" alias="/gear/gear[4]/wow">  1 </int>
 	  
 	  <float n="0"  alias="/sim/model/door-positions/crewL/position-norm"/>
 	  <float n="1"  alias="/sim/model/door-positions/crewR/position-norm"/>
@@ -147,7 +147,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	  <float n="10" alias="/controls/engines/engine[2]/throttle" />
 	  <float n="11" alias="/controls/engines/engine[3]/throttle" />
 	  <float n="12" alias="/gear/gear[2]/rollspeed-ms" />
-	  <float n="13"  alias="/sim/model/door-positions/cargo/position-norm"/>
+	  <float n="13" alias="/sim/model/door-positions/cargo/position-norm"/>
 	  <float n="14" alias="/orientation/pitch-deg"/>
 	  <float n="15" alias="/orientation/roll-deg"/>
 	  <float n="16" alias="/sim/weight[3]/weight-lb"/>

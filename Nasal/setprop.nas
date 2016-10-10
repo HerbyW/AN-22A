@@ -8,7 +8,7 @@ setprop("/sim/signals/fdm-ready", 0);
 
 var fdmready = maketimer(3, func {
   
-  if (getprop ("/sim/time/elapsed-sec") > 10 )  
+  if (getprop ("/sim/time/elapsed-sec") > 15 )  
   setprop("/sim/signals/fdm-ready", 1); 
     
 });

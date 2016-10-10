@@ -501,7 +501,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    <property>sim/multiplay/generic/int[12]</property>         
 		  </condition>      
 		  <volume>
-		    <offset>-0.42</offset>
+		    <offset>-0.30</offset>
 		  </volume>
 		  <reference-dist>10</reference-dist>
 		  <max-dist>1000</max-dist>
@@ -514,7 +514,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    <property>sim/multiplay/generic/int[13]</property>         
 		  </condition>      
 		  <volume>
-		    <offset>-0.40</offset>
+		    <offset>-0.32</offset>
 		  </volume>
 		  <reference-dist>10</reference-dist>
 		  <max-dist>1000</max-dist>
@@ -527,7 +527,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    <property>sim/multiplay/generic/int[14]</property>         
 		  </condition>      
 		  <volume>
-		    <offset>-0.38</offset>
+		    <offset>-0.34</offset>
 		  </volume>
 		  <reference-dist>10</reference-dist>
 		  <max-dist>1000</max-dist>
@@ -562,6 +562,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    <factor>0.00058</factor>
 		    <offset>0.055</offset>        
 		  </volume>
+		  <pitch>
+		    <min>0.0</min>
+		    <max>0.01</max>
+		  </pitch>
 		  <position>
 		    <x>-3.7</x>
 		    <y>-13.45</y>
@@ -586,6 +590,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    <factor>0.00058</factor>
 		    <offset>0.055</offset>        
 		  </volume>
+		  <pitch>
+		    <min>0.0</min>
+		    <max>0.01</max>
+		  </pitch>
 		  <position>
 		    <x>-4.32</x>
 		    <y>-6.88</y>
@@ -610,6 +618,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    <factor>0.00058</factor>
 		    <offset>0.055</offset>        
 		  </volume>
+		  <pitch>
+		    <min>0.0</min>
+		    <max>0.01</max>
+		  </pitch>
 		  <position>
 		    <x>-4.32</x>
 		    <y> 6.88</y>
@@ -634,6 +646,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    <factor>0.00058</factor>
 		    <offset>0.055</offset>        
 		  </volume>
+		  <pitch>
+		    <min>0.0</min>
+		    <max>0.01</max>
+		  </pitch>
 		  <position>
 		    <x>-3.7</x>
 		    <y> 13.45</y>
@@ -741,12 +757,12 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		  <mode>looped</mode>
 		  <path>Aircraft/AN-22A/Sounds/24roll.wav</path>
 		  <condition>
-		    <property>/gear/gear[0]/wow</property>
+		    <property>sim/multiplay/generic/int[16]</property>
 		  </condition>
 		  <volume>
 		    <property>sim/multiplay/generic/float[12]</property>
 		    <type>log</type>
-		    <factor>0.25</factor>
+		    <factor>0.23</factor>
 		    <min>0.0</min>
 		    <max>0.8</max>
 		  </volume>
@@ -760,8 +776,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		  <path>Aircraft/AN-22A/Sounds/24roll.wav</path>
 		  <condition>
 		    <or>          
-		      <property>/gear/gear[1]/wow</property>
-		      <property>/gear/gear[2]/wow</property>
+		      <property>sim/multiplay/generic/int[18]</property>
+		      <property>sim/multiplay/generic/int[19]</property>
 		    </or>
 		  </condition>
 		  <volume>
@@ -862,7 +878,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		  <path>Aircraft/AN-22A/Sounds/dinamik_pr2.wav</path>
 		  <condition>
 		    <greater-than>
-		      <property>instrumentation/airspeed-indicator/true-speed-kt</property>
+		      <property>/instrumentation/airspeed-indicator/true-speed-kt</property>
 		      <value>399</value>
 		    </greater-than>
 		  </condition> 
@@ -885,15 +901,15 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		  <path>Aircraft/AN-22A/Sounds/stall.wav</path>
 		  <condition>
 		    <and>
-		      <property>instrumentation/alerts/stall</property>
+		      <property>/instrumentation/alerts/stall</property>
 		      <greater-than>
-			<property>sim/time/elapsed-sec</property>
+			<property>/sim/time/elapsed-sec</property>
 			<value>100</value>
 		      </greater-than>
 		    </and>
 		  </condition>    
 		  <volume>
-		    <property>instrumentation/alerts/stall</property>
+		    <property>/instrumentation/alerts/stall</property>
 		    <max>1.0</max>
 		  </volume>
 		  <reference-dist>10</reference-dist>
@@ -908,8 +924,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		  <path>Aircraft/AN-22A/Sounds/omi_1.wav</path>
 		  <condition>
 		    <less-than>
-		      <property>position/altitude-agl-ft</property>
-		      <property>instrumentation/altimeter/decision-height</property>      
+		      <property>/position/altitude-agl-ft</property>
+		      <property>/instrumentation/altimeter/decision-height</property>      
 		    </less-than>
 		  </condition>
 		  <volume>
@@ -1103,7 +1119,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    <property>/instrumentation/adf[0]/in-range</property>         
 		  </condition>
 		  <volume>
-		    <property>instrumentation/adf[0]/volume</property>	
+		    <property>/instrumentation/adf[0]/volume</property>	
 		    <min>0.00</min>
 		    <max>1.0</max>
 		  </volume>      
@@ -1119,7 +1135,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    <property>/instrumentation/adf[1]/in-range</property>        
 		  </condition>
 		  <volume>	
-		    <property>instrumentation/adf[1]/volume</property>
+		    <property>/instrumentation/adf[1]/volume</property>
 		    <min>0.00</min>
 		    <max>1.0</max>
 		  </volume>      
