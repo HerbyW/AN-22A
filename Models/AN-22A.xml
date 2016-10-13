@@ -1899,7 +1899,37 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     </axis>
   </animation>
   
+  <!-- Stairs -->
+  
+  <model>
+   <name>stairs</name>
+   <path>Aircraft/AN-22A/Models/Effects/stairs.ac</path>  
+  </model>
+  
+  <animation>
+    <type>select</type>
+    <object-name>escalier_2</object-name>
+    <condition>
+      <greater-than>
+	<property>sim/multiplay/generic/float[0]</property>
+	<value>0.85</value>
+      </greater-than>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>escalier_1</object-name>
+    <condition>
+      <greater-than>
+	<property>sim/multiplay/generic/float[1]</property>
+	<value>0.85</value>
+      </greater-than>
+    </condition>
+  </animation>
+
   <!-- Porte -->
+
   <animation>
     <type>pick</type>
     <object-name>porteG</object-name>

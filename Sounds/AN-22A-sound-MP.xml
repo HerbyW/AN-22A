@@ -437,8 +437,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    <property>sim/multiplay/generic/int[17]</property>
 		    <factor>0.35</factor>
 		  </volume>
-		  <reference-dist>10</reference-dist>
-		  <max-dist>100</max-dist>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
 		</door>
 		
 		<door>
@@ -460,8 +460,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		  <volume>
 		    <factor>0.11</factor>
 		  </volume>
-		  <reference-dist>10</reference-dist>
-		  <max-dist>100</max-dist>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
 		</door>
 		
 		<door>
@@ -477,8 +477,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    <property>sim/multiplay/generic/int[17]</property>
 		    <factor>0.35</factor>
 		  </volume>
-		  <reference-dist>10</reference-dist>
-		  <max-dist>100</max-dist>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
 		</door>
 		
 		<door>
@@ -500,8 +500,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		  <volume>
 		    <factor>0.11</factor>
 		  </volume>
-		  <reference-dist>10</reference-dist>
-		  <max-dist>100</max-dist>
+		  <reference-dist>100</reference-dist>
+		  <max-dist>1000</max-dist>
 		</door>
 
 		<!-- Bradley Tanks in and out -->
@@ -517,7 +517,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    </greater-than>	
 		  </condition>
 		  <reference-dist>100</reference-dist>
-		  <max-dist>1000</max-dist>
+		  <max-dist>2000</max-dist>
 		</tank1>
 		
 		<tank2>
@@ -531,7 +531,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    </greater-than>	
 		  </condition>
 		  <reference-dist>100</reference-dist>
-		  <max-dist>1000</max-dist>
+		  <max-dist>2000</max-dist>
 		  <delay-sec>5</delay-sec>
 		</tank2>
 		
@@ -546,7 +546,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		    </greater-than>	
 		  </condition>
 		  <reference-dist>100</reference-dist>
-		  <max-dist>1000</max-dist>
+		  <max-dist>2000</max-dist>
 		  <delay-sec>10</delay-sec>
 		</tank3>
 
