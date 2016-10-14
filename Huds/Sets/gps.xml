@@ -29,7 +29,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<label>
 	  <width>2</width>
 	  <height>2</height>
-	  <x>80</x>
+	  <x>110</x>
 	  <format>(TO)</format>
 	  <halign>left</halign>
 	  
@@ -47,7 +47,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<label>
 	  <width>2</width>
 	  <height>2</height>
-	  <x>80</x>
+	  <x>110</x>
 	  <format>(FROM)</format>
 	  <halign>left</halign>
 	  
@@ -101,7 +101,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	  <label>
 	    <width>2</width>
 	    <height>2</height>
-	    <x>80</x>
+	    <x>110</x>
 	    <format>-&gt;%5s</format>
 	    <halign>left</halign>
 	    <input>
@@ -136,7 +136,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	    <label>
 	      <width>2</width>
 	      <height>2</height>
-	      <x>60</x>
+	      <x>80</x>
 	      <y>-10</y>
 	      <format>TTW:%s</format>
 	      <halign>left</halign>
@@ -414,7 +414,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <width>2</width>
 	      <height>2</height>
 	      <y>-340</y>
-	      <x>60</x>
+	      <x>110</x>
 	      <input>
 		<property>autopilot/route-manager/departure/name</property>
 	      </input>
@@ -443,7 +443,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <width>2</width>
 	      <height>2</height>
 	      <y>-350</y>
-	      <x>60</x>
+	      <x>110</x>
 	      <input>
 		<property>autopilot/route-manager/destination/name</property>
 	      </input>
