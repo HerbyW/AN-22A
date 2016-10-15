@@ -841,13 +841,13 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
    <!--Throttle, Propeller-Pitch, Mixture Control Panel -->
  
  <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/quadrant/quadrant.xml</path>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/throttlebox/throttlebox.xml</path>
     <offsets>
-      <x-m> -0.00</x-m>
-      <y-m> -0.28 </y-m>
-      <z-m> -0.35 </z-m>
+      <x-m> 0</x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
       <heading-deg>0</heading-deg>
-      <pitch-deg>43</pitch-deg>
+      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
   
@@ -876,10 +876,21 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <!--USH, USHDB ADF and VOR Navigation Compasses -->
   
   <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ush/ush.xml</path>
+    <offsets>
+      <x-m> 0.05</x-m>
+      <y-m> 0.03 </y-m>
+      <z-m> -0.30 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>-38</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ushdb/ushdb.xml</path>
     <offsets>
       <x-m> 0.05</x-m>
-      <y-m> 0.10 </y-m>
+      <y-m> 0.18 </y-m>
       <z-m> -0.30 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-38</pitch-deg>
@@ -890,7 +901,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ushdb/ushdb_selector.xml</path>
     <offsets>
       <x-m> 0.104</x-m>
-      <y-m> 0.10 </y-m>
+      <y-m> 0.18 </y-m>
       <z-m> -0.383 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-38</pitch-deg>
@@ -901,7 +912,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf1.xml</path>
     <offsets>
       <x-m> 0.102</x-m>
-      <y-m> 0.063 </y-m>
+      <y-m> 0.143 </y-m>
       <z-m> -0.416 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-38</pitch-deg>
@@ -912,7 +923,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf2.xml</path>
     <offsets>
       <x-m> 0.102</x-m>
-      <y-m> 0.139 </y-m>
+      <y-m> 0.219 </y-m>
       <z-m> -0.416 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-38</pitch-deg>
@@ -923,7 +934,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/red-lamp-nav1.xml</path>
     <offsets>
       <x-m> 0.075</x-m>
-      <y-m> 0.063 </y-m>
+      <y-m> 0.143 </y-m>
       <z-m> -0.377 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-38</pitch-deg>
@@ -934,7 +945,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/red-lamp-nav2.xml</path>
     <offsets>
       <x-m> 0.075</x-m>
-      <y-m> 0.139 </y-m>
+      <y-m> 0.219 </y-m>
       <z-m> -0.377</z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-38</pitch-deg>
@@ -967,7 +978,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <alignment>center-center</alignment>
     <offsets>
       <x-m> 0.104</x-m>
-      <y-m> 0.088 </y-m>
+      <y-m> 0.168 </y-m>
       <z-m> -0.383 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-38</pitch-deg>
@@ -984,17 +995,6 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <blue>  0.5 </blue>
     </emission>
   </animation>
-  
-  <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ush/ush.xml</path>
-    <offsets>
-      <x-m> 0.05</x-m>
-      <y-m> -0.05 </y-m>
-      <z-m> -0.30 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-38</pitch-deg>
-    </offsets>
-  </model>
  
   <!--engineur panel: Skawk Transponder Control Module
                       KM-5 magnetic variation module,

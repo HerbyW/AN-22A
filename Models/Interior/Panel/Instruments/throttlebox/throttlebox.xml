@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
+  <PropertyList>
+    
+    <path>throttlebox.ac</path>
+
+   <!--Lights-->
+
+  <animation>
+    <type>material</type>    
+    <object-name>P1</object-name>   
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.0 </red>
+      <green> 0.0 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>T1</object-name>
+    <object-name>T2</object-name>
+    <object-name>T3</object-name>
+    <object-name>T4</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.05 </green>
+      <blue>  0.05 </blue>
+    </emission>
+  </animation>  
+
+  <animation>
+    <type>material</type>
+    <object-name>B1</object-name>
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>  
+
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>T1</object-name>    
+    <expression>
+      <product>
+	<property>controls/engines/engine[0]/throttle</property>
+	<property>controls/engines/engine[0]/condition</property>
+	<value>60</value>
+      </product>
+    </expression>
+    <offset-deg>0</offset-deg>
+    <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>T2</object-name>
+  <expression>
+      <product>
+	<property>controls/engines/engine[1]/throttle</property>
+	<property>controls/engines/engine[1]/condition</property>
+	<value>60</value>
+      </product>
+    </expression>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>T3</object-name>
+  <expression>
+      <product>
+	<property>controls/engines/engine[2]/throttle</property>
+	<property>controls/engines/engine[2]/condition</property>
+	<value>60</value>
+      </product>
+    </expression>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>T4</object-name>
+  <expression>
+      <product>
+	<property>controls/engines/engine[3]/throttle</property>
+	<property>controls/engines/engine[3]/condition</property>
+	<value>60</value>
+      </product>
+    </expression>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>P1</object-name>
+  <property>controls/engines/engine[0]/propeller-pitch</property>
+  <offset-deg>0</offset-deg>
+  <factor>60</factor>
+    <center>
+      <x-m> 0.009387 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> -0.367 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y>-1 </y>
+      <z> 0 </z>
+    </axis>
+ </animation>
+
+</PropertyList>
