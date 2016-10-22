@@ -854,9 +854,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <model>
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/switch/reverser.xml</path>
     <offsets>
-      <x-m> 0.078</x-m>
-      <y-m> -0.35 </y-m>
-      <z-m> -0.292 </z-m>
+      <x-m> 0.0272</x-m>
+      <y-m> -0.266 </y-m>
+      <z-m> -0.265 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-47</pitch-deg>
     </offsets>
@@ -866,7 +866,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/red-lamp-reverser.xml</path>
     <offsets>
       <x-m> 0.05</x-m>
-      <y-m> -0.35 </y-m>
+      <y-m> -0.271 </y-m>
       <z-m> -0.285 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-43</pitch-deg>

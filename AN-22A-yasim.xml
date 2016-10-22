@@ -67,19 +67,19 @@ An-22A
   <cruise speed="390" alt="36370" fuel="0.8">
     <control-setting axis="/controls/engines/engine[0]/throttle-v" value="1"/>
     <control-setting axis="/controls/engines/engine[0]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
     
     <control-setting axis="/controls/engines/engine[1]/throttle-v" value="1"/>
     <control-setting axis="/controls/engines/engine[1]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
     
     <control-setting axis="/controls/engines/engine[2]/throttle-v" value="1"/>
     <control-setting axis="/controls/engines/engine[2]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1"/>
     
     <control-setting axis="/controls/engines/engine[3]/throttle-v" value="1"/>
     <control-setting axis="/controls/engines/engine[3]/condition" value="1"/>
-    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1"/>
     
     <control-setting axis="/controls/flight/flaps" value="0"/>
     <control-setting axis="/controls/gear/gear-down" value="0"/>

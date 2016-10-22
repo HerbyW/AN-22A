@@ -42,15 +42,14 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     </gear>
     <paratroopers>
       <paratroopers type="int">0</paratroopers>
-      <weight type="float">0</weight>
-      
-      </paratroopers>
-      <bradle>
+      <weight type="float">0</weight>      
+    </paratroopers>
+    <bradle>
 	<bradle type="int">0</bradle>
 	<weight type="float">60850</weight>
 	<nosmoke type="string">nosmoke</nosmoke>
-      </bradle>
-      <switches>
+    </bradle>
+    <switches>
 	<fuel type="float">0</fuel>
 	<gauge-light type="int">0</gauge-light>
 	<adf-1-selector type="double">0</adf-1-selector>
@@ -61,10 +60,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<glass-heating type="bool">0</glass-heating>
 	<rotor-heating type="bool">0</rotor-heating>
 	<instrument-heating type="bool">0</instrument-heating>
-      </switches>
-      <chokes>
+    </switches>
+    <chokes>
 	<activ type="int">0</activ>
-      </chokes>
+    </chokes>
       <reverser type="bool">0</reverser>
     </controls>
     
@@ -74,9 +73,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <sim include="Systems/views.xml">
       
       <description>Antonov AN-22A (YASim)</description>
-      <author>HerbyW (Instrumentation, Animation, FDM. 3D-model), firefly 3D for interior and panel, BARANGER E.(3D/FDM-orig)</author>
+      <author>Herbert Wagner (Instrumentation, Animation, FDM. 3D-model), firefly 3D for interior and panel, Baranger E.(3D/FDM-orig)</author>
       <aircraft-version>4.0.5</aircraft-version>
-      <status>early production</status>
+      <status>production</status>
       <rating>
 	<FDM type="int">4</FDM>
 	<systems type="int">4</systems>
@@ -329,12 +328,12 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <doors>
 		<file>Aircraft/AN-22A/Nasal/doors.nas</file>
 	      </doors>
-	      <an12>
+	      <an22>
 		<file>Aircraft/AN-22A/Nasal/liveries.nas</file>
 		<file>Aircraft/AN-22A/Nasal/light.nas</file>
 		<file>Aircraft/AN-22A/Nasal/autostart.nas</file>
 		<file>Aircraft/AN-22A/Nasal/autopilot.nas</file>
-	      </an12>
+	      </an22>
 	      <instruments>
 		<file>Aircraft/AN-22A/Nasal/setprop.nas</file>      
 	      </instruments>

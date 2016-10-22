@@ -2,7 +2,6 @@
 #  Copyright (C) Herbert Wagner Dec2014-2016
 #  see Read-Me.txt for all copyrights in the base folder of this aircraft
 ###################################################################################
-
 setprop("/sim/signals/fdm-ready", 0);
 
 
