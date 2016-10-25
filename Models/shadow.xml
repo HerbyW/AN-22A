@@ -27,7 +27,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <condition>
      <and>
       <property>/sim/rendering/shadows/enabled</property>
-      <not><property>sim/multiplay/generic/int[4]</property></not>
+      <not><property>/sim/replay/replay-state</property></not>
      </and>
     </condition>
   </animation>

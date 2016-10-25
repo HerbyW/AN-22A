@@ -10,7 +10,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <controls>
     <autostart type="int">0</autostart>
     <lighting>
-      <nav-lights type="int">0</nav-lights>    
+      <nav-lights type="int">0</nav-lights>
+      <beacon type="bool">false</beacon>
+      <strobe type="bool">false</strobe>
       <landing-lights type="int">0</landing-lights>
       <taxi-lights type="int">0</taxi-lights>
     </lighting>
@@ -74,7 +76,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       
       <description>Antonov AN-22A (YASim)</description>
       <author>Herbert Wagner (Instrumentation, Animation, FDM. 3D-model), firefly 3D for interior and panel, Baranger E.(3D/FDM-orig)</author>
-      <aircraft-version>4.0.5</aircraft-version>
+      <aircraft-version>4.0.6</aircraft-version>
       <status>production</status>
       <rating>
 	<FDM type="int">4</FDM>
@@ -85,6 +87,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       
       <fuel-fraction>0.6</fuel-fraction>
       <signals><fdm-ready type="int">0</fdm-ready></signals>
+      
       <startup>
 	<splash-texture>Aircraft/AN-22A/AN-22A-splash.png</splash-texture>
       </startup>
@@ -94,7 +97,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<livery archive="y">
 	  <file type="string">default</file>
 	</livery>
-	<AN-22A><version type="string">4.0.5</version></AN-22A>
+	<AN-22A><version type="string">4.0.6</version></AN-22A>
 	<anti-ice-alpha type="float">1</anti-ice-alpha>
 	<anti-ice-rotor type="float">1</anti-ice-rotor>
 	<iceing type="float">1</iceing>
@@ -116,10 +119,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	  <int type="int" n="1" alias="/controls/paratroopers/jump-signal">  0 </int>
 	  <int type="int" n="2" alias="/controls/bradle/bradle">  0 </int>
 	  <int type="int" n="3" alias="/controls/chokes/activ">  0 </int>
-	  <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>
+	  <int type="int" n="4" alias="/controls/lighting/beacon-state/state"/>
 	  <int type="int" n="5" alias="/controls/switches/gauge-light"/>
 	  <int type="int" n="6" alias="/controls/reverser">  0 </int>
-	  
+	  <int type="int" n="7" alias="/controls/lighting/strobe-state/state"/>
 	  <int type="int" n="8" alias="/controls/lighting/nav-lights"/>
 	  <int type="int" n="9" alias="/controls/lighting/landing-lights"/>
 	  <int type="int" n="10" alias="/controls/lighting/taxi-lights"/>
@@ -156,7 +159,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	  
 	  <string  alias="/sim/multiplay/callsign"/>
 	  <string n="1" type="string" alias="/sim/model/AN-22A/version"/>
-	  <string n="9" type="string" />
+	  
 	  </generic>
 	</multiplay>
 	
