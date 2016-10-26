@@ -23,6 +23,7 @@ setlistener("/controls/autostart", func
 	setprop("/controls/electric/battery-switch", 1);
         setprop("/controls/switches/gauge-light", 1);
         setprop("/controls/lighting/nav-lights", 1);
+	setprop("/controls/lighting/beacon", 1);
 	
 	setprop("sim/messages/copilot", "Main power and lights are on");
 	
@@ -70,6 +71,8 @@ setlistener("/controls/electric/battery-switch", func
 		
         setprop("/controls/switches/gauge-light", 0);
         setprop("/controls/lighting/nav-lights", 0);
+	setprop("/controls/lighting/beacon", 0);
+	setprop("/controls/lighting/strobe", 0);
 	
 	setprop("sim/messages/copilot", "Main power and lights are off");
 	
