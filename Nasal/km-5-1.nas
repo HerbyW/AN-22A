@@ -481,7 +481,7 @@ ark_2_1_handler = func {
 ark_1_power = func{
     if( getprop("instrumentation/adf[0]/power-btn") == 1 )
 	{
-    	if( getprop("controls/switches/gauge-light") == 1 )
+    	if( getprop("controls/switches/gauge-light") > 0 )
 		{
 	     
 	     setprop("instrumentation/adf[0]/serviceable", 1 );
@@ -500,7 +500,7 @@ ark_1_power = func{
 ark_2_power = func{
     if( getprop("instrumentation/adf[1]/power-btn") == 1 )
 	{
-    	if( getprop("controls/switches/gauge-light") == 1 )
+    	if( getprop("controls/switches/gauge-light") > 0 )
 		{
 	     
 	     setprop("instrumentation/adf[1]/serviceable", 1 );
@@ -519,7 +519,7 @@ ark_2_power = func{
 nav_1_power = func{
     if( getprop("instrumentation/nav[0]/power-btn") == 1 )
 	{
-    	if( getprop("controls/switches/gauge-light") == 1 )
+    	if( getprop("controls/switches/gauge-light") > 0 )
 		{
 	     
 	     setprop("instrumentation/nav[0]/serviceable", 1 );
@@ -538,7 +538,7 @@ nav_1_power = func{
 nav_2_power = func{
     if( getprop("instrumentation/nav[1]/power-btn") == 1 )
 	{
-    	if( getprop("controls/switches/gauge-light") == 1 )
+    	if( getprop("controls/switches/gauge-light") > 0 )
 		{
 	     
 	     setprop("instrumentation/nav[1]/serviceable", 1 );
