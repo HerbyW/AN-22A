@@ -95,7 +95,7 @@ setlistener("/controls/switches/usvp-selector-trans", func
       }
       else
       {
-        setprop("/instrumentation/usvp/air_ground_speed_kt", getprop("/velocities/airspeed-kt"));
+        setprop("/instrumentation/usvp/air_ground_speed_kt", getprop("/instrumentation/airspeed-indicator/true-speed-kt"));
       }
   
   }
@@ -552,7 +552,7 @@ setlistener("/sim/airport/closest-airport-id", func
 
 setlistener("controls/flight/flaps", func
  { 
- if ((getprop("controls/flight/flaps") > 0  ) and (getprop("velocities/groundspeed-kt") > 250  ))
+ if ((getprop("controls/flight/flaps") > 0  ) and (getprop("/instrumentation/airspeed-indicator/true-speed-kt") > 250  ))
   {
     setprop("controls/flight/flaps", 0);
     setprop("sim/flaps/current-setting", 0);
