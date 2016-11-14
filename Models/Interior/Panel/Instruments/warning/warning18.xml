@@ -41,7 +41,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <object-name>text</object-name>
    <condition>
     <less-than>
-      <property>/sim/weight[3]/weight-lb</property>
+      <property>sim/weight[3]/weight-lb</property>
       <value>1</value>      
     </less-than>
   </condition> 
@@ -61,7 +61,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <repeatable>false</repeatable>
     <binding>
       <command>property-assign</command>
-      <property>/sim/weight[3]/weight-lb</property>
+      <property>sim/weight[3]/weight-lb</property>
       <value>1</value>
     </binding>
   </action>
