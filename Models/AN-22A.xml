@@ -447,6 +447,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <x-m>  0.0 </x-m>
       <y-m>  0.0 </y-m>
       <z-m> -5.85 </z-m>
+      <pitch-deg>-0.0</pitch-deg>
     </offsets>
   </model>
    
@@ -1912,7 +1913,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <condition>
       <greater-than>
 	<property>sim/multiplay/generic/float[0]</property>
-	<value>0.85</value>
+	<value>-0.1</value>
       </greater-than>
     </condition>
   </animation>
@@ -1923,9 +1924,75 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <condition>
       <greater-than>
 	<property>sim/multiplay/generic/float[1]</property>
-	<value>0.85</value>
+	<value>-0.1</value>
       </greater-than>
     </condition>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>escalier_1</object-name>
+    <property>sim/multiplay/generic/float[1]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  -1.7 </dep></entry>
+      <entry><ind> 0.5 </ind><dep>  -1.7 </dep></entry>
+      <entry><ind> 0.7 </ind><dep>  -1.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+ <animation>
+    <type>translate</type>
+    <object-name>escalier_1</object-name>
+    <property>sim/multiplay/generic/float[1]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  -1.4 </dep></entry>
+      <entry><ind> 0.7 </ind><dep>  -1.4 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z>-1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>escalier_2</object-name>
+    <property>sim/multiplay/generic/float[0]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  1.7 </dep></entry>
+      <entry><ind> 0.5 </ind><dep>  1.7 </dep></entry>
+      <entry><ind> 0.7 </ind><dep>  1.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+ <animation>
+    <type>translate</type>
+    <object-name>escalier_2</object-name>
+    <property>sim/multiplay/generic/float[0]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  -1.4 </dep></entry>
+      <entry><ind> 0.7 </ind><dep>  -1.4 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z>-1 </z>
+    </axis>
   </animation>
 
   <!-- Porte -->

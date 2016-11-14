@@ -28,6 +28,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
      <and>
       <property>/sim/rendering/shadows/enabled</property>
       <not><property>/sim/replay/replay-state</property></not>
+      <greater-than>
+      <property>sim/multiplay/generic/float[2]</property>
+      <value>5</value>
+      </greater-than>
      </and>
     </condition>
   </animation>

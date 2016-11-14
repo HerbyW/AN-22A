@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim>
+
+    <model>
+      <livery>
+        <name type="string">Aeroflot-dirty</name>
+        <texture>Liveries/texture-dirty.png</texture>
+      </livery>
+    </model>
+
+  </sim>
+
+</PropertyList>
