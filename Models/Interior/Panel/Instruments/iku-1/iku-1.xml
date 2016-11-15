@@ -38,7 +38,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>compass</object-name>
-  <property>/orientation/heading-deg</property>
+  <property>orientation/heading-deg</property>
   <axis>
     <x>1.0</x>
     <y>0.0</y>

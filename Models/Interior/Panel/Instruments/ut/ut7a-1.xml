@@ -66,7 +66,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>
-    <property>/engines/engine/n2</property>
+    <property>engines/engine/n2</property>
     <factor> 1 </factor>
     <interpolation>
       <entry><ind>	0.0</ind>	<dep>	190.0</dep></entry>
@@ -83,7 +83,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <animation>
     <type>rotate</type>
     <object-name>needle_2</object-name>
-    <property>/engines/engine/n2</property>
+    <property>engines/engine/n2</property>
     <factor> 3.6 </factor>
     <offset-deg> 90 </offset-deg>
     <center>

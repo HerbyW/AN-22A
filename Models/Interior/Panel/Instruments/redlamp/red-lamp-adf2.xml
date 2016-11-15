@@ -44,7 +44,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <object-name>_d_2</object-name>
   <condition>
     <equals>
-     <property>/instrumentation/adf[1]/in-range</property>    
+     <property>instrumentation/adf[1]/in-range</property>    
      <value>0</value>
     </equals>
   </condition>

@@ -47,7 +47,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
     <object-name>intvitres</object-name>
   </effect>

@@ -63,7 +63,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <command>set-tooltip</command>
       <tooltip-id>Drift</tooltip-id>
       <label>Wind Drift: %5.2f</label>
-      <property>/instrumentation/drift</property>      
+      <property>instrumentation/drift</property>      
     </binding>
   </hovered> 
   

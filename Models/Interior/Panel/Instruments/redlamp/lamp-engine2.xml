@@ -44,7 +44,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <object-name>_d_2</object-name>
    <condition>
     <equals>
-     <property>/engines/engine[2]/running</property>    
+     <property>engines/engine[2]/running</property>    
      <value>1</value>
     </equals>
   </condition>

@@ -44,7 +44,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <object-name>_d_2</object-name>
   <condition>    
     <greater-than>
-    <property>/engines/engine[2]/rpm</property>
+    <property>engines/engine[2]/rpm</property>
     <value> 350 </value>
     </greater-than>       
   </condition>

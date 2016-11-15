@@ -37,7 +37,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>handle_1</object-name>
-  <property>/controls/switches/glass-heating</property> 
+  <property>controls/switches/glass-heating</property> 
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -51,7 +51,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>handle_2</object-name>
-  <property>/controls/switches/rotor-heating</property>
+  <property>controls/switches/rotor-heating</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -65,7 +65,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>handle_3</object-name>
-  <property>/controls/switches/instrument-heating</property>
+  <property>controls/switches/instrument-heating</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -87,7 +87,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <repeatable>false</repeatable>
     <binding>
         <command>property-toggle</command>
-        <property>/controls/switches/glass-heating</property>
+        <property>controls/switches/glass-heating</property>
       </binding>
   </action>
 </animation>
@@ -100,7 +100,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <repeatable>false</repeatable>
     <binding>
         <command>property-toggle</command>
-        <property>/controls/switches/glass-heating</property>
+        <property>controls/switches/glass-heating</property>
       </binding>
   </action>
 </animation>
@@ -114,7 +114,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <repeatable>false</repeatable>
     <binding>
         <command>property-toggle</command>
-        <property>/controls/switches/rotor-heating</property>
+        <property>controls/switches/rotor-heating</property>
       </binding>
   </action>
 </animation>
@@ -127,7 +127,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <repeatable>false</repeatable>
     <binding>
         <command>property-toggle</command>
-        <property>/controls/switches/rotor-heating</property>
+        <property>controls/switches/rotor-heating</property>
       </binding>
   </action>
 </animation>
@@ -142,7 +142,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <repeatable>false</repeatable>     
      <binding>
         <command>property-toggle</command>
-        <property>/controls/switches/instrument-heating</property>
+        <property>controls/switches/instrument-heating</property>
       </binding>
   </action>
 </animation>
@@ -156,7 +156,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <repeatable>false</repeatable>     
      <binding>
         <command>property-toggle</command>
-        <property>/controls/switches/instrument-heating</property>
+        <property>controls/switches/instrument-heating</property>
       </binding>
   </action>
 </animation>

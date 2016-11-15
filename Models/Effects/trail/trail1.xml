@@ -18,8 +18,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <condition>
       <and>
         <greater-than>
-          <!-- engines/engine[0]/n2 -->
-          <property>/engines/engine[0]/n2</property>
+          <property>engines/engine[0]/n2</property>
           <value>70</value>
         </greater-than>
         <greater-than>

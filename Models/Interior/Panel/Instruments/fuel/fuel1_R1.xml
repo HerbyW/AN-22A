@@ -46,8 +46,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
    <expression>
      <table>
      <sum>
-       <property>/consumables/fuel/tank[2]/level-kg</property>
-       <property>/consumables/fuel/tank[3]/level-kg</property>
+       <property>consumables/fuel/tank[2]/level-kg</property>
+       <property>consumables/fuel/tank[3]/level-kg</property>
      </sum>
      <entry><ind>  0</ind><dep>0</dep></entry> 
      <entry><ind> 21700</ind><dep>  263</dep></entry>

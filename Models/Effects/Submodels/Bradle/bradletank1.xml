@@ -71,13 +71,5 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <z>-1 </z>
     </axis>
   </animation>
-  
-<!--unter  sim
-   <aircraft-data>
-<path>extra500/panel</path>
-<path>/extra500/electric/source/Battery</path>
-</aircraft-data> 
--->
-  
-  
+
 </PropertyList>

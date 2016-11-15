@@ -111,15 +111,15 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         <condition>
         	<and>
 		        <equals>
-		          <property>/autopilot/locks/altitude</property>
+		          <property>autopilot/locks/altitude</property>
 		          <value type="string"></value>
 		        </equals>
 		        <equals>
-		          <property>/autopilot/locks/heading</property>
+		          <property>autopilot/locks/heading</property>
 		          <value type="string"></value>
 		        </equals>
 		        <equals>
-		          <property>/autopilot/locks/speed</property>
+		          <property>autopilot/locks/speed</property>
 		          <value type="string"></value>
 		        </equals> 
           </and>
@@ -134,17 +134,17 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
 				 <binding> 
 				   <command>property-assign</command>
-				    <property>/autopilot/locks/heading</property>
+				    <property>autopilot/locks/heading</property>
 				     <value type="string"></value>
 				 </binding>
 				 <binding>
 				   <command>property-assign</command>
-				     <property>/autopilot/locks/altitude</property>
+				     <property>autopilot/locks/altitude</property>
 		                      <value type="string"></value>
 				 </binding>
 				 <binding>
                                    <command>property-assign</command>
-                                     <property>/autopilot/locks/speed</property>
+                                     <property>autopilot/locks/speed</property>
                                       <value type="string"></value>
                                  </binding>     
         </action>
@@ -158,12 +158,12 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
 				  <binding>
 				    <command>property-assign</command>
-				    <property>/autopilot/locks/heading</property>
+				    <property>autopilot/locks/heading</property>
 				    <value type="string">wing-leveler</value>
 				  </binding>
 				  <binding>
 				    <command>property-assign</command>
-				    <property>/autopilot/internal/target-roll-deg</property>
+				    <property>autopilot/internal/target-roll-deg</property>
 				    <value type="double"> 0 </value>
 				  </binding>
         </action>
@@ -177,7 +177,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         <condition>        	
         	  <not>
 		      <equals>
-		        <property>/autopilot/locks/heading</property>
+		        <property>autopilot/locks/heading</property>
 		        <value type="string">dg-heading-hold</value>
 		      </equals>
 		  </not>
@@ -192,7 +192,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/locks/heading</property>
+              <property>autopilot/locks/heading</property>
               <value type="string">dg-heading-hold</value>
 	    </binding>            
         </action>
@@ -206,7 +206,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
                <command>property-assign</command>
-                <property>/autopilot/locks/heading</property>
+                <property>autopilot/locks/heading</property>
                 <value type="string">wing-leveler</value>
             </binding>
          </action>
@@ -220,7 +220,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         <condition>
 	  <not>
 	      <equals>
-	        <property>/autopilot/locks/altitude</property>
+	        <property>autopilot/locks/altitude</property>
 	        <value type="string">altitude-hold</value>
 	      </equals>
 	  </not>
@@ -235,13 +235,13 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
 		<binding>
 		  <command>property-assign</command>
-		  <property>/autopilot/locks/altitude</property>
+		  <property>autopilot/locks/altitude</property>
 		  <value type="string">altitude-hold</value>
 		</binding>
 		<binding>
 		  <command>property-assign</command>
-		  <property>/autopilot/settings/target-altitude-ft</property>
-		  <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+		  <property>autopilot/settings/target-altitude-ft</property>
+		  <property>instrumentation/altimeter/indicated-altitude-ft</property>
 		</binding>   
         </action>
     </animation>
@@ -254,7 +254,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
 		<binding>
 		  <command>property-assign</command>
-		  <property>/autopilot/locks/altitude</property>
+		  <property>autopilot/locks/altitude</property>
                   <value type="string"></value>
 		</binding>            
         </action>
@@ -268,7 +268,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         <condition>
               <not>
                <equals>
-                 <property>/autopilot/locks/speed</property>
+                 <property>autopilot/locks/speed</property>
                  <value type="string">speed-with-throttle</value>
                </equals>
               </not>           
@@ -283,13 +283,13 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/locks/speed</property>
+              <property>autopilot/locks/speed</property>
               <value type="string">speed-with-throttle</value>
             </binding>
 	    <binding>
               <command>property-assign</command>
-              <property>/autopilot/settings/target-speed-kt</property>
-              <property>/velocities/airspeed-kt</property>
+              <property>autopilot/settings/target-speed-kt</property>
+              <property>velocities/airspeed-kt</property>
             </binding> 
         </action>
     </animation>
@@ -302,7 +302,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/locks/speed</property>
+              <property>autopilot/locks/speed</property>
               <value type="string"></value>
             </binding>            
         </action>
@@ -315,7 +315,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         <condition>
             <not>
 	      <equals>
-	        <property>/autopilot/locks/heading</property>
+	        <property>autopilot/locks/heading</property>
 	        <value type="string">true-heading-hold</value>
 	      </equals>
 	    </not>
@@ -330,7 +330,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/locks/heading</property>
+              <property>autopilot/locks/heading</property>
               <value type="string">true-heading-hold</value>
             </binding>
         </action>
@@ -344,7 +344,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/locks/heading</property>
+              <property>autopilot/locks/heading</property>
               <value type="string"></value>
             </binding>            
         </action>
@@ -358,7 +358,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         <condition>        	
                    <not>
 		          <equals>
-		          	<property>/autopilot/locks/altitude</property>
+		          	<property>autopilot/locks/altitude</property>
 		          	<value type="string">vertical-speed-hold</value>
 		          </equals>
 		    </not>
@@ -373,13 +373,13 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/locks/altitude</property>
+              <property>autopilot/locks/altitude</property>
               <value type="string">vertical-speed-hold</value>
             </binding>
 	    <binding>
               <command>property-assign</command>
-              <property>/autopilot/settings/vertical-speed-fpm</property>
-	      <property>/autopilot/internal/vert-speed-fpm</property>
+              <property>autopilot/settings/vertical-speed-fpm</property>
+	      <property>autopilot/internal/vert-speed-fpm</property>
             </binding>
         </action>
     </animation>
@@ -392,7 +392,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/locks/altitude</property>
+              <property>autopilot/locks/altitude</property>
               <value type="string"></value>
             </binding>            
         </action>
@@ -406,7 +406,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         <condition>
 	  <not>
             <equals>
-          	<property>/autopilot/locks/heading</property>
+          	<property>autopilot/locks/heading</property>
           	<value type="string">nav1-hold</value>
             </equals>
           </not>
@@ -421,7 +421,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/locks/heading</property>
+              <property>autopilot/locks/heading</property>
               <value type="string">nav1-hold</value>
             </binding>            
         </action>
@@ -435,7 +435,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/locks/heading</property>
+              <property>autopilot/locks/heading</property>
               <value type="string"></value>
             </binding>            
         </action>
@@ -449,7 +449,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         <condition>
 	   <not>
              <equals>
-          	<property>/autopilot/locks/altitude</property>
+          	<property>autopilot/locks/altitude</property>
           	<value type="string">gs1-hold</value>
              </equals>
 	    </not>
@@ -464,12 +464,12 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/locks/altitude</property>
+              <property>autopilot/locks/altitude</property>
               <value type="string">gs1-hold</value>
             </binding>
 	    <binding>
               <command>property-assign</command>
-              <property>/instrumentation/nav[0]/gs-rate-of-climb</property>
+              <property>instrumentation/nav[0]/gs-rate-of-climb</property>
               <value type="double">0</value>
             </binding>
         </action>
@@ -483,7 +483,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/locks/altitude</property>
+              <property>autopilot/locks/altitude</property>
               <value type="string"></value>
             </binding>            
         </action>

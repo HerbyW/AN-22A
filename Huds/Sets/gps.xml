@@ -243,7 +243,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <format>METAR:%4.1f.........................wind speed kt</format>
 	      <halign>left</halign>
 	      <input>
-		<property>environment/metar/base-wind-speed-kt</property>
+		<property>/environment/metar/base-wind-speed-kt</property>
 	      </input>
 	    </label>
 	    
@@ -255,7 +255,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <format>METAR:%4.1f........................wind direction</format>
 	      <halign>left</halign>
 	      <input>
-		<property>environment/metar/base-wind-dir-deg</property>
+		<property>/environment/metar/base-wind-dir-deg</property>
 	      </input>
 	    </label>
 	    
@@ -275,7 +275,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <y>35</y>		
 	      <halign>left</halign>
 	      <input>
-		<property>environment/metar/station-id</property>
+		<property>/environment/metar/station-id</property>
 	      </input>
 	    </label>    
 	    
@@ -300,7 +300,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <format>VerticalSpeed:%4d.....................meter/sec</format>
 	      <halign>left</halign>
 	      <input>
-		<property>velocities/vertical-speed-fps</property>
+		<property>/velocities/vertical-speed-fps</property>
 		<factor>0.3048</factor>
 	      </input>
 	    </label>
@@ -313,7 +313,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <format>Cargo Door:%01d.................closed(0) open(1)</format>
 	      <halign>left</halign>
 	      <input>
-		<property>sim/model/door-positions/cargo/position-norm</property>
+		<property>/sim/model/door-positions/cargo/position-norm</property>
 	      </input>
 	    </label>
 	    
@@ -325,7 +325,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <format>Cargo:%6.1f..................................LBS</format>
 	      <halign>left</halign>
 	      <input>
-		<property>sim/weight[1]/weight-lb</property>
+		<property>/sim/weight[1]/weight-lb</property>
 	      </input>
 	    </label>
 	    
@@ -339,7 +339,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <format>Pitch-Trim:................................%6.4f</format>
 	      <halign>left</halign>
 	      <input>
-		<property>controls/flight/elevator-trim</property>
+		<property>/controls/flight/elevator-trim</property>
 	      </input>
 	    </label>
 	    
@@ -351,7 +351,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <format>Propeller Pitch Control:...............%6.2f</format>
 	      <halign>left</halign>
 	      <input>
-		<property>controls/engines/engine/propeller-pitch</property>
+		<property>/controls/engines/engine/propeller-pitch</property>
 	      </input>
 	    </label>
 	    
@@ -363,7 +363,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <format>Fuel-Flow-GPH:.......................%8.2f</format>
 	      <halign>left</halign>
 	      <input>
-		<property>engines/engine/fuel-flow-gph</property>
+		<property>/engines/engine/fuel-flow-gph</property>
 	      </input>
 	    </label>
 	    
@@ -375,7 +375,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <format>RPM:.........................................%6.2f</format>
 	      <halign>left</halign>
 	      <input>
-		<property>engines/engine/rpm</property>
+		<property>/engines/engine/rpm</property>
 	      </input>
 	    </label>
 	    
@@ -387,7 +387,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <format>Thrust:.............................%6.2f LBS</format>
 	      <halign>left</halign>
 	      <input>
-		<property>engines/engine/thrust-lbs</property>
+		<property>/engines/engine/thrust-lbs</property>
 	      </input>
 	    </label>
 	    
@@ -406,7 +406,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <y>-340</y>
 	      <x>20</x>
 	      <input>
-		<property>autopilot/route-manager/departure/airport</property>
+		<property>/autopilot/route-manager/departure/airport</property>
 	      </input>
 	    </label>
 	    
@@ -416,7 +416,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <y>-340</y>
 	      <x>110</x>
 	      <input>
-		<property>autopilot/route-manager/departure/name</property>
+		<property>/autopilot/route-manager/departure/name</property>
 	      </input>
 	    </label>
 	    
@@ -435,7 +435,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <y>-350</y>
 	      <x>20</x>
 	      <input>
-		<property>autopilot/route-manager/destination/airport</property>
+		<property>/autopilot/route-manager/destination/airport</property>
 	      </input>
 	    </label>
 	    
@@ -445,7 +445,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <y>-350</y>
 	      <x>110</x>
 	      <input>
-		<property>autopilot/route-manager/destination/name</property>
+		<property>/autopilot/route-manager/destination/name</property>
 	      </input>
 	    </label>
 	    
@@ -457,7 +457,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <halign>left</halign>
 	      <format>Total-Distance:..................%6.2f nm</format>
 	      <input>
-		<property>autopilot/route-manager/total-distance</property>
+		<property>/autopilot/route-manager/total-distance</property>
 	      </input>
 	    </label>
 	    
@@ -469,7 +469,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <halign>left</halign>
 	      <format>True-Heading:......................%5.2f deg</format>
 	      <input>
-		<property>autopilot/route-manager/wp/true-bearing-deg</property>
+		<property>/autopilot/route-manager/wp/true-bearing-deg</property>
 	      </input>
 	    </label>
 	    
@@ -481,7 +481,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <halign>left</halign>
 	      <format>Remaining-Distance:..........%6.2f nm</format>
 	      <input>
-		<property>autopilot/route-manager/distance-remaining-nm</property>
+		<property>/autopilot/route-manager/distance-remaining-nm</property>
 	      </input>
 	    </label>
 	    

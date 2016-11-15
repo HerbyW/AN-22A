@@ -18,12 +18,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <condition>
       <and>
         <greater-than>
-          <!-- engines/engine[3]/n2 -->
-          <property>/engines/engine[3]/n2</property>
+          <property>engines/engine[3]/n2</property>
           <value>70</value>
         </greater-than>
         <greater-than>
-          <!-- position/altitude-ft -->
           <property>sim/multiplay/generic/float[3]</property>
           <value>14000</value>
         </greater-than>

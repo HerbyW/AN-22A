@@ -196,7 +196,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <value>0.0</value>
     </reference>
     <output>
-      <property>autopilot/internal/target-roll-deg</property>
+      <property>/autopilot/internal/target-roll-deg</property>
     </output>
     <config>
       <Kp>-1.0</Kp>

@@ -104,7 +104,7 @@ setlistener("/controls/switches/usvp-selector-trans", func
 #####################################################################################################################
 
 #Lights
-setprop("controls/switches/headlight-mode", 1);
+setprop("/controls/switches/headlight-mode", 1);
 
 ######################################################################################################################
 
@@ -154,29 +154,29 @@ setlistener("/controls/ALS/setting", func(v) {
 });
 
 
-setlistener("controls/ALS/setting", func
+setlistener("/controls/ALS/setting", func
 
  { 
-   if(getprop("sim/rendering/rembrandt/enabled") == 1)
+   if(getprop("/sim/rendering/rembrandt/enabled") == 1)
     {
-      setprop("sim/messages/copilot", "ALS is not working with Rembrandt");
+      setprop("/sim/messages/copilot", "ALS is not working with Rembrandt");
     }
     else
     { 
-      if(getprop("controls/ALS/setting") == 1)
+      if(getprop("/controls/ALS/setting") == 1)
       {
-      setprop("sim/rendering/shaders/skydome", 1);
-      setprop("sim/rendering/als-secondary-lights/landing-light1-offset-deg", -12);
-      setprop("sim/rendering/als-secondary-lights/landing-light2-offset-deg", 12);
-      setprop("sim/rendering/als-secondary-lights/use-alt-landing-light", 1);
-      setprop("sim/rendering/als-secondary-lights/use-landing-light", 1);
-      setprop("sim/rendering/als-secondary-lights/use-searchlight", 1);
+      setprop("/sim/rendering/shaders/skydome", 1);
+      setprop("/sim/rendering/als-secondary-lights/landing-light1-offset-deg", -12);
+      setprop("/sim/rendering/als-secondary-lights/landing-light2-offset-deg", 12);
+      setprop("/sim/rendering/als-secondary-lights/use-alt-landing-light", 1);
+      setprop("/sim/rendering/als-secondary-lights/use-landing-light", 1);
+      setprop("/sim/rendering/als-secondary-lights/use-searchlight", 1);
       }
       else
       {
-      setprop("sim/rendering/als-secondary-lights/use-alt-landing-light", 0);
-      setprop("sim/rendering/als-secondary-lights/use-landing-light", 0);
-      setprop("sim/rendering/als-secondary-lights/use-searchlight", 0);
+      setprop("/sim/rendering/als-secondary-lights/use-alt-landing-light", 0);
+      setprop("/sim/rendering/als-secondary-lights/use-landing-light", 0);
+      setprop("/sim/rendering/als-secondary-lights/use-searchlight", 0);
       }
     }   
 
@@ -187,7 +187,7 @@ setlistener("controls/ALS/setting", func
 
 # SKAWK support
 
-setlistener("instrumentation/transponder/inputs/mode", func
+setlistener("/instrumentation/transponder/inputs/mode", func
 
 {
   
@@ -208,7 +208,7 @@ setprop("/instrumentation/transponder/serviceable", 0);
 
 # Parking Chokes and Brake Control
 
-setlistener("controls/gear/brake-parking", func
+setlistener("/controls/gear/brake-parking", func
 
 { if (getprop("/sim/replay/replay-state") == 0)
 
@@ -217,12 +217,12 @@ setlistener("controls/gear/brake-parking", func
     {
       if (getprop("/controls/chokes/activ") == 1)
         {
-	  setprop("sim/messages/copilot", "Parking Chokes are at the wheels! Parking Brake can not be lift");
+	  setprop("/sim/messages/copilot", "Parking Chokes are at the wheels! Parking Brake can not be lift");
           setprop("/controls/gear/brake-parking", 1);
         }
       else
         {
-	  setprop("sim/messages/copilot", "Parking Brake off, aircraft is moving!");
+	  setprop("/sim/messages/copilot", "Parking Brake off, aircraft is moving!");
 	  setprop("/controls/gear/brake-parking", 0);  
 	}
      }
@@ -230,12 +230,12 @@ setlistener("controls/gear/brake-parking", func
      {
        if (getprop("/position/gear-agl-m") > 2)
         {
-	 setprop("sim/messages/copilot", "We are in the air, Brakes have no sense...");
+	 setprop("/sim/messages/copilot", "We are in the air, Brakes have no sense...");
 	 setprop("/controls/gear/brake-parking", 0);
         }
        else
         {
-	  setprop("sim/messages/copilot", "Parking Brake on, check if chokes are needed!");
+	  setprop("/sim/messages/copilot", "Parking Brake on, check if chokes are needed!");
 	}
      } 
 }});  
@@ -247,13 +247,13 @@ setlistener("/controls/chokes/activ", func
    if (getprop("/controls/chokes/activ") == 1)
    if (getprop("/controls/gear/brake-parking") == 0)
         {
-	  setprop("sim/messages/copilot", "Parking Brake off, Chokes can not be set!");
+	  setprop("/sim/messages/copilot", "Parking Brake off, Chokes can not be set!");
 	  setprop("/controls/chokes/activ", 0);  
 	}
     if (getprop("/controls/chokes/activ") == 1)
     if (getprop("/controls/gear/brake-parking") == 1)
         {
-	  setprop("sim/messages/copilot", "Parking Brake and Chokes are set, enjoy your day!");
+	  setprop("/sim/messages/copilot", "Parking Brake and Chokes are set, enjoy your day!");
 	}
 }});
 
@@ -262,37 +262,37 @@ setlistener("/controls/chokes/activ", func
 # Landing Gears Control with help from: 707 Hangar of Constance
 
 # prevent retraction of the landing gear when any of the wheels are compressed
-setlistener("controls/gear/gear-down", func
+setlistener("/controls/gear/gear-down", func
  {
- var down = props.globals.getNode("controls/gear/gear-down").getBoolValue();
- var crashed = getprop("sim/crashed") or 0;
- if (!down and (getprop("gear/gear[0]/wow") or getprop("gear/gear[1]/wow") or getprop("gear/gear[6]/wow")))
+ var down = props.globals.getNode("/controls/gear/gear-down").getBoolValue();
+ var crashed = getprop("/sim/crashed") or 0;
+ if (!down and (getprop("/gear/gear[0]/wow") or getprop("/gear/gear[1]/wow") or getprop("/gear/gear[6]/wow")))
   {
     if(!crashed){
-  		props.globals.getNode("controls/gear/gear-down").setBoolValue(1);
+  		props.globals.getNode("/controls/gear/gear-down").setBoolValue(1);
     }else{
-  		props.globals.getNode("controls/gear/gear-down").setBoolValue(0);
+  		props.globals.getNode("/controls/gear/gear-down").setBoolValue(0);
     }
   }
  });
 
 var gearstate = 0;
-setlistener("gear/gear/position-norm", func
-  { if (getprop("gear/gear/position-norm") == 1)
+setlistener("/gear/gear/position-norm", func
+  { if (getprop("/gear/gear/position-norm") == 1)
     { gearstate = 0 ;}
-    if (getprop("gear/gear/position-norm") < 1)
+    if (getprop("/gear/gear/position-norm") < 1)
     { gearstate = 1 ;}
-    if (getprop("gear/gear/position-norm") == 0)
+    if (getprop("/gear/gear/position-norm") == 0)
     { gearstate = 0 ;}
-    setprop("gear/state", gearstate)
+    setprop("/gear/state", gearstate)
   }
 );
 
-setlistener("position/gear-agl-m", func
+setlistener("/position/gear-agl-m", func
   {
-    if ((getprop("gear/gear/position-norm") == 0) and (getprop("position/gear-agl-m") < 100))
-    {setprop("gear/warning", 1);}
-      else setprop("gear/warning", 0)
+    if ((getprop("/gear/gear/position-norm") == 0) and (getprop("/position/gear-agl-m") < 100))
+    {setprop("/gear/warning", 1);}
+      else setprop("/gear/warning", 0)
   });
 
 
@@ -349,14 +349,14 @@ var factor = 0.0051;
 
 if (getprop("/controls/switches/fuel") > 0.5)
 {
-interpolate("instrumentation/fuel_press/A0/press1", getprop("engines/engine[0]/fuel-flow-gph")*factor + 0.1  , 5.0);
-interpolate("instrumentation/fuel_press/A0/press2", getprop("engines/engine[0]/fuel-flow-gph")*factor + 0.1  , 5.0);
-interpolate("instrumentation/fuel_press/A1/press1", getprop("engines/engine[1]/fuel-flow-gph")*factor + 0.1  , 5.0);
-interpolate("instrumentation/fuel_press/A1/press2", getprop("engines/engine[1]/fuel-flow-gph")*factor + 0.1  , 5.0);
-interpolate("instrumentation/fuel_press/A2/press1", getprop("engines/engine[2]/fuel-flow-gph")*factor + 0.1  , 5.0);
-interpolate("instrumentation/fuel_press/A2/press2", getprop("engines/engine[2]/fuel-flow-gph")*factor + 0.1  , 5.0);
-interpolate("instrumentation/fuel_press/A3/press1", getprop("engines/engine[3]/fuel-flow-gph")*factor + 0.1  , 5.0);
-interpolate("instrumentation/fuel_press/A3/press2", getprop("engines/engine[3]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("/instrumentation/fuel_press/A0/press1", getprop("/engines/engine[0]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("/instrumentation/fuel_press/A0/press2", getprop("/engines/engine[0]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("/instrumentation/fuel_press/A1/press1", getprop("/engines/engine[1]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("/instrumentation/fuel_press/A1/press2", getprop("/engines/engine[1]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("/instrumentation/fuel_press/A2/press1", getprop("/engines/engine[2]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("/instrumentation/fuel_press/A2/press2", getprop("/engines/engine[2]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("/instrumentation/fuel_press/A3/press1", getprop("/engines/engine[3]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("/instrumentation/fuel_press/A3/press2", getprop("/engines/engine[3]/fuel-flow-gph")*factor + 0.1  , 5.0);
 }
 }
 );
@@ -366,10 +366,10 @@ oilPressTimer.start();
 #################################################################################################################
 
 
-setprop("sim/messages/copilot", "Hello");
-setprop("sim/messages/copilot", getprop("sim/multiplay/generic/string[0]"));
-setprop("sim/messages/copilot", "Have fun with the heavy cargo airplane Antonov-22A");
-setprop("sim/messages/copilot", "For Autostart hit the s key!");
+setprop("/sim/messages/copilot", "Hello");
+setprop("/sim/messages/copilot", getprop("sim/multiplay/generic/string[0]"));
+setprop("/sim/messages/copilot", "Have fun with the heavy cargo airplane Antonov-22A");
+setprop("/sim/messages/copilot", "For Autostart hit the s key!");
 
 
 ####################################################################################################################
@@ -550,13 +550,13 @@ setlistener("/sim/airport/closest-airport-id", func
 # Flaps Control with speed limits
 # prevent demage of flaps due to speed
 
-setlistener("controls/flight/flaps", func
+setlistener("/controls/flight/flaps", func
  { 
- if ((getprop("controls/flight/flaps") > 0  ) and (getprop("/instrumentation/airspeed-indicator/indicated-speed-kt") > 250  ))
+ if ((getprop("/controls/flight/flaps") > 0  ) and (getprop("/instrumentation/airspeed-indicator/indicated-speed-kt") > 250  ))
   {
-    setprop("controls/flight/flaps", 0);
-    setprop("sim/flaps/current-setting", 0);
-    setprop("sim/messages/copilot", "Do you want to destroy the flaps due to overspeed (max 250)????");    
+    setprop("/controls/flight/flaps", 0);
+    setprop("/sim/flaps/current-setting", 0);
+    setprop("/sim/messages/copilot", "Do you want to destroy the flaps due to overspeed (max 250)????");    
   }
 });
  
@@ -564,28 +564,28 @@ setlistener("controls/flight/flaps", func
 # runway effect
 
 
-setprop("controls/gear/runway", 0);
+setprop("/controls/gear/runway", 0);
 
-setlistener("gear/gear[3]/wow", func
+setlistener("/gear/gear[3]/wow", func
 {
-  if (getprop("gear/gear[3]/wow") == 0)
-    interpolate("controls/gear/runway", 0 , 0.1);
+  if (getprop("/gear/gear[3]/wow") == 0)
+    interpolate("/controls/gear/runway", 0 , 0.1);
   else
   {
-  if ( ( getprop("gear/gear[3]/compression-norm") > 0.20 ) and ( getprop("gear/gear[3]/rollspeed-ms") > 60)  and ( getprop("/velocities/speed-down-fps") > 2))
-    interpolate("controls/gear/runway", 1 , 0.3, 0 , 0.3);
+  if ( ( getprop("/gear/gear[3]/compression-norm") > 0.20 ) and ( getprop("/gear/gear[3]/rollspeed-ms") > 60)  and ( getprop("/velocities/speed-down-fps") > 2))
+    interpolate("/controls/gear/runway", 1 , 0.3, 0 , 0.3);
   }
 }
 );
 
-setlistener("controls/gear/brake-parking", func
+setlistener("/controls/gear/brake-parking", func
 {
-  if (getprop("controls/gear/brake-parking") == 0)
-    interpolate("controls/gear/runway", 0 , 0.1);
+  if (getprop("/controls/gear/brake-parking") == 0)
+    interpolate("/controls/gear/runway", 0 , 0.1);
   else
   {
-  if ( ( getprop("controls/gear/brake-parking") == 1 ) and ( getprop("gear/gear[2]/rollspeed-ms") > 30) )
-    interpolate("controls/gear/runway", 1 , 1.2, 0 , 1.2);
+  if ( ( getprop("/controls/gear/brake-parking") == 1 ) and ( getprop("/gear/gear[2]/rollspeed-ms") > 30) )
+    interpolate("/controls/gear/runway", 1 , 1.2, 0 , 1.2);
   }
 }
 );
@@ -612,7 +612,7 @@ var ice = maketimer(15, func
     else
     {
       interpolate("/sim/model/anti-ice-alpha", getprop("/environment/temperature-degc") * 0.03846 + 0.90 , 14 );
-      setprop("sim/messages/copilot", "Window Ice Warning System has detected low temperature");
+      setprop("/sim/messages/copilot", "Window Ice Warning System has detected low temperature");
     }
    }
    else 
@@ -629,7 +629,7 @@ var ice = maketimer(15, func
     else
     {
       interpolate("/sim/model/anti-ice-rotor", getprop("/environment/temperature-degc") * 0.03846 , 14 );
-      setprop("sim/messages/copilot", "Propeller Ice Warning System has detected low temperature");
+      setprop("/sim/messages/copilot", "Propeller Ice Warning System has detected low temperature");
     }
    }
    else 
@@ -676,9 +676,9 @@ rotorice.start();
 #<spread>15</spread>
 #</speed-mps>
 
-setlistener("gear/gear[2]/wow", func
+setlistener("/gear/gear[2]/wow", func
 {
-  if (getprop("gear/gear[2]/wow") == 0)
+  if (getprop("/gear/gear[2]/wow") == 0)
     setprop("/sim/model/smokeshooterspeed", 80 );
   else
   {

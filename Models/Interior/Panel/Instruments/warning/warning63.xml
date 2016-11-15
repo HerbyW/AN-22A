@@ -42,7 +42,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <object-name>text</object-name>
    <condition>
     <less-than>
-     <property>/sim/model/anti-ice-rotor</property>    
+     <property>sim/model/anti-ice-rotor</property>    
      <value>1</value>
     </less-than>
   </condition>  
