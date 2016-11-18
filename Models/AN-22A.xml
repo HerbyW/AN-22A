@@ -18,8 +18,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
       var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
       
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+      var crew_door = self.getNode("/instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("/instrumentation/doors/passenger/position-norm", 1);
     
       crew_door.alias(float_0);
       passenger_door.alias(float_1);
