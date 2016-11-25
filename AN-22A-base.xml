@@ -76,7 +76,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       
       <description>Antonov AN-22A (YASim)</description>
       <author>Herbert Wagner (Instrumentation, Animation, FDM. 3D-model), firefly 3D for interior and panel, Baranger E.(3D/FDM-orig)</author>
-      <aircraft-version>5.0.0</aircraft-version>
+      <aircraft-version>5.0.1</aircraft-version>
       <status>production</status>
       <rating>
 	<FDM type="int">4</FDM>
@@ -97,7 +97,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<livery archive="y">
 	  <file type="string">default</file>
 	</livery>
-	<AN-22A><version type="string">5.0.0</version></AN-22A>
+	<AN-22A><version type="string">5.0.1</version></AN-22A>
 	<anti-ice-alpha type="float">1</anti-ice-alpha>
 	<anti-ice-rotor type="float">1</anti-ice-rotor>
 	<iceing type="float">1</iceing>

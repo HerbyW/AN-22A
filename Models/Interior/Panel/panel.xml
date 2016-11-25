@@ -219,8 +219,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.825 </y-m>
-      <z-m>  0.032 </z-m>
+      <y-m> -0.805 </y-m>
+      <z-m>  0.11 </z-m>
     </offsets>
   </model>
   
@@ -292,6 +292,17 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     </offsets>
   </model>
      
+    <!-- Mach Indicator -->
+  
+  <model>
+    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/m_ind-1/m_ind-1.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.82 </y-m>
+      <z-m>  0.035 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>   
 
   <!-- ALT, Barometric Altimeter IN Hg/mm in meter and feet-->
   
@@ -810,10 +821,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   
  <model>
   <name>Autopilot Helper</name>
-  <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ap/ap-fg.xml</path>
+  <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ap/ap-mach.xml</path>
   <offsets>
       <x-m>  0.00 </x-m>
-      <y-m> -0.286 </y-m>
+      <y-m> -0.295 </y-m>
       <z-m>  0.210 </z-m>
   </offsets>
  </model>
