@@ -43,10 +43,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   
  <model>
   <name>Autopilot Helper</name>
-  <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ap/ap-fg.xml</path>
+  <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/ap/ap-mach.xml</path>
   <offsets>
-      <x-m>  -1.472 </x-m>
-      <y-m>   0.20 </y-m>
+      <x-m>  -1.474 </x-m>
+      <y-m>   0.18 </y-m>
       <z-m>  -1.50 </z-m>
   </offsets>
  </model>

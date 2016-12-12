@@ -73,6 +73,7 @@ The only reason it's here is to specify a second ADF.
         <number>0</number>
     </clock> 
 
+<!--    
     <heading-indicator-fg>
         <name>heading-indicator-fg</name>
         <number>0</number>
@@ -82,7 +83,7 @@ The only reason it's here is to specify a second ADF.
         <name>heading-indicator-fg</name>
         <number>1</number>
     </heading-indicator-fg>
-	
+-->
     <magnetic-compass>
         <name>magnetic-compass</name>
         <number>0</number>
