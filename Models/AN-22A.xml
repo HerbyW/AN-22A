@@ -2239,34 +2239,14 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
    
     <!-- NEW   Taxi and Landing lights-->
   <model>
-    <path>Aircraft/AN-22A/Models/light/landinglightstaxi.xml</path>
+    <path>Aircraft/AN-22A/Models/light/AN22A-lights.xml</path>
     <offsets>
       <x-m> 0 </x-m>
       <y-m> 0 </y-m>
       <z-m> 0 </z-m>
     </offsets>
   </model>
-  <!-- Landing lamps on top -->
-  <model>
-    <path>Aircraft/AN-22A/Models/light/landinglights.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
-  </model>
-  
-  <model>
-    <path>Aircraft/AN-22A/Models/light/TU-160-lights.xml</path>
-    <offsets>
-      <x-m> -4.63</x-m>
-      <y-m>   0.0 </y-m>
-      <z-m>  -3.254</z-m>
-    </offsets>
-  </model>
-  
-  
-  
+
     <!--Internal Cabin lights for Rembrand, switch: bano-->
  <model>
   <path>Aircraft/AN-22A/Models/light/headlight-tiny.xml</path>
@@ -2282,6 +2262,55 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   </offsets>
  </model>  
   
+    <!-- Ambient special effect lamps-->
+  <model>
+    <path>Aircraft/AN-22A/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -21.176 </x-m>
+      <y-m> -1.028 </y-m>
+      <z-m> -4.42 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-22A/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -21.176 </x-m>
+      <y-m>  1.028 </y-m>
+      <z-m> -4.42 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-22A/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -9.998 </x-m>
+      <y-m> -3.776 </y-m>
+      <z-m> -5.087 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-22A/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -9.998 </x-m>
+      <y-m>  3.776 </y-m>
+      <z-m> -5.087 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-22A/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> 3.555 </x-m>
+      <y-m>  3.529 </y-m>
+      <z-m> -4.775 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-22A/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> 3.555 </x-m>
+      <y-m> -3.529 </y-m>
+      <z-m> -4.775 </z-m>
+    </offsets>
+  </model>
     
   <!-- smoke -->
   
