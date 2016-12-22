@@ -2186,17 +2186,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <y-m>-20.9 </y-m>
       <z-m>  0.35 </z-m>
      </offsets>
-   </model>
-          
-   <model>
-    <path>Aircraft/AN-22A/Models/light/WhiteLight.xml</path>    
-     <offsets>
-      <x-m>-26.45 </x-m>
-      <y-m>  0.0 </y-m>
-      <z-m> -4.15 </z-m>
-     </offsets>
-   </model>
-    
+   </model>    
   
   <!-- StrobeLights: white-pulse, left-right wings and ruder-->
   <model>
