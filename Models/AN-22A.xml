@@ -2311,6 +2311,22 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <z-m> -4.775 </z-m>
     </offsets>
   </model>
+  <model>
+    <path>Aircraft/AN-22A/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -3.384 </x-m>
+      <y-m> -20.411 </y-m>
+      <z-m> 0.064 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-22A/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -3.384 </x-m>
+      <y-m> 20.411 </y-m>
+      <z-m> 0.064 </z-m>
+    </offsets>
+  </model>
     
   <!-- smoke -->
   
