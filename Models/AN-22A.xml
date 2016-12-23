@@ -2317,6 +2317,38 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <z-m> 0.064 </z-m>
     </offsets>
   </model>
+  <model>
+    <name>CrewRight</name>
+    <path>Aircraft/AN-22A/Models/light/BlueAmbientLight.xml</path>
+    <condition>
+		<greater-than>
+			<property>sim/multiplay/generic/float[1]</property>
+			<value>0.25</value>
+		</greater-than>
+	</condition>
+    <offsets>
+      <x-m> -8.251 </x-m>
+      <y-m> 4.553 </y-m>
+      <z-m> -4.672 </z-m>
+    </offsets>
+  </model>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>CrewRight</object-name>
+    <property>sim/multiplay/generic/float[1]</property>
+    <factor> 165 </factor>
+    <center>
+      <x-m> -8.68632 </x-m>
+      <y-m>  4.78313 </y-m>
+      <z-m> -3.81660 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
     
   <!-- smoke -->
   
