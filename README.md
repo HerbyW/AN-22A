@@ -1,5 +1,5 @@
 # Antonov-22A Antei
-for Flightgear Flightsimulator
+for Flightgear Flightsimulator by Herbert Wagner
 
 New Instrumentation, new panels, new interior and hundreds of addings to the official Versions.
 

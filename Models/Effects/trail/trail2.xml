@@ -72,7 +72,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
           <alpha><value> 0.3 </value></alpha>
         </color>
         <size>
-          <value>0.25</value>
+          <value>0.35</value>
         </size>
       </start>
 
@@ -89,7 +89,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       </end>
 
       <life-sec>
-        <value>10</value>
+        <value>15</value>
       </life-sec>
         
       <mass-kg>  0.5 </mass-kg>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--
-Copyright (C) Herbert Wagner Dec2014-2016
+Copyright (C) Herbert Wagner Dec2014-2018
 see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
 
@@ -80,10 +80,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <aircraft-version>5.0.2</aircraft-version>
       <status>production</status>
       <rating>
-	<FDM type="int">4</FDM>
-	<systems type="int">4</systems>
-	<cockpit type="int">4</cockpit>
-	<model type="int">4</model>
+	<FDM type="int">5</FDM>
+	<systems type="int">5</systems>
+	<cockpit type="int">5</cockpit>
+	<model type="int">5</model>
       </rating>
       
       <fuel-fraction>0.6</fuel-fraction>

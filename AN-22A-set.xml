@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!--
-Copyright (C) Herbert Wagner Dec2014-2016
+Copyright (C) Herbert Wagner Dec2014-2018
 see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
 
@@ -17,7 +17,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <weight n="0">
         	    <name>Crew</name>
         	    <weight-lb type="double">400</weight-lb>
-        	    <max-lb type="double">800</max-lb>
+        	    <max-lb type="double">1200</max-lb>
         	    <min-lb type="double">300</min-lb>
     </weight>
     
@@ -45,10 +45,10 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     
     
     <rating>
-      <FDM type="int">     4 </FDM>
-      <systems type="int"> 3 </systems>
-      <cockpit type="int"> 4 </cockpit>
-      <model type="int">   4 </model>
+      <FDM type="int">     5 </FDM>
+      <systems type="int"> 5 </systems>
+      <cockpit type="int"> 5 </cockpit>
+      <model type="int">   5 </model>
     </rating>
    
    <systems>

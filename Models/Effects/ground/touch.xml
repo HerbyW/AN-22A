@@ -60,7 +60,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
           <blue><value>  0.55 </value></blue>
           <alpha><value> 0.6 </value></alpha>
         </color>
-        <size><value> 5 </value></size>
+        <size><value> 4 </value></size>
       </start>
       <end>
         <color>
@@ -69,9 +69,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
           <blue><value>  0.85 </value></blue>
           <alpha><value> 0.20 </value></alpha>
         </color>
-        <size><value> 15 </value></size>
+        <size><value> 14 </value></size>
       </end>
-      <life-sec><value> 3 </value></life-sec>
+      <life-sec><value> 4 </value></life-sec>
       <mass-kg>  0.025 </mass-kg>
       <radius-m> 0.175 </radius-m>
     </particle>
