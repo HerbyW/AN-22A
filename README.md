@@ -1,5 +1,15 @@
 # Antonov-22A Antei
+
 for Flightgear Flightsimulator by Herbert Wagner
+
+++++++++++++++++++++
+
+Based on:
+Antonov AN-22
+BARANGER Emmanuel
+January, 02, 2013.
+
+++++++++++++++++++++
 
 New Instrumentation, new panels, new interior and hundreds of addings to the official Versions.
 
@@ -16,4 +26,8 @@ Many files for light and smoke are derivated from 707 by Lake of Constance Hanga
 
 Each xml-file holds own copyright notices.
 
-Most content is GPL some not.
+LICENSE: This aircraft is released under the GNU GPL v2 License, see COPYING file.
+
+Installation: Unzip and copy into the aircraft folder.
+
+See aircraft help for detailed instructions.
